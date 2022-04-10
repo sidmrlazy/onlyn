@@ -29,3 +29,9 @@
             etc.</p>
     </div>
 </div>
+
+<div class="custom-section-btn">
+    <button type="button" class="custom-btn">
+        More Services
+    </button>
+</div>

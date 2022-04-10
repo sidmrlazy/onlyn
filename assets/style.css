@@ -218,3 +218,31 @@
   color: #fff !important;
   transition: ease-in-out 0.2s;
 }
+.custom-section-btn {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.custom-btn {
+  width: 150px;
+  border: 2px solid #3b8b18;
+  border-radius: 100px;
+  padding: 10px;
+  background-color: #fff;
+  font-family: "Poppins", sans-serif;
+  color: #3b8b18;
+  font-weight: 600;
+}
+.custom-btn:hover {
+  border: 2px solid #fff;
+  border-radius: 100px;
+  padding: 10px;
+  background-color: #3b8b18;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  font-weight: 600;
+  transition: ease-in-out 0.2s;
+}
