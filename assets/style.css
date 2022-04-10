@@ -1,0 +1,220 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+/* ============= Navbar ============= */
+.navbar {
+  background-color: #fff !important;
+}
+.navbar-brand {
+  max-width: 20% !important;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.navbar-brand img {
+  width: 50%;
+  height: auto;
+}
+.nav-link {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600 !important;
+  color: #333333 !important;
+  font-size: 16px !important;
+}
+.dropdown-menu {
+  /* width: 800px; */
+  width: max-content !important;
+  padding: 20px;
+  -webkit-box-shadow: 3px 0px 32px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 0px 32px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 0px 32px -8px rgba(0, 0, 0, 0.75);
+  border: 0;
+}
+.dropdown-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.dropdown-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  margin-right: 50px;
+  margin-left: 20px;
+}
+.dropdown-icon {
+  font-size: 20px;
+  font-weight: bold;
+  color: #3b8b18;
+  margin-top: 3px;
+}
+#dropdown-heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600 !important;
+  color: #333333 !important;
+  font-size: 16px;
+  margin-left: 15px;
+  margin-bottom: 10px !important;
+  text-decoration: none;
+}
+#dropdown-heading:hover {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600 !important;
+  color: #333333 !important;
+  font-size: 16px;
+  margin-left: 15px;
+  margin-bottom: 10px !important;
+  text-decoration: none;
+  color: #3b8b18 !important;
+  transition: ease-in-out 0.2s;
+}
+.dropdown-item {
+  padding: 0;
+  margin-left: 15px;
+  margin-bottom: 3px;
+  font-size: 14px;
+}
+.dropdown-item:hover {
+  padding: 0;
+  margin-left: 15px;
+  margin-bottom: 3px;
+  font-size: 14px;
+  background-color: #00000000 !important;
+  color: #3b8b18 !important;
+  transition: ease-in-out 0.2s;
+}
+.nav-item {
+  margin-right: 40px;
+}
+.nav-contact-btn {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  background-color: #3b8b18;
+  border-radius: 100px;
+  width: 15%;
+}
+.nav-contact-btn:hover {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  background-color: #3b8b18;
+  border-radius: 100px;
+  width: 20%;
+  transition: ease-in-out 0.8s;
+  background: rgb(59, 139, 24);
+  background: linear-gradient(
+    90deg,
+    rgba(59, 139, 24, 1) 0%,
+    rgba(39, 221, 18, 1) 62%
+  );
+}
+.nav-contact-btn P {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700 !important;
+  color: #fff !important;
+  margin: 0;
+  padding: 10px;
+}
+.forward-arrow-icon {
+  color: #fff;
+  margin-left: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  top: 0;
+  padding: 0;
+  margin: 0;
+}
+
+/* ================= Product Banner ================= */
+.product-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+.product-banner h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900 !important;
+  font-size: 60px;
+}
+.lottie-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lottie {
+  width: 80%;
+  height: auto;
+}
+
+/* ================= Marketing Section ================= */
+.custom-section {
+  margin-top: 100px;
+  margin-bottom: 50px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.custom-section h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900 !important;
+  text-align: center;
+  font-size: 60px;
+}
+.custom-section p {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+.header-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.header-section p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  color: #3b8b18;
+}
+.header-section h1 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 44px;
+}
+.card-section {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  padding: 40px;
+}
+.onlyn-card {
+  width: 300px;
+  height: 300px;
+  border: 1px solid #c7c7c7c7;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 20px;
+  margin: 20px;
+}
+.onlyn-card h1 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.onlyn-card:hover {
+  background-color: #3b8b18 !important;
+  color: #fff !important;
+  transition: ease-in-out 0.2s;
+}
