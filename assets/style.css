@@ -1,6 +1,10 @@
 * {
   font-family: "Poppins", sans-serif;
 }
+::selection {
+  color: #fff;
+  background: #3b8b18;
+}
 
 /* ============= Navbar ============= */
 .navbar {
@@ -152,6 +156,9 @@
 }
 
 /* ================= Marketing Section ================= */
+.marketing-section {
+  width: 100%;
+}
 .custom-section {
   margin-top: 100px;
   margin-bottom: 50px !important;
@@ -227,8 +234,8 @@
   margin-bottom: 50px;
 }
 .custom-btn {
-  width: 150px;
-  border: 2px solid #3b8b18;
+  width: 200px;
+  border: 0;
   border-radius: 100px;
   padding: 10px;
   background-color: #fff;
@@ -237,12 +244,25 @@
   font-weight: 600;
 }
 .custom-btn:hover {
-  border: 2px solid #fff;
-  border-radius: 100px;
-  padding: 10px;
   background-color: #3b8b18;
-  font-family: "Poppins", sans-serif;
   color: #fff;
-  font-weight: 600;
-  transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.5s;
+}
+/* =============== Hero Section =============== */
+.hero-section {
+  width: 100%;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 150px;
+}
+.hero-section h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+.hero-section p {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
 }

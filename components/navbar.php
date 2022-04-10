@@ -61,7 +61,8 @@
                             <div class="dropdown-section">
                                 <ion-icon name="megaphone-outline" class="dropdown-icon"></ion-icon>
                                 <div>
-                                    <a class="dropdown-item" id="dropdown-heading" href="#">Marketing</a>
+                                    <a class="dropdown-item" id="dropdown-heading"
+                                        href="index.php#marketing">Marketing</a>
                                     <li><a class="dropdown-item" href="#">Content</a></li>
                                     <li><a class="dropdown-item" href="#">Social Media Marketing</a></li>
                                     <li><a class="dropdown-item" href="#">SEO</a></li>
