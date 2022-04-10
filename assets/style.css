@@ -266,3 +266,110 @@
   font-family: "Poppins", sans-serif;
   text-align: center;
 }
+
+@media only screen and (max-width: 768px) {
+  /* Navbar */
+  .navbar-brand {
+    max-width: 50% !important;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .navbar-brand img {
+    width: 100% !important;
+    height: auto;
+  }
+  .nav-contact-btn {
+    width: 50% !important;
+  }
+  /* Product Banner */
+  .product-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    margin-top: 100px;
+  }
+  .product-banner h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900 !important;
+    font-size: 44px;
+  }
+  .product-banner p {
+    font-family: "Poppins", sans-serif;
+    text-align: left;
+  }
+  .lottie-holder {
+    max-width: fit-content;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .lottie {
+    width: 80%;
+    height: auto;
+  }
+
+  /* Marketing Section */
+  .custom-section {
+    max-width: 100%;
+  }
+  .custom-section h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900 !important;
+    text-align: center;
+    font-size: 44px;
+  }
+  .header-section p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    color: #3b8b18;
+    max-width: 100%;
+  }
+  .header-section h1 {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-size: 30px;
+  }
+  .card-section {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .onlyn-card {
+    max-width: 100%;
+    max-height: auto;
+    border: 1px solid #c7c7c7c7;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+  /* Hero Section */
+  .hero-section {
+    max-width: 100%;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+  }
+  .hero-section h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    text-align: center;
+  }
+  .hero-section p {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+  }
+}

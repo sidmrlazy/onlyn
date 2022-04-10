@@ -8,5 +8,7 @@
 
         <p>The experience of our digital marketing specialists enables us to present a full basket of services to you.
             We’re ready to be your marketing partners!!</p>
+
+        <img src="assets/images/other/hero-section-img-1.png" alt="" class="img-fluid">
     </div>
 </section>
