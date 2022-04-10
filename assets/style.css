@@ -345,6 +345,14 @@
   .nav-contact-btn {
     width: 50% !important;
   }
+  .dropdown-menu {
+    width: initial !important;
+    padding: 20px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border: 0;
+  }
   /* Product Banner */
   .product-banner {
     display: flex;
