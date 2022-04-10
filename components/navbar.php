@@ -11,7 +11,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="index.php">Home</a>
+                    <a class="nav-link" aria-current="page" href="index">Home</a>
                 </li>
 
                 <!-- ======================= Mobile View ======================= -->
@@ -45,7 +45,7 @@
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" id="dropdown-heading" href="marketing.php">Marketing</a></li>
+                        <li><a class="dropdown-item" id="dropdown-heading" href="marketing">Marketing</a></li>
                         <li><a class="dropdown-item" href="#">Content</a></li>
                         <li><a class="dropdown-item" href="#">Social Media Marketing</a></li>
                         <li><a class="dropdown-item" href="#">SEO</a></li>
@@ -102,7 +102,7 @@
                             <div class="dropdown-section">
                                 <ion-icon name="megaphone-outline" class="dropdown-icon"></ion-icon>
                                 <div>
-                                    <a class="dropdown-item" id="dropdown-heading" href="marketing.php">Marketing</a>
+                                    <a class="dropdown-item" id="dropdown-heading" href="marketing">Marketing</a>
                                     <li><a class="dropdown-item" href="#">Content</a></li>
                                     <li><a class="dropdown-item" href="#">Social Media Marketing</a></li>
                                     <li><a class="dropdown-item" href="#">SEO</a></li>
