@@ -29,6 +29,12 @@
   color: #333333 !important;
   font-size: 16px !important;
 }
+.nav-link:hover {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  color: #3b8b18 !important;
+}
 .dropdown-menu {
   /* width: 800px; */
   width: fit-content !important;
@@ -343,7 +349,7 @@
     height: auto;
   }
   .nav-contact-btn {
-    width: 50% !important;
+    display: none;
   }
   .dropdown-menu {
     width: initial !important;
