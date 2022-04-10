@@ -1,5 +1,5 @@
 <section class="container footer-section">
-    <div class="col-md-4 footer-col">
+    <div class="col-md-3 footer-col">
         <img src="assets/images/logo/Logo.png" alt="">
         <div class="row-one">
             <p>Get Free Estimation</p>
@@ -15,7 +15,7 @@
         </div>
     </div>
 
-    <div class="col-md-4 footer-col">
+    <div class="col-md-3 footer-col">
         <h5>Company</h5>
         <div class="col-two">
             <p>About Us</p>
@@ -28,6 +28,24 @@
             <p>Sitemap</p>
             <p>Contact</p>
         </div>
+    </div>
+
+    <div class="col-md-3 footer-col">
+        <h5>Services</h5>
+
+        <div class="col-two">
+            <p>Android App Development</p>
+            <p>Cake PHP Development</p>
+            <p>How to Engage</p>
+            <p>We Work With</p>
+            <p>Testimonials</p>
+            <p>FAQs</p>
+            <p>Policies</p>
+            <p>Sitemap</p>
+            <p>Contact</p>
+        </div>
+
+
     </div>
 </section>
 

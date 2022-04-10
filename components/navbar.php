@@ -1,4 +1,4 @@
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
             <img src="assets/images/logo/Logo.png" alt="">
@@ -14,7 +14,48 @@
                     <a class="nav-link" aria-current="page" href="index.php">Home</a>
                 </li>
 
-                <li class="nav-item dropdown">
+                <!-- ======================= Mobile View ======================= -->
+                <li class="nav-item dropdown mobile">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Services
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#" id="dropdown-heading">Mobile Apps</a></li>
+                        <li><a class="dropdown-item" href="#">Native Android Apps</a></li>
+                        <li><a class="dropdown-item" href="#">Cross Platform</a></li>
+                        <li><a class="dropdown-item" href="#">Hybrid Apps</a></li>
+                        <li><a class="dropdown-item" href="#">PWA</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#" id="dropdown-heading">Web Development</a></li>
+                        <li><a class="dropdown-item" href="#">Enterprise Solutions</a></li>
+                        <li><a class="dropdown-item" href="#">ECommerce</a></li>
+                        <li><a class="dropdown-item" href="#">CMS</a></li>
+                        <li><a class="dropdown-item" href="#">API & Backend</a></li>
+                        <li><a class="dropdown-item" href="#">Custom Development</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" id="dropdown-heading" href="#">Design</a></li>
+                        <li><a class="dropdown-item" href="#">Wireframe</a></li>
+                        <li><a class="dropdown-item" href="#">UI/UX Design</a></li>
+                        <li><a class="dropdown-item" href="#">Logo Design</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" id="dropdown-heading" href="marketing.php">Marketing</a></li>
+                        <li><a class="dropdown-item" href="#">Content</a></li>
+                        <li><a class="dropdown-item" href="#">Social Media Marketing</a></li>
+                        <li><a class="dropdown-item" href="#">SEO</a></li>
+                        <li><a class="dropdown-item" href="#">Campaign</a></li>
+                        <li><a class="dropdown-item" href="#">Lead Generation</a></li>
+                    </ul>
+                </li>
+
+                <!-- ======================= Desktop View ======================= -->
+                <li class="nav-item dropdown desktop">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
                         Services
@@ -61,8 +102,7 @@
                             <div class="dropdown-section">
                                 <ion-icon name="megaphone-outline" class="dropdown-icon"></ion-icon>
                                 <div>
-                                    <a class="dropdown-item" id="dropdown-heading"
-                                        href="index.php#marketing">Marketing</a>
+                                    <a class="dropdown-item" id="dropdown-heading" href="marketing.php">Marketing</a>
                                     <li><a class="dropdown-item" href="#">Content</a></li>
                                     <li><a class="dropdown-item" href="#">Social Media Marketing</a></li>
                                     <li><a class="dropdown-item" href="#">SEO</a></li>
@@ -73,8 +113,10 @@
                         </div>
                     </ul>
                 </li>
+                <!-- ======================= Desktop View ======================= -->
 
-                <li class="nav-item dropdown">
+                <!-- ======================= Desktop View ======================= -->
+                <li class="nav-item dropdown desktop">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
                         Technology
@@ -128,6 +170,7 @@
                         </div>
                     </ul>
                 </li>
+                <!-- ======================= Desktop View ======================= -->
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"

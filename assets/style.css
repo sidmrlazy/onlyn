@@ -7,6 +7,9 @@
 }
 
 /* ============= Navbar ============= */
+.mobile {
+  display: none;
+}
 .navbar {
   background-color: #fff !important;
 }
@@ -28,7 +31,7 @@
 }
 .dropdown-menu {
   /* width: 800px; */
-  width: max-content !important;
+  width: fit-content !important;
   padding: 20px;
   -webkit-box-shadow: 3px 0px 32px -8px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 3px 0px 32px -8px rgba(0, 0, 0, 0.75);
@@ -318,18 +321,17 @@
   font-weight: 600;
 }
 .col-two {
+  width: 100%;
   margin-top: 30px;
-}
-.col-two p {
-  margin: 0;
-  margin-bottom: 5px;
-  font-size: 14px;
-}
-.col-two p:hover {
-  color: #3b8b18;
 }
 @media only screen and (max-width: 768px) {
   /* Navbar */
+  .desktop {
+    display: none !important;
+  }
+  .mobile {
+    display: initial !important;
+  }
   .navbar-brand {
     max-width: 50% !important;
     height: auto;
