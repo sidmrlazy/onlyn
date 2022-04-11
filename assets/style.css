@@ -521,6 +521,14 @@
   width: 50%;
   height: auto;
 }
+.custom-new-btn {
+  background-color: #3b8b18;
+  border: 0;
+  padding: 20px;
+  border-radius: 100px;
+  font-weight: 700;
+  color: #fff;
+}
 @media only screen and (max-width: 768px) {
   /* Navbar */
   .desktop {
@@ -579,48 +587,6 @@
     height: auto;
   }
 
-  /* Marketing Section */
-  .custom-section {
-    max-width: 100%;
-  }
-  .custom-section h1 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 900 !important;
-    text-align: center;
-    font-size: 44px;
-  }
-  .header-section p {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    text-align: center;
-    color: #3b8b18;
-    max-width: 100%;
-  }
-  .header-section h1 {
-    font-family: "Poppins", sans-serif;
-    text-align: center;
-    font-size: 30px;
-  }
-  .card-section {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    flex-direction: column;
-    padding: 20px;
-  }
-  .onlyn-card {
-    max-width: 100%;
-    max-height: auto;
-    border: 1px solid #c7c7c7c7;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    padding: 20px;
-    margin-bottom: 10px;
-  }
   /* Hero Section */
   .hero-section {
     max-width: 100%;
@@ -753,5 +719,136 @@
     margin-bottom: 50px;
     text-align: center;
     font-size: 24px;
+  }
+  /* ================ Main Banner ================ */
+  .main-banner {
+    max-width: 100%;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .main-banner h1 {
+    max-width: fit-content;
+    text-align: center;
+    font-weight: 800;
+    font-size: 36px;
+  }
+  .main-banner p {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 16px;
+    max-width: 100%;
+  }
+  /* ================ All Services ================ */
+  .all-services {
+    margin-top: 100px !important;
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column-reverse;
+    max-width: fit-content !important;
+  }
+  .all-services h1 {
+    font-weight: 800;
+    padding-top: px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .all-services p {
+    padding-right: 0;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  #web-development {
+    flex-direction: column !important;
+  }
+  .services-img-box {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .services-img-box img {
+    width: 80%;
+    height: auto;
+  }
+  .icon-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .all-services-inner-img {
+    max-width: 50px;
+    height: 50px;
+    border: 1px solid #c7c7c7c7;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+  }
+  .all-services-inner-img img {
+    width: 50%;
+    height: auto;
+  }
+  .custom-new-btn {
+    background-color: #3b8b18;
+    border: 0;
+    padding: 15px;
+    border-radius: 100px;
+    font-weight: 700;
+    color: #fff;
+    width: 100%;
+  }
+
+  /* Marketing Section */
+  .marketing-section {
+    max-width: fit-content !important;
+  }
+  .custom-section {
+    max-width: fit-content;
+  }
+  .custom-section h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900 !important;
+    text-align: center;
+    font-size: 44px;
+  }
+  .header-section p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    color: #3b8b18;
+    max-width: 100%;
+  }
+  .header-section h1 {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-size: 26px;
+  }
+  .card-section {
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .onlyn-card {
+    max-width: fit-content !important;
+    max-height: auto;
+    border: 1px solid #c7c7c7c7;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 10px;
   }
 }

@@ -20,7 +20,7 @@
                 <img src="assets/images/icons/react-native.png" alt="">
             </div>
         </div>
-        <button type="button" class="new-btn mt-5">
+        <button type="button" class="custom-new-btn mt-5">
             Know More
         </button>
     </div>
@@ -29,7 +29,7 @@
     </div>
 </div>
 
-<div class="container-fluid all-services" id="web-development">
+<div class="container-fluid all-services order-2" id="web-development">
     <div class="col-md-6 services-img-box">
         <img src="assets/images/other/img-services-web-development.webp" alt="">
     </div>
@@ -50,10 +50,11 @@
                 <img src="assets/images/icons/react-native.png" alt="">
             </div>
         </div>
-        <button type="button" class="new-btn mt-5">
+        <button type="button" class="custom-new-btn mt-5">
             Know More
         </button>
     </div>
+
 </div>
 
 <div class="container-fluid all-services" id="design">
@@ -74,7 +75,7 @@
                 <img src="assets/images/icons/react-native.png" alt="">
             </div>
         </div>
-        <button type="button" class="new-btn mt-5">
+        <button type="button" class="custom-new-btn mt-5">
             Know More
         </button>
     </div>

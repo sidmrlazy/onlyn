@@ -1,4 +1,4 @@
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
 
         <a class="navbar-brand" href="index">
@@ -56,7 +56,7 @@
                 </li>
 
                 <!-- ======================= Mobile View ======================= -->
-                <li class="nav-item dropdown mobile">
+                <!-- <li class="nav-item dropdown mobile">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         Technology
@@ -89,7 +89,7 @@
                         <li><a class="dropdown-item" href="#">MySQL</a></li>
                         <li><a class="dropdown-item" href="#">Firebase</a></li>
                     </ul>
-                </li>
+                </li> -->
 
                 <!-- ======================= Desktop View ======================= -->
                 <li class="nav-item dropdown desktop">
@@ -156,7 +156,7 @@
                 <!-- ======================= Desktop View ======================= -->
 
                 <!-- ======================= Desktop View ======================= -->
-                <li class="nav-item dropdown desktop">
+                <!-- <li class="nav-item dropdown desktop">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
                         Technology
@@ -209,7 +209,7 @@
                             </div>
                         </div>
                     </ul>
-                </li>
+                </li> -->
                 <!-- ======================= Desktop View ======================= -->
 
                 <li class="nav-item dropdown">
