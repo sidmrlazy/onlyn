@@ -1002,7 +1002,7 @@
     max-width: fit-content !important;
   }
   .custom-section {
-    max-width: fit-content;
+    max-width: 100%;
   }
   .custom-section h1 {
     font-family: "Poppins", sans-serif;
@@ -1041,5 +1041,160 @@
     flex-direction: column;
     padding: 20px;
     margin-bottom: 10px;
+  }
+  /* ============ Marketing Banner ============ */
+  .marketing-banner {
+    margin-top: 200px;
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    max-width: 100%;
+    padding: 10px;
+    background-color: #f8f8f8;
+  }
+  .marketing-banner h1 {
+    font-weight: 800;
+    font-size: 36px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .marketing-banner p {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .talk-btn {
+    background-color: #3b8b18;
+    border: 0;
+    padding: 20px;
+    border-radius: 100px;
+    color: #fff;
+    font-weight: 700;
+    width: 100%;
+  }
+
+  .marketing-banner-bottom {
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    padding: 20px;
+    max-width: 100%;
+  }
+  .gradient-card {
+    background: rgb(59, 139, 24);
+    background: linear-gradient(
+      90deg,
+      rgba(59, 139, 24, 1) 0%,
+      rgba(84, 247, 12, 1) 100%
+    );
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: max-content;
+    height: 150px;
+  }
+  .gradient-card h1 {
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+  }
+  .gradient-card p {
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  .marketing-banner-bottom-text p {
+    margin-left: 0;
+    padding: 20px;
+    text-align: center;
+  }
+  .marketing-carousel h1 {
+    text-align: center;
+    margin-bottom: 44px;
+    font-weight: 800;
+    font-size: 36px;
+  }
+  .marketing-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .carousel-lottie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .carousel-content {
+    margin-left: 0;
+    display: flex;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .carousel-content h3 {
+    font-size: 24px;
+    font-weight: 800;
+    padding-bottom: 20px;
+    text-align: center;
+    margin-top: 50px !important ;
+  }
+  .carousel-content p {
+    text-align: center;
+  }
+  .onlyn-top-section {
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column !important;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    max-width: 100%;
+  }
+  .new-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .box {
+    padding: 30px;
+    background-color: #fff;
+    border: 1px solid #c7c7c7;
+    border-radius: 5px;
+    margin: 20px;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .box h4 {
+    text-align: center;
+  }
+  .box p {
+    text-align: center;
+  }
+  .onlyn-card h1 {
+    text-align: center;
+  }
+  .onlyn-card p {
+    text-align: center;
   }
 }

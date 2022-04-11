@@ -5,8 +5,7 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="marketing-slider">
-                    <div class="col-md-4">
-
+                    <div class="col-md-4 carousel-lottie">
                         <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_1veqlktp.json"
                             background="transparent" speed="1" class="lottie" loop autoplay>
                         </lottie-player>
@@ -23,7 +22,7 @@
 
             <div class="carousel-item">
                 <div class="marketing-slider">
-                    <div class="col-md-4">
+                    <div class="col-md-4 carousel-lottie">
 
                         <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_7zcn3vhm.json"
                             background="transparent" speed="1" class="lottie" loop autoplay>
@@ -46,7 +45,7 @@
 
             <div class="carousel-item">
                 <div class="marketing-slider">
-                    <div class="col-md-4">
+                    <div class="col-md-4 carousel-lottie">
                         <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_rxe6lehm.json"
                             background="transparent" speed="1" class="lottie" loop autoplay>
                         </lottie-player>
@@ -64,7 +63,7 @@
 
             <div class="carousel-item">
                 <div class="marketing-slider">
-                    <div class="col-md-4">
+                    <div class="col-md-4 carousel-lottie">
                         <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_u52mwllq.json"
                             background="transparent" speed="1" class="lottie" loop autoplay>
                         </lottie-player>
