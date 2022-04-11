@@ -334,9 +334,12 @@
 .process-section {
   margin-top: 50px;
   margin-bottom: 50px;
+  background: #3b8b18 !important;
+  padding: 100px;
 }
 .process-section h1 {
   font-weight: 800;
+  color: #fff;
 }
 .process-col {
   margin-top: 100px;
@@ -347,10 +350,12 @@
 .process-col h2 {
   font-weight: 700;
   font-size: 22px;
+  color: #fff;
 }
 .process-col p {
   padding-right: 20px;
   margin-top: 20px;
+  color: #fff;
 }
 .process-row {
   display: flex;
@@ -361,11 +366,89 @@
 .process-icon {
   font-size: 50px;
   margin-right: 20px;
+  color: #fff;
 }
 .dotted-line {
-  border-bottom: 1px solid #777;
+  border-bottom-width: 0.5px solid;
+  border-bottom-color: #fff;
+  border-top-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
   border-style: dashed;
   width: 150px;
+}
+
+/* ============ Tech Work ============ */
+.tech-work {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.tech-work h1 {
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+.accordion-button {
+  font-weight: 700;
+}
+.accordion-button:hover {
+  color: #3b8b18;
+}
+.accordion-body {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.custom-card {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+  margin: 10px;
+  max-width: 100%;
+}
+.custom-card img {
+  width: 30%;
+  height: auto;
+  padding-bottom: 15px;
+}
+.custom-card:hover {
+  background-color: #e5e5e5e5;
+  transition: ease-in-out 0.5s;
+}
+
+/* ================ Middle Section ================ */
+.middle-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+.middle-section h5 {
+  font-size: 18px !important;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+.middle-section h1 {
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+.new-btn {
+  background-color: #3b8b18;
+  border: 0;
+  padding: 20px;
+  border-radius: 100px;
+  font-weight: 700;
+  color: #fff;
 }
 @media only screen and (max-width: 768px) {
   /* Navbar */
@@ -515,6 +598,58 @@
     padding-right: 10px;
     margin-top: 20px;
     max-width: max-content !important;
+  }
+  /* ================ Middle Section ================ */
+  .middle-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+  .middle-section h5 {
+    font-size: 18px !important;
+    font-weight: 400;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .middle-section h1 {
+    font-weight: 800;
+    margin-bottom: 30px;
+  }
+  .new-btn {
+    background-color: #3b8b18;
+    border: 0;
+    padding: 20px;
+    border-radius: 100px;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  .accordion-body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+  .custom-card {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    margin: 10px;
+    max-width: 100%;
+  }
+  .custom-card img {
+    width: 30%;
+    height: auto;
+    padding-bottom: 15px;
   }
 
   /* Footer Section */

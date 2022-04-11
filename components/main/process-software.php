@@ -1,5 +1,5 @@
-<section class="container process-section">
-    <h1>We Simplify Software Development Process</h1>
+<section class="container-fluid process-section">
+    <h1>Simplifying the Design Process</h1>
 
     <div class="process-col">
         <div class="col-md-3">
