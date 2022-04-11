@@ -454,6 +454,73 @@
   font-weight: 700;
   color: #fff;
 }
+
+/* ================ Main Banner ================ */
+.main-banner {
+  margin-top: 200px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main-banner h1 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 60px;
+}
+.main-banner p {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+/* ================ All Services ================ */
+.all-services {
+  margin-top: 200px !important;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.all-services h1 {
+  font-weight: 800;
+  padding-top: 50px;
+  margin-bottom: 30px;
+}
+.all-services p {
+  padding-right: 50px;
+  margin-bottom: 30px;
+}
+.services-img-box {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services-img-box img {
+  width: 80%;
+  height: auto;
+}
+.icon-holder {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.all-services-inner-img {
+  max-width: 50px;
+  height: 50px;
+  border: 1px solid #c7c7c7c7;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+.all-services-inner-img img {
+  width: 50%;
+  height: auto;
+}
 @media only screen and (max-width: 768px) {
   /* Navbar */
   .desktop {

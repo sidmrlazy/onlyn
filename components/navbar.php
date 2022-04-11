@@ -17,13 +17,13 @@
 
                 <!-- ======================= Mobile View ======================= -->
                 <li class="nav-item dropdown mobile">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    <a class="nav-link dropdown-toggle" href="services" id="navbarDropdown" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         Services
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="#" id="dropdown-heading">Mobile Apps</a></li>
-                        <li><a class="dropdown-item" href="#">Native Android Apps</a></li>
+                        <li><a class="dropdown-item" href="">Native Android Apps</a></li>
                         <li><a class="dropdown-item" href="#">Cross Platform</a></li>
                         <li><a class="dropdown-item" href="#">Hybrid Apps</a></li>
                         <li><a class="dropdown-item" href="#">PWA</a></li>
@@ -46,7 +46,7 @@
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" id="dropdown-heading" href="marketing">Marketing</a></li>
+                        <li><a class="dropdown-item" id="dropdown-heading" href="index.php#marketing">Marketing</a></li>
                         <li><a class="dropdown-item" href="#">Content</a></li>
                         <li><a class="dropdown-item" href="#">Social Media Marketing</a></li>
                         <li><a class="dropdown-item" href="#">SEO</a></li>
@@ -102,7 +102,8 @@
                             <div class="dropdown-section">
                                 <ion-icon name="phone-portrait-outline" class="dropdown-icon"></ion-icon>
                                 <div>
-                                    <a class="dropdown-item" id="dropdown-heading" href=" #">Mobile Apps</a>
+                                    <a class="dropdown-item" id="dropdown-heading" href="services#mobile">Mobile
+                                        Apps</a>
                                     <li><a class="dropdown-item" href="#">Native Android Apps</a></li>
                                     <li><a class="dropdown-item" href="#">Cross Platform</a></li>
                                     <li><a class="dropdown-item" href="#">Hybrid Apps</a></li>
@@ -113,7 +114,8 @@
                             <div class="dropdown-section">
                                 <ion-icon name="laptop-outline" class="dropdown-icon"></ion-icon>
                                 <div>
-                                    <a class="dropdown-item" id="dropdown-heading" href="#">Web Development</a>
+                                    <a class="dropdown-item" id="dropdown-heading" href="services#web-development">Web
+                                        Development</a>
                                     <li><a class="dropdown-item" href="#">Enterprise Solutions</a></li>
                                     <li><a class="dropdown-item" href="#">ECommerce</a></li>
                                     <li><a class="dropdown-item" href="#">CMS</a></li>
@@ -129,7 +131,7 @@
                             <div class="dropdown-section">
                                 <ion-icon name="brush-outline" class="dropdown-icon"></ion-icon>
                                 <div>
-                                    <a class="dropdown-item" id="dropdown-heading" href="#">Design</a>
+                                    <a class="dropdown-item" id="dropdown-heading" href="services#design">Design</a>
                                     <li><a class="dropdown-item" href="#">Wireframe</a></li>
                                     <li><a class="dropdown-item" href="#">UI/UX Design</a></li>
                                     <li><a class="dropdown-item" href="#">Logo Design</a></li>
@@ -139,7 +141,8 @@
                             <div class="dropdown-section">
                                 <ion-icon name="megaphone-outline" class="dropdown-icon"></ion-icon>
                                 <div>
-                                    <a class="dropdown-item" id="dropdown-heading" href="marketing">Marketing</a>
+                                    <a class="dropdown-item" id="dropdown-heading"
+                                        href="services#marketing">Marketing</a>
                                     <li><a class="dropdown-item" href="#">Content</a></li>
                                     <li><a class="dropdown-item" href="#">Social Media Marketing</a></li>
                                     <li><a class="dropdown-item" href="#">SEO</a></li>
