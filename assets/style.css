@@ -336,6 +336,10 @@
   margin-bottom: 50px;
   background: #3b8b18 !important;
   padding: 100px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.75);
 }
 .process-section h1 {
   font-weight: 800;
@@ -572,18 +576,35 @@
 
   /* Process Section */
   .process-section {
-    max-width: 100%;
-    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 10px !important;
+    background: #3b8b18 !important;
+    padding: 50px;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+  .process-section h1 {
+    font-weight: 800;
+    color: #fff;
+    text-align: center;
+    font-size: 44px;
   }
   .process-icon {
     font-size: 50px;
     margin-right: 20px;
   }
   .dotted-line {
-    border-bottom: 1px solid #777;
+    border-bottom-width: 0.5px solid;
+    border-bottom-color: #fff;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
     border-style: dashed;
-    width: 100px;
+    width: 150px;
   }
+
   .process-col {
     flex-direction: column !important;
   }
@@ -659,5 +680,11 @@
   .footer-col h5 {
     font-weight: 600;
     margin-top: 50px;
+  }
+  .tech-work h1 {
+    font-weight: 800;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 24px;
   }
 }

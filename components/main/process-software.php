@@ -1,4 +1,4 @@
-<section class="container-fluid process-section">
+<section class="container process-section">
     <h1>Simplifying the Design Process</h1>
 
     <div class="process-col">
