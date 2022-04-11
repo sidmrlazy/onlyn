@@ -12,6 +12,11 @@
 }
 .navbar {
   background-color: #fff !important;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
 }
 .navbar-brand {
   max-width: 20% !important;
@@ -283,6 +288,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  background-color: #f8f8f8;
 }
 .footer-col img {
   width: 30% !important;
@@ -529,6 +535,187 @@
   font-weight: 700;
   color: #fff;
 }
+
+/* ============ Marketing Banner ============ */
+.marketing-banner {
+  margin-top: 200px;
+  padding-top: 100px !important;
+  padding-bottom: 100px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  padding: 10px;
+  background-color: #f8f8f8;
+}
+.marketing-banner h1 {
+  font-weight: 800;
+  font-size: 54px;
+  margin-bottom: 50px;
+}
+.marketing-banner p {
+  margin-bottom: 30px;
+}
+.marketing-banner-container {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.marketing-banner-container img {
+  width: 80%;
+  height: auto;
+}
+.talk-btn {
+  background-color: #3b8b18;
+  border: 0;
+  padding: 20px;
+  border-radius: 100px;
+  color: #fff;
+  font-weight: 700;
+  width: 50%;
+}
+.marketing-banner-bottom {
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+  padding-top: 100px;
+  padding: 100px;
+}
+.gradient-card {
+  background: rgb(59, 139, 24);
+  background: linear-gradient(
+    90deg,
+    rgba(59, 139, 24, 1) 0%,
+    rgba(84, 247, 12, 1) 100%
+  );
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 500px;
+  height: 150px;
+}
+.gradient-card h1 {
+  font-weight: 700;
+  font-size: 30px;
+  color: #fff;
+}
+.gradient-card p {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+.marketing-banner-bottom-text p {
+  margin-left: 20px;
+  padding: 20px;
+}
+
+/* ========= Marketing Carousel ========= */
+.marketing-carousel {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  max-width: 100% !important;
+  padding-bottom: 80px;
+}
+.marketing-carousel h3 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+.marketing-carousel h1 {
+  text-align: center;
+  margin-bottom: 44px;
+  font-weight: 800;
+  font-size: 50px;
+}
+.marketing-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.carousel-control-prev-icon {
+  content: url("../assets/images/icons/arrow-back-circle-outline.svg");
+}
+.carousel-control-prev-icon:hover {
+  content: url("../assets/images/icons/arrow-back-circle-outline.svg");
+}
+.carousel-control-next-icon {
+  content: url("../assets/images/icons/arrow-forward-circle-outline.svg");
+}
+.carousel-indicators {
+  padding-top: 150px !important;
+}
+.carousel-content {
+  margin-left: 40px;
+  display: flex;
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+  flex-direction: column;
+}
+.carousel-content h3 {
+  font-size: 24px;
+  font-weight: 800;
+  padding-bottom: 20px;
+}
+
+/* ========= What we do  ========= */
+.onlyn-top-section {
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+.onlyn-top-section h3 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+.onlyn-top-section h1 {
+  text-align: center;
+  margin-bottom: 60px;
+  font-weight: 800;
+  font-size: 50px;
+}
+.new-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  padding: 30px;
+  background-color: #fff;
+  border: 1px solid #c7c7c7;
+  border-radius: 5px;
+  margin: 20px;
+  width: 400px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.box h4 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+/* ================= Media Query ================= */
 @media only screen and (max-width: 768px) {
   /* Navbar */
   .desktop {
@@ -536,6 +723,10 @@
   }
   .mobile {
     display: initial !important;
+  }
+  .navbar {
+    background-color: #fff !important;
+    position: initial;
   }
   .navbar-brand {
     max-width: 50% !important;
@@ -625,7 +816,7 @@
     font-size: 44px;
   }
   .process-icon {
-    font-size: 50px;
+    font-size: 44px;
     margin-right: 20px;
   }
   .dotted-line {

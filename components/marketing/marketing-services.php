@@ -1,4 +1,4 @@
-<div class="marketing-section" id="marketing">
+<div class="marketing-section">
     <div class="container custom-section">
         <h1>Building Deeper Customer Relationships with Digital Marketing</h1>
         <p class="col-md-9">We empower global enterprises and businesses to achieve this through creative content,
