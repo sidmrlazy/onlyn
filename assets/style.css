@@ -12,6 +12,11 @@
 }
 .navbar {
   background-color: #fff !important;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
 }
 .navbar-brand {
   max-width: 20% !important;
@@ -283,6 +288,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  background-color: #f8f8f8;
 }
 .footer-col img {
   width: 30% !important;
@@ -530,16 +536,77 @@
   color: #fff;
 }
 
+<<<<<<< HEAD
 /* ============= About ============= */
 .about-section {
   margin-top: 200px;
   margin-bottom: 200px;
 }
 .about-section-header {
+=======
+/* ============ Marketing Banner ============ */
+.marketing-banner {
+  margin-top: 200px;
+  padding-top: 100px !important;
+  padding-bottom: 100px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  padding: 10px;
+  background-color: #f8f8f8;
+}
+.marketing-banner h1 {
+  font-weight: 800;
+  font-size: 54px;
+  margin-bottom: 50px;
+}
+.marketing-banner p {
+  margin-bottom: 30px;
+}
+.marketing-banner-container {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.marketing-banner-container img {
+  width: 80%;
+  height: auto;
+}
+.talk-btn {
+  background-color: #3b8b18;
+  border: 0;
+  padding: 20px;
+  border-radius: 100px;
+  color: #fff;
+  font-weight: 700;
+  width: 50%;
+}
+.marketing-banner-bottom {
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+  padding-top: 100px;
+  padding: 100px;
+}
+.gradient-card {
+  background: rgb(59, 139, 24);
+  background: linear-gradient(
+    90deg,
+    rgba(59, 139, 24, 1) 0%,
+    rgba(84, 247, 12, 1) 100%
+  );
+  border-radius: 10px;
+>>>>>>> df33eca2f5a3c28a151be870c67106b6caa121f8
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+<<<<<<< HEAD
 }
 .about-section-header h3 {
   font-weight: 300 !important;
@@ -554,6 +621,127 @@
 .about-section-header p {
   text-align: center;
 }
+=======
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 500px;
+  height: 150px;
+}
+.gradient-card h1 {
+  font-weight: 700;
+  font-size: 30px;
+  color: #fff;
+}
+.gradient-card p {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+.marketing-banner-bottom-text p {
+  margin-left: 20px;
+  padding: 20px;
+}
+
+/* ========= Marketing Carousel ========= */
+.marketing-carousel {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  max-width: 100% !important;
+  padding-bottom: 80px;
+}
+.marketing-carousel h3 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+.marketing-carousel h1 {
+  text-align: center;
+  margin-bottom: 44px;
+  font-weight: 800;
+  font-size: 50px;
+}
+.marketing-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.carousel-control-prev-icon {
+  content: url("../assets/images/icons/arrow-back-circle-outline.svg");
+}
+.carousel-control-prev-icon:hover {
+  content: url("../assets/images/icons/arrow-back-circle-outline.svg");
+}
+.carousel-control-next-icon {
+  content: url("../assets/images/icons/arrow-forward-circle-outline.svg");
+}
+.carousel-indicators {
+  padding-top: 150px !important;
+}
+.carousel-content {
+  margin-left: 40px;
+  display: flex;
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+  flex-direction: column;
+}
+.carousel-content h3 {
+  font-size: 24px;
+  font-weight: 800;
+  padding-bottom: 20px;
+}
+
+/* ========= What we do  ========= */
+.onlyn-top-section {
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+.onlyn-top-section h3 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+.onlyn-top-section h1 {
+  text-align: center;
+  margin-bottom: 60px;
+  font-weight: 800;
+  font-size: 50px;
+}
+.new-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  padding: 30px;
+  background-color: #fff;
+  border: 1px solid #c7c7c7;
+  border-radius: 5px;
+  margin: 20px;
+  width: 400px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.box h4 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+/* ================= Media Query ================= */
+>>>>>>> df33eca2f5a3c28a151be870c67106b6caa121f8
 @media only screen and (max-width: 768px) {
   /* Navbar */
   .desktop {
@@ -561,6 +749,10 @@
   }
   .mobile {
     display: initial !important;
+  }
+  .navbar {
+    background-color: #fff !important;
+    position: initial;
   }
   .navbar-brand {
     max-width: 50% !important;
@@ -650,7 +842,7 @@
     font-size: 44px;
   }
   .process-icon {
-    font-size: 50px;
+    font-size: 44px;
     margin-right: 20px;
   }
   .dotted-line {
@@ -836,7 +1028,7 @@
     max-width: fit-content !important;
   }
   .custom-section {
-    max-width: fit-content;
+    max-width: 100%;
   }
   .custom-section h1 {
     font-family: "Poppins", sans-serif;
@@ -876,6 +1068,7 @@
     padding: 20px;
     margin-bottom: 10px;
   }
+<<<<<<< HEAD
   /* ============= About ============= */
   .about-section {
     margin-top: 100px;
@@ -893,6 +1086,161 @@
     text-align: center;
   }
   .about-section-header p {
+=======
+  /* ============ Marketing Banner ============ */
+  .marketing-banner {
+    margin-top: 200px;
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    max-width: 100%;
+    padding: 10px;
+    background-color: #f8f8f8;
+  }
+  .marketing-banner h1 {
+    font-weight: 800;
+    font-size: 36px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .marketing-banner p {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .talk-btn {
+    background-color: #3b8b18;
+    border: 0;
+    padding: 20px;
+    border-radius: 100px;
+    color: #fff;
+    font-weight: 700;
+    width: 100%;
+  }
+
+  .marketing-banner-bottom {
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    padding: 20px;
+    max-width: 100%;
+  }
+  .gradient-card {
+    background: rgb(59, 139, 24);
+    background: linear-gradient(
+      90deg,
+      rgba(59, 139, 24, 1) 0%,
+      rgba(84, 247, 12, 1) 100%
+    );
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: max-content;
+    height: 150px;
+  }
+  .gradient-card h1 {
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+  }
+  .gradient-card p {
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  .marketing-banner-bottom-text p {
+    margin-left: 0;
+    padding: 20px;
+    text-align: center;
+  }
+  .marketing-carousel h1 {
+    text-align: center;
+    margin-bottom: 44px;
+    font-weight: 800;
+    font-size: 36px;
+  }
+  .marketing-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .carousel-lottie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .carousel-content {
+    margin-left: 0;
+    display: flex;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .carousel-content h3 {
+    font-size: 24px;
+    font-weight: 800;
+    padding-bottom: 20px;
+    text-align: center;
+    margin-top: 50px !important ;
+  }
+  .carousel-content p {
+    text-align: center;
+  }
+  .onlyn-top-section {
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column !important;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    max-width: 100%;
+  }
+  .new-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .box {
+    padding: 30px;
+    background-color: #fff;
+    border: 1px solid #c7c7c7;
+    border-radius: 5px;
+    margin: 20px;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .box h4 {
+    text-align: center;
+  }
+  .box p {
+    text-align: center;
+  }
+  .onlyn-card h1 {
+    text-align: center;
+  }
+  .onlyn-card p {
+>>>>>>> df33eca2f5a3c28a151be870c67106b6caa121f8
     text-align: center;
   }
 }
