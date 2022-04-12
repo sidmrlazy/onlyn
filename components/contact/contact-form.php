@@ -34,8 +34,13 @@
                     '$contact_email',
                     '$contact_mobile')";
 
+                    $to = "connectonlyn@onlynus.com";
+                    $subject = "Visitor Alert";
+                    $message = "Someone has filled the contact form from the website. Please check Database !";
+
                     if ($connection->query($insert) === TRUE) {
                         echo $success_msg;
+                        mail($to, $subject, $message,);
                     } else {
                         echo "Error: " . $insert . "</br>" . $connection->error;
                     }
