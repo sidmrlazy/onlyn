@@ -536,14 +536,6 @@
   color: #fff;
 }
 
-<<<<<<< HEAD
-/* ============= About ============= */
-.about-section {
-  margin-top: 200px;
-  margin-bottom: 200px;
-}
-.about-section-header {
-=======
 /* ============ Marketing Banner ============ */
 .marketing-banner {
   margin-top: 200px;
@@ -601,27 +593,10 @@
     rgba(84, 247, 12, 1) 100%
   );
   border-radius: 10px;
->>>>>>> df33eca2f5a3c28a151be870c67106b6caa121f8
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-<<<<<<< HEAD
-}
-.about-section-header h3 {
-  font-weight: 300 !important;
-  font-size: 24px;
-  text-align: center;
-}
-.about-section-header h1 {
-  font-weight: 700 !important;
-  font-size: 60px;
-  text-align: center;
-}
-.about-section-header p {
-  text-align: center;
-}
-=======
   padding-top: 40px;
   padding-bottom: 40px;
   width: 500px;
@@ -740,8 +715,48 @@
   font-weight: 800;
   margin-bottom: 20px;
 }
+
+/* ========== About Section ========== */
+.about-section {
+  margin-top: 200px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+.about-section-header h3 {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.about-section-header h1 {
+  font-size: 60px;
+  font-weight: 800;
+  text-align: center;
+}
+.about-section-header p {
+  font-size: 20px;
+  text-align: center;
+  padding: 50px;
+}
+.newspaper-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  max-width: 100%;
+}
+.newspaper-section h1 {
+  font-weight: 900;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.news-row {
+  padding: 50px;
+}
 /* ================= Media Query ================= */
->>>>>>> df33eca2f5a3c28a151be870c67106b6caa121f8
 @media only screen and (max-width: 768px) {
   /* Navbar */
   .desktop {
@@ -1068,25 +1083,6 @@
     padding: 20px;
     margin-bottom: 10px;
   }
-<<<<<<< HEAD
-  /* ============= About ============= */
-  .about-section {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    max-width: 100%;
-  }
-  .about-section-header h3 {
-    font-weight: 300 !important;
-    font-size: 24px;
-    text-align: center;
-  }
-  .about-section-header h1 {
-    font-weight: 700 !important;
-    font-size: 44px;
-    text-align: center;
-  }
-  .about-section-header p {
-=======
   /* ============ Marketing Banner ============ */
   .marketing-banner {
     margin-top: 200px;
@@ -1240,7 +1236,36 @@
     text-align: center;
   }
   .onlyn-card p {
->>>>>>> df33eca2f5a3c28a151be870c67106b6caa121f8
     text-align: center;
+  }
+  /* ========== About Section ========== */
+  .about-section {
+    margin-top: 50px;
+  }
+  .about-section-header h1 {
+    font-size: 44px;
+    text-align: center;
+  }
+  .about-section-header p {
+    font-size: 18px;
+    text-align: center;
+    padding: 0;
+    margin-top: 20px;
+  }
+  .newspaper-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+    max-width: 100%;
+  }
+  .newspaper-section h1 {
+    font-weight: 900;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .news-row {
+    padding: 20px;
   }
 }
