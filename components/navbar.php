@@ -222,7 +222,7 @@
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="#">Contact</a></li>
+                        <li><a class="dropdown-item" href="contact">Contact</a></li>
                         <li><a class="dropdown-item" href="#">Career</a></li>
                     </ul>
                 </li>

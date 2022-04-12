@@ -1,5 +1,5 @@
 <div class="about-section">
-    <div class="container about-section-header">
+    <div class="container about-section-header animate__animated animate__lightSpeedInLeft">
         <h3>Award-winning Offshore Software Development Company Since 1998</h3>
         <h1>Our Treasure Comprises Our People, Vision & Values</h1>
         <p>IndiaNIC is not only a globally recognized IT company but also a family filled with
@@ -9,7 +9,7 @@
     </div>
 </div>
 
-<div class="newspaper-section container">
+<div class="newspaper-section container animate__animated animate__lightSpeedInLeft">
     <div class="col-md-6 news-row">
         <h1>Who We Are</h1>
         <p>IndiaNIC is not an entity, it’s a family that represents togetherness for over two decades of a successful
@@ -32,7 +32,7 @@
     </div>
 </div>
 
-<div class="newspaper-section container">
+<div class="newspaper-section container animate__animated animate__lightSpeedInLeft">
     <div class="col-md-4 news-row">
         <h1>Client-centric Approach</h1>
         <p>For any business, customers are always at the center. Being a leading web and mobile app development company,
