@@ -7,6 +7,7 @@
                 <ion-icon name="disc-outline" class="process-icon"></ion-icon>
                 <div class="dotted-line"></div>
             </div>
+
             <h2>Discover</h2>
             <p>We shape brands through exploration, applying in-depth research to challenge assumptions at every turn.
             </p>
@@ -29,7 +30,7 @@
                 <div class="dotted-line"></div>
             </div>
             <h2>Build</h2>
-            <p>Using modern technologies, we build with efficiency and skill, creating flexible and scalable
+            <p>Using modern tech, we build with efficiency & skill, creating flexible & scalable
                 business-driven solutions.
             </p>
         </div>
