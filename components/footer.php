@@ -13,6 +13,21 @@
                 <p>+91 73 88 56 56 81</p>
             </div>
         </div>
+
+        <div class="footer-call-out">
+            <div class="footer-call-out-inner">
+                <ion-icon name="mail-outline" class="footer-icon"></ion-icon>
+                <!-- <img src="assets/images/other/flag.png" alt=""> -->
+                <p>connectonlyn@onlynus.com</p>
+            </div>
+        </div>
+
+        <div class="footer-call-out">
+            <div class="footer-call-out-inner">
+                <ion-icon name="location-outline" class="footer-icon"></ion-icon>
+                <p>Villa 5, Kesto Residency, Jankipuram Extension. Lucknow </p>
+            </div>
+        </div>
     </div>
 
     <div class="col-md-3 footer-col">

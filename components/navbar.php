@@ -228,10 +228,10 @@
                 </li>
 
             </ul>
-            <div class="nav-contact-btn">
+            <!-- <div class="nav-contact-btn">
                 <p>Contact Us</p>
                 <ion-icon name="arrow-forward-outline" class="forward-arrow-icon"></ion-icon>
-            </div>
+            </div> -->
 
         </div>
     </div>
