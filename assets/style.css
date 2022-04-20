@@ -45,6 +45,10 @@ input::-webkit-inner-spin-button {
   font-size: 16px !important;
   color: #3b8b18 !important;
 }
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
 .dropdown-menu {
   /* width: 800px; */
   width: fit-content !important;
@@ -458,15 +462,51 @@ input::-webkit-inner-spin-button {
   font-weight: 800;
   margin-bottom: 30px;
 }
-.new-btn {
+/* .new-btn {
   background-color: #3b8b18;
   border: 0;
   padding: 20px;
   border-radius: 100px;
   font-weight: 700;
   color: #fff;
+} */
+.new-btn-holder {
+  margin-top: 80px !important;
+  max-width: 100%;
 }
-
+.new-btn {
+  text-decoration: none !important;
+  font-size: 18px;
+  color: #3b8b18;
+  padding: 20px 50px;
+  border: 3px solid #3b8b18;
+  position: relative;
+}
+.new-btn::before,
+.new-btn::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: inherit;
+  transition: all 0.5s;
+}
+.new-btn::before {
+  top: -15px;
+  left: -15px;
+  border-width: 3px 0 0 3px;
+}
+.new-btn::after {
+  bottom: -15px;
+  right: -15px;
+  border-width: 0 3px 3px 0;
+}
+.new-btn:hover::before,
+.new-btn:hover::after {
+  width: calc(100% + 27px);
+  height: calc(100% + 27px);
+  text-decoration: none;
+}
 /* ================ Main Banner ================ */
 .main-banner {
   margin-top: 200px;
@@ -831,6 +871,7 @@ input::-webkit-inner-spin-button {
 .contact-form-btn:hover {
   background-color: #3b8b18;
 }
+
 .footer-icon {
   font-size: 30px;
 }

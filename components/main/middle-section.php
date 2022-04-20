@@ -7,9 +7,9 @@
             take
             onboard.</p>
         <p>The <strong>first 7 days are on us with ZERO upfront investment.</strong></p>
-        <button type="button" class="new-btn mt-5">
-            Start Free Trial
-        </button>
+        <div class="new-btn-holder">
+            <a href="contact.php" class="new-btn mt-5">Connect Now</a>
+        </div>
     </div>
     <div class="col-md-6 lottie-holder">
         <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_320k6p1d.json" background="transparent"

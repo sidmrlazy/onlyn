@@ -69,7 +69,7 @@
 
             </div>
 
-            <button type="submit" name="submit" class="contact-form-btn btn-primary">Submit</button>
+            <a href="" type="submit" name="submit" class="contact-form-btn">Submit</a>
 
             <p>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
         </form>
