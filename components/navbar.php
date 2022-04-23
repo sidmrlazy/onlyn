@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index">
             <!-- <img src="assets/images/logo/Logo.png" alt="" id="desktop-navbar-brand"> -->
             <img src="assets/images/logo/Logo-Half.png" alt="" id="mobile-navbar-brand">
         </a>
