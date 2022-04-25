@@ -6,7 +6,8 @@
             project that we
             take
             onboard.</p>
-        <p>The <strong>first 7 days are on us with ZERO upfront investment.</strong></p>
+        <p><strong>ZERO</strong> upfront investment. We work ONLY on Monthly Retainers. </p>
+
         <div class="new-btn-holder">
             <a href="contact.php" class="new-btn mt-5">Connect Now</a>
         </div>

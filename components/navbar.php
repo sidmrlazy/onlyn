@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="index">
             <!-- <img src="assets/images/logo/Logo.png" alt="" id="desktop-navbar-brand"> -->
@@ -18,13 +18,13 @@
                 </li>
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    <a class="nav-link dropdown-toggle" href="about" id="navbarDropdown" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         <ion-icon name="business-outline"></ion-icon>
                         About
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">
+                        <li><a class="dropdown-item" href="about">
                                 <ion-icon id="inner-icon" name="sparkles-outline"></ion-icon>How we work
                             </a></li>
                     </ul>
@@ -37,27 +37,33 @@
                         Services
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">
+                        <!-- <li><a class="dropdown-item" href="services#all-services">
+                                <ion-icon id="inner-icon" name="ribbon-outline"></ion-icon>All Services
+                            </a></li> -->
+                        <li><a class="dropdown-item" href="services#mobile">
                                 <ion-icon id="inner-icon" name="phone-portrait-outline"></ion-icon>Mobile App
                                 Development
                             </a></li>
-                        <li><a class="dropdown-item" href="#">
+                        <li><a class="dropdown-item" href="services#web-development">
                                 <ion-icon id="inner-icon" name="tv-outline"></ion-icon>Web Development
                             </a></li>
-                        <li><a class="dropdown-item" href="#">
+                        <li><a class="dropdown-item" href="services#ui-ux">
                                 <ion-icon id="inner-icon" name="color-palette-outline"></ion-icon>UI/UX Design
                             </a></li>
-                        <li><a class="dropdown-item" href="#">
+                        <li><a class="dropdown-item" href="services#branding-services">
                                 <ion-icon id="inner-icon" name="megaphone-outline"></ion-icon>Branding Services
                             </a></li>
 
-                        <li><a class="dropdown-item" href="#">
+                        <li><a class="dropdown-item" href="services#marketing-services">
                                 <ion-icon id="inner-icon" name="fast-food-outline"></ion-icon>Marketing Services
                             </a>
                         </li>
 
-                        <li><a class="dropdown-item sub-menu" href="#">Digital Inbound Marketing Services</a></li>
-                        <li><a class="dropdown-item sub-menu" href="#">Content Narketing</a></li>
+                        <li><a class="dropdown-item sub-menu" href="services#digital-inbound-marketing">Digital Inbound
+                                Marketing Services</a></li>
+                        <li><a class="dropdown-item sub-menu" href="services#content-marketing-services">Content
+                                Narketing</a>
+                        </li>
                         <li><a class="dropdown-item sub-menu" href="#">Social Media Marketing Services</a></li>
                         <li><a class="dropdown-item sub-menu" href="#">Search Engine Optimization (SEO)</a></li>
                         <li><a class="dropdown-item sub-menu" href="#">Paid Advertizing Campaigns</a></li>
