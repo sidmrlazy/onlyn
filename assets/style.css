@@ -814,6 +814,10 @@ input::-webkit-inner-spin-button {
   width: 50%;
   height: auto;
 }
+
+.static-nav-link {
+  color: #3b8b18 !important;
+}
 /* ================= Media Query ================= */
 @media only screen and (max-width: 768px) {
   /* ============ Navbar ============ */
