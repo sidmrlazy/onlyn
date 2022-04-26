@@ -22,13 +22,15 @@
         </a> -->
     </div>
     <div class="col-md-6 services-img-box">
-        <img src="assets/images/other/services-mobile-app-development.png" alt="">
+        <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_r6lfrga3.json" background="transparent"
+            speed="1" class="all-services-lottie" loop autoplay></lottie-player>
     </div>
 </div>
 
 <div class="container-fluid all-services order-2" id="web-development">
     <div class="col-md-6 services-img-box">
-        <img src="assets/images/other/img-services-web-development.webp" alt="">
+        <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_vybwn7df.json" background="transparent"
+            speed="1" loop class="all-services-lottie" autoplay></lottie-player>
     </div>
     <div class="col-md-6">
         <h1>Web Development</h1>
@@ -97,13 +99,15 @@
         </a> -->
     </div>
     <div class="col-md-6 services-img-box">
-        <img src="assets/images/other/img-services-ui-ux-design.png" alt="">
+        <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_nPojSW.json" class="all-services-lottie"
+            background="transparent" speed="1" loop autoplay></lottie-player>
     </div>
 </div>
 
 <div class="container-fluid all-services order-2" id="branding-services">
     <div class="col-md-6 services-img-box">
-        <img src="assets/images/other/img-services-web-development.webp" alt="">
+        <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_lmqweibg.json" class="all-services-lottie"
+            background="transparent" speed="1" loop autoplay></lottie-player>
     </div>
     <div class="col-md-6">
         <h1>Branding Services</h1>
@@ -148,6 +152,34 @@
     </div>
 </div>
 
+<div class="container-fluid all-services" id="offline-designing-printing">
+    <div class="col-md-6">
+        <h1>Offline Designing & Printing Solutions</h1>
+
+        <div class="mb-5">
+            <ul>
+                <li>Pamphlet Design/Printing </li>
+                <li>Flex board Design/ Printing </li>
+                <li>Glow Sign board Design/ Printing </li>
+                <li>In-shop Branding Design/ Printing</li>
+                <li>One-way Vision Branding Design / Printing</li>
+                <li>Retro Design/ Printing</li>
+                <li>Radium Design/ Printing </li>
+                <li>Translit Design / Printing</li>
+                <li>Sticker Design /Printing</li>
+                <li>Visiting Card Design/Printing</li>
+            </ul>
+        </div>
+        <!-- <a type="button" class="custom-new-btn mt-5">
+            Know More
+        </a> -->
+    </div>
+    <div class="col-md-6 services-img-box">
+        <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_ikzetk03.json" class="all-services-lottie"
+            background="transparent" speed="1" loop autoplay></lottie-player>
+    </div>
+</div>
+
 
 <div class="container-fluid all-services" id="marketing-services">
     <div class="col-md-6">
@@ -168,6 +200,7 @@
         </a>
     </div>
     <div class="col-md-6 services-img-box">
-        <img src="assets/images/other/img-services-ui-ux-design.png" alt="">
+        <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_M9wchH.json" class="all-services-lottie"
+            background="transparent" speed="1" loop autoplay></lottie-player>
     </div>
 </div>

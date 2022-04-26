@@ -1,15 +1,16 @@
 <div class="about-section">
     <div class="container about-section-header animate__animated animate__lightSpeedInLeft">
-        <h3>Award-winning Offshore Software Development Company Since 1998</h3>
-        <h1>Our Treasure Comprises Our People, Vision & Values</h1>
-        <p>IndiaNIC is not only a globally recognized IT company but also a family filled with
-            talented experts that
-            help
-            global brands, enterprises, mid-size businesses or even startups with innovative solutions.</p>
+        <h3>How we work</h3>
+        <h1>Simple Process</h1>
+        <p>That enables efficient transformations</p>
+    </div>
+
+    <div class="col-md-6">
+
     </div>
 </div>
 
-<div class="newspaper-section container animate__animated animate__lightSpeedInLeft">
+<!-- <div class="newspaper-section container animate__animated animate__lightSpeedInLeft">
     <div class="col-md-6 news-row">
         <h1>Who We Are</h1>
         <p>IndiaNIC is not an entity, it’s a family that represents togetherness for over two decades of a successful
@@ -30,9 +31,9 @@
             help global clientele with a plethora of IT services and solutions. Engagement with our team guarantees our
             clients to save huge money on project development with faster delivery.</p>
     </div>
-</div>
+</div> -->
 
-<div class="newspaper-section container animate__animated animate__lightSpeedInLeft">
+<!-- <div class="newspaper-section container animate__animated animate__lightSpeedInLeft">
     <div class="col-md-4 news-row">
         <h1>Client-centric Approach</h1>
         <p>For any business, customers are always at the center. Being a leading web and mobile app development company,
@@ -58,4 +59,4 @@
             don't just brag about quality. We define and deliver it in time.
         </p>
     </div>
-</div>
+</div> -->

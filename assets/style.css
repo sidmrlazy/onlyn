@@ -422,10 +422,10 @@ input::-webkit-inner-spin-button {
 
 /* ================ All Services ================ */
 .all-services {
-  margin-top: 200px !important;
+  margin-top: 50px !important;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 .all-services h1 {
   font-weight: 800;
@@ -443,7 +443,7 @@ input::-webkit-inner-spin-button {
   justify-content: center;
   align-items: center;
 }
-.services-img-box img {
+.all-services-lottie {
   width: 80%;
   height: auto;
 }
@@ -691,7 +691,7 @@ input::-webkit-inner-spin-button {
   text-align: center;
   padding: 50px;
 }
-.newspaper-section {
+/* .newspaper-section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -705,7 +705,7 @@ input::-webkit-inner-spin-button {
 }
 .news-row {
   padding: 50px;
-}
+} */
 /* ================= Contact Form ================= */
 .contact-form {
   margin-top: 100px !important;
@@ -1066,8 +1066,8 @@ input::-webkit-inner-spin-button {
     justify-content: center;
     align-items: center;
   }
-  .services-img-box img {
-    width: 80%;
+  .all-services-lottie {
+    width: 300px !important;
     height: auto;
   }
   .icon-holder {
@@ -1313,7 +1313,7 @@ input::-webkit-inner-spin-button {
     padding: 0;
     margin-top: 20px;
   }
-  .newspaper-section {
+  /* .newspaper-section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1328,7 +1328,7 @@ input::-webkit-inner-spin-button {
   }
   .news-row {
     padding: 20px;
-  }
+  } */
 
   /* ====== Contact Form Mobile ====== */
   .contact-form {

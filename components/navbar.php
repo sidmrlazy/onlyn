@@ -53,6 +53,11 @@
                         <li><a class="dropdown-item" href="services#branding-services">
                                 <ion-icon id="inner-icon" name="megaphone-outline"></ion-icon>Branding Services
                             </a></li>
+                        <li><a class="dropdown-item" href="services#offline-designing-printing">
+                                <ion-icon id="inner-icon" name="fast-food-outline"></ion-icon>Offline Designing &
+                                Printing Solutions
+                            </a>
+                        </li>
 
                         <li><a class="dropdown-item" href="services#marketing-services">
                                 <ion-icon id="inner-icon" name="fast-food-outline"></ion-icon>Marketing Services
