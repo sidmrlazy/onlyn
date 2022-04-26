@@ -64,10 +64,14 @@
                         <li><a class="dropdown-item sub-menu" href="services#content-marketing-services">Content
                                 Narketing</a>
                         </li>
-                        <li><a class="dropdown-item sub-menu" href="#">Social Media Marketing Services</a></li>
-                        <li><a class="dropdown-item sub-menu" href="#">Search Engine Optimization (SEO)</a></li>
-                        <li><a class="dropdown-item sub-menu" href="#">Paid Advertizing Campaigns</a></li>
-                        <li><a class="dropdown-item sub-menu" href="#">Analytics Services</a></li>
+                        <li><a class="dropdown-item sub-menu" href="services#social-media-marketing">Social Media
+                                Marketing Services</a></li>
+                        <li><a class="dropdown-item sub-menu" href="services#seo-services">Search Engine Optimization
+                                (SEO)</a></li>
+                        <li><a class="dropdown-item sub-menu" href="services#paid-campaigns">Paid Advertizing
+                                Campaigns</a></li>
+                        <li><a class="dropdown-item sub-menu" href="services#analytics-services">Analytics Services</a>
+                        </li>
                     </ul>
                 </li>
 
@@ -80,7 +84,7 @@
 
                 <li class="nav-item">
 
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="contact">
                         <ion-icon name="id-card-outline"></ion-icon>
                         Contact Us
                     </a>

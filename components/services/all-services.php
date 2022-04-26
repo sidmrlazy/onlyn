@@ -17,9 +17,9 @@
                 <img src="assets/images/icons/react-native.png" alt="">
             </div>
         </div>
-        <button type="button" class="custom-new-btn mt-5">
+        <!-- <a type="button" class="custom-new-btn mt-5">
             Know More
-        </button>
+        </a> -->
     </div>
     <div class="col-md-6 services-img-box">
         <img src="assets/images/other/services-mobile-app-development.png" alt="">
@@ -38,18 +38,30 @@
             IndiaNIC does it all by covering a wide spectrum of web solutions and framework.</p>
         <div class="icon-holder">
             <div class="all-services-inner-img">
-                <img src="assets/images/icons/apple.png" alt="">
+                <img src="assets/images/icons/php.png" alt="">
             </div>
             <div class="all-services-inner-img">
-                <img src="assets/images/icons/android.png" alt="">
+                <img src="assets/images/icons/java.png" alt="">
+            </div>
+            <div class="all-services-inner-img">
+                <img src="assets/images/icons/html.png" alt="">
+            </div>
+            <div class="all-services-inner-img">
+                <img src="assets/images/icons/css.png" alt="">
+            </div>
+            <div class="all-services-inner-img">
+                <img src="assets/images/icons/js.png" alt="">
             </div>
             <div class="all-services-inner-img">
                 <img src="assets/images/icons/react-native.png" alt="">
             </div>
+            <div class="all-services-inner-img">
+                <img src="assets/images/icons/python.png" alt="">
+            </div>
         </div>
-        <button type="button" class="custom-new-btn mt-5">
+        <!-- <a type="button" class="custom-new-btn mt-5">
             Know More
-        </button>
+        </a> -->
     </div>
 </div>
 
@@ -62,18 +74,27 @@
             websites and mobile apps resulting in maximum user engagement- Online does it all! </p>
         <div class="icon-holder">
             <div class="all-services-inner-img">
-                <img src="assets/images/icons/apple.png" alt="">
+                <img src="assets/images/icons/photoshop.png" alt="">
             </div>
             <div class="all-services-inner-img">
-                <img src="assets/images/icons/android.png" alt="">
+                <img src="assets/images/icons/illustrator.png" alt="">
             </div>
             <div class="all-services-inner-img">
-                <img src="assets/images/icons/react-native.png" alt="">
+                <img src="assets/images/icons/coreldraw.png" alt="">
+            </div>
+            <div class="all-services-inner-img">
+                <img src="assets/images/icons/adobexd.png" alt="">
+            </div>
+            <div class="all-services-inner-img">
+                <img src="assets/images/icons/figma.png" alt="">
+            </div>
+            <div class="all-services-inner-img">
+                <img src="assets/images/icons/canva.png" alt="">
             </div>
         </div>
-        <button type="button" class="custom-new-btn mt-5">
+        <!-- <a type="button" class="custom-new-btn mt-5">
             Know More
-        </button>
+        </a> -->
     </div>
     <div class="col-md-6 services-img-box">
         <img src="assets/images/other/img-services-ui-ux-design.png" alt="">
@@ -98,11 +119,35 @@
                 <li>Monitoring and measuring impact</li>
             </ul>
         </div>
-        <button type="button" class="custom-new-btn mt-5">
+        <div class="icon-holder mb-5">
+            <div class="all-services-inner-img">
+                <img src="assets/images/icons/facebook.png" alt="">
+            </div>
+            <div class="all-services-inner-img">
+                <img src="assets/images/icons/instagram.png" alt="">
+            </div>
+            <div class="all-services-inner-img">
+                <img src="assets/images/icons/youtube.png" alt="">
+            </div>
+            <div class="all-services-inner-img">
+                <img src="assets/images/icons/whatsapp.png" alt="">
+            </div>
+            <div class="all-services-inner-img">
+                <img src="assets/images/icons/messenger.png" alt="">
+            </div>
+            <div class="all-services-inner-img">
+                <img src="assets/images/icons/twitter.png" alt="">
+            </div>
+            <div class="all-services-inner-img">
+                <img src="assets/images/icons/linkedin.png" alt="">
+            </div>
+        </div>
+        <!-- <a type="button" class="custom-new-btn mt-5">
             Know More
-        </button>
+        </a> -->
     </div>
 </div>
+
 
 <div class="container-fluid all-services" id="marketing-services">
     <div class="col-md-6">
@@ -110,7 +155,7 @@
         <p>The new way to sell is by providing ‘the right content’ to the customer at the ‘time they need it most’, on
             the ‘platform or channel they are expecting to find it’. Following are the components of Marketing
             strategies ONLYN includes while working with your business: </p>
-        <div>
+        <div class="mb-5">
             <ul>
                 <li>Strategize gaining Insights through research (Customer, Industry, Competition) </li>
                 <li>Strategize quality traffic through SEO (Onpage, Offpage) </li>
@@ -118,9 +163,9 @@
                 <li>Strategy to engage audience through social media</li>
             </ul>
         </div>
-        <button type="button" class="custom-new-btn mt-5">
+        <a href="#all-marketing-services" class="custom-new-btn mt-5">
             Know More
-        </button>
+        </a>
     </div>
     <div class="col-md-6 services-img-box">
         <img src="assets/images/other/img-services-ui-ux-design.png" alt="">

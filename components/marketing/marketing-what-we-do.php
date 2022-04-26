@@ -181,7 +181,7 @@
 </div>
 
 
-<div class="onlyn-top-section">
+<div class="onlyn-top-section" id="all-marketing-services">
     <div>
         <h3>WHAT WE DO</h3>
         <h1>Top Notch Content Marketing Services</h1>
@@ -198,7 +198,8 @@
                 <p>We believe every brand has some story to tell and we know how to tell those stories online. We will
                     work....</p>
             </a>
-            <a class="box" data-bs-toggle="modal" data-bs-target="#social-media-marketing-modal">
+            <a class="box" data-bs-toggle="modal" id="social-media-marketing"
+                data-bs-target="#social-media-marketing-modal">
                 <h4>Social Media Marketing</h4>
                 <p>Social media is our happy place. We know how to make your brand sound human and we’ll make sure it
                     makes...</p>
@@ -206,17 +207,17 @@
         </div>
 
         <div class="container new-row">
-            <a class="box" data-bs-toggle="modal" data-bs-target="#seo-modal">
+            <a class="box" data-bs-toggle="modal" id="seo-services" data-bs-target="#seo-modal">
                 <h4>Search Engine Optimisation (SEO)</h4>
                 <p>SEO has everything to do with a great user experience. We always apply this principle when creating
                     websites...</p>
             </a>
-            <a class="box" data-bs-toggle="modal" data-bs-target="#paid-advertizing-modal">
+            <a class="box" data-bs-toggle="modal" id="paid-campaigns" data-bs-target="#paid-advertizing-modal">
                 <h4>Paid Advertising Campaigns </h4>
                 <p>We simplify advertising your brand and bringing more traffic to your website or campaign. We ideate
                     concepts...</p>
             </a>
-            <a class="box" data-bs-toggle="modal" data-bs-target="#analytics-modal">
+            <a class="box" data-bs-toggle="modal" id="analytics-services" data-bs-target="#analytics-modal">
                 <h4>Analytics Services</h4>
                 <p>Analyzing data means learning and growing with it. Analytics backup and inform decision making. As
                     much... </p>
