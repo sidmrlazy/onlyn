@@ -8,10 +8,10 @@
 
         <div class="footer-call-out">
             <p>Call</p>
-            <div class="footer-call-out-inner">
+            <a href="#" class="footer-call-out-inner">
                 <img src="assets/images/other/flag.png" alt="">
                 <p>+91 73 88 56 56 81</p>
-            </div>
+            </a>
         </div>
 
         <div class="footer-call-out">
@@ -33,15 +33,27 @@
     <div class="col-md-3 footer-col">
         <h5>Company</h5>
         <div class="col-two">
-            <p>About Us</p>
-            <p>Career</p>
-            <p>How to Engage</p>
-            <p>We Work With</p>
-            <p>Testimonials</p>
-            <p>FAQs</p>
-            <p>Policies</p>
-            <p>Sitemap</p>
-            <p>Contact</p>
+            <a href="about">
+                <p>About Us</p>
+            </a>
+            <a href="contact">
+                <p>Career</p>
+            </a>
+            <a href="contact">
+                <p>How to Engage</p>
+            </a>
+            <a href="services">
+                <p>We Work With</p>
+            </a>
+            <a href="#">
+                <p>Policies</p>
+            </a>
+            <a href="#">
+                <p>Sitemap</p>
+            </a>
+            <a href="contact">
+                <p>Contact</p>
+            </a>
         </div>
     </div>
 
@@ -49,15 +61,48 @@
         <h5>Services</h5>
 
         <div class="col-two">
-            <p>Android App Development</p>
-            <p>Cake PHP Development</p>
-            <p>How to Engage</p>
-            <p>We Work With</p>
-            <p>Testimonials</p>
-            <p>FAQs</p>
-            <p>Policies</p>
-            <p>Sitemap</p>
-            <p>Contact</p>
+            <a href="http://">
+                <p>Mobile App Development</p>
+            </a>
+            <a href="http://">
+                <p>Web Development</p>
+            </a>
+            <a href="http://">
+                <p>UI|UX Design</p>
+            </a>
+            <a href="http://">
+                <p>Branding Services</p>
+            </a>
+            <a href="http://">
+                <p>Offline Designing & Printing Solutions</p>
+            </a>
+            <a href="http://">
+                <p>Marketing Solutions</p>
+            </a>
+            <a href="http://">
+                <p>Digital Inbound Marketing Services</p>
+            </a>
+
+            <a href="http://">
+                <p>Content Marketing</p>
+            </a>
+            <a href="http://">
+                <p>Social Media Marketing Services</p>
+            </a>
+
+            <a href="http://">
+                <p>Search Engine Optimization</p>
+            </a>
+
+            <a href="http://">
+                <p>Paid Advertizing Campaigns</p>
+            </a>
+
+            <a href="http://">
+                <p>Analytics Services</p>
+            </a>
+
+
         </div>
 
 

@@ -221,6 +221,7 @@ input::-webkit-inner-spin-button {
   justify-content: flex-start;
   align-items: center;
   max-width: 100%;
+  text-decoration: none !important;
 }
 
 .footer-call-out-inner img {
@@ -234,10 +235,16 @@ input::-webkit-inner-spin-button {
 }
 .footer-col h5 {
   font-weight: 600;
+  text-decoration: none !important;
+  color: #000;
 }
 .col-two {
   width: 100%;
   margin-top: 30px;
+}
+.col-two a {
+  text-decoration: none;
+  color: #000;
 }
 /* ============== Process Section ============== */
 .process-section {
