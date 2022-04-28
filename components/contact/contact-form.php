@@ -36,7 +36,7 @@
                 `contact_last_name`, 
                 `contact_email`, 
                 `contact_mobile`,
-                `contact_service`,) VALUES (
+                `contact_service`) VALUES (
                     '$contact_first_name',
                     '$contact_last_name',
                     '$contact_email',
