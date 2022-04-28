@@ -17,6 +17,7 @@
                 $contact_last_name = $_POST['contact_last_name'];
                 $contact_email = $_POST['contact_email'];
                 $contact_mobile = $_POST['contact_mobile'];
+                $contact_service = $_POST['contact_service'];
                 $error_msg = "<div class='alert alert-danger text-center' role='alert'>Oops! Looks like you have missed out a field.</div>";
                 $success_msg = "<div class='alert alert-success text-center' role='alert'>Form Submitted! We will connect with you soon</div>";
 
@@ -24,7 +25,8 @@
                     $contact_first_name === "" ||
                     $contact_last_name === "" ||
                     $contact_email === "" ||
-                    $contact_mobile === ""
+                    $contact_mobile === "" ||
+                    $contact_service
                 ) {
                     echo $error_msg;
                 } else {
@@ -33,11 +35,13 @@
                 `contact_first_name`, 
                 `contact_last_name`, 
                 `contact_email`, 
-                `contact_mobile`) VALUES (
+                `contact_mobile`,
+                `contact_service`,) VALUES (
                     '$contact_first_name',
                     '$contact_last_name',
                     '$contact_email',
-                    '$contact_mobile')";
+                    '$contact_mobile',
+                    '$contact_service')";
 
                     $to = "connectonlyn@onlynus.com";
                     $subject = "Visitor Alert";
