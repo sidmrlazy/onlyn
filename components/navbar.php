@@ -81,7 +81,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="methodology">
                         <ion-icon name="color-wand-outline"></ion-icon>
                         Methodology
                     </a>
