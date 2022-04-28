@@ -26,7 +26,7 @@
                     $contact_last_name === "" ||
                     $contact_email === "" ||
                     $contact_mobile === "" ||
-                    $contact_service
+                    $contact_service === ""
                 ) {
                     echo $error_msg;
                 } else {
