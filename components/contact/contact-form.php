@@ -1,3 +1,8 @@
+<div class="mt-5 contact-form-heading">
+    <h1>Ready to start a Project?</h1>
+    <p>To start, use form below to tell us about you and the project</p>
+</div>
+
 <div class="container contact-form ">
 
     <div class="contact-section col-md-6">
@@ -67,6 +72,23 @@
                 <input type="number" class="form-control noscroll" name="contact_mobile" id="exampleInputEmail1"
                     aria-describedby="emailHelp" placeholder="+91">
 
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Select a Service</label>
+                <select class="form-select contact-form-dropdown" aria-label="Default select example">
+                    <option selected>Select a Service</option>
+                    <option name="contact_service" value="Software Development">Software Development </option>
+                    <option name="contact_service" value="Web Application development">Web Application development
+                    </option>
+                    <option name="contact_service" value="UI/UX Design">UI/UX Design </option>
+                    <option name="contact_service" value="Digital Marketing Services">Digital Marketing Services
+                    </option>
+                    <option name="contact_service" value="Offline Marketing Design">Offline Marketing Design </option>
+                    <option name="contact_service" value="Online Branding Services">Online Branding Services</option>
+                    <option name="contact_service" value="Offline Branding Services">Offline Branding Services</option>
+                    <option name="contact_service" value="Graphic Design Services ">Graphic Design Services </option>
+                    <option name="contact_service" value="Printing Solutions">Printing Solutions </option>
+                </select>
             </div>
 
             <button type="submit" name="submit" class="contact-form-btn btn-primary">Submit</button>
