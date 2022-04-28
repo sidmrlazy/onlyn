@@ -79,7 +79,8 @@
             </div>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Select a Service</label>
-                <select class="form-select contact-form-dropdown" aria-label="Default select example">
+                <select class="form-select contact-form-dropdown" name="contact_service"
+                    aria-label="Default select example">
                     <option selected>Select a Service</option>
                     <option name="contact_service" value="Software Development">Software Development </option>
                     <option name="contact_service" value="Web Application development">Web Application development
