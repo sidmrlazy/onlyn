@@ -67,7 +67,7 @@
                         <li><a class="dropdown-item sub-menu" href="services#digital-inbound-marketing">Digital Inbound
                                 Marketing Services</a></li>
                         <li><a class="dropdown-item sub-menu" href="services#content-marketing-services">Content
-                                Narketing</a>
+                                Marketing</a>
                         </li>
                         <li><a class="dropdown-item sub-menu" href="services#social-media-marketing">Social Media
                                 Marketing Services</a></li>
