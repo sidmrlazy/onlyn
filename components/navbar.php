@@ -81,6 +81,13 @@
                 </li>
 
                 <li class="nav-item">
+                    <a class="nav-link" href="consultancy">
+                        <ion-icon name="cafe-outline"></ion-icon>
+                        Consultancy
+                    </a>
+                </li>
+
+                <li class="nav-item">
                     <a class="nav-link" href="methodology">
                         <ion-icon name="color-wand-outline"></ion-icon>
                         Methodology
