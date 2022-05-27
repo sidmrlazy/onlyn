@@ -257,9 +257,9 @@ input::-webkit-inner-spin-button {
   -moz-box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.75);
 }
-.process-section h1 {
-  font-weight: 800;
-  color: #fff;
+.process-section h2 {
+  font-weight: 800 !important;
+  color: #fff !important;
 }
 .process-col {
   margin-top: 100px;
@@ -307,9 +307,10 @@ input::-webkit-inner-spin-button {
   flex-direction: column;
   width: 100%;
 }
-.tech-work h1 {
+.tech-work h3 {
   font-weight: 800;
   margin-bottom: 50px;
+  font-size: 44px;
 }
 .accordion-button {
   font-weight: 700;
@@ -358,7 +359,7 @@ input::-webkit-inner-spin-button {
   font-weight: 400;
   margin-bottom: 50px;
 }
-.middle-section h1 {
+.middle-section h2 {
   font-weight: 800;
   margin-bottom: 30px;
 }
@@ -1240,9 +1241,9 @@ input::-webkit-inner-spin-button {
     font-weight: 600;
     margin-top: 50px;
   }
-  .tech-work h1 {
-    font-weight: 800;
-    margin-bottom: 50px;
+  .tech-work h3 {
+    font-weight: 800 !important;
+    margin-bottom: 50px !important;
     text-align: center;
     font-size: 24px;
   }

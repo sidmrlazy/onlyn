@@ -1,5 +1,5 @@
 <section class="container process-section">
-    <h1>Simplifying the Design Process</h1>
+    <h2>Simplifying the Design Process</h2>
 
     <div class="process-col">
         <div class="col-md-3">

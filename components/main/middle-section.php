@@ -1,7 +1,7 @@
 <section class="container-fluid middle-section">
     <div class="col-md-5">
         <h5>Guaranteed Customer Satisfaction</h5>
-        <h1>We Promise. We Deliver.</h1>
+        <h2>We Promise. We Deliver.</h2>
         <p><strong>Have an idea?</strong> Work with us and see how it goes. We promise to go the extra mile for every
             project that we
             take
