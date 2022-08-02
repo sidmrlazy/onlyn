@@ -28,7 +28,7 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="#">Admission Criteria</a></li>
-                        <li><a class="dropdown-item" href="#">Fee Structure</a></li>
+                        <li><a class="dropdown-item" href="admissions.php#fee-structure">Fee Structure</a></li>
                         <li><a class="dropdown-item" href="#">Transfer Certificate</a></li>
                     </ul>
                 </li>

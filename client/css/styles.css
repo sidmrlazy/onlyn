@@ -763,6 +763,65 @@ input::-webkit-inner-spin-button {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.9);
 }
 
+/* ================= Admissions ================= */
+.admissions-heading {
+  width: 100%;
+  margin-bottom: 50px !important;
+}
+.admissions-heading h5 {
+  text-align: center !important;
+  font-weight: bold;
+  font-size: 20px;
+  color: #fb493f !important;
+  letter-spacing: 20px;
+}
+.admissions-heading p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0 !important;
+}
+/* ================= Fee Structure ================= */
+.fee-structure-card {
+  border: 1px solid #fb493f;
+  border-radius: 5px;
+  padding: 30px;
+  width: 500px;
+  height: 400px;
+  margin: 20px;
+  background-color: #fff !important;
+}
+.fee-structure-card:hover {
+  transition: 0.3s all ease-in-out !important;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #fff;
+}
+.fee-flex {
+  display: flex !important;
+}
+.fee-structure-card h3 {
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
+.fee-feature {
+  margin-top: 20px;
+  flex: 1;
+}
+.fee-feature p {
+  margin: 0 !important;
+  font-size: 14px;
+}
+.price {
+  font-weight: bold;
+  margin: 0 !important;
+  font-size: 20px !important;
+}
+.ol_nerdy_logo {
+  width: 80px !important;
+  height: auto !important;
+}
+
 /* ================= Footer ================= */
 .footer {
   border-top: 1px solid #e7e7e7 !important;
@@ -1156,6 +1215,27 @@ input::-webkit-inner-spin-button {
   .contact-form-container p {
     font-size: 30px;
     margin-bottom: 20px;
+  }
+  /* ================= Fee Structure ================= */
+  .fee-structure-card {
+    height: 520px;
+  }
+  .fee-flex {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .fee-feature p {
+    margin: 0 !important;
+    font-size: 12px;
+  }
+  .price {
+    font-weight: bold;
+    margin: 0 !important;
+    font-size: 18px !important;
+  }
+  .ol_nerdy_logo {
+    width: 50px !important;
+    height: auto !important;
   }
 
   /* ================= Footer ================= */
