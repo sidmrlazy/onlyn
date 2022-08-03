@@ -1,5 +1,5 @@
 <div class="homepage-principal-brief">
-    <div class="col-md-6 homepage-principal-brief-left">
+    <div class="col-md-6 homepage-principal-brief-left order-lg-0 order-1">
         <div class="vertical-line"></div>
         <div class="homepage-principle-brief-content">
             <p class="m-0">A WORD</p>
@@ -7,8 +7,11 @@
             <p>Education is not just a process of giving knowledge for a future job but a lifelong process which creates
                 an
                 understanding of moral and ethical values to guide ...</p>
-            <a href="about-us.php" class="read-more-btn-sm">Read More</a>
+            <a href="about-us.php#principle" class="read-more-btn-sm">Read More</a>
         </div>
+    </div>
+    <div class="col-md-6 homepage-principal-brief-img order-lg-1 order-0">
+        <img src="assets/images/founder-1.png" alt="">
     </div>
 </div>
 

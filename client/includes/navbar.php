@@ -16,10 +16,7 @@
                     <a class="nav-link" href="about-us.php">About us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="curriculum.php">Curriculum & Amenities</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="academics.php">Academics</a>
+                    <a class="nav-link" href="curriculum.php">Curriculum & Academics</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -27,7 +24,7 @@
                         Admissions
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Admission Criteria</a></li>
+                        <li><a class="dropdown-item" href="admissions.php#criteria">Admission Criteria</a></li>
                         <li><a class="dropdown-item" href="admissions.php#fee-structure">Fee Structure</a></li>
                         <li><a class="dropdown-item" href="#">Transfer Certificate</a></li>
                     </ul>

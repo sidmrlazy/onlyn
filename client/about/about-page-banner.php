@@ -10,12 +10,17 @@
 </div>
 <div id="who-we-are" class="d-flex about-content-container">
     <div class="col-md-6 about-content-left">
-        <p id="about-heading">OUR MISSION</p>
+        <!-- <p id="about-heading">OUR MISSION</p> -->
         <h1>What we stand for </h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur.</p>
+        <p>Our foundation stone was laid on 21st April, 2015 by the people of Vigyan Khand, Gomti Nagar, Lucknow. We
+            strive for excellence not only in the field of education but also in discipline. </p>
+
+        <p>Avaneendra Academy is the best school in Lucknow. We are unique because we are sincerely focused on
+            developing our students so that when they leave us they are ready for the world and are able to create
+            happy, successful and productive lives for themselves. For this the students need three things from their
+            schooling- Knowledge, Discipline and becoming confident individuals. At Avaneendra Academy we focus on
+            holistic learning and developing experiences along with helping our students work on their personalities,
+            co-curriculum skills, and sports.</p>
     </div>
     <div class="col-md-6 about-content-right">
         <img src="assets/images/backgrounds/square-bg-1.png" alt="">

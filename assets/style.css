@@ -49,6 +49,10 @@ input::-webkit-inner-spin-button {
   background-color: #00000000 !important;
   color: #3b8b18;
 }
+.ol_logo {
+  width: 80px !important;
+  height: auto;
+}
 /* ================= Product Banner ================= */
 .product-banner {
   display: flex;
