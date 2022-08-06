@@ -101,11 +101,11 @@
                         Contact Us
                     </a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="ol_nerdy/index.php">
                         <img src="assets/images/logo/ol_logo.png" alt="" class="ol_logo">
                     </a>
-                </li>
+                </li> -->
 
             </ul>
 
