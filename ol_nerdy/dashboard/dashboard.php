@@ -6,29 +6,30 @@ if (!empty($_SESSION['user_type'])) {
     $session_user_id = 0;
 }
 
-if ($session_user_type == 1) {
+if ($session_user_type === 1) {
 ?>
-    <?php include('dashboard-admin.php') ?>
+<?php include('dashboard-admin.php') ?>
 
-    <!-- ======================== SCHOOL DASHBOARD START ======================== -->
+<!-- ======================== SCHOOL DASHBOARD START ======================== -->
 <?php
-} else if ($session_user_type == 2) { ?>
-    <?php include('dashboard-school.php') ?>
-    <!-- ======================== SCHOOL DASHBOARD END ======================== -->
+} else if ($session_user_type === 2) { ?>
+<?php include('dashboard-admin.php') ?>
+<?php include('dashboard-school.php') ?>
+<!-- ======================== SCHOOL DASHBOARD END ======================== -->
 
 
 
-    <!-- ======================== TEACHER DASHBOARD START ======================== -->
+<!-- ======================== TEACHER DASHBOARD START ======================== -->
 <?php
-} else if ($session_user_type == 3) { ?>
-    <?php include('dashboard-teacher.php') ?>
-    <!-- ======================== SCHOOL DASHBOARD END ======================== -->
+} else if ($session_user_type === 3) { ?>
+<?php include('dashboard-teacher.php') ?>
+<!-- ======================== SCHOOL DASHBOARD END ======================== -->
 
 
 
 
-    <!-- ======================== PARENT DASHBOARD START ======================== -->
-<?php } else if ($session_user_type == 4) { ?>
-    <?php include('dashboard-parent.php') ?>
-    <!-- ======================== PARENT DASHBOARD END ======================== -->
+<!-- ======================== PARENT DASHBOARD START ======================== -->
+<?php } else if ($session_user_type === 4) { ?>
+<?php include('dashboard-parent.php') ?>
+<!-- ======================== PARENT DASHBOARD END ======================== -->
 <?php } ?>
