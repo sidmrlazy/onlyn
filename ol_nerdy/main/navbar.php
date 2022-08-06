@@ -10,10 +10,12 @@ if ($session_user_type === 1) {
 ?>
 <?php include('./main/navbar-admin.php') ?>
 <?php
-} else if ($session_user_type === 2) { ?>
+}
+if ($session_user_type === 2) { ?>
 <?php include('./main/navbar-school.php') ?>
 <?php
-} else if ($session_user_type === 3) { ?>
+}
+if ($session_user_type === 3) { ?>
 <?php include('./main/navbar-teacher.php') ?>
 <?php
 }  ?>
