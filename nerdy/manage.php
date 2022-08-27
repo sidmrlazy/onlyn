@@ -26,6 +26,11 @@
             <p>Assign a Class teacher</p>
             <ion-icon class="tab-icon-right" name="caret-forward-outline"></ion-icon>
         </a>
+        <a href="assign-subject-teacher.php" class="custom-tab">
+            <ion-icon class="tab-icon" name="easel-outline"></ion-icon>
+            <p>Assign a Subject teacher</p>
+            <ion-icon class="tab-icon-right" name="caret-forward-outline"></ion-icon>
+        </a>
         <a href="" class="custom-tab custom-tab-mobile">
             <ion-icon class="tab-icon" name="cash-outline"></ion-icon>
             <p>Fee (To Be Developed)</p>

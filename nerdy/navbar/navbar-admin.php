@@ -14,10 +14,39 @@
                 </li>
             </ul>
             <div class="d-flex">
-                <a href="logout.php" type="button" class="nav-link navbar-right-section">
-                    Signout
-                </a>
-
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <?php
+                        require_once('main/config.php');
+                        if (!empty($_SESSION['user_type'])) {
+                            $session_user_id = $_SESSION['user_id'];
+                            $session_user_type = $_SESSION['user_type'];
+                            $query = "SELECT * FROM users WHERE user_id = $session_user_id";
+                            $result = mysqli_query($connection, $query);
+                            while ($row = mysqli_fetch_assoc($result)) {
+                                $user_name = $row['user_name'];
+                        ?>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" data-bs-toggle="tooltip" data-bs-placement="top"
+                            title="Learning Management System" aria-expanded="false">
+                            <?php echo $user_name ?>
+                        </a>
+                        <?php
+                            }
+                        } else {
+                            $session_user_id = 0;
+                        }
+                        ?>
+                        <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="logout.php">
+                                    <ion-icon name="log-out-outline"></ion-icon>
+                                    Logout
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>

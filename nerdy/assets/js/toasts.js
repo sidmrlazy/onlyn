@@ -109,3 +109,9 @@ function subjectAssign() {
     $("#subjectAssignToast").toast("show");
   });
 }
+
+function loginErr() {
+  $(document).ready(function () {
+    $("#loginErrToast").toast("show");
+  });
+}

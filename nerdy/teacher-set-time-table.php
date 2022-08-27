@@ -2,7 +2,7 @@
 <?php include('navbar/navbar.php'); ?>
 <?php include('toasts.php'); ?>
 <div class="d-flex">
-    <?php include('navbar/teacher-side-nav.php') ?>
+    <?php include('navbar/class-teacher-side-nav.php') ?>
     <div class="school-main-dashboard container section-container mb-5 animate__animated animate__fadeIn">
         <div class="section-header">
             <h3 class="section-heading">
@@ -11,8 +11,6 @@
             </h3>
             <p class="section-desc">Set time table for your assigned class</p>
         </div>
-
-
         <?php
         $select_class = "SELECT * FROM classes WHERE class_teacher = $session_user_id";
         $select_class_result = mysqli_query($connection, $select_class);
@@ -147,15 +145,19 @@
                     while ($row = mysqli_fetch_assoc($fetch_admin_res)) {
                         $user_added_by = $row['user_added_by'];
                     }
-                    $query = "SELECT * FROM users WHERE user_added_by = $user_added_by AND user_type = 3";
+                    $query = "SELECT * FROM users WHERE user_added_by = $user_added_by";
                     $result = mysqli_query($connection, $query);
                     while ($row = mysqli_fetch_assoc($result)) {
                         $user_id = $row['user_id'];
                         $user_name = $row['user_name'];
+                        $user_type = $row['user_type'];
+
+                        if ($user_type == 3 || $user_type == 5) {
                     ?>
-                    <option value="<?php echo $user_name ?>"><?php echo $user_name ?></option>
-                    <?php } ?>
-                    <option value="None">None</option>
+                    <option value="<?php echo $user_id ?>"><?php echo $user_name ?></option>
+                    <?php }
+                    } ?>
+                    <option value="0">None</option>
                 </select>
                 <label for="floatingSelect">Select Teacher</label>
             </div>
@@ -214,6 +216,17 @@
                         $tt_time = $row['tt_time'];
                         $tt_subject = $row['tt_subject'];
                         $tt_teacher = $row['tt_teacher'];
+
+
+
+                        $fetch_teacher = "SELECT * FROM users WHERE user_id = $tt_teacher";
+                        $fetch_teacher_res = mysqli_query($connection, $fetch_teacher);
+                        $user_name = "";
+                        while ($row = mysqli_fetch_assoc($fetch_teacher_res)) {
+                            $user_name = $row['user_name'];
+                        }
+
+
                     ?>
                     <form method="POST" action="">
                         <tr>
@@ -222,7 +235,12 @@
                             <td><?php echo $tt_period ?></td>
                             <td><?php echo $tt_time ?></td>
                             <td><?php echo $tt_subject ?></td>
-                            <td><?php echo $tt_teacher ?></td>
+
+                            <?php if ($tt_subject == 'Recess') { ?>
+                            <td><?php echo '---' ?></td>
+                            <?php } else { ?>
+                            <td><?php echo $user_name ?></td>
+                            <?php } ?>
                             <td class="text-center">
                                 <button type="submit" name="del"
                                     class="btn btn-xs-sm btn-outline-danger">Delete</button>

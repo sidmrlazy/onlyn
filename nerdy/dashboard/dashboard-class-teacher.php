@@ -1,6 +1,24 @@
 <div class="d-flex">
-    <?php include('navbar/teacher-side-nav.php') ?>
-    <div class="school-main-dashboard container ">
+    <?php include('navbar/class-teacher-side-nav.php') ?>
+    <div class="school-main-dashboard container mt-3">
+        <div class="tab-pill-grid animate__animated animate__fadeIn">
+            <div class="tab-pill">
+                <div class="tab-row">
+                    <ion-icon name="person-outline" id="green-icon" class="tab-pill-icon"></ion-icon>
+                    <p class="tab-label">Students in your class</p>
+                    <?php
+                    require_once('main/config.php');
+
+                    $fetch_teacher = "SELECT * FROM students WHERE student_added_by = $session_user_id";
+                    $fetch_teacher_result = mysqli_query($connection, $fetch_teacher);
+                    $fetch_teacher_count = mysqli_num_rows($fetch_teacher_result); ?>
+                    <p class="tab-top-res"><?php echo $fetch_teacher_count ?></p>
+                </div>
+            </div>
+            <div class="d-none tab-pill"></div>
+        </div>
+
+
         <div class="mt-4 animate__animated animate__fadeIn">
             <?php
             require_once('main/config.php');
@@ -66,7 +84,7 @@
         <div class="mt-4 animate__animated animate__fadeIn">
             <div class="tab-wrap-view">
                 <?php
-                $select_query = "SELECT * FROM `time_table` WHERE `tt_teacher` = '$session_user_id'";
+                $select_query = "SELECT * FROM time_table WHERE tt_teacher = $session_user_id";
                 $select_query_res = mysqli_query($connection, $select_query);
                 while ($row = mysqli_fetch_assoc($select_query_res)) {
                     $tt_class = $row['tt_class'];

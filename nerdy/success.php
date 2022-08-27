@@ -129,6 +129,8 @@ if ($success === true) {
                         if (!$update_subscription_result) {
                             die(mysqli_error($connection));
                         } else {
+
+
                             header('location:index.php');
                         }
                     }

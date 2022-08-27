@@ -12,7 +12,7 @@ $current_date = date('d-m-Y');
 ?>
 
 <div class="d-flex ">
-    <?php include('navbar/teacher-side-nav.php') ?>
+    <?php include('navbar/class-teacher-side-nav.php') ?>
     <div class="school-main-dashboard container section-container table-responsive animate__animated animate__fadeIn">
         <div class="section-header">
             <h3 class="section-heading">

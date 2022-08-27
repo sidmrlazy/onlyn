@@ -2,7 +2,7 @@
 <?php include('navbar/navbar.php'); ?>
 <?php include('toasts.php'); ?>
 <div class="d-flex">
-    <?php include('navbar/teacher-side-nav.php') ?>
+    <?php include('navbar/class-teacher-side-nav.php') ?>
     <div class="school-main-dashboard container section-container mb-5 animate__animated animate__fadeIn">
         <div class="section-header">
             <h3 class="section-heading">
@@ -97,10 +97,46 @@
                     $update_user_limit = "UPDATE `subscription` SET `subscription_parent_limit`= $deducted_parent_limit WHERE subscription_user_id = $student_school_id";
                     $update_user_result = mysqli_query($connection, $update_user_limit);
                     if ($update_user_result) {
-                        echo '<script>studentAdded()</script>';
 
-                        // Send Login Details on Parents Email.
-                        //  ==========>
+
+                        // Parent Login Generation.
+                        $temp_password_first = substr($student_name, 0, 4);
+                        $temp_password_last = substr($student_father_contact, -4);
+
+                        $parent_login_id = $student_father_contact;
+                        $temp_login_password = strtolower($temp_password_first . $temp_password_last);
+
+                        $parent_login_password = password_hash($temp_login_password, PASSWORD_DEFAULT);
+                        $parent_user_status = 2;
+
+                        $parent_user_type = 4;
+
+                        $search_query = "SELECT * FROM `users` WHERE user_contact = $student_father_contact";
+                        $search_result = mysqli_query($connection, $search_query);
+                        $search_count = mysqli_num_rows($search_result);
+
+                        if ($search_count > 0) {
+                            echo "Looks like this user is already registered as a student in our system";
+                        } else if ($search_count == 0) {
+                            $insert_parent = "INSERT INTO `users`(
+                                `user_name`,  
+                                `user_contact`, 
+                                `user_password`, 
+                                `user_status`, 
+                                `user_type`, 
+                                `user_added_by`) VALUES(
+                                    '$student_name',
+                                    '$parent_login_id',
+                                    '$parent_login_password',
+                                    '$parent_user_status',
+                                    '$parent_user_type',
+                                    '$session_user_id'
+                                )";
+                            $insert_parent_res = mysqli_query($connection, $insert_parent);
+                            if ($insert_parent_res) {
+                                echo '<script>studentAdded()</script>';
+                            }
+                        }
                     } else {
                         die(mysqli_error($connection));
                     }

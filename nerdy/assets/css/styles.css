@@ -92,7 +92,7 @@ input::-webkit-inner-spin-button {
 
 /* ============ DASHBOARD TEACHER ============ */
 .dashboard-tabs {
-  width: 250px;
+  width: auto !important;
   height: 50px;
   border: 1px solid #e7e7e7;
   border-radius: 3px;
@@ -102,6 +102,7 @@ input::-webkit-inner-spin-button {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2) !important;
   background-color: #fff;
   margin-right: 5px;
+  margin-bottom: 10px !important;
 }
 .dashboard-tab-label {
   font-weight: 500 !important;
@@ -111,6 +112,7 @@ input::-webkit-inner-spin-button {
   flex: 1 !important;
   font-weight: 500;
   color: green;
+  margin-right: 15px;
 }
 .dashboard-live-tab {
   border: 1px solid #e7e7e7;
@@ -169,7 +171,7 @@ input::-webkit-inner-spin-button {
 }
 .tab-pill {
   width: 400px;
-  height: 100px;
+  height: 120px;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
@@ -380,7 +382,7 @@ input::-webkit-inner-spin-button {
   /* flex: 1 1 1 300px !important; */
   border: 1px solid #e7e7e7 !important;
   width: 360px;
-  height: 100px;
+  height: 120px;
   margin: 5px;
   padding: 10px;
   border-radius: 5px;
@@ -1032,5 +1034,18 @@ input::-webkit-inner-spin-button {
     margin-bottom: 0px !important;
     margin-right: 0 !important;
     margin-top: 10px;
+  }
+
+  /* Time Table  */
+  .time-table-row {
+    flex-direction: column !important;
+  }
+  .input-time-table {
+    width: 100% !important;
+  }
+  .time-table-btn {
+    width: 100% !important;
+    margin-top: 10px;
+    margin-left: 0 !important;
   }
 }

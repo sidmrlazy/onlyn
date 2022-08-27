@@ -11,9 +11,17 @@
                 } else {
                     $session_user_id = 0;
                 }
-                $fetch_teacher = "SELECT * FROM users WHERE user_type = 3 AND user_added_by = $session_user_id";
+                $fetch_teacher = "SELECT * FROM users WHERE user_added_by = $session_user_id";
                 $fetch_teacher_result = mysqli_query($connection, $fetch_teacher);
-                $fetch_teacher_count = mysqli_num_rows($fetch_teacher_result); ?>
+                while ($row = mysqli_fetch_assoc($fetch_teacher_result)) {
+                    $user_type = $row['user_type'];
+                }
+
+                if ($user_type == 3 || $user_type == 5) {
+                    $fetch_teacher_count = mysqli_num_rows($fetch_teacher_result);
+                }
+
+                ?>
                 <p class="tab-top-res"><?php echo $fetch_teacher_count ?></p>
             </div>
 

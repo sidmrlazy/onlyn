@@ -14,4 +14,6 @@ if ($session_user_type == 1) {
     include('./dashboard/dashboard-teacher.php');
 } else if ($session_user_type == 4) {
     include('./dashboard/dashboard-parent.php');
+} else if ($session_user_type == 5) {
+    include('./dashboard/dashboard-class-teacher.php');
 }

@@ -1,7 +1,7 @@
 <?php include('main/header.php'); ?>
 <?php include('navbar/navbar.php'); ?>
 <div class="d-flex">
-    <?php include('navbar/teacher-side-nav.php') ?>
+    <?php include('navbar/class-teacher-side-nav.php') ?>
     <div class="school-main-dashboard container section-container mb-5 animate__animated animate__fadeIn">
         <div class="section-header">
             <h3 class="section-heading">

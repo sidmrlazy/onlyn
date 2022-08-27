@@ -12,4 +12,8 @@ if ($session_user_type == 1) {
     include('./navbar/navbar-school.php');
 } else if ($session_user_type == 3) {
     include('./navbar/navbar-teacher.php');
+} else if ($session_user_type == 4) {
+    include('./navbar/navbar-parent.php');
+} else if ($session_user_type == 5) {
+    include('./navbar/navbar-class-teacher.php');
 }

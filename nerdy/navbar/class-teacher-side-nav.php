@@ -6,17 +6,17 @@
         </a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" aria-current="page" href="subject-teacher-student.php">
+        <a class="nav-link" aria-current="page" href="student.php">
             <ion-icon name="person-outline"></ion-icon>
             Students
         </a>
     </li>
-    <!-- <li class="nav-item">
+    <li class="nav-item">
         <a class="nav-link" href="mark-student-attendance.php">
             <ion-icon name="shield-checkmark-outline"></ion-icon>
             Attendance
         </a>
-    </li> -->
+    </li>
     <li class="nav-item">
         <a class="nav-link" aria-current="page" href="announcement-teacher.php">
             <ion-icon name="megaphone-outline"></ion-icon>
@@ -48,12 +48,12 @@
 
         </a>
     </li>
-    <!-- <li class="nav-item">
+    <li class="nav-item">
         <a class="nav-link" href="teacher-set-time-table.php">
             <ion-icon name="calendar-outline"></ion-icon>
             Time Table
         </a>
-    </li> -->
+    </li>
 
     <li class="nav-item">
         <a class="nav-link" href="#">

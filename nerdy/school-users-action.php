@@ -29,13 +29,16 @@
                     $session_user_id = 0;
                 }
 
-                $fetch_teachers = "SELECT * FROM `users` WHERE user_type = '3' AND user_added_by = $session_user_id";
+                $fetch_teachers = "SELECT * FROM `users` WHERE user_added_by = $session_user_id";
                 $fetch_tacher_result = mysqli_query($connection, $fetch_teachers);
                 while ($row = mysqli_fetch_assoc($fetch_tacher_result)) {
                     $user_id = $row['user_id'];
                     $user_name = $row['user_name'];
                     $user_contact = $row['user_contact'];
                     $user_status = $row['user_status'];
+                    $user_type = $row['user_type'];
+
+                    if ($user_type == 3 || $user_type == 5) {
                 ?>
 
                 <form action="edit-user-teacher.php" method="POST" class="inner-tab">
@@ -45,13 +48,14 @@
                     <div class="d-flex justify-content-center align-items-center">
                         <?php if ($user_status == "1") { ?>
                         <p class="profile-teacher-active-pill w-100">Active</p>
-                        <?php  } else if ($user_status == '2') { ?>
+                        <?php  } elseif ($user_status == '2') { ?>
                         <p class="profile-teacher-inactive-pill w-100">Blocked</p>
                         <?php  } ?>
                         <button type="submit" name="edit" class="btn btn-outline-warning btn-sm">Edit</button>
                     </div>
                 </form>
                 <?php
+                    }
                 } ?>
             </div>
         </div>

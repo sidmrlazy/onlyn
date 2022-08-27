@@ -16,12 +16,20 @@
             if (isset($_POST['update'])) {
                 $class_id = $_POST['class_id'];
                 $class_teacher = $_POST['class_teacher'];
-                $update_class = "UPDATE `classes` SET `class_teacher`= $class_teacher WHERE class_id = $class_id";
-                $update_class_result = mysqli_query($connection, $update_class);
-                if (!$update_class_result) {
-                    die("ERROR 404: " . mysqli_error($connection));
+
+                $check_status = "SELECT * FROM `classes` WHERE class_teacher = $class_teacher AND class_id = $class_id";
+                if (mysqli_query($connection, $check_status)) {
+                    echo "<div class='alert alert-warning mt-3 mb-3' role='alert'>This teacher has already been assigned a class</div>";
                 } else {
-                    echo "<div class='alert alert-warning mt-3' role='alert'>Class Teacher Assigned! <a href='manage.php' style='text-decoration: none !important;'>Click here</a> to go back to Menu</div>";
+                    $update_class = "UPDATE `classes` SET `class_teacher`= $class_teacher WHERE class_id = $class_id";
+                    $update_class_result = mysqli_query($connection, $update_class);
+                    if (!$update_class_result) {
+                        die("ERROR 404: " . mysqli_error($connection));
+                    } else {
+                        $update_user_type = "UPDATE `users` SET `user_type` = 5 WHERE user_id = $class_teacher";
+                        $update_user_type_result = mysqli_query($connection, $update_user_type);
+                        echo "<div class='alert alert-warning mt-3 mb-3' role='alert'>Class Teacher Assigned! <a href='manage.php' style='text-decoration: none !important;'>Click here</a> to go back to Menu</div>";
+                    }
                 }
             }
             ?>

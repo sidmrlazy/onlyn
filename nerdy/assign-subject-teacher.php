@@ -45,16 +45,18 @@
                             aria-label="Default select example">
                             <option selected>Select Teacher</option>
                             <?php
-                            $get_teacher = "SELECT * FROM users WHERE user_type = 3 AND user_added_by = $session_user_id";
+                            $get_teacher = "SELECT * FROM users WHERE user_added_by = $session_user_id";
                             $get_teacher_result = mysqli_query($connection, $get_teacher);
                             $count_subjects = mysqli_num_rows($get_teacher_result);
                             while ($row = mysqli_fetch_array($get_teacher_result)) {
                                 $user_id = $row['user_id'];
                                 $user_name = $row['user_name'];
-
+                                $user_type = $row['user_type'];
+                                if ($user_type == 3 || $user_type  == 5) {
                             ?>
                             <option value="<?php echo $user_id ?>"><?php echo $user_name ?></option>
                             <?php
+                                }
                             }
 
                             ?>
@@ -89,11 +91,12 @@
                             $get_classes_result = mysqli_query($connection, $get_classes);
                             $count_subjects = mysqli_num_rows($get_classes_result);
                             while ($row = mysqli_fetch_array($get_classes_result)) {
+                                $class_id = $row['class_id'];
                                 $class_name = $row['class_name'];
                                 $class_section = $row['class_section'];
 
                             ?>
-                            <option value="<?php echo $class_name . $class_section ?>">
+                            <option value="<?php echo $class_id ?>">
                                 <?php echo $class_name . $class_section ?></option>
                             <?php
                             }
