@@ -22,7 +22,7 @@
                 $user_contact = $_POST['user_contact'];
                 $user_password = $_POST['user_password'];
 
-                $query = "SELECT * FROM users WHERE user_contact = $user_contact AND user_status = 1";
+                $query = "SELECT * FROM users WHERE user_contact = $user_contact";
                 $result = mysqli_query($connection, $query);
 
                 while ($row = mysqli_fetch_assoc($result)) {
@@ -35,78 +35,14 @@
                     $user_type = $row['user_type'];
 
                     if ($user_password == $decrypted_password) {
-                        // Send OTP SMS and then Login
-
-                        // $curl = curl_init();
-
-                        // curl_setopt_array($curl, [
-                        //     CURLOPT_URL => "https://api.movider.co/v1/verify",
-                        //     CURLOPT_RETURNTRANSFER => true,
-                        //     CURLOPT_ENCODING => "",
-                        //     CURLOPT_MAXREDIRS => 10,
-                        //     CURLOPT_TIMEOUT => 30,
-                        //     CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-                        //     CURLOPT_CUSTOMREQUEST => "POST",
-                        //     CURLOPT_POSTFIELDS => "api_key=tzAnOXEq6qxxr4ux7t0IGDrriEALnS&api_secret=oVyt8y-45uJg_E-_KQ680wb5gGc_ou&code_length=6&to=917388565681",
-                        //     CURLOPT_HTTPHEADER => [
-                        //         "Accept: application/json",
-                        //         "Content-Type: application/x-www-form-urlencoded"
-                        //     ],
-                        // ]);
-
-                        // $response = curl_exec($curl);
-                        // $err = curl_error($curl);
-
-                        // curl_close($curl);
-
-                        // if ($err) {
-                        //     echo "cURL Error #:" . $err;
-                        // } else {
-                        //     echo $response;
-                        // }
-
-                        // $msg = "Thank you for logging in to Onlyn Nerdy Samiksha";
-
-                        // $curl = curl_init();
-                        // $data = array(
-                        //     'api_key' => "tzAnOXEq6qxxr4ux7t0IGDrriEALnS",
-                        //     'api_secret' => "oVyt8y-45uJg_E-_KQ680wb5gGc_ou",
-                        //     'text' => $msg,
-                        //     'to' => "917388565681",
-                        //     'from' => "MOVIDER"
-                        // );
-
-                        // curl_setopt_array($curl, array(
-                        //     CURLOPT_URL => "https://api.movider.co/v1/sms",
-                        //     CURLOPT_RETURNTRANSFER => true,
-                        //     CURLOPT_TIMEOUT => 30,
-                        //     CURLOPT_CUSTOMREQUEST => "POST",
-                        //     CURLOPT_POSTFIELDS => http_build_query($data),
-                        //     CURLOPT_HTTPHEADER => array(
-                        //         'Accept' => 'application/json',
-                        //         'Content-Type' => 'application/x-www-form-urlencoded',
-                        //     ),
-                        // ));
-
-                        // $response = curl_exec($curl);
-                        // $err = curl_error($curl);
-
-                        // curl_close($curl);
-
-                        // if ($err) {
-                        //     echo "cURL Error #:" . $err;
-                        // } else {
-                        //     echo $response;
-                        //     echo $msg;
-                        // }
-
-
+                        session_start();
                         $_SESSION["loggedin"] = true;
                         $_SESSION["user_id"] = $user_id;
                         $_SESSION["user_contact"] = $user_contact;
                         $_SESSION["user_school_name"] = $user_school_name;
                         $_SESSION["user_type"] = $user_type;
-                        header('Location: dashboard.php');
+
+                        header('location:dashboard.php');
                     } else {
                         echo "<script>loginErr();</script>";
                     }
