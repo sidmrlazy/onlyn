@@ -631,6 +631,42 @@ input::-webkit-inner-spin-button {
 }
 
 /* Fee */
+.student-details-card {
+  width: 40%;
+  border: 1px solid #e7e7e7;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+.inclined-card {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+.paid-pill {
+  margin: 5px;
+  width: 80px !important;
+  border: 1px solid #467a35;
+  padding: 5px;
+  border-radius: 3px;
+  text-align: center;
+  background-color: #fff;
+  color: #467a35 !important;
+}
+.un-paid-pill {
+  margin: 5px;
+  width: 80px !important;
+  border: 1px solid #cf3037;
+  padding: 5px;
+  border-radius: 3px;
+  text-align: center;
+  background-color: #fff;
+  color: #cf3037 !important;
+}
+.student-details-name {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+}
 .fee-btn {
   width: 50% !important;
   height: 38px !important;
@@ -649,6 +685,22 @@ input::-webkit-inner-spin-button {
 }
 .edit-btn-icon:hover {
   color: coral !important;
+}
+.fee-mini-card-holder {
+  display: flex;
+  flex-wrap: wrap !important;
+  margin-top: 10px;
+}
+.mini-card {
+  width: auto !important;
+  display: flex !important;
+  border: 1px solid #e7e7e7;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 10px;
+}
+.mini-card p {
+  margin: 0 !important;
 }
 
 /* Forms */
@@ -828,6 +880,11 @@ input::-webkit-inner-spin-button {
   border-radius: 3px;
   margin-right: 5px;
   padding: 20px;
+}
+.att-carrot:hover {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  transition: 0.3s all ease-in-out;
 }
 .att-carrot p {
   margin: 0 !important;

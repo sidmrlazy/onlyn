@@ -133,3 +133,15 @@ function emptyClass() {
     $("#emptyClassToast").toast("show");
   });
 }
+
+function notInserted() {
+  $(document).ready(function () {
+    $("#notInsertedToast").toast("show");
+  });
+}
+
+function inserted() {
+  $(document).ready(function () {
+    $("#insertedToast").toast("show");
+  });
+}

@@ -25,15 +25,15 @@
                     <tbody>
 
                         <?php
+                        require_once('main/config.php');
                         if (!empty($_SESSION['user_type'])) {
                             $session_user_id = $_SESSION['user_id'];
                         } else {
                             $session_user_id = 0;
                         }
-                        require_once('main/config.php');
+
                         if (isset($_POST['submit'])) {
                             $class_id = $_POST['class_id'];
-
                             $query = "SELECT * FROM `classes` WHERE `class_id` = '$class_id' GROUP BY `class_name`";
                             $result = mysqli_query($connection, $query);
                             if (!$result) {
@@ -139,6 +139,7 @@
                             }
                         }
 
+
                         ?>
 
 
@@ -146,36 +147,42 @@
                 </table>
 
             </div>
-            <div class="card p-3 mt-4">
+
+
+            <!-- ============ TOTAL ANNUAL FEE START ============  -->
+            <div class="fee-mini-card-holder">
                 <?php
                 $total_annual = intval("");
-                $fetch_monthly = "SELECT * FROM `school_fee` WHERE `fee_tenure` = 4 and `fee_class_id` = $fee_class_id";
-                $fetch_monthly_res = mysqli_query($connection, $fetch_monthly);
+                $fetch_annual = "SELECT * FROM `school_fee` WHERE `fee_tenure` = 4 and `fee_class_id` = $fee_class_id";
+                $fetch_annual_res = mysqli_query($connection, $fetch_annual);
 
-                while ($row = mysqli_fetch_assoc($fetch_monthly_res)) {
+                while ($row = mysqli_fetch_assoc($fetch_annual_res)) {
                     $total_annual += $row['fee_amount'];
                 }
                 ?>
-                <div class="d-flex">
-                    <p>Total One-Time Fee : </p>
+                <div class="mini-card">
+                    <p>Total Annual Fee : </p>
                     <php>₹<?php echo $total_annual; ?></p>
                 </div>
+                <!-- ============ TOTAL ANNUAL FEE END ============  -->
 
-
+                <!-- ============ TOTAL ONE TIME FEE START ============  -->
                 <?php
                 $total_one_time = intval("");
-                $fetch_monthly = "SELECT * FROM `school_fee` WHERE `fee_tenure` = 5 and `fee_class_id` = $fee_class_id";
-                $fetch_monthly_res = mysqli_query($connection, $fetch_monthly);
+                $one_time = "SELECT * FROM `school_fee` WHERE `fee_tenure` = 5 and `fee_class_id` = $fee_class_id";
+                $one_time_res = mysqli_query($connection, $one_time);
 
-                while ($row = mysqli_fetch_assoc($fetch_monthly_res)) {
+                while ($row = mysqli_fetch_assoc($one_time_res)) {
                     $total_one_time += $row['fee_amount'];
                 }
                 ?>
-                <div class="d-flex">
-                    <p>Total Annual Fee : </p>
+                <div class="mini-card">
+                    <p>Total One-Time Fee : </p>
                     <php>₹<?php echo $total_one_time; ?></p>
                 </div>
+                <!-- ============ TOTAL ONE TIME FEE END ============  -->
 
+                <!-- ============ TOTAL MONTHLY FEE START ============  -->
                 <?php
                 $total_monthly = intval("");
                 $fetch_monthly = "SELECT * FROM `school_fee` WHERE `fee_tenure` = 1 and `fee_class_id` = $fee_class_id";
@@ -185,14 +192,15 @@
                     $total_monthly += $row['fee_amount'];
                 }
                 ?>
-                <div class="d-flex">
+                <div class="mini-card">
                     <p>Total Monthly Fee : </p>
                     <php>₹<?php echo $total_monthly; ?></p>
                 </div>
+                <!-- ============ TOTAL MONTHLY FEE START ============  -->
+
+
             </div>
-
         </div>
-
 
     </div>
 </div>

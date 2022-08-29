@@ -21,7 +21,7 @@
                     $session_user_id = 0;
                 }
 
-                $fetch_teachers = "SELECT * FROM `classes` WHERE class_added_by = $session_user_id GROUP BY `class_name`";
+                $fetch_teachers = "SELECT * FROM `classes` WHERE `class_added_by` = $session_user_id GROUP BY `class_name`";
                 $fetch_teacher_result = mysqli_query($connection, $fetch_teachers);
                 while ($row = mysqli_fetch_assoc($fetch_teacher_result)) {
                     $class_id = $row['class_id'];

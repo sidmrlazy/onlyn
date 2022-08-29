@@ -11,17 +11,17 @@
 
         <a href="view-class-wise-fee.php" class="custom-tab">
             <ion-icon class="tab-icon" name="color-filter-outline"></ion-icon>
-            <p>View class-wise fee</p>
+            <p>View class-wise fee structure</p>
             <ion-icon class="tab-icon-right" name="caret-forward-outline"></ion-icon>
         </a>
 
-        <a href="#" class="custom-tab">
+        <a href="select-class-collect-fee.php" class="custom-tab">
             <ion-icon class="tab-icon" name="receipt-outline"></ion-icon>
             <p>Collect Fee</p>
             <ion-icon class="tab-icon-right" name="caret-forward-outline"></ion-icon>
         </a>
 
-        <a href="#" class="custom-tab">
+        <a href="select-class-default.php" class="custom-tab">
             <ion-icon class="tab-icon" name="shapes-outline"></ion-icon>
             <p>Check Fee Defaulters</p>
             <ion-icon class="tab-icon-right" name="caret-forward-outline"></ion-icon>
@@ -29,14 +29,14 @@
 
         <a href="#" class="custom-tab">
             <ion-icon class="tab-icon" name="search-outline"></ion-icon>
-            <p>Classwise Fee Collection Status</p>
+            <p>Fee Collection Status</p>
             <ion-icon class="tab-icon-right" name="caret-forward-outline"></ion-icon>
         </a>
-        <a href="assign-student-fee-structure.php" class="custom-tab custom-tab-mobile">
+        <!-- <a href="assign-student-fee-structure.php" class="custom-tab custom-tab-mobile">
             <ion-icon class="tab-icon" name="cash-outline"></ion-icon>
             <p>Assign fee structure to student</p>
             <ion-icon class="tab-icon-right" name="caret-forward-outline"></ion-icon>
-        </a>
+        </a> -->
     </div>
 </div>
 <?php include('main/footer.php'); ?>
