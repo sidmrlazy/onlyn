@@ -35,7 +35,7 @@
                     $user_type = $row['user_type'];
 
                     if ($user_password == $decrypted_password) {
-                        session_start();
+                        // session_start();
                         $_SESSION["loggedin"] = true;
                         $_SESSION["user_id"] = $user_id;
                         $_SESSION["user_contact"] = $user_contact;
