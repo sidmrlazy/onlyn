@@ -37,7 +37,7 @@
     </li>
 
     <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="fee-menu.php">
             <ion-icon name="card-outline"></ion-icon>
             Fee
         </a>

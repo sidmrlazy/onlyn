@@ -31,11 +31,7 @@
             <p>Assign a Subject teacher</p>
             <ion-icon class="tab-icon-right" name="caret-forward-outline"></ion-icon>
         </a>
-        <a href="" class="custom-tab custom-tab-mobile">
-            <ion-icon class="tab-icon" name="cash-outline"></ion-icon>
-            <p>Fee (To Be Developed)</p>
-            <ion-icon class="tab-icon-right" name="caret-forward-outline"></ion-icon>
-        </a>
+
     </div>
 </div>
 <?php include('main/footer.php'); ?>

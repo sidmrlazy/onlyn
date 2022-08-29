@@ -103,10 +103,47 @@
             }
         } ?>
 
+        <div class="animate__animated animate__fadeIn mt-5 mb-5">
+            <div class="section-header mb-3">
+                <h3 class="section-heading-dashboard">
+                    <ion-icon name="school-outline" class="section-heading-icon"></ion-icon>
+                    Subscription Status
+                </h3>
+            </div>
+            <?php
+            if (!empty($_SESSION['user_type'])) {
+                $session_user_id = $_SESSION['user_id'];
+            } else {
+                $session_user_id = 0;
+            }
+            $current_date = date('d-m-Y');
+            echo $current_date;
+
+            $query = "SELECT * FROM `subscription` WHERE `subscription_user_id` = '$session_user_id'";
+            $subscription_res = mysqli_query($connection, $query);
+            $subscription_end_date = "";
+            while ($row = mysqli_fetch_assoc($subscription_res)) {
+                $subscription_end_date = $row['subscription_end_date'];
+
+                if ($current_date == $subscription_end_date) {
+                    $subscription_end_date = "EXPIRED. CURRENT DATE IS EQUAL TO SUBSCRIPTION END DATE ( $subscription_end_date )";
+                } elseif ($current_date <= $subscription_end_date) {
+                    $subscription_end_date = "EXPIRED. CURRENT DATE IS LESS THAN OR EQUAL TO SUBSCRIPTION END DATE ( $subscription_end_date )";
+                } else {
+                    $subscription_end_date = "ACTIVE";
+                }
+            }
+
+            ?>
+            <p style="color: #000;"><?php echo $subscription_end_date; ?></p>
+
+
+        </div>
+
         <div class="animate__animated animate__fadeIn mt-4">
             <div class="section-header mb-3">
                 <h3 class="section-heading-dashboard">
-                    <ion-icon name="construct-outline" class="section-heading-icon"></ion-icon>
+                    <ion-icon name="glasses-outline" class="section-heading-icon"></ion-icon>
                     Teachers who logged in today
                 </h3>
             </div>
@@ -123,21 +160,76 @@
             <div class="dashboard-live-tab">
                 <div class="live-att-col">
                     <p class="live-att-name"><?php echo $staff_name; ?></p>
-                    <p><?php echo $staff_attendance_date; ?></p>
+                    <p class="live-att-date"><?php echo $staff_attendance_date; ?></p>
                 </div>
                 <?php
                         if ($staff_attendance_value == 1) { ?>
                 <img src="assets/images/gif/ol-dot.gif" alt="" class="live-att-img">
-                <?php
-                        }
-                        ?>
-
+                <?php } ?>
             </div>
-
             <?php
                 }
             }
             ?>
         </div>
+
+        <div class="animate__animated animate__fadeIn mt-4 mb-5">
+            <div class="section-header mb-3">
+                <h3 class="section-heading-dashboard">
+                    <ion-icon name="school-outline" class="section-heading-icon"></ion-icon>
+                    Daily classwise student attendance
+                </h3>
+            </div>
+
+            <div class="w-100 animate__animated animate__fadeIn">
+                <div class="tab-wrap-view">
+                    <?php
+                    require_once('main/config.php');
+                    if (!empty($_SESSION['user_type'])) {
+                        $session_user_id = $_SESSION['user_id'];
+                    } else {
+                        $session_user_id = 0;
+                    }
+
+                    $fetch_teachers = "SELECT * FROM `classes` WHERE class_added_by = $session_user_id";
+                    $fetch_teacher_result = mysqli_query($connection, $fetch_teachers);
+                    while ($row = mysqli_fetch_assoc($fetch_teacher_result)) {
+                        $class_id = $row['class_id'];
+                        $class_name = $row['class_name'];
+                        $class_section = $row['class_section'];
+                        $class_status = $row['class_status'];
+
+                        $current_date = date('d-m-Y');
+
+                        $fetch_student = "SELECT * FROM student_attendance WHERE attendance_class_id = $class_id AND attendance_date = '$current_date'";
+                        $fetch_res = mysqli_query($connection, $fetch_student);
+
+                        $fetch_att_count = "";
+                        $attendance_date = "";
+                        while ($row = mysqli_fetch_assoc($fetch_res)) {
+                            $attendance_date = $row['attendance_date'];
+                            $attendance_value = $row['attendance_value'];
+                            if ($attendance_value == 1) {
+                                $fetch_att_count = mysqli_num_rows($fetch_res);
+                            }
+                        }
+                    ?>
+                    <form action="show-tt-day.php" method="POST">
+                        <input type="text" name="tt_class" value="<?php echo $class_id ?>" hidden>
+                        <div class="att-carrot mb-2">
+                            <?php
+                                if (empty($fetch_att_count)) { ?>
+                            <p><?php echo $class_name . $class_section . " - " . "Attendance Not Marked" ?></p>
+                            <?php } else { ?>
+                            <p><?php echo $class_name . $class_section . " - " . $fetch_att_count ?></p>
+                            <?php } ?>
+                        </div>
+                    </form>
+                    <?php } ?>
+                </div>
+            </div>
+        </div>
+
+
     </div>
 </div>

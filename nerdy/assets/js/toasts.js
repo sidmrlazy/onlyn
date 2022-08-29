@@ -115,3 +115,21 @@ function loginErr() {
     $("#loginErrToast").toast("show");
   });
 }
+
+function feeAdded() {
+  $(document).ready(function () {
+    $("#feeAddedToast").toast("show");
+  });
+}
+
+function deleteFee() {
+  $(document).ready(function () {
+    $("#deleteFeeToast").toast("show");
+  });
+}
+
+function emptyClass() {
+  $(document).ready(function () {
+    $("#emptyClassToast").toast("show");
+  });
+}

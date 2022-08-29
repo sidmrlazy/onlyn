@@ -174,7 +174,7 @@
                         <th scope="col">Time</th>
                         <th scope="col">Subject</th>
                         <th scope="col">Subject Teacher</th>
-                        <th scope="col">Action</th>
+                        <th scope="col" class="text-center">Action</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -241,11 +241,20 @@
                             <?php } else { ?>
                             <td><?php echo $user_name ?></td>
                             <?php } ?>
+
                             <td class="text-center">
+                                <button type="submit" name="del" class="btn">
+                                    <ion-icon name="trash-outline" class="del-btn-icon"></ion-icon>
+                                </button>
+                                <!-- <button type="submit" name="edit" class="btn">
+                                        <ion-icon name="create-outline" class="edit-btn-icon"></ion-icon>
+                                    </button> -->
+                            </td>
+                            <!-- <td class="text-center">
                                 <button type="submit" name="del"
                                     class="btn btn-xs-sm btn-outline-danger">Delete</button>
                                 <button type="submit" name="edit" class="btn btn-xs-sm btn-outline-dark">Edit</button>
-                            </td>
+                            </td> -->
                         </tr>
                     </form>
                     <?php } ?>

@@ -297,7 +297,6 @@
                 </select>
                 <label for="floatingSelect">Assign Class</label>
             </div>
-
             <button type="submit" name="add" class="btn btn-outline-success p-3 mt-3">Add Student</button>
         </form>
     </div>

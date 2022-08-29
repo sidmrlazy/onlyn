@@ -18,7 +18,10 @@
                 $class_teacher = $_POST['class_teacher'];
 
                 $check_status = "SELECT * FROM `classes` WHERE class_teacher = $class_teacher AND class_id = $class_id";
-                if (mysqli_query($connection, $check_status)) {
+                $check_status_res = mysqli_query($connection, $check_status);
+                $check_status_count = mysqli_num_rows($check_status_res);
+
+                if ($check_status_count > 0) {
                     echo "<div class='alert alert-warning mt-3 mb-3' role='alert'>This teacher has already been assigned a class</div>";
                 } else {
                     $update_class = "UPDATE `classes` SET `class_teacher`= $class_teacher WHERE class_id = $class_id";
@@ -37,9 +40,9 @@
                 <div class="form-floating mb-3">
                     <select class="form-select" name="class_id" id="floatingSelect"
                         aria-label="Floating label select example">
-                        <option>Click here to get options</option>
+                        <option>Showing available classes</option>
                         <?php
-                        $fetch_class_teacher = "SELECT * FROM classes WHERE class_added_by = $session_user_id";
+                        $fetch_class_teacher = "SELECT * FROM classes WHERE class_added_by = $session_user_id AND class_teacher = ''";
                         $fetch_class_teacher_result = mysqli_query($connection, $fetch_class_teacher);
                         while ($row = mysqli_fetch_assoc($fetch_class_teacher_result)) {
                             $class_id = $row['class_id'];
@@ -52,10 +55,11 @@
                     </select>
                     <label for="floatingSelect">Select Class</label>
                 </div>
+
                 <div class="form-floating mb-3">
                     <select class="form-select" name="class_teacher" id="floatingSelect"
                         aria-label="Floating label select example">
-                        <option>Click here to get options</option>
+                        <option>Showing available teachers</option>
                         <?php
                         $fetch_class_teacher = "SELECT * FROM users WHERE user_type = 3 AND user_added_by = $session_user_id";
                         $fetch_class_teacher_result = mysqli_query($connection, $fetch_class_teacher);
