@@ -8,8 +8,8 @@
 
         <div class="col-md-6 section-form">
             <p>Upgrade your school to a digital platform with Onlyn Nerdy</p>
-            <form action="pay.php" method="POST" class="mt-4 login-form">
-                <div class="d-flex w-100 mb-2">
+            <form action="pay.php" method="POST" class="mt-4 reg-form login-form">
+                <div class="d-flex mob-flex w-100 mb-2">
                     <div class="form-floating m-1 w-100">
                         <input type="text" name="user_school_name" required class="form-control" id="floatingInput"
                             placeholder="School Name">
@@ -22,7 +22,7 @@
                         <label for="floatingInput">Registered Mobile Number</label>
                     </div>
                 </div>
-                <div class="d-flex w-100 mb-2">
+                <div class="d-flex mob-flex w-100 mb-2">
                     <div class="form-floating m-1 w-100">
                         <input type="password" autocomplete="on" name="user_password" required class="form-control"
                             id="floatingInput" placeholder="**********">
@@ -42,7 +42,7 @@
                     <label for="floatingInput">Email ID</label>
                 </div>
 
-                <div class="d-flex w-100 mb-3">
+                <div class="d-flex mob-flex w-100 mb-3">
                     <div class="form-floating m-1 w-100">
                         <select name="user_state" class="form-select" id="floatingSelect"
                             aria-label="Floating label select example">
@@ -104,7 +104,7 @@
                 </div>
 
 
-                <div class="d-flex w-100 mb-3">
+                <div class="d-flex mob-flex w-100 mb-3">
                     <div class="form-floating m-1 w-100">
                         <input type="text" maxlength="6" required name="user_pincode" class="form-control"
                             id="floatingInput" placeholder="abs@xyz.com">

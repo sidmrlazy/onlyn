@@ -1143,4 +1143,18 @@ input::-webkit-inner-spin-button {
     margin-top: 10px;
     margin-left: 0 !important;
   }
+  .login-form {
+    margin-bottom: 50px !important;
+    flex-direction: column !important;
+  }
+  .register {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 100% !important;
+    flex-direction: column !important;
+  }
+  .mob-flex {
+    flex-direction: column !important;
+  }
 }
