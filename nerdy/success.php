@@ -64,6 +64,7 @@ if ($success === true) {
                 $setup_subject_status = 0;
                 $setup_teacher_status = 0;
                 $setup_remove_status = 0;
+                $setup_payment_status = 1;
 
                 $insert_setup_query = "INSERT INTO `setup_status`(
                     `setup_school_id`, 
@@ -72,14 +73,16 @@ if ($success === true) {
                     `setup_teacher_status`, 
                     `setup_staff_status`, 
                     `setup_subject_status`,
-                    `setup_remove_status`) VALUES (
+                    `setup_remove_status`,
+                    `setup_payment_status`) VALUES (
                         '$user_id',
                         '$setup_registration_status',
                         '$setup_class_status',
                         '$setup_teacher_status',
                         '$setup_staff_status',
                         '$setup_subject_status',
-                        '$setup_remove_status')";
+                        '$setup_remove_status',
+                        '$setup_payment_status')";
                 $insert_setup_result = mysqli_query($connection, $insert_setup_query);
                 if ($insert_setup_result) {
                     $user_payment_status = 1;
@@ -129,8 +132,6 @@ if ($success === true) {
                         if (!$update_subscription_result) {
                             die(mysqli_error($connection));
                         } else {
-
-
                             header('location:index.php');
                         }
                     }

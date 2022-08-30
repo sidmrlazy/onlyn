@@ -1,4 +1,4 @@
-<!-- ============== START ============== -->
+<!-- ============== SETUP START ============== -->
 <div class="container-fluid">
     <?php
     require_once('main/config.php');
@@ -29,6 +29,7 @@
         $setup_staff_status = $row['setup_staff_status'];
         $setup_subject_status = $row['setup_subject_status'];
         $setup_remove_status = $row['setup_remove_status'];
+        $setup_payment_status = $row['setup_payment_status'];
 
         if ($setup_registration_status == 1) {
             $total_setup_status = 15;
@@ -81,7 +82,7 @@
     </div>
 
     <?php }
-        if ($setup_remove_status == 2) { ?>
+        if ($setup_remove_status == 2 && $setup_payment_status == 1) { ?>
     <div class="d-none card p-3">
         <div class="alert alert-warning" role="alert">
             Setup Progress
@@ -97,7 +98,9 @@
         </form>
     </div>
 </div>
-<!-- ============== END ============== -->
+<!-- ============== SETUP END ============== -->
+
+<!-- ============== ACTIVE SUBSCRIPTION DATA START ============== -->
 <div class="container-fluid w-100">
     <div class="d-flex">
         <?php include('navbar/school-side-nav.php') ?>
@@ -114,26 +117,40 @@
                 </div>
                 <?php
                 $current_date = date('d-m-Y');
-                echo $current_date;
-
+                $date_today = strtotime($current_date);
                 $query = "SELECT * FROM `subscription` WHERE `subscription_user_id` = '$session_user_id'";
                 $subscription_res = mysqli_query($connection, $query);
                 $subscription_end_date = "";
                 while ($row = mysqli_fetch_assoc($subscription_res)) {
                     $subscription_end_date = $row['subscription_end_date'];
-
-                    if ($current_date == $subscription_end_date) {
-                        $subscription_end_date = "EXPIRED. CURRENT DATE IS EQUAL TO SUBSCRIPTION END DATE ( $subscription_end_date )";
-                    } elseif ($current_date <= $subscription_end_date) {
-                        $subscription_end_date = "EXPIRED. CURRENT DATE IS LESS THAN OR EQUAL TO SUBSCRIPTION END DATE ( $subscription_end_date )";
-                    } else {
-                        $subscription_end_date = "ACTIVE";
-                    }
                 }
+                $expiry_date = strtotime($subscription_end_date);
 
+                if ($date_today == $expiry_date) {
+                    $update_setup = "UPDATE `setup_status` SET `setup_payment_status`= 2 WHERE setup_school_id = $session_user_id";
+                    $update_setup_res = mysqli_query($connection, $update_setup);
                 ?>
-                <p style="color: #000;"><?php echo $subscription_end_date; ?></p>
+                <div class="alert alert-danger" role="alert">
+                    SUBSCRIPTION EXPIRED TODAY! PLEASE MAKE PAYMENT TO CONTINUE USING
+                    OUR SERVICES.
+                </div>
 
+                <?php }
+                if ($date_today < $expiry_date) { ?>
+                <div class="alert alert-success" role="alert">
+                    SUBSCRIPTION ACTIVE!
+                </div>
+
+                <?php }
+                if ($date_today > $expiry_date) {
+                    $update_setup = "UPDATE `setup_status` SET `setup_payment_status`= 2 WHERE setup_school_id = $session_user_id";
+                    $update_setup_res = mysqli_query($connection, $update_setup);
+                ?>
+                <div class="alert alert-danger" role="alert">
+                    SUBSCRIPTION EXPIRED ON <?php echo $subscription_end_date ?>. PLEASE MAKE PAYMENT TO CONTINUE USING
+                    OUR SERVICES!
+                </div>
+                <?php } ?>
 
             </div>
 
@@ -226,11 +243,117 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
     </div>
 </div>
+<!-- ============== ACTIVE SUBSCRIPTION DATA END ============== -->
+
+<!-- ============== EXPIRED SUBSCRIPTION DATA START ============== -->
+<?php }
+        if ($setup_payment_status == 2) { ?>
+
+<div class="container mt-3">
+    <div class="animate__animated animate__fadeIn mb-5">
+        <!-- <div class="section-header mb-3">
+            <h3 class="section-heading-dashboard">
+                <ion-icon name="school-outline" class="section-heading-icon"></ion-icon>
+                Subscription Status
+            </h3>
+        </div> -->
+        <?php
+            $current_date = date('d-m-Y');
+            $date_today = strtotime($current_date);
+
+            $query = "SELECT * FROM `subscription` WHERE `subscription_user_id` = '$session_user_id'";
+            $subscription_res = mysqli_query($connection, $query);
+
+            $subscription_end_date = "";
+            while ($row = mysqli_fetch_assoc($subscription_res)) {
+                $subscription_end_date = $row['subscription_end_date'];
+            }
+            $expiry_date = strtotime($subscription_end_date);
+
+            if ($date_today == $expiry_date) {
+                $update_setup = "UPDATE `setup_status` SET `setup_payment_status`= 2 WHERE setup_school_id = $session_user_id";
+                $update_setup_res = mysqli_query($connection, $update_setup);
+
+                if (!$update_setup_res) {
+                    die();
+                } else {
+                    $data = "SELECT * FROM users WHERE user_id = $session_user_id";
+                    $res = mysqli_query($connection, $data);
+
+                    $user_school_name = "";
+                    $user_contact = "";
+                    $user_email = "";
+                    $user_plan_amount = "";
+
+                    while ($row = mysqli_fetch_assoc($res)) {
+                        $user_id = $row['user_id'];
+                        $user_school_name = $row['user_school_name'];
+                        $user_contact = $row['user_contact'];
+                        $user_email = $row['user_email'];
+                        $user_plan_amount = $row['user_plan_amount'];
+                    }
+                }
+            ?>
+        <form action="re-pay.php" method="POST" class="alert alert-danger text-center" role="alert">
+            <input type="text" name="user_id" value="<?php echo $user_id ?>" hidden>
+            <input type="text" name="user_school_name" value="<?php echo $user_school_name ?>" hidden>
+            <input type="text" name="user_contact" value="<?php echo $user_contact ?>" hidden>
+            <input type="text" name="user_email" value="<?php echo $user_email ?>" hidden>
+            <input type="text" name="user_plan_amount" value="<?php echo $user_plan_amount ?>" hidden>
+            SUBSCRIPTION EXPIRED TODAY! PLEASE MAKE PAYMENT TO CONTINUE USING
+            OUR SERVICES. <button class="btn btn-sm btn-outline-primary ml-2">Make Payment</button>
+        </form>
+        <?php }
+            if ($date_today < $expiry_date) { ?>
+        <div class="alert alert-success" role="alert">
+            SUBSCRIPTION ACTIVE!
+        </div>
+
+        <?php }
+
+            if ($date_today > $expiry_date) {
+                $update_setup = "UPDATE `setup_status` SET `setup_payment_status`= 2 WHERE setup_school_id = $session_user_id";
+                $update_setup_res = mysqli_query($connection, $update_setup);
+
+                if (!$update_setup_res) {
+                    die();
+                } else {
+                    $data = "SELECT * FROM users WHERE user_id = $session_user_id";
+                    $res = mysqli_query($connection, $data);
+
+                    $user_school_name = "";
+                    $user_contact = "";
+                    $user_email = "";
+                    $user_plan_amount = "";
+
+                    while ($row = mysqli_fetch_assoc($res)) {
+                        $user_id = $row['user_id'];
+                        $user_school_name = $row['user_school_name'];
+                        $user_contact = $row['user_contact'];
+                        $user_email = $row['user_email'];
+                        $user_plan_amount = $row['user_plan_amount'];
+                    }
+                }
+            ?>
+        <form action="re-pay.php" method="POST" class="alert alert-danger text-center" role="alert">
+            <input type="text" name="user_id" value="<?php echo $user_id ?>" hidden>
+            <input type="text" name="user_school_name" value="<?php echo $user_school_name ?>" hidden>
+            <input type="text" name="user_contact" value="<?php echo $user_contact ?>" hidden>
+            <input type="text" name="user_email" value="<?php echo $user_email ?>" hidden>
+            <input type="text" name="user_plan_amount" value="<?php echo $user_plan_amount ?>" hidden>
+
+            SUBSCRIPTION EXPIRED ON <?php echo $subscription_end_date ?>. PLEASE MAKE PAYMENT TO CONTINUE USING
+            OUR SERVICES! <button class="btn btn-sm btn-outline-primary ml-2">Make Payment</button>
+        </form>
+        <?php } ?>
+
+    </div>
+</div>
+
+<!-- ============== EXPIRED SUBSCRIPTION DATA END ============== -->
 <?php
         }
     } ?>
