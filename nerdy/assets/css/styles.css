@@ -713,6 +713,7 @@ body {
   border-radius: 5px;
   padding: 10px;
   margin-right: 10px;
+  background-color: #fff !important;
 }
 .mini-card p {
   margin: 0 !important;
@@ -1138,6 +1139,16 @@ body {
   }
 
   /* Pills */
+  .tab-pill {
+    width: 100% !important;
+    height: 120px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    margin-right: 0 !important;
+    margin-bottom: 10px !important;
+  }
   .info-pill {
     width: 100% !important;
     height: 90px;
@@ -1181,6 +1192,33 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #fff;
+  }
+  .mob-card {
+    padding: 10px !important;
+  }
+  .fee-btn {
+    width: 100% !important;
+    height: auto !important;
+    margin-top: 10px !important;
+    padding: 5px;
+    font-size: 20px !important;
+  }
+  .student-details-card {
+    width: 100% !important;
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  }
+  .mini-card {
+    width: 100% !important;
+    display: flex !important;
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 0px !important;
+    margin-bottom: 5px;
     background-color: #fff;
   }
 }

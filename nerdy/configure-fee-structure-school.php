@@ -1,7 +1,7 @@
 <?php include('main/header.php'); ?>
 <?php include('navbar/navbar.php'); ?>
 <?php include('toasts.php'); ?>
-<div class="d-flex">
+<div class="d-flex container-fluid">
     <?php include('navbar/school-side-nav.php') ?>
     <div class="school-main-dashboard container section-container mb-5 animate__animated animate__fadeIn">
         <div class="mb-5">
@@ -49,7 +49,7 @@
             ?>
 
             <form action="" method="POST" class="card p-3 col-md-12">
-                <div class="horizontal-form-row">
+                <div class="horizontal-form-row mob-flex">
                     <select class="form-select equal-flex m-1" name="fee_class_id" aria-label="Default select example">
                         <option selected>Select Class</option>
                         <?php

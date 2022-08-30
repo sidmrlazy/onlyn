@@ -46,7 +46,7 @@
         }
         ?>
         <form method="POST" action="" class="card p-3">
-            <div id='new-input-field' class='d-flex justify-content-center align-items-center w-100'>
+            <div id='new-input-field' class='mob-flex d-flex justify-content-center align-items-center w-100'>
                 <div class='form-floating mb-3 w-100 m-1'>
                     <input type='text' name='class_name' class='form-control' id='floatingInput'
                         placeholder='name@example.com'>

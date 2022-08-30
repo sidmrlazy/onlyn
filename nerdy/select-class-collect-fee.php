@@ -1,6 +1,6 @@
 <?php include('main/header.php'); ?>
 <?php include('navbar/navbar.php'); ?>
-<div class="d-flex">
+<div class="d-flex container-fluid">
     <?php include('navbar/school-side-nav.php') ?>
     <div class="school-main-dashboard container section-container mb-5 animate__animated animate__fadeIn">
         <div class="section-header">
@@ -13,7 +13,7 @@
 
         <form method="POST" action="show-student-details.php" class="col-md-6 card p-3">
             <input type="text" name="student_assigned_school" value="<?php echo $session_user_id ?>" hidden>
-            <div id='new-input-field' class='d-flex justify-content-center align-items-center w-100 mb-3'>
+            <div id='new-input-field' class='mob-flex d-flex justify-content-center align-items-center w-100 mb-3'>
                 <div class="form-floating w-100 m-1">
                     <select class="form-select" id="floatingSelect" name="student_assigned_class"
                         aria-label="Floating label select example">

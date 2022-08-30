@@ -1,7 +1,7 @@
 <?php include('main/header.php'); ?>
 <?php include('navbar/navbar.php'); ?>
 <?php include('toasts.php') ?>
-<div class="d-flex">
+<div class="d-flex container-fluid">
     <?php include('navbar/school-side-nav.php') ?>
     <div class="school-main-dashboard container section-container mb-5 animate__animated animate__fadeIn">
         <div class="section-header">
@@ -179,7 +179,7 @@
         }
         ?>
 
-        <form method="POST" action="" class="card p-5">
+        <form method="POST" action="" class="card mob-card p-5">
 
             <input type="text" name="ann_to_type" value="<?php echo $ann_to_type; ?>" hidden>
             <input type="text" name="ann_to_class" value="<?php echo $ann_to_class; ?>" hidden>

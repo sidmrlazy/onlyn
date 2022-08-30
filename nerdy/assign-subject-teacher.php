@@ -38,7 +38,7 @@
                 }
                 ?>
                 <form action="" method="POST">
-                    <div class="d-flex">
+                    <div class="mob-flex d-flex">
                         <!-- <input type="text" name="teacher_assigned" value="<?php echo $user_name ?>" hidden> -->
                         <!-- Subject -->
                         <select class="form-select equal-flex m-1" name="teacher_assigned"

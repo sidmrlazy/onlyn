@@ -1,6 +1,6 @@
 <?php include('main/header.php'); ?>
 <?php include('navbar/navbar.php'); ?>
-<div class="d-flex">
+<div class="d-flex container-fluid">
     <?php include('navbar/school-side-nav.php') ?>
     <div class="school-main-dashboard container section-container table-responsive animate__animated animate__fadeIn">
 
@@ -23,7 +23,7 @@
                 <button type="submit" name="change" class="change-date-btn-new m-1">Change</button>
             </form>
         </div>
-        <div class="card p-5">
+        <div class="card mob-card p-5">
             <table class="table table-bordered">
                 <thead>
                     <tr>

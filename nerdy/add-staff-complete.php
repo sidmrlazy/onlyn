@@ -58,7 +58,7 @@
 
         ?>
         <form method="POST" action="" class="card p-3 col-md-6">
-            <div class='d-flex justify-content-center align-items-center w-100 mb-3'>
+            <div class='d-flex mob-flex justify-content-center align-items-center w-100 mb-3'>
                 <div class='form-floating w-100 m-1'>
                     <input type='text' name='staff_name' class='form-control' id='floatingInput'
                         placeholder='Full Name'>

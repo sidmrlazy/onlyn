@@ -87,7 +87,7 @@
             <!-- =========== HIDDEN =========== -->
             <input type="text" name="user_id" value="<?php echo $fetched_user_id; ?>" hidden>
             <!-- =========== HIDDEN =========== -->
-            <div class='w-100 d-flex justify-content-center align-items-center w-100 mb-3'>
+            <div class='w-100 mob-flex d-flex justify-content-center align-items-center w-100 mb-3'>
                 <div class="w-100 m-1">
                     <label for="userName" class="form-label w-100">Full Name</label>
                     <input type="text" name="user_name" class="form-control w-100" id="userName"

@@ -1,6 +1,6 @@
 <?php include('main/header.php'); ?>
 <?php include('navbar/navbar.php'); ?>
-<div class="d-flex">
+<div class="d-flex container-fluid">
     <?php include('navbar/school-side-nav.php') ?>
     <div class="school-main-dashboard container section-container mb-5 animate__animated animate__fadeIn">
 
@@ -46,7 +46,7 @@
                                     $class_name = $row['class_name'];
                                 }
 
-                                $fetch_fee = "SELECT * FROM `school_fee` WHERE `fee_class_id` = $class_id AND `fee_school_id` = $session_user_id";
+                                $fetch_fee = "SELECT * FROM `school_fee` WHERE `fee_class_id` = '$class_id' AND `fee_school_id` = $session_user_id";
                                 $fetch_fee_res = mysqli_query($connection, $fetch_fee);
 
 

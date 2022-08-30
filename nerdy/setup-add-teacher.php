@@ -172,7 +172,7 @@
         }
         ?>
         <form method="POST" action="" class="col-md-6 card p-3">
-            <div id='new-input-field' class='d-flex justify-content-center align-items-center w-100 mb-3'>
+            <div id='new-input-field' class='d-flex mob-flex justify-content-center align-items-center w-100 mb-3'>
                 <div class='form-floating w-100 m-1'>
                     <input type='text' name='user_name' class='form-control' id='floatingInput' placeholder='Full Name'>
                     <label for='floatingInput'>Teacher Full Name</label>

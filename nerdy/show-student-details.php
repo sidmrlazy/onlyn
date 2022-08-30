@@ -1,7 +1,7 @@
 <?php include('main/header.php'); ?>
 <?php include('navbar/navbar.php'); ?>
 <?php include('toasts.php'); ?>
-<div class="d-flex">
+<div class="d-flex container-fluid">
     <?php include('navbar/school-side-nav.php') ?>
     <div class="school-main-dashboard container section-container mb-5 animate__animated animate__fadeIn">
         <div class="section-header">
@@ -105,7 +105,7 @@
             <input type="text" name="fee_assigned_class" value="<?php echo $student_assigned_class ?>" hidden>
             <!-- ============== HIDDEN DATA ==============  -->
 
-            <div id='new-input-field' class='d-flex justify-content-center align-items-center w-100 mb-3'>
+            <div id='new-input-field' class='mob-flex d-flex justify-content-center align-items-center w-100 mb-3'>
                 <div class="form-floating w-100 m-1">
                     <select class="form-select" id="floatingSelect" name="fee_collection_type"
                         aria-label="Floating label select example">

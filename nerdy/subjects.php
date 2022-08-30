@@ -87,7 +87,9 @@
                             <input type="text" name="subject_id" value="<?php echo $subject_id; ?>" hidden>
                             <p class="setup-subject-name"><?php echo $subject_name; ?></p>
                             <button type="submit" name="delete" data-bs-toggle="tooltip" data-bs-placement="top"
-                                title="Delete <?php echo $subject_name ?>" class="btn btn-sm cross-button">X</button>
+                                title="Delete <?php echo $subject_name ?>" class="btn btn-sm cross-button">
+                                <ion-icon name="trash-outline"></ion-icon>
+                            </button>
                         </div>
                     </form>
                     <?php
