@@ -734,7 +734,6 @@ input::-webkit-inner-spin-button {
   width: 200px !important;
   padding-left: 10px !important;
   background: #fff;
-  margin-left: 10px;
   background-color: #fff !important;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 }

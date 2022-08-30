@@ -20,6 +20,8 @@
         $setup_subject_status = $row['setup_subject_status'];
         if ($setup_registration_status == 1) {
     ?>
+
+    <!-- ============ PROFILE SETUP START ============ -->
     <a href="profile.php" class="custom-tab">
         <ion-icon class="tab-icon" name="person-add-outline"></ion-icon>
         <p>Profile Setup</p>
@@ -33,6 +35,9 @@
         <p>Profile Setup Complete</p>
         <ion-icon name="checkmark-outline" style="color: green; font-size: 20px; font-weight: bold;"></ion-icon>
     </div>
+    <!-- ============ PROFILE SETUP END ============ -->
+
+    <!-- ============ CLASS SETUP START ============ -->
     <?php }
         if ($setup_class_status == 0) { ?>
     <a href="add-class.php" class="custom-tab">
@@ -47,6 +52,9 @@
         <p>Class Creation Complete</p>
         <ion-icon name="checkmark-outline" style="color: green; font-size: 20px; font-weight: bold;"></ion-icon>
     </div>
+    <!-- ============ CLASS SETUP END ============ -->
+
+    <!-- ============ TEACHER SETUP START ============ -->
     <?php }
         if ($setup_teacher_status == 0) { ?>
     <a href="add-teacher.php" class="custom-tab">
@@ -59,9 +67,12 @@
         if ($setup_teacher_status == 1) { ?>
     <div class="custom-tab-complete">
         <ion-icon class="tab-icon-complete" name="glasses-outline"></ion-icon>
-        <p>Generate Teacher ID's</p>
+        <p>Teacher ID's Generated</p>
         <ion-icon name="checkmark-outline" style="color: green; font-size: 20px; font-weight: bold;"></ion-icon>
     </div>
+    <!-- ============ TEACHER SETUP END ============ -->
+
+    <!-- ============ STAFF SETUP START ============ -->
     <?php
         }
         if ($setup_staff_status == 0) { ?>
@@ -75,9 +86,12 @@
         if ($setup_staff_status == 1) { ?>
     <div class="custom-tab-complete">
         <ion-icon class="tab-icon-complete" name="people-outline"></ion-icon>
-        <p>Generate Staff ID's</p>
+        <p>Staff ID's Generated</p>
         <ion-icon name="checkmark-outline" style="color: green; font-size: 20px; font-weight: bold;"></ion-icon>
     </div>
+    <!-- ============ STAFF SETUP END ============ -->
+
+    <!-- ============ SUBJECT SETUP START ============ -->
     <?php }
         if ($setup_subject_status == 0) { ?>
     <a href="add-subject.php" class="custom-tab mb-5">
@@ -90,11 +104,12 @@
         if ($setup_subject_status == 1) { ?>
     <div class="custom-tab-complete mb-5">
         <ion-icon class="tab-icon-complete" name="library-outline"></ion-icon>
-        <p>Add Subject</p>
+        <p>Subjects Added</p>
         <ion-icon name="checkmark-outline" style="color: green; font-size: 20px; font-weight: bold;"></ion-icon>
     </div>
     <?php }
     } ?>
+    <!-- ============ SUBJECT SETUP END ============ -->
 
 
 </div>
