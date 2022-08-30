@@ -111,7 +111,7 @@
             <div class="animate__animated animate__fadeIn mt-5 mb-5">
                 <div class="section-header mb-3">
                     <h3 class="section-heading-dashboard">
-                        <ion-icon name="school-outline" class="section-heading-icon"></ion-icon>
+                        <ion-icon name="speedometer-outline" class="section-heading-icon"></ion-icon>
                         Subscription Status
                     </h3>
                 </div>
