@@ -99,7 +99,7 @@
                     placeholder="<?php echo $student_name ?>" class="form-control" id="studentFullName"
                     aria-describedby="fullName">
             </div>
-            <div class="w-100 d-flex mb-3">
+            <div class="w-100 d-flex mob-flex mb-3">
                 <div class="w-100 m-1">
                     <label for="studentFullName" class="form-label">Father's Full Name</label>
                     <input disabled type="text" name="student_father_name"
@@ -120,7 +120,7 @@
                 </div>
             </div>
 
-            <div class="w-100 d-flex mb-3">
+            <div class="w-100 d-flex mob-flex mb-3">
                 <div class="w-100 m-1">
                     <label for="studentFullName" class="form-label">Mother's Full Name</label>
                     <input type="text" name="student_mother_name" value="<?php echo $student_mother_name ?>"
@@ -149,7 +149,7 @@
                     aria-describedby="fullName">
             </div>
 
-            <div class="w-100 d-flex mb-3">
+            <div class="w-100 d-flex mob-flex mb-3">
                 <div class="m-1 w-100">
                     <label for="exampleFormControlInput1" class="form-label">State</label>
                     <select class="form-select" name="student_state" aria-label="Default select example">
