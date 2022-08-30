@@ -1,6 +1,6 @@
 <?php include('main/header.php'); ?>
 <?php include('navbar/navbar.php'); ?>
-<div class="container mt-4 mb-5">
+<div class="container-fluid mt-4 mb-5">
     <?php
     require_once('main/config.php');
     if (!empty($_SESSION['user_type'])) {
