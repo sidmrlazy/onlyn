@@ -1221,4 +1221,16 @@ body {
     margin-bottom: 5px;
     background-color: #fff;
   }
+  .att-carrot {
+    width: 100% !important;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e7e7e7;
+    border-radius: 3px;
+    margin-right: 5px;
+    padding: 20px;
+    background-color: #fff !important;
+  }
 }
