@@ -1,6 +1,6 @@
 <?php include('main/header.php'); ?>
 <?php include('navbar/navbar.php'); ?>
-<div class="d-flex">
+<div class="d-flex container-fluid">
     <?php include('navbar/school-side-nav.php') ?>
     <div class="school-main-dashboard container section-container mb-5 animate__animated animate__fadeIn">
         <div class="section-header">
@@ -32,7 +32,7 @@
             <p class="transaction-amount">₹<?php echo $transaction_amount ?></p>
             <div class="tran-row">
                 <p class="tran-id"><?php echo $transaction_id ?></p>
-                <p><?php echo date('d-M-Y', strtotime($transaction_date)) ?></p>
+                <p><?php echo date('d | M | Y', strtotime($transaction_date)) ?></p>
             </div>
         </div>
         <?php }

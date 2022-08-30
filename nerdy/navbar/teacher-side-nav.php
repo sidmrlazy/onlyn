@@ -18,7 +18,7 @@
         </a>
     </li> -->
     <li class="nav-item">
-        <a class="nav-link" aria-current="page" href="announcement-teacher.php">
+        <a class="nav-link" aria-current="page" href="announcement-subject-teacher.php">
             <ion-icon name="megaphone-outline"></ion-icon>
             Announcements
             <?php

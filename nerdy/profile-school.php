@@ -67,17 +67,18 @@
             <div class="card mt-3 p-3">
                 <p class="user-profile-label">Subscription End Date</p>
                 <?php
-                    $get_subscription_details = "SELECT * FROM `transactions` WHERE transaction_user_id = $session_user_id";
+                    $get_subscription_details = "SELECT * FROM `subscription` WHERE subscription_user_id = $session_user_id";
                     $get_subscription_result = mysqli_query($connection, $get_subscription_details);
+                    $subscription_end_date = "";
                     while ($row = mysqli_fetch_assoc($get_subscription_result)) {
-                        $fetched_transaction_date = $row['transaction_date'];
-                        $new_date = explode(" ", $fetched_transaction_date);
-                        $expiry_date = $new_date[0];
-                        $new_expiry = date('d-M-Y', strtotime($new_date[0] . ' + 30 days'));
+                        $subscription_end_date = $row['subscription_end_date'];
+                        // $new_date = explode(" ", $fetched_transaction_date);
+                        // $expiry_date = $new_date[0];
+                        // $new_expiry = date('d-M-Y', strtotime($new_date[0] . ' + 30 days'));
+                    }
                     ?>
-                <p class="expiry-date"><?php echo $new_expiry; ?></p>
-                <?php
-                    } ?>
+                <p class="expiry-date"><?php echo date('d-M-Y', strtotime($subscription_end_date)); ?></p>
+
             </div>
         </div>
         <?php

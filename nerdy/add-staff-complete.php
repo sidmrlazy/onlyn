@@ -1,7 +1,7 @@
 <?php include('main/header.php'); ?>
 <?php include('navbar/navbar.php'); ?>
 <?php include('toasts.php'); ?>
-<div class="d-flex">
+<div class="d-flex container-fluid">
     <?php include('navbar/school-side-nav.php') ?>
     <div class="school-main-dashboard container section-container mb-5 animate__animated animate__fadeIn">
         <div class="section-header">
@@ -73,13 +73,13 @@
             <div class="form-floating mb-3">
                 <select class="form-select" name="staff_type" id="floatingSelect"
                     aria-label="Floating label select example">
-                    <option selected>Open this menu</option>
+                    <option selected>Click here to open list</option>
                     <option value="Aaya">Aaya</option>
                     <option value="Peon">Peon</option>
                     <option value="Sweeper">Sweeper</option>
                     <option value="Security Guard">Security Guard</option>
-                    <label for="floatingSelect">Staff Type</label>
                 </select>
+                <label for="floatingSelect">Staff Type</label>
             </div>
 
             <button type="submit" name="submit" class="btn btn-outline-success mb-3">Generate Staff ID</button>

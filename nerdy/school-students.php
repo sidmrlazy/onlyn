@@ -1,6 +1,6 @@
 <?php include('main/header.php'); ?>
 <?php include('navbar/navbar.php'); ?>
-<div class="d-flex">
+<div class="d-flex container-fluid">
     <?php include('navbar/school-side-nav.php') ?>
     <div class="school-main-dashboard container section-container mb-5 animate__animated animate__fadeIn">
         <div class="section-header">
@@ -8,7 +8,8 @@
                 <ion-icon name="person" class="section-heading-icon"></ion-icon>
                 Students
             </h3>
-            <p class="section-desc">Select class to show students</p>
+            <p class="section-desc">You will be able to see all the students when a teacher adds a student in their
+                account</p>
         </div>
 
 

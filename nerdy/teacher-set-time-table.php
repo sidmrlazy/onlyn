@@ -1,7 +1,7 @@
 <?php include('main/header.php'); ?>
 <?php include('navbar/navbar.php'); ?>
 <?php include('toasts.php'); ?>
-<div class="d-flex">
+<div class="d-flex container-fluid">
     <?php include('navbar/class-teacher-side-nav.php') ?>
     <div class="school-main-dashboard container section-container mb-5 animate__animated animate__fadeIn">
         <div class="section-header">
@@ -165,7 +165,7 @@
             <button type="submit" name="submit" class="btn btn-sm btn-outline-success time-table-btn">+</button>
         </form>
 
-        <div class="table-responsive mt-4">
+        <div class="table-responsive card p-4 mt-4">
             <table class="table table-bordered">
                 <thead>
                     <tr>

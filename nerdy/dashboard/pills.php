@@ -5,7 +5,7 @@
                 <ion-icon name="person-outline" id="green-icon" class="tab-pill-icon"></ion-icon>
                 <p class="tab-label">All Teachers</p>
                 <?php
-                require_once('main/config.php');
+                include('main/config.php');
                 if (!empty($_SESSION['user_type'])) {
                     $session_user_id = $_SESSION['user_id'];
                 } else {
@@ -13,14 +13,15 @@
                 }
                 $fetch_teacher = "SELECT * FROM users WHERE user_added_by = $session_user_id";
                 $fetch_teacher_result = mysqli_query($connection, $fetch_teacher);
+
+                $user_type = "";
                 while ($row = mysqli_fetch_assoc($fetch_teacher_result)) {
                     $user_type = $row['user_type'];
                 }
-                $fetch_teacher_count = "";
+                // $fetch_teacher_count = "";
                 if ($user_type == 3 || $user_type == 5) {
                     $fetch_teacher_count = mysqli_num_rows($fetch_teacher_result);
                 }
-
                 ?>
                 <p class="tab-top-res"><?php echo $fetch_teacher_count ?></p>
             </div>

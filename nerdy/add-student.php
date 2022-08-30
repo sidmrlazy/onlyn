@@ -1,7 +1,7 @@
 <?php include('main/header.php'); ?>
 <?php include('navbar/navbar.php'); ?>
 <?php include('toasts.php'); ?>
-<div class="d-flex">
+<div class="d-flex container-fluid">
     <?php include('navbar/class-teacher-side-nav.php') ?>
     <div class="school-main-dashboard container section-container mb-5 animate__animated animate__fadeIn">
         <div class="section-header">
@@ -164,27 +164,27 @@
         <?php }
         } ?>
         <form action="" method="POST" class="card p-3">
-            <div class="w-100 d-flex mb-3">
+            <div class="w-100 d-flex mob-flex mb-3">
                 <div class="w-100 m-1 form-floating">
                     <input type="number" name="student_roll_number" class="form-control" id="floatingInput"
-                        placeholder="Roll Number">
+                        placeholder="Roll Number" required>
                     <label for="floatingInput">Roll Number</label>
                 </div>
                 <div class="w-100 m-1 form-floating">
                     <input type="text" name="student_name" class="form-control" id="floatingInput"
-                        placeholder="name@example.com">
+                        placeholder="name@example.com" required>
                     <label for="floatingInput">Student's Full Name</label>
                 </div>
             </div>
-            <div class="w-100 d-flex mb-3">
+            <div class="w-100 d-flex mob-flex mb-3">
                 <div class="w-100 form-floating m-1 ">
                     <input type="text" name="student_father_name" class="form-control" id="floatingPassword"
-                        placeholder="Password">
+                        placeholder="Password" required>
                     <label for="floatingPassword">Father's Name</label>
                 </div>
                 <div class="w-100 form-floating m-1 ">
                     <input type="number" name="student_father_contact" class="form-control" id="floatingPassword"
-                        placeholder="Password">
+                        placeholder="Password" required>
                     <label for="floatingPassword">Father's Mobile Number</label>
                 </div>
                 <div class="w-100 form-floating m-1 ">
@@ -194,7 +194,7 @@
                 </div>
             </div>
 
-            <div class="w-100 d-flex mb-3">
+            <div class="w-100 d-flex mob-flex mb-3">
                 <div class="w-100 form-floating m-1 ">
                     <input type="text" name="student_mother_name" class="form-control" id="floatingPassword"
                         placeholder="Password">
@@ -213,14 +213,14 @@
             </div>
             <div class="form-floating mb-3">
                 <textarea class="form-control" name="student_address" placeholder="Leave a comment here"
-                    id="floatingTextarea2" style="height: 100px"></textarea>
+                    id="floatingTextarea2" style="height: 100px" required></textarea>
                 <label for="floatingTextarea2">Full Address</label>
             </div>
 
-            <div class="w-100 d-flex mb-3">
+            <div class="w-100 d-flex mob-flex mb-3">
                 <div class="form-floating m-1 w-100">
                     <select class="form-select" name="student_state" id="floatingSelect"
-                        aria-label="Floating label select example">
+                        aria-label="Floating label select example" required>
                         <option>Click here to open list of States</option>
                         <?php
                         $curl = curl_init();
@@ -247,7 +247,7 @@
 
                 <div class="form-floating m-1 w-100">
                     <select class="form-select" name="student_city" id="floatingSelect"
-                        aria-label="Floating label select example">
+                        aria-label="Floating label select example" required>
                         <option>Click here to open list of Cities</option>
                         <?php
                         $curl = curl_init();
@@ -274,7 +274,7 @@
 
                 <div class="form-floating m-1 w-100">
                     <input type="number" name="student_pincode" maxlength="6" class="form-control" id="floatingInput"
-                        placeholder="XXXXXX">
+                        placeholder="XXXXXX" required>
                     <label for="floatingInput">Pincode</label>
                 </div>
             </div>

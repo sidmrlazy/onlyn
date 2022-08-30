@@ -1,7 +1,7 @@
 <?php include('main/header.php'); ?>
 <?php include('navbar/navbar.php'); ?>
-<div class="d-flex">
-    <?php include('navbar/teacher-side-nav.php') ?>
+<div class="d-flex container-fluid">
+    <?php include('navbar/class-teacher-side-nav.php') ?>
     <div class="school-main-dashboard container section-container mb-5">
         <div class="section-header">
             <h3 class="section-heading">
@@ -102,9 +102,9 @@
             <div class="w-100 d-flex mb-3">
                 <div class="w-100 m-1">
                     <label for="studentFullName" class="form-label">Father's Full Name</label>
-                    <input type="text" name="student_father_name" placeholder="<?php echo $student_father_name ?>"
-                        value="<?php echo $student_father_name ?>" class="form-control" id="studentFullName"
-                        aria-describedby="fullName">
+                    <input disabled type="text" name="student_father_name"
+                        placeholder="<?php echo $student_father_name ?>" value="<?php echo $student_father_name ?>"
+                        class="form-control" id="studentFullName" aria-describedby="fullName">
                 </div>
                 <div class="w-100 m-1">
                     <label for="studentFullName" class="form-label">Father's Contact</label>

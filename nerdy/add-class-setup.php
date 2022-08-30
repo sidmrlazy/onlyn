@@ -1,6 +1,6 @@
 <?php include('main/header.php'); ?>
 <?php include('navbar/navbar.php'); ?>
-<div class="d-flex">
+<div class="d-flex container-fluid">
     <?php include('navbar/school-side-nav.php') ?>
     <div class="school-main-dashboard container section-container animate__animated animate__fadeIn">
         <div class="section-header">
@@ -94,7 +94,9 @@
                             <input type="text" name="class_id" value="<?php echo $class_id; ?>" hidden>
                             <p class="setup-subject-name"><?php echo $class_name . $class_section; ?></p>
                             <button type="submit" name="delete" data-bs-toggle="tooltip" data-bs-placement="top"
-                                title="Delete <?php echo $class_name ?>" class="btn btn-sm cross-button">X</button>
+                                title="Delete <?php echo $class_name ?>" class="btn btn-sm cross-button">
+                                <ion-icon name="trash-outline" class="m-0"></ion-icon>
+                            </button>
                         </div>
                     </form>
                     <?php

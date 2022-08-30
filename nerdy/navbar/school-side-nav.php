@@ -18,17 +18,18 @@
         </a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" aria-current="page" href="announcement.php">
-            <ion-icon name="megaphone-outline"></ion-icon>
-            Announcements
-        </a>
-    </li>
-    <li class="nav-item">
         <a class="nav-link" href="school-attendance.php">
             <ion-icon name="shield-checkmark-outline"></ion-icon>
             Attendance
         </a>
     </li>
+    <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="announcement.php">
+            <ion-icon name="megaphone-outline"></ion-icon>
+            Announcements
+        </a>
+    </li>
+
     <li class="nav-item">
         <a class="nav-link" href="select-class-tt.php">
             <ion-icon name="calendar-outline"></ion-icon>

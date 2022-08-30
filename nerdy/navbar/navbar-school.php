@@ -105,12 +105,35 @@
                         Announcements
                     </a>
                 </li>
+
+                <li class="nav-item nav-mobile">
+                    <a class="nav-link active" aria-current="page" href="select-class-tt.php">
+                        <ion-icon name="calendar"></ion-icon>
+                        Time Table
+                    </a>
+                </li>
+
+                <li class="nav-item nav-mobile">
+                    <a class="nav-link active" aria-current="page" href="fee-menu.php">
+                        <ion-icon name="card"></ion-icon>
+                        Fee
+                    </a>
+                </li>
+
                 <li class="nav-item nav-mobile">
                     <a class="nav-link active" aria-current="page" href="manage.php">
                         <ion-icon name="settings"></ion-icon>
                         Manage School
                     </a>
                 </li>
+
+                <li class="nav-item nav-mobile">
+                    <a class="nav-link active" aria-current="page" href="#">
+                        <ion-icon name="notifications"></ion-icon>
+                        Notification
+                    </a>
+                </li>
+
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-bs-toggle="dropdown" data-bs-toggle="tooltip" data-bs-placement="top"

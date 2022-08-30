@@ -1,4 +1,4 @@
-<div class="d-flex">
+<div class="d-flex container-fluid">
     <?php include('navbar/class-teacher-side-nav.php') ?>
     <div class="school-main-dashboard container mt-3">
         <div class="tab-pill-grid animate__animated animate__fadeIn">
