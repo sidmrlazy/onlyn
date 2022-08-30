@@ -10,21 +10,12 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <?php
-                    require_once('main/config.php');
-                    if (!empty($_SESSION['user_type'])) {
-                        $session_user_id = $_SESSION['user_id'];
-                    } else {
-                        $session_user_id = 0;
-                    }
-
-                    ?>
                     <a class="nav-link active" aria-current="page" href="index.php">Home</a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="index.php#plan-select">Pricing</a>
-                </li>
-                <li class="nav-item dropdown">
+                </li> -->
+                <!-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         Dropdown
@@ -40,11 +31,8 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link disabled">Disabled</a>
-                </li>
+                </li> -->
             </ul>
-            <!-- <div class="d-flex">
-                <a href="logout.php" class="nav-link">Logout</a>
-            </div> -->
         </div>
     </div>
 </nav>

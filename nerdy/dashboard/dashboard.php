@@ -5,7 +5,6 @@ if (!empty($_SESSION['user_type'])) {
 } else {
     $session_user_id = 0;
 }
-
 if ($session_user_type == 1) {
     include('dashboard-admin.php');
 } else if ($session_user_type == 2) {

@@ -1,11 +1,9 @@
 <div class="d-flex">
     <?php include('navbar/school-side-nav.php') ?>
-
     <div class="school-main-dashboard container mt-3">
         <?php include('dashboard/pills.php') ?>
         <?php
         require_once('main/config.php');
-
         if (isset($_POST['complete'])) {
             $setup_remove_status = 2;
             $setup_id = $_POST['setup_id'];
@@ -17,7 +15,6 @@
                 echo '<div class="alert alert-success mt-4 animate__animated animate__fadeInUp" role="alert">Setup Complete!</div>';
             }
         }
-
         $query = "SELECT * FROM setup_status WHERE setup_school_id = $session_user_id";
         $result = mysqli_query($connection, $query);
         while ($row = mysqli_fetch_assoc($result)) {

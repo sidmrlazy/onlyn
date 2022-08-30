@@ -5,5 +5,5 @@ if (!isset($_SESSION)) {
 $_SESSION["loggedin"] = false;
 $_SESSION = array();
 session_destroy();
-header("Location:index.php", true, 301); // Or wherever you want to redirect
+header("Location:index.php", true, 301);
 exit;
