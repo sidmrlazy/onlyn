@@ -228,9 +228,9 @@
                                 }
                             }
                         ?>
-                        <form action="show-tt-day.php" method="POST">
+                        <form action="show-tt-day.php" class="att-carrot" method="POST">
                             <input type="text" name="tt_class" value="<?php echo $class_id ?>" hidden>
-                            <div class="att-carrot mb-2">
+                            <div class=" mb-2">
                                 <?php
                                     if (empty($fetch_att_count)) { ?>
                                 <p><?php echo $class_name . $class_section . " - " . "Attendance Not Marked" ?></p>

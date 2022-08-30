@@ -1221,6 +1221,11 @@ body {
     margin-bottom: 5px;
     background-color: #fff;
   }
+  .tab-wrap-view {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    width: 100%;
+  }
   .att-carrot {
     width: 100% !important;
     height: 50px;
