@@ -483,7 +483,12 @@ input::-webkit-inner-spin-button {
   justify-content: center !important;
   align-items: flex-start;
   flex-direction: column !important;
-  width: 100%;
+  max-width: 100%;
+}
+.profile-logo-section img {
+  width: 10%;
+  height: auto;
+  margin-bottom: 5px !important;
 }
 .profile-logo-section-icon {
   font-size: 30px !important;
