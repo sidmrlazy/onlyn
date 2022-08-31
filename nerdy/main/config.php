@@ -6,10 +6,10 @@ $database = "u976956619_onlyn";
 $password = "Sid12asthana";
 
 // Development
-// $servername = "localhost";
-// $username = "root";
-// $database = "ol_nerdy";
-// $password = "";
+$servername = "localhost";
+$username = "root";
+$database = "ol_nerdy";
+$password = "";
 
 // Validate Connection
 $connection = new mysqli($servername, $username, $password, $database);
