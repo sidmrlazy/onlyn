@@ -3,6 +3,17 @@
 <div class="d-flex container-fluid">
     <?php include('navbar/school-side-nav.php') ?>
     <div class="school-main-dashboard container section-container mb-5 animate__animated animate__fadeIn">
+
+        <div class="section-header">
+            <h3 class="section-heading">
+                <ion-icon name="card" class="section-heading-icon"></ion-icon>
+                Fee
+            </h3>
+            <p class="section-desc">Keep records of your annual, monthly, one-time fee of respective classes and
+                students. <br> Know the total amount to
+                be submitted, date of fee submission and the status of payment <br> and balance left to be paid.</p>
+        </div>
+
         <a href="configure-fee-structure-school.php" class="custom-tab">
             <ion-icon class="tab-icon" name="cog-outline"></ion-icon>
             <p>Configure Fee Structure</p>

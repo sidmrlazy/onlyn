@@ -5,12 +5,18 @@
     <?php include('navbar/school-side-nav.php') ?>
     <div class="school-main-dashboard container section-container mb-5 animate__animated animate__fadeIn">
         <div class="mb-5">
-            <div class="section-header">
-                <h3 class="section-heading">
-                    <ion-icon name="cog" class="section-heading-icon"></ion-icon>
-                    Configure Fee Structure
-                </h3>
-                <p class="section-desc">Setup fee structure according to your school</p>
+            <div class="section-header section-heading-row">
+                <div class="section-flex">
+                    <h3 class="section-heading">
+                        <ion-icon name="cog" class="section-heading-icon"></ion-icon>
+                        Configure Fee Structure
+                    </h3>
+                    <p class="section-desc">Setup class- wise Fee Structure according to your school.</p>
+                </div>
+
+                <a href="fee-menu.php" class="section-heading-btn">
+                    <ion-icon name="arrow-back-outline" class="section-heading-btn-icon"></ion-icon> Go Back
+                </a>
             </div>
 
             <?php
@@ -111,7 +117,7 @@
             </form>
 
 
-            <div class="table-responsive mt-4">
+            <div class="card p-3 table-responsive mt-4">
                 <table class="table table-bordered">
                     <thead>
                         <tr>

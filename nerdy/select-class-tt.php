@@ -8,7 +8,7 @@
                 <ion-icon name="people" class="section-heading-icon"></ion-icon>
                 Select Class
             </h3>
-            <p class="section-desc">Select class to view time-table</p>
+            <p class="section-desc">Select class to view the time-table set by the respective class teacher</p>
         </div>
 
         <div class="w-100">
