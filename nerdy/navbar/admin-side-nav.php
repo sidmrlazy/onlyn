@@ -6,13 +6,13 @@
         </a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" aria-current="page" href="#">
-            <ion-icon name="people-outline"></ion-icon>
-            Users
+        <a class="nav-link" aria-current="page" href="admin-all-schools.php">
+            <ion-icon name="business-outline"></ion-icon>
+            Schools
         </a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" aria-current="page" href="#">
+        <a class="nav-link" aria-current="page" href="admin-school-txn.php">
             <ion-icon name="person-outline"></ion-icon>
             Transactions
         </a>
@@ -31,7 +31,7 @@
     </li>
 
     <li class="nav-item">
-        <a class="nav-link" href="manage.php">
+        <a class="nav-link" href="#">
             <ion-icon name="settings-outline"></ion-icon>
             Manage
         </a>

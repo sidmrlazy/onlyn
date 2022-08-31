@@ -18,6 +18,134 @@ input::-webkit-inner-spin-button {
 body {
   background-color: #fafafa;
 }
+
+/* ============ ADMIN DASHBOARD ============ */
+.admin-dashboard-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.admin-dashboard-pills {
+  width: 300px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2) !important;
+  margin-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.admin-dashboard-pills #icon-green {
+  color: #3cb878 !important;
+  font-size: 18px;
+  margin-right: 5px !important;
+}
+.admin-dashboard-pills #icon-blue {
+  color: #0f2e70 !important;
+  font-size: 18px;
+  margin-right: 5px !important;
+}
+.admin-dashboard-pills #icon-orange {
+  color: #f59842 !important;
+  font-size: 18px;
+  margin-right: 5px !important;
+}
+.admin-dashboard-pills p {
+  margin: 0;
+  flex: 1;
+}
+.pill-count {
+  flex: 0 !important;
+  font-size: 18px;
+  margin-right: 10px;
+  font-weight: 500;
+}
+
+/* ============ ADMIN SCHOOL DETAILS ============ */
+.admin-school-details {
+  width: 100%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.school-logo {
+  width: 150px;
+  height: 130px !important;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3) !important;
+  z-index: 100 !important;
+}
+.school-logo img {
+  width: 50% !important;
+  height: auto;
+}
+.admin-school-details-row {
+  width: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  margin-left: -30px;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2) !important;
+}
+.admin-school-content {
+  flex: 1;
+  margin-left: 35px !important;
+}
+.school-name {
+  margin: 0 !important;
+  font-size: 18px;
+  font-weight: 500;
+}
+.school-contact {
+  margin: 0 !important;
+}
+.pay-success {
+  margin: 0;
+  color: #467a35;
+}
+.added-date {
+  margin: 0;
+  font-size: 12px;
+}
+
+/* ============ ADMIN TXN DETAILS ============ */
+.admin-txn-tab {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2) !important;
+}
+.txn-school-name {
+  flex: 1;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  margin-left: 10px;
+}
+.admin-txn-flex {
+  flex: 1;
+}
+.plan-name {
+  margin: 0;
+  font-weight: 500;
+  color: green;
+  font-size: 16px;
+}
+
 /* ============ LOGIN ============ */
 .login {
   display: flex !important;
@@ -35,7 +163,6 @@ body {
   display: flex !important;
   justify-content: flex-start !important;
   align-items: flex-start !important;
-
   max-width: 100% !important;
 }
 .login-background img {
@@ -1257,5 +1384,35 @@ body {
   .login-background img {
     width: 50%;
     height: auto;
+  }
+
+  /* ============ ADMIN DASHBOARD ============ */
+  .admin-dashboard-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .admin-dashboard-pills {
+    width: 100% !important;
+    margin-bottom: 8px !important;
+  }
+  .admin-dashboard-pills #icon-green {
+    color: #3cb878 !important;
+    font-size: 18px;
+    margin-right: 5px !important;
+  }
+  .admin-dashboard-pills #icon-blue {
+    color: #0f2e70 !important;
+    font-size: 18px;
+    margin-right: 5px !important;
+  }
+  .admin-dashboard-pills p {
+    margin: 0;
+    flex: 1;
+  }
+  .pill-count {
+    flex: 0 !important;
+    font-size: 18px;
+    margin-right: 10px;
+    font-weight: 500;
   }
 }

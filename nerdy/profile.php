@@ -41,7 +41,7 @@
 
 
     // QUERY TO FETCH SCHOOL LOGO
-    $get_image_query = "SELECT * FROM users WHERE user_id = $session_user_id";
+    $get_image_query = "SELECT * FROM `users` WHERE `user_id` = $session_user_id";
     $get_image_result = mysqli_query($connection, $get_image_query);
     while ($row = mysqli_fetch_assoc($get_image_result)) {
         $user_school_logo = "assets/images/school-logo/" . $row['user_school_logo'];
