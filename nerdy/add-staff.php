@@ -8,7 +8,8 @@
             <ion-icon name="construct-outline" class="section-heading-icon"></ion-icon>
             Add Staff
         </h3>
-        <p class="section-desc">Enter staff details below to generate staff ID.</p>
+        <p class="section-desc">Enter School Staff (Accounts, Admin, Principal, HR etc) details below to generate Staff
+            ID.</p>
     </div>
     <?php
     require_once('main/config.php');

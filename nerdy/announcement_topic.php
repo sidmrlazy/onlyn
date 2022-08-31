@@ -9,7 +9,8 @@
                 <ion-icon name="megaphone" class="section-heading-icon"></ion-icon>
                 Announcement Details
             </h3>
-            <p class="section-desc">Enter the topic and details of announcement below</p>
+            <p class="section-desc">Enter the subject and details of the
+                announcement you want to announce below.</p>
         </div>
 
         <?php

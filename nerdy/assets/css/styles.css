@@ -280,6 +280,7 @@ body {
   border-radius: 5px;
   padding: 10px !important;
   margin-bottom: 10px;
+  background-color: #fff !important;
 }
 .ann-row {
   display: flex;

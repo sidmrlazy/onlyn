@@ -82,6 +82,7 @@ function parentDisabledConfirmation() {
 }
 function announced() {
   $(document).ready(function () {
+    window.location.href = "announcement.php";
     $("#announcedToast").toast("show");
   });
 }

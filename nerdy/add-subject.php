@@ -8,7 +8,8 @@
             <ion-icon name="book-outline" class="section-heading-icon"></ion-icon>
             Add Subject
         </h3>
-        <p class="section-desc">Enter subject name below.</p>
+        <p class="section-desc">Enter School Subjects (all classes) below. Click on ADD SUBJECT to keep adding subjects.
+            Click on Complete once you have added all the subjects.</p>
     </div>
 
     <?php

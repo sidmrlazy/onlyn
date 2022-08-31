@@ -8,8 +8,8 @@
             <ion-icon name="business-outline" class="section-heading-icon"></ion-icon>
             Add Class
         </h3>
-        <p class="section-desc">Enter Class Name or Number & Class Section. Click on complete class creation button to
-            go to next step</p>
+        <p class="section-desc">Enter all the Classes & Sections. Click on ADD CLASS to keep adding classes. Click on
+            Complete Class Setup to complete your Classes and sections setup and go to next step</p>
     </div>
     <?php
     require_once('main/config.php');

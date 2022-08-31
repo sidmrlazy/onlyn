@@ -7,7 +7,7 @@
             <ion-icon name="person-circle-outline" class="section-heading-icon"></ion-icon>
             Profile
         </h3>
-        <p class="section-desc">Upload your school logo or Edit Details below. Click on Complete Form button to go to
+        <p class="section-desc">Upload/Edit School Logo and Details below. Click on the ‘Complete Form’ to go to the
             next step.</p>
     </div>
 

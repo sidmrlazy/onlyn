@@ -8,7 +8,8 @@
                 <ion-icon name="megaphone" class="section-heading-icon"></ion-icon>
                 Announcements
             </h3>
-            <p class="section-desc">Send announcement to everyone or select a user individually</p>
+            <p class="section-desc">Choose who you want to announce to. Enter the subject and details of the
+                announcement you want to announce below.</p>
         </div>
 
         <form method="POST" action="announcement_topic.php" class="card p-4">
@@ -81,7 +82,7 @@
         } else {
             $session_user_id = 0;
         }
-        $query = "SELECT * FROM announcement WHERE ann_by=$session_user_id";
+        $query = "SELECT * FROM announcement WHERE ann_by = $session_user_id ORDER BY ann_id DESC";
         $result = mysqli_query($connection, $query);
         while ($row = mysqli_fetch_assoc($result)) {
             $ann_topic = $row['ann_topic'];

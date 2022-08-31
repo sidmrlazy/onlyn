@@ -7,8 +7,10 @@
             <ion-icon name="glasses-outline" class="section-heading-icon"></ion-icon>
             Add Teacher
         </h3>
-        <p class="section-desc">Enter teacher's name and mobile number below. The ID to Sign-In to Onlyn Nerdy Teacher
-            Panel is First 4 Letters of the teacher's name and last 4 Digits of Mobile Number.</p>
+        <p class="section-desc">To Create your teachers IDs Please enter the Teacher’s name and Mobile Number below.
+        </p>
+        <p class="note">(Please Note: The ID to Sign-In to Onlyn Nerdy Teacher Panel is First 4 Letters of a teacher's
+            name and last 4 Digits of Mobile Number.)</p>
     </div>
 
     <?php
