@@ -46,11 +46,21 @@
                         placeholder="+91 XXXXX XXXXX">
                     <label for="floatingInput">Registered Mobile Number</label>
                 </div>
-                <div class="form-floating mb-3">
-                    <input type="password" autocomplete="on" name="user_password" class="form-control"
-                        id="floatingPassword" placeholder="Password">
+
+                <div class="form-floating w-100">
+                    <input type="password" autocomplete="on" name="user_password" class="form-control" id="typepass"
+                        placeholder="Password">
                     <label for="floatingPassword">Password</label>
                 </div>
+
+
+                <div class="form-check w-50 check-custom mt-3">
+                    <input class="form-check-input" onclick="Toggle()" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Show Password
+                    </label>
+                </div>
+
                 <button type="submit" name="submit" class="login-button w-100">Sign-In</button>
                 <div class="line section-form"></div>
                 <div class="register-text">

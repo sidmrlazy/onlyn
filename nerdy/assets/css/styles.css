@@ -177,6 +177,9 @@ body {
   border: 0 !important;
   border-bottom: 1px solid #e7e7e7 !important;
 }
+.check-custom {
+  margin-left: 5px !important;
+}
 
 /* ============ DASHBOARD SCHOOL ============ */
 .school-main-dashboard {
