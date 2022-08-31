@@ -160,6 +160,52 @@
             </ul>
             <div class="d-flex">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item ">
+                        <?php
+                                $current_date = date('d-m-Y');
+                                $date_today = strtotime($current_date);
+                                $query = "SELECT * FROM `subscription` WHERE `subscription_user_id` = '$session_user_id'";
+                                $subscription_res = mysqli_query($connection, $query);
+                                $subscription_end_date = "";
+                                while ($row = mysqli_fetch_assoc($subscription_res)) {
+                                    $subscription_end_date = $row['subscription_end_date'];
+                                }
+                                $expiry_date = strtotime($subscription_end_date);
+
+                                if ($date_today == $expiry_date) {
+                                    $update_setup = "UPDATE `setup_status` SET `setup_payment_status`= 2 WHERE setup_school_id = $session_user_id";
+                                    $update_setup_res = mysqli_query($connection, $update_setup);
+                                ?>
+                        <div class="animate__animated animate__flash animate__infinite infinite navbar-plan-expired"
+                            role="">
+                            <p>
+                                Subscription Expired
+                            </p>
+                        </div>
+
+                        <?php }
+                                if ($date_today < $expiry_date) { ?>
+                        <div class="navbar-plan-active" role="">
+                            <p>Plan Active</p>
+                        </div>
+
+                        <?php }
+                                if ($date_today > $expiry_date) {
+                                    $update_setup = "UPDATE `setup_status` SET `setup_payment_status`= 2 WHERE setup_school_id = $session_user_id";
+                                    $update_setup_res = mysqli_query($connection, $update_setup);
+                                ?>
+                        <div class="animate__animated animate__flash animate__infinite infinite navbar-plan-expired"
+                            role="">
+                            <p>
+                                Subscription Expired on <?php echo $subscription_end_date ?>.
+                            </p>
+                        </div>
+                        <?php } ?>
+                        <!-- <a class="nav-link active" aria-current="page" href="dashboard.php">
+                            <ion-icon name="home"></ion-icon>
+                            Home
+                        </a> -->
+                    </li>
                     <li class="nav-item dropdown">
                         <?php
                                 require_once('main/config.php');
@@ -238,6 +284,7 @@
                                 }
                                 ?>
                         <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="navbarDropdown">
+
                             <li>
                                 <a class="dropdown-item" href="logout.php">
                                     <ion-icon name="log-out-outline"></ion-icon>

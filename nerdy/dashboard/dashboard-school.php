@@ -107,7 +107,21 @@
 
         <div class="school-main-dashboard container mt-3">
             <?php include('dashboard/pills.php') ?>
+            <?php
+            $current_date = date('d-m-Y');
+            $date_today = strtotime($current_date);
+            $query = "SELECT * FROM `subscription` WHERE `subscription_user_id` = '$session_user_id'";
+            $subscription_res = mysqli_query($connection, $query);
+            $subscription_end_date = "";
+            while ($row = mysqli_fetch_assoc($subscription_res)) {
+                $subscription_end_date = $row['subscription_end_date'];
+            }
+            $expiry_date = strtotime($subscription_end_date);
 
+            if ($date_today == $expiry_date) {
+                $update_setup = "UPDATE `setup_status` SET `setup_payment_status`= 2 WHERE setup_school_id = $session_user_id";
+                $update_setup_res = mysqli_query($connection, $update_setup);
+            ?>
             <div class="animate__animated animate__fadeIn mt-5 mb-5">
                 <div class="section-header mb-3">
                     <h3 class="section-heading-dashboard">
@@ -115,44 +129,48 @@
                         Subscription Status
                     </h3>
                 </div>
-                <?php
-                $current_date = date('d-m-Y');
-                $date_today = strtotime($current_date);
-                $query = "SELECT * FROM `subscription` WHERE `subscription_user_id` = '$session_user_id'";
-                $subscription_res = mysqli_query($connection, $query);
-                $subscription_end_date = "";
-                while ($row = mysqli_fetch_assoc($subscription_res)) {
-                    $subscription_end_date = $row['subscription_end_date'];
-                }
-                $expiry_date = strtotime($subscription_end_date);
 
-                if ($date_today == $expiry_date) {
-                    $update_setup = "UPDATE `setup_status` SET `setup_payment_status`= 2 WHERE setup_school_id = $session_user_id";
-                    $update_setup_res = mysqli_query($connection, $update_setup);
-                ?>
                 <div class="alert alert-danger" role="alert">
                     SUBSCRIPTION EXPIRED TODAY! PLEASE MAKE PAYMENT TO CONTINUE USING
                     OUR SERVICES.
                 </div>
+            </div>
 
-                <?php }
-                if ($date_today < $expiry_date) { ?>
+            <?php }
+            if ($date_today < $expiry_date) { ?>
+            <div class="d-none animate__animated animate__fadeIn mt-5 mb-5">
+                <div class="section-header mb-3">
+                    <h3 class="section-heading-dashboard">
+                        <ion-icon name="speedometer-outline" class="section-heading-icon"></ion-icon>
+                        Subscription Status
+                    </h3>
+                </div>
+
                 <div class="alert alert-success" role="alert">
                     SUBSCRIPTION ACTIVE!
                 </div>
+            </div>
 
-                <?php }
-                if ($date_today > $expiry_date) {
-                    $update_setup = "UPDATE `setup_status` SET `setup_payment_status`= 2 WHERE setup_school_id = $session_user_id";
-                    $update_setup_res = mysqli_query($connection, $update_setup);
-                ?>
+            <?php }
+            if ($date_today > $expiry_date) {
+                $update_setup = "UPDATE `setup_status` SET `setup_payment_status`= 2 WHERE setup_school_id = $session_user_id";
+                $update_setup_res = mysqli_query($connection, $update_setup);
+            ?>
+            <div class="animate__animated animate__fadeIn mt-5 mb-5">
+                <div class="section-header mb-3">
+                    <h3 class="section-heading-dashboard">
+                        <ion-icon name="speedometer-outline" class="section-heading-icon"></ion-icon>
+                        Subscription Status
+                    </h3>
+                </div>
                 <div class="alert alert-danger" role="alert">
                     SUBSCRIPTION EXPIRED ON <?php echo $subscription_end_date ?>. PLEASE MAKE PAYMENT TO CONTINUE USING
                     OUR SERVICES!
                 </div>
-                <?php } ?>
-
             </div>
+            <?php } ?>
+
+
 
             <div class="animate__animated animate__fadeIn mt-4">
                 <div class="section-header mb-3">

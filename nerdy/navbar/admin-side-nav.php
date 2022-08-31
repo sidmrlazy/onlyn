@@ -6,19 +6,19 @@
         </a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" aria-current="page" href="admin-all-schools.php">
+        <a class="nav-link" aria-current="page" href="admin-all-schools">
             <ion-icon name="business-outline"></ion-icon>
             Schools
         </a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" aria-current="page" href="admin-school-txn.php">
+        <a class="nav-link" aria-current="page" href="admin-school-txn">
             <ion-icon name="person-outline"></ion-icon>
             Transactions
         </a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" aria-current="page" href="#">
+        <a class="nav-link" aria-current="page" href="admin-activity-menu">
             <ion-icon name="megaphone-outline"></ion-icon>
             Activities
         </a>
