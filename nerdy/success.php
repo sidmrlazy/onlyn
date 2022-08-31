@@ -133,6 +133,65 @@ if ($success === true) {
                             die(mysqli_error($connection));
                         } else {
                             header('location:index.php');
+
+                            // ============= SEND SMS ON SUCCESS ENABLEX =============
+                            // $url = "https://sms-api.enablex.io/sms/v1/messages/";
+
+                            // $header = [
+                            //     "Authorization: Basic XuzuRuPySyjeee6uZeXezuJapuPeMaeuRydu",
+                            //     "Content-Type: application/json"
+                            // ];
+
+                            // $post_body = [
+                            //     "body" => "Congratulations , your school is now registered with Onlyn Nerdy. 
+                            //     TXNID: $razorpay_payment_id. Subscription End Date: $subscription_end_date",
+                            //     "type" => "sms",
+                            //     "data_coding" => "uncode",
+                            //     "campaign" => "2437508",
+                            //     "to" => ["+917388565681"],
+                            //     "from" => "ENABLEX",
+                            //     "template_id" => "901",
+                            // ];
+                            // $curl = curl_init();
+                            // curl_setopt($ch, CURLOPT_URL, $url);
+                            // curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+                            // curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($post_body));
+                            // curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
+                            // curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                            // curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+                            // curl_exec($ch);
+
+                            // ============= SEND SMS ON SUCCESS MOVIDER =============
+                            //  $data = array(
+                            //      'api_key' => "tzAnOXEq6qxxr4ux7t0IGDrriEALnS",
+                            //      'api_secret' => "oVyt8y-45uJg_E-_KQ680wb5gGc_ou",
+                            //      'text' => "Congratulations , your school is now registered with Onlyn Nerdy. TXNID: $razorpay_payment_id. Subscription End Date: $subscription_end_date",
+                            //      'to' => "917388565681",
+                            //      'from' => "OLNERDY"
+                            //  );
+
+                            //  curl_setopt_array($curl, array(
+                            //      CURLOPT_URL => "https://api.enablex.io/sms/",
+                            //      CURLOPT_RETURNTRANSFER => true,
+                            //      CURLOPT_TIMEOUT => 30,
+                            //      CURLOPT_CUSTOMREQUEST => "POST",
+                            //      CURLOPT_POSTFIELDS => http_build_query($data),
+                            //      CURLOPT_HTTPHEADER => array(
+                            //          "Content-Type: application/x-www-form-urlencoded",
+                            //          "cache-control: no-cache"
+                            //      ),
+                            //  ));
+
+                            //  $response = curl_exec($curl);
+                            //  $err = curl_error($curl);
+
+                            //  curl_close($curl);
+
+                            // if ($err) {
+                            //     echo "cURL Error #:" . $err;
+                            // } else {
+                            //     echo $response;
+                            // }
                         }
                     }
                 } else {

@@ -4,7 +4,7 @@
             <img src="assets/images/vectors/vec-1.png" alt="" class="login-img">
         </div>
 
-        <div class="col-md-6 section-form">
+        <div class="p-3 col-md-6 section-form">
             <h1>Login</h1>
             <p>Enter your registered mobile number and password to login</p>
             <?php
@@ -51,7 +51,7 @@
                         id="floatingPassword" placeholder="Password">
                     <label for="floatingPassword">Password</label>
                 </div>
-                <button type="submit" name="submit" class="login-button">Sign-In</button>
+                <button type="submit" name="submit" class="login-button w-100">Sign-In</button>
                 <div class="line section-form"></div>
                 <div class="register-text">
                     <p>Not a member yet?<a href="register.php"> Click here </a>to create a new account</p>

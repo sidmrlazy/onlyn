@@ -157,8 +157,43 @@ data-dismiss="alert" aria-label="Close">
 ?>
 
 <?php include('main/session-less-header.php') ?>
-<div class="container mt-5 d-flex justify-content-center align-items-center">
-    <button id="rzp-button1" class="btn btn-primary">Pay with Razorpay</button>
+<?php include('main/web-navbar.php') ?>
+<div class="container mt-5 mb-5">
+    <div class="card p-3 table-responsive">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">SCHOOL NAME</th>
+                    <th scope="col">CONTACT</th>
+                    <th scope="col">EMAIL</th>
+                    <th scope="col">ADDRESS</th>
+                    <th scope="col">SELECTED PLAN</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><?php echo $user_school_name ?></td>
+                    <td><?php echo $user_contact ?></td>
+                    <td><?php echo $user_email ?></td>
+                    <td><?php echo $user_address . ", " . $user_city . ". " . $user_state . " - " . $user_pincode ?>
+                    </td>
+                    <?php
+                    if ($user_plan_amount == "2800") { ?>
+                    <td>Basic(₹2800/-)</td>
+                    <?php }
+                    if ($user_plan_amount == "3600") {  ?>
+                    <td>Premium(₹3600/-)</td>
+                    <?php }
+                    if ($user_plan_amount == "5000") {  ?>
+                    <td>Pro(₹5000/-)</td>
+                    <?php } ?>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="container mt-5 d-flex justify-content-center align-items-center">
+        <button id="rzp-button1" class="btn btn-primary">Confirm</button>
+    </div>
 </div>
 <?php include('main/footer.php') ?>
 

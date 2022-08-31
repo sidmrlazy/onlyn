@@ -7,7 +7,7 @@
         </div>
 
         <div class="col-md-6 section-form">
-            <p>Upgrade your school to a digital platform with Onlyn Nerdy</p>
+            <p class="text-center">Upgrade your school to a digital platform with Onlyn Nerdy</p>
             <form action="pay.php" method="POST" class="mt-4 reg-form login-form">
                 <div class="d-flex mob-flex w-100 mb-2">
                     <div class="form-floating m-1 w-100">
@@ -122,7 +122,7 @@
                         <label for="floatingSelect">Select Subscription Plan</label>
                     </div>
                 </div>
-                <input type="submit" name="register" value='Sign-Up' class="login-button">
+                <input type="submit" name="register" value='Sign-Up' class="login-button w-100">
                 <div class="line section-form"></div>
                 <div class="register-text">
                     <p>Already a member?<a href="index.php"> Click here </a>to Sign-In to your account</p>
