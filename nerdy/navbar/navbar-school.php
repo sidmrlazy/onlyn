@@ -24,6 +24,12 @@
                 if ($setup_remove_status == 0 || $setup_remove_status == 1) {
             ?>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="dashboard.php">
+                        <ion-icon name="home"></ion-icon>
+                        Home
+                    </a>
+                </li>
 
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="setup.php">

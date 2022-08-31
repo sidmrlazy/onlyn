@@ -21,6 +21,7 @@
                         if (!empty($_SESSION['user_type'])) {
                             $session_user_id = $_SESSION['user_id'];
                             $session_user_type = $_SESSION['user_type'];
+
                             $query = "SELECT * FROM users WHERE user_id = $session_user_id";
                             $result = mysqli_query($connection, $query);
                             while ($row = mysqli_fetch_assoc($result)) {
@@ -37,7 +38,7 @@
                             $session_user_id = 0;
                         }
                         ?>
-                        <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="navbarDropdown">
+                        <ul class="nav-mobile dropdown-menu dropdown-menu-lg-end" aria-labelledby="navbarDropdown">
                             <li>
                                 <a class="dropdown-item" href="logout.php">
                                     <ion-icon name="log-out-outline"></ion-icon>

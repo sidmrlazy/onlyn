@@ -19,7 +19,7 @@
         if (!$update_table_result) {
             die(mysqli_error($connection));
         } else {
-            echo '<script>addTeacherComplete()</script>';
+            echo '<script>goToSetup()</script>';
         }
     }
 

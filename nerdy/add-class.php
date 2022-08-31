@@ -25,7 +25,7 @@
         if (!$complete_profile_result) {
             die(mysqli_error($connection));
         } else {
-            echo '<script>addClassComplete()</script>';
+            echo '<script>goToSetup()</script>';
         }
     }
 

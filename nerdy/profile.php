@@ -1,5 +1,6 @@
 <?php include('main/header.php'); ?>
 <?php include('navbar/navbar.php'); ?>
+<?php include('toasts.php'); ?>
 <div class="container section-container mb-5">
     <div class="section-header">
         <h3 class="section-heading">
@@ -89,6 +90,8 @@
         $complete_profile_result = mysqli_query($connection, $complete_profile_query);
         if (!$complete_profile_result) {
             die(mysqli_error($connection));
+        } else {
+            echo "<script>goToSetup();</script>";
         }
     }
 

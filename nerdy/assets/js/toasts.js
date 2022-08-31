@@ -145,3 +145,9 @@ function inserted() {
     $("#insertedToast").toast("show");
   });
 }
+
+function goToSetup() {
+  $(document).ready(function () {
+    $("#goToSetupToast").toast("show");
+  });
+}
