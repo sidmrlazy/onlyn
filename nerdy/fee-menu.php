@@ -34,15 +34,15 @@
 
         <a href="select-class-default.php" class="custom-tab">
             <ion-icon class="tab-icon" name="shapes-outline"></ion-icon>
-            <p>Check Fee Defaulters</p>
+            <p>Check Fee Status</p>
             <ion-icon class="tab-icon-right" name="caret-forward-outline"></ion-icon>
         </a>
 
-        <a href="#" class="custom-tab">
+        <!-- <a href="#" class="custom-tab">
             <ion-icon class="tab-icon" name="search-outline"></ion-icon>
             <p>Fee Collection Status</p>
             <ion-icon class="tab-icon-right" name="caret-forward-outline"></ion-icon>
-        </a>
+        </a> -->
         <!-- <a href="assign-student-fee-structure.php" class="custom-tab custom-tab-mobile">
             <ion-icon class="tab-icon" name="cash-outline"></ion-icon>
             <p>Assign fee structure to student</p>

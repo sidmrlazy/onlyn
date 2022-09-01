@@ -27,53 +27,46 @@
             $fee_assigned_class = $_POST['fee_assigned_class'];
             $fee_collection_type = $_POST['fee_collection_type'];
             $fee_collection_date = $_POST['fee_collection_date'];
-            // $fee_collection_amount = $_POST['fee_collection_amount'];
             $fee_collection_receipt = $_POST['fee_collection_receipt'];
             $fee_collection_status = 1;
 
-            // if (empty($fee_collection_amount)) {
-            //     die("<div class='alert alert-danger mb-3' role='alert'>
-            //      Amount cannot be empty!
-            //    </div>");
-            // }
             if (empty($fee_collection_receipt)) {
                 die("<div class='alert alert-danger mb-3' role='alert'>
                  Fee Receipt cannot be empty!
                </div>");
             }
-            if ($fee_collection_type) {
-                $fetch_amount = "SELECT * FROM school_fee WHERE fee_id = $fee_collection_type AND fee_school_id = $fee_school_id";
-                $fetch_amount_res = mysqli_query($connection, $fetch_amount);
 
-                if (!$fetch_amount_res) {
-                    echo "ERROR";
-                } else {
-                    $fetch_amount = "";
-                    while ($row = mysqli_fetch_assoc($fetch_amount_res)) {
-                        $fee_amount = $row['fee_amount'];
-                    }
-                }
+            $fetch_amount = "SELECT * FROM school_fee WHERE fee_id = '$fee_collection_type' AND fee_school_id = '$fee_school_id'";
+            $fetch_amount_res = mysqli_query($connection, $fetch_amount);
+
+            if (!$fetch_amount_res) {
+                echo "ERROR";
             } else {
+                $fetch_amount = "";
+                while ($row = mysqli_fetch_assoc($fetch_amount_res)) {
+                    $fee_amount = $row['fee_amount'];
+                }
+
                 $insert_query = "INSERT INTO `fee_collection`(
-                 `fee_school_id`,
-                 `fee_school_student_id`,
-                 `fee_assigned_class`,
-                 `fee_collection_type`,
-                 `fee_collection_date`,
-                 `fee_collection_amount`,
-                 `fee_collection_receipt`,
-                 `fee_collection_status`
-             )
-             VALUES(
-                 '$fee_school_id',
-                 '$fee_school_student_id',
-                 '$fee_assigned_class',
-                 '$fee_collection_type',
-                 '$fee_collection_date',
-                 '$fee_amount',
-                 '$fee_collection_receipt',
-                 '$fee_collection_status'
-             )";
+                        `fee_school_id`,
+                        `fee_school_student_id`,
+                        `fee_assigned_class`,
+                        `fee_collection_type`,
+                        `fee_collection_date`,
+                        `fee_collection_amount`,
+                        `fee_collection_receipt`,
+                        `fee_collection_status`
+                    )
+                    VALUES(
+                        '$fee_school_id',
+                        '$fee_school_student_id',
+                        '$fee_assigned_class',
+                        '$fee_collection_type',
+                        '$fee_collection_date',
+                        '$fee_amount',
+                        '$fee_collection_receipt',
+                        '$fee_collection_status'
+                    )";
                 $insert_result = mysqli_query($connection, $insert_query);
 
                 if (!$insert_result) {
@@ -222,11 +215,11 @@
                     <label for='floatingContact'>For the month of</label>
                 </div>
 
-                <div class='form-floating w-100 m-1'>
+                <!-- <div class='form-floating w-100 m-1'>
                     <input disabled type='number' name='fee_collection_amount' value="<?php echo $fee_amount ?>"
                         class='form-control' id='floatingContact' placeholder='<?php echo "₹" . $fee_amount ?>'>
                     <label for='floatingContact'>Amount (in ₹)</label>
-                </div>
+                </div> -->
 
                 <div class='form-floating w-100 m-1'>
                     <input type='text' name='fee_collection_receipt' class='form-control' id='floatingContact'
