@@ -918,12 +918,49 @@ hr {
   background: #fff;
   background-color: #fff !important;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  background-color: #2e3345 !important;
 }
 .side-nav-link:hover {
   background-color: #e7e7e7;
   border-radius: 3px;
   transition: 0.3s all ease-in-out !important;
 }
+.side-nav-text {
+  color: #e7e7e7 !important;
+  font-weight: 200 !important;
+  font-size: 12px !important;
+}
+.side-nav-icon {
+  width: 20px;
+  height: auto;
+  margin-right: 5px !important;
+}
+#light-blue-icon {
+  color: #23b3e0 !important;
+  font-size: 14px !important;
+  margin-right: 5px;
+}
+#dark-blue-icon {
+  color: #518dea !important;
+  font-size: 14px !important;
+  margin-right: 5px;
+}
+#flourescent-green {
+  color: #27c24c !important;
+  font-size: 14px !important;
+  margin-right: 5px;
+}
+#pale-yellow {
+  color: #fbe165 !important;
+  font-size: 14px !important;
+  margin-right: 5px;
+}
+#pale-orange {
+  color: #f19a5e !important;
+  font-size: 14px !important;
+  margin-right: 5px;
+}
+
 .nav-mobile {
   display: none;
 }
@@ -938,10 +975,7 @@ hr {
   width: 30%;
   height: auto;
 }
-.nav-link {
-  color: #666 !important;
-  font-size: 14px !important;
-}
+
 .dropdown-item {
   font-size: 14px !important;
 }

@@ -1,61 +1,61 @@
 <ul class="pt-3 nav flex-column side-nav">
     <li class="nav-item side-nav-link">
-        <a class="nav-link " aria-current="page" href="dashboard.php">
-            <ion-icon name="home-outline"></ion-icon>
+        <a class="nav-link side-nav-text " aria-current="page" href="dashboard.php">
+            <ion-icon id="light-blue-icon" name="home"></ion-icon>
             Home
         </a>
     </li>
     <hr>
     <li class="nav-item side-nav-link">
-        <a class="nav-link" aria-current="page" href="school-users-action.php">
-            <ion-icon name="people-outline"></ion-icon>
+        <a class="nav-link side-nav-text" aria-current="page" href="school-users-action.php">
+            <ion-icon id="dark-blue-icon" name="people"></ion-icon>
             Teachers & Staff
         </a>
     </li>
     <li class="nav-item side-nav-link">
-        <a class="nav-link " aria-current="page" href="school-students.php">
-            <ion-icon name="person-outline"></ion-icon>
+        <a class="nav-link side-nav-text " aria-current="page" href="school-students.php">
+            <ion-icon id="flourescent-green" name="person"></ion-icon>
             Students
         </a>
     </li>
     <hr>
     <li class="nav-item side-nav-link">
-        <a class="nav-link" href="school-attendance.php">
-            <ion-icon name="shield-checkmark-outline"></ion-icon>
+        <a class="nav-link side-nav-text" href="school-attendance.php">
+            <ion-icon id="pale-yellow" name="shield-checkmark"></ion-icon>
             Attendance
         </a>
     </li>
     <li class="nav-item side-nav-link">
-        <a class="nav-link" aria-current="page" href="announcement.php">
-            <ion-icon name="megaphone-outline"></ion-icon>
+        <a class="nav-link side-nav-text" aria-current="page" href="announcement.php">
+            <ion-icon id="dark-blue-icon" name="megaphone"></ion-icon>
             Announcements
         </a>
     </li>
 
     <li class="nav-item side-nav-link">
-        <a class="nav-link" href="select-class-tt.php">
-            <ion-icon name="calendar-outline"></ion-icon>
+        <a class="nav-link side-nav-text" href="select-class-tt.php">
+            <ion-icon id="pale-orange" name="calendar"></ion-icon>
             Time Table
         </a>
     </li>
     <hr>
     <li class="nav-item side-nav-link">
-        <a class="nav-link" href="fee-menu.php">
-            <ion-icon name="card-outline"></ion-icon>
+        <a class="nav-link side-nav-text" href="fee-menu.php">
+            <ion-icon id="pale-yellow" name="card"></ion-icon>
             Fee
         </a>
     </li>
 
     <li class="nav-item side-nav-link">
-        <a class="nav-link" href="#">
-            <ion-icon name="notifications-outline"></ion-icon>
+        <a class="nav-link side-nav-text" href="#">
+            <ion-icon id="flourescent-green" name="notifications"></ion-icon>
             Notifications
         </a>
     </li>
 
     <li class="nav-item side-nav-link">
-        <a class="nav-link" href="manage.php">
-            <ion-icon name="settings-outline"></ion-icon>
+        <a class="nav-link side-nav-text" href="manage.php">
+            <ion-icon id="light-blue-icon" name="settings"></ion-icon>
             Manage School
         </a>
     </li>

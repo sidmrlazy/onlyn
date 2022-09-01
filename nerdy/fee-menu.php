@@ -37,17 +37,6 @@
             <p>Check Fee Status</p>
             <ion-icon class="tab-icon-right" name="caret-forward-outline"></ion-icon>
         </a>
-
-        <!-- <a href="#" class="custom-tab">
-            <ion-icon class="tab-icon" name="search-outline"></ion-icon>
-            <p>Fee Collection Status</p>
-            <ion-icon class="tab-icon-right" name="caret-forward-outline"></ion-icon>
-        </a> -->
-        <!-- <a href="assign-student-fee-structure.php" class="custom-tab custom-tab-mobile">
-            <ion-icon class="tab-icon" name="cash-outline"></ion-icon>
-            <p>Assign fee structure to student</p>
-            <ion-icon class="tab-icon-right" name="caret-forward-outline"></ion-icon>
-        </a> -->
     </div>
 </div>
 <?php include('main/footer.php'); ?>
