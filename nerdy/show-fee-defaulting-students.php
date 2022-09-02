@@ -18,6 +18,10 @@
                 $fetch = "SELECT * FROM school_fee WHERE fee_id = $fetched_fee_type";
                 $fetch_r = mysqli_query($connection, $fetch);
 
+                $fetch_student_data = "SELECT * FROM `students` WHERE student_assigned_class = $fee_assigned_class";
+                $fetch_student_data_res = mysqli_query($connection, $fetch_student_data);
+                $fetch_student_count = mysqli_num_rows($fetch_student_data_res);
+
                 $fee_type = "";
                 while ($row = mysqli_fetch_assoc($fetch_r)) {
                     $fee_type = $row['fee_type'];
@@ -80,8 +84,11 @@
             }
 
             ?>
-            <php class="section-desc">Showing students that have paid the <strong><?php echo $fetched_fee_type_name ?>
-                </strong></p>
+            <p class="section-desc">
+                Showing students that have paid the
+                <strong><?php echo $fetched_fee_type_name ?></strong>
+            </p>
+            <p>Total Students in this class: <?php echo $fetch_student_count; ?></p>
         </div>
 
         <div class="student-grid">
@@ -179,24 +186,24 @@
 
             ?>
 
-                        <div class="student-fee-tab">
+            <div class="student-fee-tab">
 
-                            <p class="student-fee-name"><?php echo $student_name ?></p>
-                            <p class="student-fee-receipt-number">Receipt number: <?php echo $fee_collection_receipt ?></p>
+                <p class="student-fee-name"><?php echo $student_name ?></p>
+                <p class="student-fee-receipt-number">Receipt number: <?php echo $fee_collection_receipt ?></p>
 
-                            <div class="student-fee-row">
-                                <?php
-                                if ($fee_collection_status == 1) { ?>
-                                    <p class="fee-paid">PAID</p>
-                                <?php } ?>
-                                <p class="fee-date"><?php echo $fee_collection_added_date ?></p>
-                            </div>
-                        </div>
-
+                <div class="student-fee-row">
                     <?php
+                                if ($fee_collection_status == 1) { ?>
+                    <p class="fee-paid">PAID</p>
+                    <?php } ?>
+                    <p class="fee-date"><?php echo $fee_collection_added_date ?></p>
+                </div>
+            </div>
+
+            <?php
                     }
                 } else if ($count == 0) { ?>
-                    <p>NO DATA FOUND</p>
+            <p>NO DATA FOUND</p>
 
             <?php
                 }
