@@ -1,5 +1,5 @@
 <ul class="nav flex-column side-nav">
-    <li class="nav-item side-nav-link ">
+    <li class="nav-item side-nav-link mt-4">
         <a class="nav-link side-nav-text" aria-current="page" href="dashboard.php">
             <ion-icon id="light-blue-icon" name="home"></ion-icon>
             Home
