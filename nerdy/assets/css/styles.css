@@ -755,8 +755,8 @@ body {
   text-align: center;
 }
 .active-pill {
-  border: 2px solid #cf3037;
-  color: #cf3037;
+  border: 2px solid green;
+  color: green;
   background-color: #fff;
   padding: 2px !important;
   border-radius: 3px !important;
@@ -955,8 +955,8 @@ body {
 hr {
   margin: 0;
   color: #777 !important;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 /* Navbar */
 .badge-text {
@@ -982,6 +982,7 @@ hr {
   color: #e7e7e7 !important;
   font-weight: 200 !important;
   font-size: 12px !important;
+  margin-top: 10px;
 }
 .side-nav-icon {
   width: 20px;
@@ -1036,6 +1037,9 @@ hr {
 
 .dropdown-item {
   font-size: 14px !important;
+}
+.nav-link {
+  color: #777;
 }
 .nav-link:hover {
   color: #777 !important;
@@ -1102,6 +1106,54 @@ hr {
   color: #cf3037;
 }
 
+/* ========== CLASS TEACHER PROFILE SECTION ========== */
+.class-teacher-pro-card {
+  border: 1px solid #e7e7e7;
+  width: 50%;
+  height: auto;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+.class-teacher-details-box {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e7e7e7;
+}
+.class-teacher-box-label {
+  margin: 0;
+  color: #777;
+  font-size: 12px;
+}
+.class-teacher-name {
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0;
+}
+.school-logo-holder {
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 100%;
+  border: 1px solid #e7e7e7;
+}
+.school-logo-holder img {
+  width: 30px;
+  height: 30px;
+}
+.class-teacher-school-name {
+  margin-left: 5px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.class-teacher-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px !important;
+}
+.class-teacher-flex {
+  flex: 1;
+}
 /* Transactions */
 .transaction-card {
   width: 100% !important;
@@ -1403,6 +1455,43 @@ hr {
   color: #cf3037;
   transition: 0.3s all ease-in-out !important;
 }
+
+/* =========== DIARY =========== */
+.diary-card {
+  width: 100%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 20px !important;
+}
+.diary-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.diary-section {
+  margin-bottom: 5px;
+}
+.diary-label {
+  margin: 0;
+  font-size: 12px;
+  color: #777;
+}
+.diary-btn-holder {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  margin-left: 20px;
+}
+.diary-btn {
+  background-color: #00000000;
+  border: 0;
+  font-size: 24px !important;
+  color: #cf3037;
+}
+
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   .side-nav {

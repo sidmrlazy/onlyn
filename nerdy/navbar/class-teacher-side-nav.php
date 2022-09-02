@@ -1,25 +1,27 @@
-<ul class="pt-3 nav flex-column side-nav">
-    <li class="nav-item">
-        <a class="nav-link" aria-current="page" href="dashboard.php">
-            <ion-icon name="home-outline"></ion-icon>
+<ul class="nav flex-column side-nav">
+    <li class="nav-item side-nav-link ">
+        <a class="nav-link side-nav-text" aria-current="page" href="dashboard.php">
+            <ion-icon id="light-blue-icon" name="home"></ion-icon>
             Home
         </a>
     </li>
-    <li class="nav-item">
-        <a class="nav-link" aria-current="page" href="student.php">
-            <ion-icon name="person-outline"></ion-icon>
+    <hr>
+    <li class="nav-item side-nav-link">
+        <a class="nav-link side-nav-text" aria-current="page" href="student.php">
+            <ion-icon id="dark-blue-icon" name="person"></ion-icon>
             Students
         </a>
     </li>
-    <li class="nav-item">
-        <a class="nav-link" href="mark-student-attendance.php">
-            <ion-icon name="shield-checkmark-outline"></ion-icon>
+    <li class="nav-item side-nav-link">
+        <a class="nav-link side-nav-text" href="mark-student-attendance.php">
+            <ion-icon id="pale-yellow" name="shield-checkmark"></ion-icon>
             Attendance
         </a>
     </li>
-    <li class="nav-item">
-        <a class="nav-link" aria-current="page" href="announcement-teacher.php">
-            <ion-icon name="megaphone-outline"></ion-icon>
+    <hr>
+    <li class="nav-item side-nav-link">
+        <a class="nav-link side-nav-text" aria-current="page" href="announcement-teacher.php">
+            <ion-icon id="dark-blue-icon" name="megaphone"></ion-icon>
             Announcements
             <?php
             require_once('main/config.php');
@@ -48,16 +50,16 @@
 
         </a>
     </li>
-    <li class="nav-item">
-        <a class="nav-link" href="teacher-set-time-table.php">
-            <ion-icon name="calendar-outline"></ion-icon>
+    <li class="nav-item side-nav-link">
+        <a class="nav-link side-nav-text" href="teacher-set-time-table.php">
+            <ion-icon id="pale-orange" name="calendar"></ion-icon>
             Time Table
         </a>
     </li>
 
-    <li class="nav-item">
-        <a class="nav-link" href="#">
-            <ion-icon name="book-outline"></ion-icon>
+    <li class="nav-item side-nav-link">
+        <a class="nav-link side-nav-text" href="class-teacher-student-diary-menu.php">
+            <ion-icon id="flourescent-green" name="book"></ion-icon>
             Student Diary
         </a>
     </li>

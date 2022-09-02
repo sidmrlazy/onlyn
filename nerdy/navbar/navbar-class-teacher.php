@@ -50,16 +50,17 @@
                 </li>
                 <li class="nav-item nav-mobile">
                     <a class="nav-link active" aria-current="page" href="#">
-                        <ion-icon name="book"></ion-icon>
-                        School Diary
-                    </a>
-                </li>
-                <li class="nav-item nav-mobile">
-                    <a class="nav-link active" aria-current="page" href="#">
                         <ion-icon name="calendar"></ion-icon>
                         Time Table
                     </a>
                 </li>
+                <li class="nav-item nav-mobile">
+                    <a class="nav-link active" aria-current="page" href="class-teacher-student-diary-menu.php">
+                        <ion-icon name="book"></ion-icon>
+                        Student Diary
+                    </a>
+                </li>
+
             </ul>
             <div class="d-flex">
                 <?php

@@ -3,7 +3,7 @@
     <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
         <div id="studentAtt" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="toast-header">
-                <img src="assets/images/logo/logo-round.png" class="rounded me-2 toast-logo" alt="...">
+                <img src="assets/images/logo/logo.png" class="rounded me-2 toast-logo" alt="...">
                 <strong class="me-auto">Attendance</strong>
                 <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
             </div>
@@ -20,7 +20,7 @@
     <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
         <div id="addClassToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="toast-header">
-                <img src="assets/images/logo/logo-round.png" class="rounded me-2 toast-logo" alt="...">
+                <img src="assets/images/logo/logo.png" class="rounded me-2 toast-logo" alt="...">
                 <strong class="me-auto">Update</strong>
                 <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
             </div>
@@ -37,7 +37,7 @@
     <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
         <div id="classSetupComplete" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="toast-header">
-                <img src="assets/images/logo/logo-round.png" class="rounded me-2 toast-logo" alt="...">
+                <img src="assets/images/logo/logo.png" class="rounded me-2 toast-logo" alt="...">
                 <strong class="me-auto">Update</strong>
                 <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
             </div>
@@ -54,7 +54,7 @@
     <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
         <div id="addTeacherToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="toast-header">
-                <img src="assets/images/logo/logo-round.png" class="rounded me-2 toast-logo" alt="...">
+                <img src="assets/images/logo/logo.png" class="rounded me-2 toast-logo" alt="...">
                 <strong class="me-auto">Update</strong>
                 <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
             </div>
@@ -71,7 +71,7 @@
     <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
         <div id="teacherComplete" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="toast-header">
-                <img src="assets/images/logo/logo-round.png" class="rounded me-2 toast-logo" alt="...">
+                <img src="assets/images/logo/logo.png" class="rounded me-2 toast-logo" alt="...">
                 <strong class="me-auto">Update</strong>
                 <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
             </div>
@@ -88,7 +88,7 @@
     <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
         <div id="staffComplete" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="toast-header">
-                <img src="assets/images/logo/logo-round.png" class="rounded me-2 toast-logo" alt="...">
+                <img src="assets/images/logo/logo.png" class="rounded me-2 toast-logo" alt="...">
                 <strong class="me-auto">Update</strong>
                 <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
             </div>
@@ -105,7 +105,7 @@
     <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
         <div id="staffAddedToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="toast-header">
-                <img src="assets/images/logo/logo-round.png" class="rounded me-2 toast-logo" alt="...">
+                <img src="assets/images/logo/logo.png" class="rounded me-2 toast-logo" alt="...">
                 <strong class="me-auto">Update</strong>
                 <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
             </div>
@@ -123,7 +123,7 @@
     <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
         <div id="subjectAddition" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="toast-header">
-                <img src="assets/images/logo/logo-round.png" class="rounded me-2 toast-logo" alt="...">
+                <img src="assets/images/logo/logo.png" class="rounded me-2 toast-logo" alt="...">
                 <strong class="me-auto">Update</strong>
                 <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
             </div>
@@ -140,7 +140,7 @@
     <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
         <div id="addSubjectToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="toast-header">
-                <img src="assets/images/logo/logo-round.png" class="rounded me-2 toast-logo" alt="...">
+                <img src="assets/images/logo/logo.png" class="rounded me-2 toast-logo" alt="...">
                 <strong class="me-auto">Update</strong>
                 <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
             </div>
@@ -157,7 +157,7 @@
     <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
         <div id="setupEndToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="toast-header">
-                <img src="assets/images/logo/logo-round.png" class="rounded me-2 toast-logo" alt="...">
+                <img src="assets/images/logo/logo.png" class="rounded me-2 toast-logo" alt="...">
                 <strong class="me-auto">Complete</strong>
                 <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
             </div>
@@ -174,7 +174,7 @@
     <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
         <div id="parentLoginToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="toast-header">
-                <img src="assets/images/logo/logo-round.png" class="rounded me-2 toast-logo" alt="...">
+                <img src="assets/images/logo/logo.png" class="rounded me-2 toast-logo" alt="...">
                 <strong class="me-auto">Activated</strong>
                 <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
             </div>
@@ -191,7 +191,7 @@
     <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
         <div id="parentDisableToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="toast-header">
-                <img src="assets/images/logo/logo-round.png" class="rounded me-2 toast-logo" alt="...">
+                <img src="assets/images/logo/logo.png" class="rounded me-2 toast-logo" alt="...">
                 <strong class="me-auto">Disabled</strong>
                 <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
             </div>
@@ -207,7 +207,7 @@
     <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
         <div id="announcedToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="toast-header">
-                <img src="assets/images/logo/logo-round.png" class="rounded me-2 toast-logo" alt="...">
+                <img src="assets/images/logo/logo.png" class="rounded me-2 toast-logo" alt="...">
                 <strong class="me-auto">Announcement</strong>
                 <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
             </div>
@@ -222,7 +222,7 @@
     <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
         <div id="markedAsRead" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="toast-header">
-                <img src="assets/images/logo/logo-round.png" class="rounded me-2 toast-logo" alt="...">
+                <img src="assets/images/logo/logo.png" class="rounded me-2 toast-logo" alt="...">
                 <strong class="me-auto">Success</strong>
                 <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
             </div>

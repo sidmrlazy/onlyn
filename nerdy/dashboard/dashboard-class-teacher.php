@@ -1,7 +1,12 @@
-<div class="d-flex container-fluid">
+<div class="container-fluid">
     <?php include('navbar/class-teacher-side-nav.php') ?>
-    <div class="school-main-dashboard container mt-3">
+    <div class="school-main-dashboard">
+        <p class="mb-3">
+            <ion-icon id="light-blue-icon" name="home"></ion-icon> Dashboard
+        </p>
         <div class="tab-pill-grid animate__animated animate__fadeIn">
+
+
             <div class="tab-pill">
                 <div class="tab-row">
                     <ion-icon name="person-outline" id="green-icon" class="tab-pill-icon"></ion-icon>
@@ -75,15 +80,21 @@
 
 
         <!-- =================== TEACHING SCHEDULE START =================== -->
-        <div class="section-header animate__animated animate__fadeIn">
+        <p class="mb-3">
+            <ion-icon id="pale-orange" name="calendar"></ion-icon> Your teaching schedule
+        </p>
+
+        <!-- <div class="section-header animate__animated animate__fadeIn">
             <h3 class="section-heading-dashboard">
                 <ion-icon name="calendar-outline" class="section-heading-icon"></ion-icon>
                 Your teaching schedule
             </h3>
-        </div>
+        </div> -->
         <div class="mt-4 animate__animated animate__fadeIn">
             <div class="tab-wrap-view">
                 <?php
+                $date_today = date('D');
+
                 $select_query = "SELECT * FROM time_table WHERE tt_teacher = $session_user_id";
                 $select_query_res = mysqli_query($connection, $select_query);
                 while ($row = mysqli_fetch_assoc($select_query_res)) {

@@ -1,8 +1,8 @@
 <?php include('main/header.php'); ?>
 <?php include('navbar/navbar.php'); ?>
-<div class="d-flex container-fluid">
+<div class="container-fluid">
     <?php include('navbar/class-teacher-side-nav.php') ?>
-    <div class="school-main-dashboard container section-container mb-5 animate__animated animate__fadeIn">
+    <div class="school-main-dashboard animate__animated animate__fadeIn">
         <a href="add-student.php" class="custom-tab">
             <ion-icon class="tab-icon" name="person-add-outline"></ion-icon>
             <p>Add Student</p>

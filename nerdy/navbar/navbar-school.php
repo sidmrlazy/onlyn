@@ -146,7 +146,7 @@ $link = "https://wa.me/+917388565681?text=Hi%20";
                     </a>
                 </li> -->
 
-                <!-- <li class="nav-item dropdown">
+                <!-- <li class="nav-item active dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-bs-toggle="dropdown" data-bs-toggle="tooltip" data-bs-placement="top"
                         title="Learning Management System" aria-expanded="false">

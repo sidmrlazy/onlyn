@@ -42,3 +42,13 @@ function Toggle() {
     temp.type = "password";
   }
 }
+
+function toggleDrop() {
+  var select = document.getElementById("box").value;
+
+  if (select == 1) {
+    document.getElementById("boxOne").style.display = "none";
+  } else if (select == 2) {
+    document.getElementById("boxOne").style.display = "block";
+  }
+}
