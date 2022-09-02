@@ -46,12 +46,12 @@
         </a>
     </li>
 
-    <li class="nav-item side-nav-link">
+    <!-- <li class="nav-item side-nav-link">
         <a class="nav-link side-nav-text" href="#">
             <ion-icon id="flourescent-green" name="notifications"></ion-icon>
             Notifications
         </a>
-    </li>
+    </li> -->
 
     <li class="nav-item side-nav-link">
         <a class="nav-link side-nav-text" href="manage.php">
