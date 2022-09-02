@@ -126,7 +126,7 @@
                     <label for="floatingSelect">Select Fee Type</label>
                 </div>
 
-                <div class="form-floating w-100 m-1">
+                <!-- <div class="form-floating w-100 m-1">
                     <select class="form-select" id="floatingSelect" name="fee_collection_status"
                         aria-label="Floating label select example">
                         <option value="0">Click here</option>
@@ -134,7 +134,7 @@
                         <option value="">Unpaid</option>
                     </select>
                     <label for="floatingSelect">Status Type</label>
-                </div>
+                </div> -->
             </div>
 
             <button type="submit" name="submit" class="btn btn-outline-success mb-3">

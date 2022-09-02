@@ -5,15 +5,14 @@
     <div class="school-main-dashboard container section-container table-responsive animate__animated animate__fadeIn">
         <div class="section-header">
             <h3 class="section-heading">
-                <ion-icon name="person" class="section-heading-icon"></ion-icon>
-                Students
+                <ion-icon name="shapes" class="section-heading-icon"></ion-icon>
+                Status
             </h3>
             <?php
             if (isset($_POST['submit'])) {
                 $fee_assigned_class = $_POST['fee_assigned_class'];
                 $fee_collection_date = $_POST['fee_collection_date'];
                 $fetched_fee_type = $_POST['fee_type'];
-                $fetched_fee_collection_status = $_POST['fee_collection_status'];
 
 
                 $fetch = "SELECT * FROM school_fee WHERE fee_id = $fetched_fee_type";
@@ -81,142 +80,131 @@
             }
 
             ?>
-            <php class="section-desc">Showing <strong><?php echo $fetched_fee_type_name ?></strong></p>
+            <php class="section-desc">Showing students that have paid the <strong><?php echo $fetched_fee_type_name ?>
+                </strong></p>
         </div>
 
-        <div class="card p-3 table-responsive">
-            <table class="table table-bordered">
-                <thead>
-                    <tr>
-                        <th scope="col">Roll Number</th>
-                        <th scope="col">Student Name</th>
-                        <th scope="col">Status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php
-                    if (isset($_POST['submit'])) {
-                        $fee_assigned_class = $_POST['fee_assigned_class'];
-                        $fee_collection_date = $_POST['fee_collection_date'];
-                        $fetched_fee_type = $_POST['fee_type'];
-                        $fetched_fee_collection_status = $_POST['fee_collection_status'];
+        <div class="student-grid">
+            <?php
+            if (isset($_POST['submit'])) {
+                $fee_assigned_class = $_POST['fee_assigned_class'];
+                $fee_collection_date = $_POST['fee_collection_date'];
+                $fetched_fee_type = $_POST['fee_type'];
 
-                        $query = "SELECT * FROM `students` WHERE `student_assigned_class` = '$fee_assigned_class'";
-                        $result = mysqli_query($connection, $query);
+                $fetch_details = "SELECT * FROM school_fee WHERE fee_id = $fetched_fee_type";
+                $fetch_res = mysqli_query($connection, $fetch_details);
 
-                        $fetch_fee_data = "SELECT * FROM school_fee WHERE fee_id = $fetched_fee_type";
-                        $fetch_fee_res = mysqli_query($connection, $fetch_fee_data);
+                $fee_type = "";
+                $fetched_fee_type_name = "";
+                while ($row = mysqli_fetch_assoc($fetch_res)) {
+                    $fee_type = $row['fee_type'];
 
-                        $fee_type = "";
-                        while ($row = mysqli_fetch_assoc($fetch_fee_res)) {
-                            $fee_type = $row['fee_type'];
-                        }
+                    if ($fee_type == 1) {
+                        $fetched_fee_type_name = "Registration Fee";
+                    }
+                    if ($fee_type == 2) {
+                        $fetched_fee_type_name = "Monthly Fee";
+                    }
+                    if ($fee_type == 3) {
+                        $fetched_fee_type_name = "Uniform | School Dress Fee";
+                    }
+                    if ($fee_type == 4) {
+                        $fetched_fee_type_name = "Admission Fee";
+                    }
+                    if ($fee_type == 5) {
+                        $fetched_fee_type_name = "Sports Fee";
+                    }
+                    if ($fee_type == 6) {
+                        $fetched_fee_type_name = "Computer Lab Fee";
+                    }
+                    if ($fee_type == 7) {
+                        $fetched_fee_type_name = "Diary Card Fee";
+                    }
+                    if ($fee_type == 8) {
+                        $fetched_fee_type_name = "Transportation Fee";
+                    }
+                    if ($fee_type == 9) {
+                        $fetched_fee_type_name = "Fooding Fee";
+                    }
+                    if ($fee_type == 10) {
+                        $fetched_fee_type_name = "Music Fee";
+                    }
+                    if ($fee_type == 11) {
+                        $fetched_fee_type_name = "Sports Fee";
+                    }
+                    if ($fee_type == 12) {
+                        $fetched_fee_type_name = "Onlyn Nerdy Parent Login Fee";
+                    }
+                    if ($fee_type == 13) {
+                        $fetched_fee_type_name = "Stationary Fee";
+                    }
+                    if ($fee_type == 14) {
+                        $fetched_fee_type_name = "Field Trips & Outing Fee";
+                    }
+                    if ($fee_type == 15) {
+                        $fetched_fee_type_name = "Medical Facility Fee";
+                    }
+                    if ($fee_type == 16) {
+                        $fetched_fee_type_name = "Yearly Book Fee";
+                    }
+                    if ($fee_type == 17) {
+                        $fetched_fee_type_name = "Exam Fee";
+                    }
+                    if ($fee_type == 18) {
+                        $fetched_fee_type_name = "Annual Fee";
+                    }
+                }
 
-                        if ($fee_type == 1) {
-                            $fetched_fee_type_name = "Registration Fee";
-                        }
-                        if ($fee_type == 2) {
-                            $fetched_fee_type_name = "Monthly Fee";
-                        }
-                        if ($fee_type == 3) {
-                            $fetched_fee_type_name = "Uniform | School Dress Fee";
-                        }
-                        if ($fee_type == 4) {
-                            $fetched_fee_type_name = "Admission Fee";
-                        }
-                        if ($fee_type == 5) {
-                            $fetched_fee_type_name = "Sports Fee";
-                        }
-                        if ($fee_type == 6) {
-                            $fetched_fee_type_name = "Computer Lab Fee";
-                        }
-                        if ($fee_type == 7) {
-                            $fetched_fee_type_name = "Diary Card Fee";
-                        }
-                        if ($fee_type == 8) {
-                            $fetched_fee_type_name = "Transportation Fee";
-                        }
-                        if ($fee_type == 9) {
-                            $fetched_fee_type_name = "Fooding Fee";
-                        }
-                        if ($fee_type == 10) {
-                            $fetched_fee_type_name = "Music Fee";
-                        }
-                        if ($fee_type == 11) {
-                            $fetched_fee_type_name = "Sports Fee";
-                        }
-                        if ($fee_type == 12) {
-                            $fetched_fee_type_name = "Onlyn Nerdy Parent Login Fee";
-                        }
-                        if ($fee_type == 13) {
-                            $fetched_fee_type_name = "Stationary Fee";
-                        }
-                        if ($fee_type == 14) {
-                            $fetched_fee_type_name = "Field Trips & Outing Fee";
-                        }
-                        if ($fee_type == 15) {
-                            $fetched_fee_type_name = "Medical Facility Fee";
-                        }
-                        if ($fee_type == 16) {
-                            $fetched_fee_type_name = "Yearly Book Fee";
-                        }
-                        if ($fee_type == 17) {
-                            $fetched_fee_type_name = "Exam Fee";
-                        }
-                        if ($fee_type == 18) {
-                            $fetched_fee_type_name = "Annual Fee";
-                        }
+                $query = "SELECT * FROM `fee_collection`";
+                $query .= "WHERE `fee_collection_date` = '$fee_collection_date' AND fee_assigned_class = $fee_assigned_class AND fee_collection_type = $fetched_fee_type";
+                $result = mysqli_query($connection, $query);
 
-                        $student_id = "";
-                        while ($row = mysqli_fetch_assoc($result)) {
-                            $student_id = $row['student_id'];
+                $count = mysqli_num_rows($result);
+
+                if ($count > 0) {
+                    while ($row = mysqli_fetch_assoc($result)) {
+                        $fee_school_student_id = $row['fee_school_student_id'];
+                        $fee_collection_status = $row['fee_collection_status'];
+                        $fee_collection_receipt = $row['fee_collection_receipt'];
+                        $fee_collection_added_date = $row['fee_collection_added_date'];
+                        $fee_collection_type = $row['fee_collection_type'];
+
+                        $fetch_student_details = "SELECT * FROM students WHERE student_id = $fee_school_student_id";
+                        $fetch_student_res = mysqli_query($connection, $fetch_student_details);
+                        $student_name = "";
+                        while ($row = mysqli_fetch_assoc($fetch_student_res)) {
                             $student_roll_number = $row['student_roll_number'];
                             $student_name = $row['student_name'];
-
-
-                            $data = "SELECT * FROM `fee_collection` WHERE `fee_school_student_id` = $student_id AND `fee_collection_date` = '$fee_collection_date' AND fee_collection_type = '$fetched_fee_type' GROUP BY fee_school_student_id";
-                            $res = mysqli_query($connection, $data);
-
-                            while ($row = mysqli_fetch_assoc($res)) {
-                                $fee_school_student_id = $row['fee_school_student_id'];
-                                $fee_collection_type = $row['fee_collection_type'];
-                                $fee_collection_status = $row['fee_collection_status'];
-
-                                if ($student_id == $fee_school_student_id && $fetched_fee_collection_status == 1) {
-                    ?>
-
-                    <tr>
-                        <td><?php echo $student_roll_number ?></td>
-                        <td><?php echo $student_name ?></td>
-                        <td>Paid</td>
-                    </tr>
-
-                    <?php
-                                    // echo $student_name . " " . $fetched_fee_collection_status . "<br>";
-                                } else if (!$fetched_fee_collection_status) {
-                                    $fetch_data = "SELECT * FROM `students` WHERE student_id = $student_id";
-                                    $fetch_res = mysqli_query($connection, $fetch_data);
-
-                                    while ($row = mysqli_fetch_assoc($result)) {
-                                        $student_id = $row['student_id'];
-                                        $student_roll_number = $row['student_roll_number'];
-                                        $student_name = $row['student_name']; ?>
-                    <tr>
-                        <td><?php echo $student_roll_number ?></td>
-                        <td><?php echo $student_name ?></td>
-                        <td>Unpaid</td>
-                    </tr>
-
-                    <?php
-                                    }
-                                }
-                            }
                         }
+
+            ?>
+
+                        <div class="student-fee-tab">
+
+                            <p class="student-fee-name"><?php echo $student_name ?></p>
+                            <p class="student-fee-receipt-number">Receipt number: <?php echo $fee_collection_receipt ?></p>
+
+                            <div class="student-fee-row">
+                                <?php
+                                if ($fee_collection_status == 1) { ?>
+                                    <p class="fee-paid">PAID</p>
+                                <?php } ?>
+                                <p class="fee-date"><?php echo $fee_collection_added_date ?></p>
+                            </div>
+                        </div>
+
+                    <?php
                     }
-                    ?>
-                </tbody>
-            </table>
+                } else if ($count == 0) { ?>
+                    <p>NO DATA FOUND</p>
+
+            <?php
+                }
+            }
+            ?>
         </div>
+
+
 
 
 

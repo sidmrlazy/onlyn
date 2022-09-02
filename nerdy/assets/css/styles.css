@@ -815,6 +815,51 @@ body {
 }
 
 /* Fee */
+.student-grid {
+  display: flex !important;
+  flex-wrap: wrap;
+}
+.student-fee-tab {
+  max-width: 250px;
+  width: 100%;
+  height: 120px;
+  border: 1px solid #e7e7e7;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+  flex-direction: column;
+}
+.student-fee-name {
+  margin: 0 !important;
+  font-size: 16px;
+  font-weight: 500;
+}
+.student-fee-receipt-number {
+  margin: 0;
+  font-size: 14px !important;
+}
+.student-fee-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  width: 100%;
+}
+.fee-paid {
+  color: green;
+  flex: 1 !important;
+  margin: 0;
+}
+.fee-date {
+  flex: 1;
+  font-size: 12px;
+  margin: 0;
+}
 .student-details-card {
   width: 40%;
   border: 1px solid #e7e7e7;
