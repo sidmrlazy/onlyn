@@ -139,12 +139,12 @@ $link = "https://wa.me/+917388565681?text=Hi%20";
                     </a>
                 </li>
 
-                <li class="nav-item nav-mobile">
+                <!-- <li class="nav-item nav-mobile">
                     <a class="nav-link active" aria-current="page" href="#">
                         <ion-icon name="notifications"></ion-icon>
                         Notification
                     </a>
-                </li>
+                </li> -->
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
