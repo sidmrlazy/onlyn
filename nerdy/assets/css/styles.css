@@ -7,7 +7,7 @@
 }
 ::selection {
   color: #fff;
-  background: #0f2e70;
+  background: #2e3345;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -625,6 +625,7 @@ body {
 .setup-subject-name {
   flex: 1;
   margin: 0 !important;
+  font-size: 14px !important;
 }
 .attendance-details {
   display: flex !important;
@@ -648,6 +649,14 @@ body {
   margin-left: 10px !important;
 }
 /* Profile */
+.edit-profile-btn-holder {
+  background-color: #00000000 !important;
+  border: 0;
+}
+.edit-profile-btn {
+  font-size: 24px !important;
+  color: #3b6ad1;
+}
 .profile-logo-section {
   display: flex !important;
   justify-content: center !important;
@@ -921,7 +930,6 @@ hr {
   background-color: #2e3345 !important;
 }
 .side-nav-link:hover {
-  background-color: #e7e7e7;
   border-radius: 3px;
   transition: 0.3s all ease-in-out !important;
 }
@@ -960,6 +968,11 @@ hr {
   font-size: 14px !important;
   margin-right: 5px;
 }
+#bright-red {
+  color: #de4b4e !important;
+  font-size: 14px !important;
+  margin-right: 5px;
+}
 
 .nav-mobile {
   display: none;
@@ -980,7 +993,7 @@ hr {
   font-size: 14px !important;
 }
 .nav-link:hover {
-  color: #0f2e70 !important;
+  color: #777 !important;
   transition: 0.3s all ease-in-out !important;
 }
 .navbar-right-section {

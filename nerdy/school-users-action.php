@@ -2,7 +2,7 @@
 <?php include('navbar/navbar.php'); ?>
 <div class="d-flex container-fluid">
     <?php include('navbar/school-side-nav.php') ?>
-    <div class="school-main-dashboard container section-container mb-5 animate__animated animate__fadeIn">
+    <div class="school-main-dashboard container mb-5 animate__animated animate__fadeIn">
 
         <div class="section-header">
             <h3 class="section-heading">

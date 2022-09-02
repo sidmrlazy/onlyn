@@ -15,6 +15,7 @@
         $fetch_school_details_result = mysqli_query($connection, $fetch_school_details);
 
         while ($row = mysqli_fetch_assoc($fetch_school_details_result)) {
+            $user_id = $row['user_id'];
             $user_school_logo = "assets/images/school-logo/" . $row['user_school_logo'];
             $user_school_name = $row['user_school_name'];
             $user_contact = $row['user_contact'];
@@ -54,6 +55,12 @@
                     </p>
                     <p class="user-city"><?php echo $user_city . ", " . $user_state . "-" . $user_pincode ?></p>
                 </div>
+                <form action="profile.php" method="POST">
+                    <input type="text" name="user_id" value="<?php echo $user_id; ?>" hidden>
+                    <button type="submit" name="edit" class="edit-profile-btn-holder">
+                        <ion-icon name="create-outline" class="edit-profile-btn"></ion-icon>
+                    </button>
+                </form>
             </div>
         </div>
 

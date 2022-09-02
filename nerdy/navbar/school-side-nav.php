@@ -55,7 +55,7 @@
 
     <li class="nav-item side-nav-link">
         <a class="nav-link side-nav-text" href="manage.php">
-            <ion-icon id="light-blue-icon" name="settings"></ion-icon>
+            <ion-icon id="bright-red" name="settings"></ion-icon>
             Manage School
         </a>
     </li>
