@@ -1,3 +1,9 @@
+<?php
+
+$link = "https://wa.me/+917388565681?text=Hi%20";
+
+
+?>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="dashboard.php">
@@ -237,6 +243,12 @@
                             <li>
                                 <a class="dropdown-item" href="transactions-school.php">
                                     <ion-icon name="list-outline"></ion-icon> Transactions
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" target="_blank" href="<?php echo $link ?>">
+                                    <ion-icon name="logo-whatsapp"></ion-icon> Support
                                 </a>
                             </li>
                             <li>

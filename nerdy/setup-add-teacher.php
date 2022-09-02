@@ -27,10 +27,13 @@
                 <ion-icon name="person-add" class="section-heading-icon"></ion-icon>
                 Add Teacher
             </h3>
-            <p class="section-desc">Mention details below to generate Teacher's user ID. To <strong>Sign-In</strong> to
+            <p class="section-desc">Mention details below to generate Teacher's user ID. <br> To
+                <strong>Sign-In</strong> to
                 teacher's
-                Onlyn Nerdy panel enter the mobile number of the teacher and the First 4 Alphabets of teacher's name and
-                last 4 Digits of the mobile number.</p>
+                Onlyn Nerdy panel enter the mobile number of the teacher and the <br> First 4 Alphabets of teacher's
+                name and
+                last 4 Digits of the mobile number.
+            </p>
         </div>
         <?php
         $user_exists = false;

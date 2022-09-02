@@ -55,7 +55,7 @@
                     </p>
                     <p class="user-city"><?php echo $user_city . ", " . $user_state . "-" . $user_pincode ?></p>
                 </div>
-                <form action="profile.php" method="POST">
+                <form action="edit-school-profile.php" method="POST">
                     <input type="text" name="user_id" value="<?php echo $user_id; ?>" hidden>
                     <button type="submit" name="edit" class="edit-profile-btn-holder">
                         <ion-icon name="create-outline" class="edit-profile-btn"></ion-icon>

@@ -60,17 +60,13 @@
             </div>
         </div>
 
-        <div class="container w-100 mt-5">
+        <!-- <div class="container w-100 mt-5">
             <div class="d-flex">
                 <a href="add-staff-complete.php" type="submit"
                     class="btn btn-outline-primary mb-3 d-flex justify-content-center align-items-center">Add
                     Staff
                     <ion-icon style="margin-left: 5px !important" name="add-circle-outline"></ion-icon>
                 </a>
-                <!-- <button type="submit"
-                class="btn btn-outline-primary mb-3 d-flex justify-content-center align-items-center">Add Staff
-                <ion-icon style="margin-left: 5px !important" name="add-circle-outline"></ion-icon>
-            </button> -->
             </div>
             <div class="tab-wrap-view">
                 <?php
@@ -109,7 +105,7 @@
                 <?php
                 } ?>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
 <?php include('main/footer.php'); ?>
