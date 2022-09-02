@@ -1,9 +1,9 @@
 <?php include('main/header.php'); ?>
 <?php include('navbar/navbar.php'); ?>
 <?php include('toasts.php'); ?>
-<div class="d-flex container-fluid">
+<div class="container-fluid">
     <?php include('navbar/teacher-side-nav.php') ?>
-    <div class="school-main-dashboard container section-container mb-5 animate__animated animate__fadeIn">
+    <div class="school-main-dashboard animate__animated animate__fadeIn">
         <div class="section-header">
             <h3 class="section-heading">
                 <ion-icon name="megaphone-outline" class="section-heading-icon"></ion-icon>

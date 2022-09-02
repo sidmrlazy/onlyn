@@ -14,7 +14,7 @@
     </li>
     <li class="nav-item side-nav-link">
         <a class="nav-link side-nav-text" aria-current="page" href="announcement-subject-teacher.php">
-            <ion-icon name="megaphone"></ion-icon>
+            <ion-icon id="pale-orange" name="megaphone"></ion-icon>
             Announcements
             <?php
             require_once('main/config.php');
@@ -44,8 +44,8 @@
         </a>
     </li>
     <li class="nav-item side-nav-link">
-        <a class="nav-link side-nav-text" href="#">
-            <ion-icon name="book"></ion-icon>
+        <a class="nav-link side-nav-text" href="subject-teacher-student-diary-menu.php">
+            <ion-icon id="flourescent-green" name="book"></ion-icon>
             Student Diary
         </a>
     </li>
