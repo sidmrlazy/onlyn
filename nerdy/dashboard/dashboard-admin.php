@@ -25,17 +25,6 @@
                 ?>
                 <p class="pill-count"><?php echo $count ?></p>
             </div>
-
-            <div class="admin-dashboard-pills">
-                <ion-icon name="trending-up-outline" id="icon-orange"></ion-icon>
-                <p>Continued Subscribers</p>
-                <?php
-                $query = "SELECT * FROM `transactions` GROUP BY transaction_user_id";
-                $result = mysqli_query($connection, $query);
-                $count = mysqli_num_rows($result);
-                ?>
-                <p class="pill-count"><?php echo $count ?></p>
-            </div>
         </div>
     </div>
 </div>

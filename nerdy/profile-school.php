@@ -37,9 +37,9 @@
         ?>
         <div class="card p-4">
             <div class="school-profile-card">
-                <div>
-                    <img class="user-school-logo" src="<?php echo $user_school_logo ?>"
-                        alt="<?php echo $user_school_logo ?>">
+                <div class="user-school-logo">
+                    <img src="<?php echo $user_school_logo ?>" alt="<?php echo $user_school_logo ?>"
+                        class="user-school-logo-img">
                 </div>
                 <div class="school-profile-details">
                     <h4 class="user-school"><?php echo $user_school_name ?></h4>

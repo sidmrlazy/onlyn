@@ -17,7 +17,7 @@
             while ($row = mysqli_fetch_assoc($fetch_teacher_result)) {
                 $user_type = $row['user_type'];
             }
-
+            $fetch_teacher_count = "";
             if ($user_type == 3 || $user_type == 5) {
                 $fetch_teacher_count = mysqli_num_rows($fetch_teacher_result);
             }

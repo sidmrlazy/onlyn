@@ -63,4 +63,11 @@
             Student Diary
         </a>
     </li>
+
+    <li class="nav-item side-nav-link">
+        <a class="nav-link side-nav-text" href="#">
+            <ion-icon id="bright-red" name="rocket"></ion-icon>
+            Exams & Results
+        </a>
+    </li>
 </ul>
