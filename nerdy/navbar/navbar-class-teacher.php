@@ -1,19 +1,6 @@
-<!-- Mark Attendance Toast Start -->
-<div class="toast-container">
-    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-        <div id="markAttendance" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
-            <div class="toast-header">
-                <img src="assets/images/logo/logo-round.png" class="rounded me-2 toast-logo" alt="...">
-                <strong class="me-auto">Attendance</strong>
-                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-            </div>
-            <div class="toast-body">
-                <p>Attendance Marked! Please <a href="dashboard.php">click here </a>to continue.</p>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Mark Attendance Toast End -->
+<?php include('modal.php') ?>
+<?php include('toasts.php') ?>
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
@@ -62,6 +49,7 @@
                 </li>
 
             </ul>
+
             <div class="d-flex">
                 <?php
                 if (!empty($_SESSION['user_type'])) {
@@ -105,6 +93,7 @@
                     }
                 }
 
+
                 $user_query = "SELECT * FROM users WHERE user_id = $session_user_id";
                 $user_result = mysqli_query($connection, $user_query);
                 $user_id = "";
@@ -116,6 +105,7 @@
                     $user_added_by = $row['user_added_by'];
                 }
                 if ($count == 0) {
+                    echo "<script>classTeacherAttendanceModal();</script>";
                 ?>
                 <form action="" method="POST">
                     <input type="text" name="staff_attendance_user_id" value="<?php echo $user_id ?>" hidden>

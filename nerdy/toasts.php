@@ -382,3 +382,35 @@
         </div>
     </div>
 </div>
+
+<div class="toast-container">
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+        <div id="teacherAttToast" class="toast align-items-center text-white bg-primary border-0" role="alert"
+            aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body">
+                    You have not marked your attendance!
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                    aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Mark Attendance Toast Start -->
+<div class="toast-container">
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+        <div id="markAttendance" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="assets/images/logo/logo-round.png" class="rounded me-2 toast-logo" alt="...">
+                <strong class="me-auto">Attendance</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                <p>Attendance Marked! Please <a href="dashboard.php">click here </a>to continue.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Mark Attendance Toast End -->

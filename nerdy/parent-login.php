@@ -99,13 +99,13 @@
                             <?php
                                 if ($student_login == 2) { ?>
                             <td>
-                                <button type="submit" name="activate" value="1" class="btn btn-sm btn-success">
+                                <button type="submit" name="activate" value="1" class="btn btn-sm btn-outline-success">
                                     Activate
                                 </button>
                             </td>
                             <?php } else if ($student_login == 1) { ?>
                             <td>
-                                <button type="submit" name="disable" value="2" class="btn btn-sm btn-warning">
+                                <button type="submit" name="disable" value="2" class="btn btn-sm btn-outline-warning">
                                     Disable
                                 </button>
                             </td>

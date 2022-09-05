@@ -52,3 +52,15 @@ function toggleDrop() {
     document.getElementById("boxOne").style.display = "block";
   }
 }
+
+function readStatus() {
+  var getStatus = document.getElementById("endDateCheckBox");
+
+  if (getStatus.checked) {
+    console.log("Checked");
+    document.getElementById("endDateInput").style.display = "block";
+  } else if (!getStatus.checked) {
+    console.log("Not Checked");
+    document.getElementById("endDateInput").style.display = "none";
+  }
+}

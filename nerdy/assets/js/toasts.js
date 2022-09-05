@@ -152,3 +152,10 @@ function goToSetup() {
     $("#goToSetupToast").toast("show");
   });
 }
+
+// Modal
+function classTeacherAttendanceModal() {
+  $(document).ready(function () {
+    $("#classTeacherAttendanceModal").modal("show");
+  });
+}
