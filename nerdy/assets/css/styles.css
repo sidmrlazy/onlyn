@@ -1872,4 +1872,104 @@ hr {
   .dashboard-tabs {
     width: 100% !important;
   }
+
+  .admin-circle {
+    max-width: 120px;
+    max-height: 140px !important;
+    width: 100px;
+    height: 150px !important;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start !important;
+  }
+  .school-logo-img-holder {
+    width: 100px;
+    height: 120px;
+  }
+  .school-logo-img-holder:hover {
+    filter: initial !important;
+    transition: 0.2s all ease-in-out !important;
+  }
+  .school-logo-img {
+    width: 60px;
+    height: auto !important;
+  }
+  .school-circle-name {
+    font-size: 12px !important;
+  }
+
+  /* ============ ADMIN TXN DETAILS ============ */
+  .admin-txn-tab {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column !important;
+    background-color: #fff;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2) !important;
+  }
+  .txn-school-name {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .admin-txn-flex {
+    flex: 1;
+  }
+  .plan-name {
+    margin: 0;
+    margin-bottom: 10px !important;
+    font-weight: 500;
+    color: green;
+    font-size: 16px;
+  }
+
+  /* ============ Admin Activity ============ */
+  .activity-bar {
+    align-items: flex-start;
+    flex-direction: column !important;
+    margin-bottom: 10px;
+  }
+  .activity-details {
+    flex: 1;
+    margin-left: 0px;
+    padding-right: 0px !important;
+  }
+  .activity-name {
+    font-weight: 500;
+    margin: 0;
+    color: #000 !important;
+    font-size: 16px !important;
+  }
+  .active-text {
+    color: #27c24c !important;
+    font-weight: 500;
+    margin-top: 5px !important;
+  }
+
+  .disabled-text {
+    color: #de4b4e !important;
+    font-weight: 500;
+    margin-top: 5px !important;
+  }
+  .activity-details {
+    margin: 0;
+    color: #777 !important;
+    font-size: 14px;
+  }
+  .admin-actviity-del-btn {
+    background-color: #fff;
+    border: 0;
+    margin-right: 10px;
+    font-size: 20px !important;
+    color: #de4b4e;
+    margin-left: 20px;
+  }
+  .activity-bar-img {
+    width: 25px !important;
+    height: auto;
+  }
 }

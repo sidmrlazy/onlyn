@@ -34,7 +34,6 @@
             $student_state = $_POST['student_state'];
             $student_city = $_POST['student_city'];
             $student_pincode = $_POST['student_pincode'];
-            $student_assigned_class = $_POST['student_assigned_class'];
             $student_status = $_POST['student_status'];
 
             $update_data = "UPDATE `students` SET 
@@ -50,7 +49,6 @@
         `student_city`='$student_city',
         `student_pincode`='$student_pincode',
         `student_added_by`='$session_user_id',
-        `student_assigned_class`='$student_assigned_class',
         `student_status`='$student_status' WHERE student_id = $student_id";
             $update_data_result = mysqli_query($connection, $update_data);
             if (!$update_data_result) {
@@ -81,8 +79,7 @@
                 $student_pincode = $row['student_pincode'];
                 $student_assigned_class = $row['student_assigned_class'];
                 $student_status = $row['student_status'];
-            }
-        }
+
         ?>
 
         <form action="" method="POST" class="card p-5">
@@ -95,22 +92,22 @@
             </div>
             <div class="mb-3">
                 <label for="studentFullName" class="form-label">Student Full Name</label>
-                <input type="text" name="student_name" value="<?php echo $student_name ?>"
+                <input readonly type="text" name="student_name" value="<?php echo $student_name ?>"
                     placeholder="<?php echo $student_name ?>" class="form-control" id="studentFullName"
                     aria-describedby="fullName">
             </div>
             <div class="w-100 d-flex mob-flex mb-3">
                 <div class="w-100 m-1">
                     <label for="studentFullName" class="form-label">Father's Full Name</label>
-                    <input disabled type="text" name="student_father_name"
-                        placeholder="<?php echo $student_father_name ?>" value="<?php echo $student_father_name ?>"
-                        class="form-control" id="studentFullName" aria-describedby="fullName">
+                    <input type="text" name="student_father_name" placeholder="<?php echo $student_father_name ?>"
+                        value="<?php echo $student_father_name ?>" class="form-control" id="studentFullName"
+                        aria-describedby="fullName">
                 </div>
                 <div class="w-100 m-1">
                     <label for="studentFullName" class="form-label">Father's Contact</label>
                     <input disabled type="number" placeholder="<?php echo $student_father_contact ?>"
-                        value="<?php echo $student_father_contact ?>" class="form-control" id="studentFullName"
-                        aria-describedby="fullName">
+                        value="<?php echo $student_father_contact ?>" name="student_father_contact" class="form-control"
+                        id="studentFullName" aria-describedby="fullName">
                 </div>
                 <div class="w-100 m-1">
                     <label for="studentFullName" class="form-label">Father's Email</label>
@@ -155,23 +152,23 @@
                     <select class="form-select" name="student_state" aria-label="Default select example">
                         <option><?php echo $student_state; ?></option>
                         <?php
-                        $curl = curl_init();
-                        curl_setopt_array($curl, array(
-                            CURLOPT_URL => 'https://api.countrystatecity.in/v1/countries/IN/states',
-                            CURLOPT_RETURNTRANSFER => true,
-                            CURLOPT_HTTPHEADER => array(
-                                'X-CSCAPI-KEY: eTAxUGIyaElOSm5ldE9YdDhmQTJTaWMxbEVWUVFqR1hqblZRNmRyVw=='
-                            ),
-                        ));
-                        $response = curl_exec($curl);
-                        curl_close($curl);
-                        $response_json = json_decode($response);
-                        foreach ($response_json as $key) {
-                            $user_state =  $key->name; ?>
+                                $curl = curl_init();
+                                curl_setopt_array($curl, array(
+                                    CURLOPT_URL => 'https://api.countrystatecity.in/v1/countries/IN/states',
+                                    CURLOPT_RETURNTRANSFER => true,
+                                    CURLOPT_HTTPHEADER => array(
+                                        'X-CSCAPI-KEY: eTAxUGIyaElOSm5ldE9YdDhmQTJTaWMxbEVWUVFqR1hqblZRNmRyVw=='
+                                    ),
+                                ));
+                                $response = curl_exec($curl);
+                                curl_close($curl);
+                                $response_json = json_decode($response);
+                                foreach ($response_json as $key) {
+                                    $user_state =  $key->name; ?>
                         <option value="<?php echo $user_state; ?>"><?php echo $user_state; ?></option>
                         <?php
-                        }
-                        ?>
+                                }
+                                ?>
 
                     </select>
 
@@ -182,24 +179,24 @@
                     <select class="form-select" name="student_city" aria-label="Default select example">
                         <option><?php echo $student_city; ?></option>
                         <?php
-                        $curl = curl_init();
-                        curl_setopt_array($curl, array(
-                            CURLOPT_URL => 'https://api.countrystatecity.in/v1/countries/IN/cities',
-                            CURLOPT_RETURNTRANSFER => true,
-                            CURLOPT_HTTPHEADER => array(
-                                'X-CSCAPI-KEY: eTAxUGIyaElOSm5ldE9YdDhmQTJTaWMxbEVWUVFqR1hqblZRNmRyVw=='
-                            ),
-                        ));
-                        $response = curl_exec($curl);
-                        curl_close($curl);
-                        $response_json = json_decode($response);
-                        foreach ($response_json as $key) {
-                            $user_city =  $key->name; ?>
+                                $curl = curl_init();
+                                curl_setopt_array($curl, array(
+                                    CURLOPT_URL => 'https://api.countrystatecity.in/v1/countries/IN/cities',
+                                    CURLOPT_RETURNTRANSFER => true,
+                                    CURLOPT_HTTPHEADER => array(
+                                        'X-CSCAPI-KEY: eTAxUGIyaElOSm5ldE9YdDhmQTJTaWMxbEVWUVFqR1hqblZRNmRyVw=='
+                                    ),
+                                ));
+                                $response = curl_exec($curl);
+                                curl_close($curl);
+                                $response_json = json_decode($response);
+                                foreach ($response_json as $key) {
+                                    $user_city =  $key->name; ?>
 
                         <option value="<?php echo $user_city; ?>"><?php echo $user_city; ?></option>
                         <?php
-                        }
-                        ?>
+                                }
+                                ?>
 
                     </select>
 
@@ -215,24 +212,6 @@
 
             </div>
 
-            <div class="form-floating mb-3">
-                <select class="form-select" name="student_assigned_class" id="floatingSelect"
-                    aria-label="Floating label select example">
-                    <option>Open this menu to get list of Class</option>
-                    <?php
-                    $fetch_class = "SELECT * FROM classes where class_teacher = $session_user_id";
-                    $fetch_result = mysqli_query($connection, $fetch_class);
-                    while ($row = mysqli_fetch_assoc($fetch_result)) {
-                        $class_id = $row['class_id'];
-                        $class_name = $row['class_name'];
-                        $class_section = $row['class_section'];
-                    ?>
-                    <option value="<?php echo $class_id ?>"><?php echo $class_name . $class_section ?></option>
-                    <?php
-                    } ?>
-                </select>
-                <label for="floatingSelect">Assign Class</label>
-            </div>
 
             <div class="w-100 mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Student ID Status</label>
@@ -246,6 +225,8 @@
 
             <button type="submit" name="update" class="btn btn-outline-success p-3 mt-3">Update Student Details</button>
         </form>
+        <?php   }
+        } ?>
     </div>
 </div>
 <?php include('main/footer.php'); ?>

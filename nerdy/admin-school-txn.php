@@ -3,9 +3,8 @@
 
 <div class="d-flex container-fluid">
     <?php include('navbar/admin-side-nav.php') ?>
-    <div class="school-main-dashboard container mt-3">
+    <div class="school-main-dashboard container mt-3 mb-5">
         <p>Transactions</p>
-
         <div>
             <?php
             $query = "SELECT * FROM `transactions`";

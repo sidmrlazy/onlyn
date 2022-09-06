@@ -24,7 +24,7 @@
                 <button type="submit" name="open" class="school-logo-img-holder">
                     <img src="<?php echo $user_school_logo ?>" alt="" class="school-logo-img">
                 </button>
-                <p><?php echo $user_school_name ?></p>
+                <p class="school-circle-name"><?php echo $user_school_name ?></p>
 
             </form>
             <?php
