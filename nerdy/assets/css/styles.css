@@ -1388,6 +1388,7 @@ hr {
   margin: 5px;
   border-radius: 5px;
   padding: 10px;
+  background-color: #fff !important;
 }
 .att-card-period {
   margin: 0;

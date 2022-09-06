@@ -54,6 +54,14 @@
                             $tt_time = $row['tt_time'];
                             $tt_teacher = $row['tt_teacher'];
 
+                            $get_teacher = "SELECT * FROM users WHERE user_id = $tt_teacher";
+                            $get_teacher_res = mysqli_query($connection, $get_teacher);
+                            $teacher_name = "";
+                            while ($row = mysqli_fetch_assoc($get_teacher_res)) {
+                                $teacher_name = $row['user_name'];
+                            }
+                            $tt_teacher = $teacher_name;
+
                 ?>
                 <div class="att-card">
                     <?php if ($tt_period == 1) { ?>
