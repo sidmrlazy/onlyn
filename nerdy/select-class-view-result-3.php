@@ -15,53 +15,6 @@
 
 
         <?php
-        if (isset($_POST['update'])) {
-            $exam_id = $_POST['exam_id'];
-            $exam_status = 2;
-
-            $update = "UPDATE `exam` SET `exam_status`= $exam_status WHERE exam_id = $exam_id";
-            $update_res = mysqli_query($connection, $update);
-
-            if (!$update_res) {
-                echo "<div class='alert alert-danger mb-3' role='alert'>Error!</div>";
-            } else {
-                echo "<div class='alert alert-success mb-3' role='alert'>Exam Completed</div>";
-            }
-        }
-
-        if (isset($_POST['submit'])) {
-            $exam_result_exam_id = $_POST['exam_result_exam_id'];
-            $exam_result_student_id = $_POST['exam_result_student_id'];
-            $exam_result_obt = $_POST['exam_result_obt'];
-            $exam_result_out_of = $_POST['exam_result_out_of'];
-            $exam_result_marked_by = $_POST['exam_result_marked_by'];
-            $exam_result_status = 1;
-
-            $insert_marks = "INSERT INTO `exam_result`(
-                `exam_result_exam_id`,
-                `exam_result_student_id`,
-                `exam_result_obt`,
-                `exam_result_out_of`,
-                `exam_result_marked_by`,
-                `exam_result_status`
-            )
-            VALUES(
-                '$exam_result_exam_id',
-                '$exam_result_student_id',
-                '$exam_result_obt',
-                '$exam_result_out_of',
-                '$exam_result_marked_by',
-                '$exam_result_status'
-            )";
-            $insert_marks_res = mysqli_query($connection, $insert_marks);
-
-            if (!$insert_marks_res) {
-                echo "<div class='alert alert-danger mb-3' role='alert'>Error!</div>";
-            } else {
-                echo "<div class='alert alert-success mb-3' role='alert'>Result Updated. <a href='class-teacher-upload-result-3.php' style='color: #000 !important'>Continue</a></div>";
-            }
-        }
-
         if (isset($_POST['mark'])) {
             $exam_id = $_POST['exam_id'];
 
@@ -174,11 +127,6 @@
                 <p class="exam-section-label">Download</p>
                 <img src="<?php echo $exam_file_ext_img ?>" alt="">
             </a>
-
-            <div>
-                <button type="submit" name="update" class="btn btn-sm btn-outline-primary">Mark as Complete</button>
-            </div>
-
         </form>
         <?php }
             $get_students = "SELECT * FROM students WHERE student_assigned_class = $class_id";
@@ -209,13 +157,13 @@
             <p class="student-name"><?php echo $student_name ?></p>
 
             <div class="form-floating student-marks-section col-md-3">
-                <input type="number" class="form-control" name="exam_result_obt" value="<?php echo $exam_result_obt ?>"
-                    id="marksObtained" placeholder="XXX">
+                <input disabled type="number" class="form-control" name="exam_result_obt"
+                    value="<?php echo $exam_result_obt ?>" id="marksObtained" placeholder="XXX">
                 <label for="marksObtained">Marks Obtained</label>
             </div>
 
             <div class="form-floating student-marks-section col-md-3">
-                <input type="number" class="form-control student-marks-section" name="exam_result_out_of"
+                <input disabled type="number" class="form-control student-marks-section" name="exam_result_out_of"
                     value="<?php echo $exam_result_out_of ?>" id="outOf" placeholder="XXX">
                 <label for="outOf">Out Of</label>
             </div>

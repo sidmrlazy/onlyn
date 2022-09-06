@@ -8,14 +8,15 @@
             <p>Upload Offline Exam | Test</p>
             <ion-icon class="tab-icon-right" name="caret-forward-outline"></ion-icon>
         </a>
-        <!-- <a href="#" class="custom-tab">
-            <ion-icon class="tab-icon" name="tv-outline"></ion-icon>
-            <p>Create an Online Exam | Test</p>
-            <ion-icon class="tab-icon-right" name="caret-forward-outline"></ion-icon>
-        </a> -->
         <a href="class-teacher-upload-result.php" class="custom-tab">
             <ion-icon class="tab-icon" name="ribbon-outline"></ion-icon>
             <p>Upload Results</p>
+            <ion-icon class="tab-icon-right" name="caret-forward-outline"></ion-icon>
+        </a>
+
+        <a href="select-class-view-result.php" class="custom-tab">
+            <ion-icon class="tab-icon" name="rocket-outline"></ion-icon>
+            <p>View Results</p>
             <ion-icon class="tab-icon-right" name="caret-forward-outline"></ion-icon>
         </a>
         <a href="edit-teacher-upload-result.php" class="custom-tab">
