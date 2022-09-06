@@ -12,7 +12,7 @@
             <ion-icon class="tab-icon-right" name="caret-forward-outline"></ion-icon>
         </a>
 
-        <a href="#" class="custom-tab">
+        <a href="admin-view-uploaded-activity.php" class="custom-tab">
             <ion-icon class="tab-icon" name="document-text-outline"></ion-icon>
             <p>View all uploaded activities</p>
             <ion-icon class="tab-icon-right" name="caret-forward-outline"></ion-icon>

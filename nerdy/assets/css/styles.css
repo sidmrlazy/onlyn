@@ -20,6 +20,60 @@ body {
 }
 
 /* ============ ADMIN DASHBOARD ============ */
+.activity-bar {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2) !important;
+  margin-bottom: 10px;
+}
+.activity-details {
+  flex: 1;
+  margin-left: 10px;
+  padding-right: 50px !important;
+}
+.activity-name {
+  font-weight: 500;
+  margin: 0;
+  color: #000 !important;
+  font-size: 16px !important;
+}
+.active-text {
+  color: #27c24c !important;
+  font-weight: 500;
+  margin-top: 5px !important;
+}
+
+.disabled-text {
+  color: #de4b4e !important;
+  font-weight: 500;
+  margin-top: 5px !important;
+}
+.activity-details {
+  margin: 0;
+  color: #777 !important;
+  font-size: 14px;
+}
+.admin-actviity-del-btn {
+  background-color: #fff;
+  border: 0;
+  margin-right: 10px;
+  font-size: 20px !important;
+  color: #de4b4e;
+  margin-left: 20px;
+}
+.activity-bar-img {
+  width: 25px !important;
+  height: auto;
+}
+.admin-section-file {
+  font-size: 0;
+  margin-right: 20px;
+}
 .admin-dashboard-grid {
   display: flex;
   flex-wrap: wrap;
@@ -1772,6 +1826,7 @@ hr {
   }
 
   /* ============ ADMIN DASHBOARD ============ */
+
   .admin-dashboard-grid {
     display: flex;
     flex-wrap: wrap;

@@ -7,6 +7,12 @@
     </li>
     <hr>
     <li class="nav-item side-nav-link">
+        <a class="nav-link side-nav-text" aria-current="page" href="select-class-activity.php">
+            <ion-icon id="pale-orange" name="balloon"></ion-icon>
+            Activities
+        </a>
+    </li>
+    <li class="nav-item side-nav-link">
         <a class="nav-link side-nav-text" aria-current="page" href="school-users-action.php">
             <ion-icon id="dark-blue-icon" name="people"></ion-icon>
             Teachers & Staff

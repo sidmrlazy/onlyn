@@ -2,7 +2,7 @@
     <div class="tab-pill animate__animated animate__fadeIn">
         <div class="tab-row">
             <ion-icon name="person-outline" id="green-icon" class="tab-pill-icon"></ion-icon>
-            <p class="tab-label">All Teachers</p>
+            <p class="tab-label">Teachers</p>
             <?php
             include('main/config.php');
             if (!empty($_SESSION['user_type'])) {
@@ -40,7 +40,7 @@
     <div class="tab-pill animate__animated animate__fadeIn">
         <div class="tab-row">
             <ion-icon name="person-circle-outline" id="red-icon" class="tab-pill-icon"></ion-icon>
-            <p class="tab-label">All Students</p>
+            <p class="tab-label">Students</p>
             <?php
             require_once('main/config.php');
             if (!empty($_SESSION['user_type'])) {

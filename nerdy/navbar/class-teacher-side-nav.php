@@ -7,6 +7,12 @@
     </li>
     <hr>
     <li class="nav-item side-nav-link">
+        <a class="nav-link side-nav-text" aria-current="page" href="class-teacher-select-class-activity">
+            <ion-icon id="pale-orange" name="balloon"></ion-icon>
+            Activities
+        </a>
+    </li>
+    <li class="nav-item side-nav-link">
         <a class="nav-link side-nav-text" aria-current="page" href="student.php">
             <ion-icon id="dark-blue-icon" name="person"></ion-icon>
             Students

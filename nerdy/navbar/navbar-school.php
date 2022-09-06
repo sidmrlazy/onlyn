@@ -91,6 +91,13 @@ $link = "https://wa.me/+917388565681?text=Hi%20";
                 </li>
 
                 <li class="nav-item nav-mobile">
+                    <a class="nav-link active" aria-current="page" href="select-class-activity.php">
+                        <ion-icon name="balloon"></ion-icon>
+                        Activities
+                    </a>
+                </li>
+
+                <li class="nav-item nav-mobile">
                     <a class="nav-link active" aria-current="page" href="school-users-action.php">
                         <ion-icon name="people"></ion-icon>
                         Teachers & Staff

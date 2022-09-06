@@ -9,8 +9,28 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
+                <li class="nav-item nav-mobile">
                     <a class="nav-link active" aria-current="page" href="dashboard.php">Home</a>
+                </li>
+
+                <li class="nav-item nav-mobile">
+                    <a class="nav-link active" aria-current="page" href="admin-all-schools.php">Schools</a>
+                </li>
+
+                <li class="nav-item nav-mobile">
+                    <a class="nav-link active" aria-current="page" href="admin-school-txn.php">Transactions</a>
+                </li>
+
+                <li class="nav-item nav-mobile">
+                    <a class="nav-link active" aria-current="page" href="admin-activity-menu.php">Activities</a>
+                </li>
+
+                <li class="nav-item nav-mobile">
+                    <a class="nav-link active" aria-current="page" href="#">Notifications</a>
+                </li>
+
+                <li class="nav-item nav-mobile">
+                    <a class="nav-link active" aria-current="page" href="#">Manage</a>
                 </li>
             </ul>
             <div class="d-flex">

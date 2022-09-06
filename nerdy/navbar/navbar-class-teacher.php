@@ -18,6 +18,12 @@
                     </a>
                 </li>
                 <li class="nav-item nav-mobile">
+                    <a class="nav-link active" aria-current="page" href="class-teacher-select-class-activity">
+                        <ion-icon name="balloon"></ion-icon>
+                        Activities
+                    </a>
+                </li>
+                <li class="nav-item nav-mobile">
                     <a class="nav-link active" aria-current="page" href="student.php">
                         <ion-icon name="person"></ion-icon>
                         Students
