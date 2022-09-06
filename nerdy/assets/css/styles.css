@@ -1814,4 +1814,7 @@ hr {
     margin-bottom: 15px !important;
     flex-direction: column !important;
   }
+  .dashboard-tabs {
+    width: 100% !important;
+  }
 }

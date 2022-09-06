@@ -9,9 +9,29 @@
                 <ion-icon name="calendar-outline" class="section-heading-icon"></ion-icon>
                 Set Time Table
             </h3>
+
             <p class="section-desc">Set time table for your assigned class</p>
         </div>
         <?php
+        if (isset($_POST['set'])) {
+            $fetched_tt_day = $_POST['tt_day'];
+            if ($fetched_tt_day == 1) {
+                $tt_day_name = "Monday";
+            } else if ($fetched_tt_day == 2) {
+                $tt_day_name = "Tuesday";
+            } else if ($fetched_tt_day == 3) {
+                $tt_day_name = "Wednesday";
+            } else if ($fetched_tt_day == 4) {
+                $tt_day_name = "Thursday";
+            } else if ($fetched_tt_day == 5) {
+                $tt_day_name = "Friday";
+            } else if ($fetched_tt_day == 6) {
+                $tt_day_name = "Saturday";
+            } else if ($fetched_tt_day == 7) {
+                $tt_day_name = "Sunday";
+            }
+        }
+
         $select_class = "SELECT * FROM classes WHERE class_teacher = $session_user_id";
         $select_class_result = mysqli_query($connection, $select_class);
 
@@ -31,7 +51,6 @@
         while ($row = mysqli_fetch_assoc($select_subject_result)) {
             $subject_name = $row['subject_name'];
         }
-
 
         if (isset($_POST['submit'])) {
             $tt_day = $_POST['tt_day'];
@@ -64,6 +83,9 @@
             if (!$create_tt_res) {
                 die(mysqli_error($connection));
             } else {
+                echo "<div class='alert alert-success mb-3' role='alert'>
+                Time Table Updated
+              </div>";
                 echo "<script>timeTableSuccess();</script>";
             }
         }
@@ -72,32 +94,20 @@
         ?>
 
         <form action="" method="POST" class="time-table-row">
+            <input type="number" name="tt_day" class="form-control" value="<?php echo $fetched_tt_day ?>"
+                id="floatingInput" placeholder="###" hidden>
             <div class="form-floating input-time-table">
-                <select class="form-select" name="tt_day" id="floatingSelect"
-                    aria-label="Floating label select example">
-                    <option selected>Days</option>
-                    <option value="1">Monday</option>
-                    <option value="2">Tuesday</option>
-                    <option value="3">Wednesday</option>
-                    <option value="4">Thursday</option>
-                    <option value="5">Friday</option>
-                    <option value="6">Saturday</option>
-                    <option value="7">Sunday</option>
-                </select>
-                <label for="floatingSelect">Select Day</label>
-            </div>
-
-            <div class="form-floating input-time-table">
-                <input type="number" name="tt_period" class="form-control" id="floatingInput" placeholder="1st Period">
+                <input required type="number" name="tt_period" class="form-control" id="floatingInput"
+                    placeholder="1st Period">
                 <label for="floatingInput">Period (Ex: 1 / 2 / 3)</label>
             </div>
 
             <div class="form-floating input-time-table">
-                <input type="time" class="form-control" name="tt_time" id="floatingInput" placeholder="00:00">
+                <input required type="time" class="form-control" name="tt_time" id="floatingInput" placeholder="00:00">
                 <label for="floatingInput">Select Time</label>
             </div>
             <div class="form-floating input-time-table">
-                <select class="form-select" name="tt_subject" id="floatingSelect"
+                <select required class="form-select" name="tt_subject" id="floatingSelect"
                     aria-label="Floating label select example">
                     <option selected>Subject List</option>
                     <?php
@@ -129,7 +139,7 @@
 
 
             <div class="form-floating input-time-table">
-                <select class="form-select" id="floatingSelect" name="tt_teacher"
+                <select required class="form-select" id="floatingSelect" name="tt_teacher"
                     aria-label="Floating label select example">
                     <option selected>Teacher List</option>
                     <?php
@@ -165,7 +175,7 @@
             <button type="submit" name="submit" class="btn btn-sm btn-outline-success time-table-btn">+</button>
         </form>
 
-        <div class="table-responsive card p-4 mt-4">
+        <!-- <div class="table-responsive card p-4 mt-4">
             <table class="table table-bordered">
                 <thead>
                     <tr>
@@ -191,25 +201,25 @@
                         }
                     }
 
-                    $fetch_tt = "SELECT * FROM time_table WHERE tt_created_by = $session_user_id";
+                    $fetch_tt = "SELECT * FROM time_table WHERE tt_created_by = $session_user_id AND `tt_day` = '$fetched_tt_day'";
                     $fetch_tt_res = mysqli_query($connection, $fetch_tt);
                     while ($row = mysqli_fetch_assoc($fetch_tt_res)) {
                         $tt_id = $row['tt_id'];
-                        $tt_day = $row['tt_day'];
-                        if ($tt_day == 1) {
-                            $tt_day = "Monday";
-                        } else if ($tt_day == 2) {
-                            $tt_day = "Tuesday";
-                        } else if ($tt_day == 3) {
-                            $tt_day = "Wednesday";
-                        } else if ($tt_day == 4) {
-                            $tt_day = "Thursday";
-                        } else if ($tt_day == 5) {
-                            $tt_day = "Friday";
-                        } else if ($tt_day == 6) {
-                            $tt_day = "Saturday";
-                        } else if ($tt_day == 7) {
-                            $tt_day = "Sunday";
+                        $new_tt_day = $row['tt_day'];
+                        if ($new_tt_day == 1) {
+                            $tt_day_name = "Monday";
+                        } elseif ($new_tt_day == 2) {
+                            $tt_day_name = "Tuesday";
+                        } elseif ($new_tt_day == 3) {
+                            $tt_day_name = "Wednesday";
+                        } elseif ($new_tt_day == 4) {
+                            $tt_day_name = "Thursday";
+                        } elseif ($new_tt_day == 5) {
+                            $tt_day_name = "Friday";
+                        } elseif ($new_tt_day == 6) {
+                            $tt_day_name = "Saturday";
+                        } elseif ($new_tt_day == 7) {
+                            $tt_day_name = "Sunday";
                         }
 
                         $tt_period = $row['tt_period'];
@@ -225,13 +235,11 @@
                         while ($row = mysqli_fetch_assoc($fetch_teacher_res)) {
                             $user_name = $row['user_name'];
                         }
-
-
                     ?>
                     <form method="POST" action="">
                         <tr>
                             <td class="d-none"><input type="text" name="tt_id" value="<?php echo $tt_id ?>"></td>
-                            <td><?php echo $tt_day ?></td>
+                            <td><?php echo $tt_day_name ?></td>
                             <td><?php echo $tt_period ?></td>
                             <td><?php echo $tt_time ?></td>
                             <td><?php echo $tt_subject ?></td>
@@ -246,21 +254,13 @@
                                 <button type="submit" name="del" class="btn">
                                     <ion-icon name="trash-outline" class="del-btn-icon"></ion-icon>
                                 </button>
-                                <!-- <button type="submit" name="edit" class="btn">
-                                        <ion-icon name="create-outline" class="edit-btn-icon"></ion-icon>
-                                    </button> -->
                             </td>
-                            <!-- <td class="text-center">
-                                <button type="submit" name="del"
-                                    class="btn btn-xs-sm btn-outline-danger">Delete</button>
-                                <button type="submit" name="edit" class="btn btn-xs-sm btn-outline-dark">Edit</button>
-                            </td> -->
                         </tr>
                     </form>
                     <?php } ?>
                 </tbody>
             </table>
-        </div>
+        </div> -->
     </div>
 </div>
 <?php include('main/footer.php'); ?>

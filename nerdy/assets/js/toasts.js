@@ -95,7 +95,7 @@ function annRead() {
 
 function timeTableSuccess() {
   $(document).ready(function () {
-    $("#tt_created").toast("show");
+    window.location.href = "class-teacher-select-day-tt.php";
   });
 }
 

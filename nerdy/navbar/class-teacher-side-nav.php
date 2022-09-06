@@ -50,8 +50,15 @@
 
         </a>
     </li>
-    <li class="nav-item side-nav-link">
+    <!-- <li class="nav-item side-nav-link">
         <a class="nav-link side-nav-text" href="teacher-set-time-table.php">
+            <ion-icon id="pale-orange" name="calendar"></ion-icon>
+            Time Table
+        </a>
+    </li> -->
+
+    <li class="nav-item side-nav-link">
+        <a class="nav-link side-nav-text" href="time-table-menu.php">
             <ion-icon id="pale-orange" name="calendar"></ion-icon>
             Time Table
         </a>

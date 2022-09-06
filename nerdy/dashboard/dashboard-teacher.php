@@ -1,6 +1,6 @@
 <div class="d-flex container-fluid">
     <?php include('navbar/teacher-side-nav.php') ?>
-    <div class="school-main-dashboard">
+    <div class="school-main-dashboard w-100">
         <div class="mt-4 animate__animated animate__fadeIn">
             <?php
             require_once('main/config.php');
@@ -66,6 +66,7 @@
         <div class="mt-4 animate__animated animate__fadeIn">
             <div class="tab-wrap-view">
                 <?php
+                $date_today = date('D');
                 $select_query = "SELECT * FROM `time_table` WHERE `tt_teacher` = '$session_user_id'";
                 $select_query_res = mysqli_query($connection, $select_query);
                 while ($row = mysqli_fetch_assoc($select_query_res)) {
@@ -75,38 +76,38 @@
                     $tt_day = $row['tt_day'];
 
                     if ($tt_day == 1) {
-                        $tt_day = "Monday";
+                        $tt_day = "Mon";
                     }
                     if ($tt_day == 2) {
-                        $tt_day = "Tuesday";
+                        $tt_day = "Tue";
                     }
                     if ($tt_day == 3) {
-                        $tt_day = "Wednesday";
+                        $tt_day = "Wed";
                     }
                     if ($tt_day == 4) {
-                        $tt_day = "Thursday";
+                        $tt_day = "Thur";
                     }
                     if ($tt_day == 5) {
-                        $tt_day = "Friday";
+                        $tt_day = "Fri";
                     }
                     if ($tt_day == 6) {
-                        $tt_day = "Saturday";
+                        $tt_day = "Sat";
                     }
                     if ($tt_day == 7) {
-                        $tt_day = "Sunday";
+                        $tt_day = "Sun";
                     }
-
-                    if ($tt_class) {
-                        $fetch_class = "SELECT * FROM classes WHERE class_id = $tt_class";
-                        $fetch_class_res = mysqli_query($connection, $fetch_class);
-                        $class_name = "";
-                        $class_section = "";
-                        while ($row = mysqli_fetch_assoc($fetch_class_res)) {
-                            $class_name = $row['class_name'];
-                            $class_section = $row['class_section'];
+                    if ($tt_day == $date_today) {
+                        if ($tt_class) {
+                            $fetch_class = "SELECT * FROM classes WHERE class_id = '$tt_class'";
+                            $fetch_class_res = mysqli_query($connection, $fetch_class);
+                            $class_name = "";
+                            $class_section = "";
+                            while ($row = mysqli_fetch_assoc($fetch_class_res)) {
+                                $class_name = $row['class_name'];
+                                $class_section = $row['class_section'];
+                            }
+                            $tt_class = $class_name . $class_section;
                         }
-                        $tt_class = $class_name . $class_section;
-                    }
                 ?>
                 <div class="dashboard-tabs">
                     <p class="dashboard-tab-label">Class <?php echo $tt_class ?> |</p>
@@ -114,6 +115,7 @@
                     <p><?php echo $tt_time . " (" . $tt_day . ")" ?></p>
                 </div>
                 <?php
+                    }
                 }
                 ?>
             </div>
