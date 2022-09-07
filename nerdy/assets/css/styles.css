@@ -1434,6 +1434,7 @@ hr {
   border: 1px solid #e7e7e7;
   border-radius: 3px;
   margin-right: 5px;
+  margin-bottom: 10px !important;
   padding: 20px;
   background-color: #fff !important;
 }
