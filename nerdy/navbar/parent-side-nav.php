@@ -44,14 +44,14 @@
         </a>
     </li>
     <li class="nav-item side-nav-link">
-        <a class="nav-link side-nav-text" href="#">
+        <a class="nav-link side-nav-text" href="parent-show-tt-day.php">
             <ion-icon id="pale-orange" name="calendar-outline"></ion-icon>
             Time Table
         </a>
     </li>
 
     <li class="nav-item side-nav-link">
-        <a class="nav-link side-nav-text" href="#">
+        <a class="nav-link side-nav-text" href="student-view-exam.php">
             <ion-icon id="bright-red" name="rocket"></ion-icon>
             Exams & Results
         </a>

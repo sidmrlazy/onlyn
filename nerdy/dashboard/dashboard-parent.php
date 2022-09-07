@@ -33,6 +33,7 @@
                         $student_assigned_class = $row['student_assigned_class'];
                     }
 
+
                     $get_time_table = "SELECT * FROM `time_table` WHERE `tt_class` = $student_assigned_class";
                     $get_time_table_result = mysqli_query($connection, $get_time_table);
 
@@ -71,7 +72,7 @@
                             $tt_day = 'Sun';
                         }
 
-                        if ($tt_day = $current_day) { ?>
+                        if ($tt_day == $current_day) { ?>
 
                     <tr>
                         <td><?php echo $tt_day ?></td>

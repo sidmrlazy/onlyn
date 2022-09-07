@@ -21,6 +21,7 @@
             $fetch_exam_query = "SELECT * FROM `exam` WHERE `exam_id` = '$exam_id'";
             $fetch_exam_query_res = mysqli_query($connection, $fetch_exam_query);
 
+
             while ($row = mysqli_fetch_assoc($fetch_exam_query_res)) {
                 $exam_id = $row['exam_id'];
                 $exam_title = $row['exam_title'];
@@ -149,7 +150,10 @@
                         $exam_result_out_of = $row['exam_result_out_of'];
                         $exam_result_status = $row['exam_result_status'];
                     }
-                ?>
+
+                    if (empty($exam_result_out_of) || empty($exam_result_obt)) { ?>
+        <div class="alert alert-danger mt-3 mb-3" role="alert">Marks not assigned to students!</div>
+        <?php } else { ?>
         <form action="" method="POST" class="student-result-section ">
             <input type="text" name="exam_result_exam_id" value="<?php echo $exam_id ?>" hidden>
             <input type="text" name="exam_result_student_id" value="<?php echo $student_id ?>" hidden>
@@ -179,6 +183,7 @@
             <?php } ?>
         </form>
         <?php
+                    }
                 }
             }
         } ?>

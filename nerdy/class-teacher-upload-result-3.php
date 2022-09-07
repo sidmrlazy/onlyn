@@ -17,6 +17,7 @@
         <?php
         if (isset($_POST['update'])) {
             $exam_id = $_POST['exam_id'];
+            $exam_id = $_POST['exam_id'];
             $exam_status = 2;
 
             $update = "UPDATE `exam` SET `exam_status`= $exam_status WHERE exam_id = $exam_id";
@@ -56,9 +57,16 @@
             $insert_marks_res = mysqli_query($connection, $insert_marks);
 
             if (!$insert_marks_res) {
-                echo "<div class='alert alert-danger mb-3' role='alert'>Error!</div>";
+                echo "<div class='alert alert-danger mb-3' role='alert'>Error 1!</div>";
             } else {
-                echo "<div class='alert alert-success mb-3' role='alert'>Result Updated. <a href='class-teacher-upload-result-3.php' style='color: #000 !important'>Continue</a></div>";
+                $update_student_ans_status = "UPDATE `exam_answer` SET `ea_status`= '2' WHERE `ea_exam_id` = '$exam_result_exam_id' AND `ea_student_id` = '$exam_result_student_id'";
+                $update_res = mysqli_query($connection, $update_student_ans_status);
+
+                if (!$update_res) {
+                    echo "<div class='alert alert-danger mb-3' role='alert'>Error 2!</div>";
+                } else {
+                    echo "<div class='alert alert-success mb-3' role='alert'>Result Updated. <a href='class-teacher-upload-result-3.php' style='color: #000 !important'>Continue</a></div>";
+                }
             }
         }
 
@@ -139,6 +147,7 @@
                 } ?>
         <form action="" method="POST" class="result-data">
             <input type="text" name="exam_id" value="<?php echo $exam_id ?>" hidden>
+
             <div class="exam-section">
                 <p class="exam-section-label">Exam Title</p>
                 <p class="exam-title"><?php echo $exam_title ?></p>
@@ -201,12 +210,41 @@
                         $exam_result_out_of = $row['exam_result_out_of'];
                         $exam_result_status = $row['exam_result_status'];
                     }
+
+                    $fetch_ans = "SELECT * FROM `exam_answer` WHERE `ea_student_id` = '$student_id'";
+                    $fetch_ans_res = mysqli_query($connection, $fetch_ans);
+
+                    $ea_file = "";
+                    while ($row = mysqli_fetch_assoc($fetch_ans_res)) {
+                        $ea_file = "assets/ans/" . $row['ea_file'];
+
+                        $ea_file_ext = pathinfo($ea_file, PATHINFO_EXTENSION);
+
+                        if ($ea_file_ext == "pdf") {
+                            $ea_file_ext_img = "assets/images/icons/pdf_logo.png";
+                        }
+                        if ($ea_file_ext == "docx") {
+                            $ea_file_ext_img = "assets/images/icons/word_logo.webp";
+                        }
+                        if ($ea_file_ext == "xlsx") {
+                            $ea_file_ext_img = "assets/images/icons/excel_logo.png";
+                        }
+
+                        if ($ea_file_ext == "pptx") {
+                            $ea_file_ext_img = "assets/images/icons/powerpoint_logo.webp";
+                        }
+
                 ?>
         <form action="" method="POST" class="student-result-section ">
             <input type="text" name="exam_result_exam_id" value="<?php echo $exam_id ?>" hidden>
             <input type="text" name="exam_result_student_id" value="<?php echo $student_id ?>" hidden>
             <input type="text" name="exam_result_marked_by" value="<?php echo $session_user_id ?>" hidden>
             <p class="student-name"><?php echo $student_name ?></p>
+
+            <a class="exam-section-file" target="_blank" href="<?php echo $ea_file ?>"><?php echo $ea_file ?>
+                <p class="exam-section-label">Answer Sheet</p>
+                <img src="<?php echo $ea_file_ext_img ?>" alt="" class="student-ans-img">
+            </a>
 
             <div class="form-floating student-marks-section col-md-3">
                 <input type="number" class="form-control" name="exam_result_obt" value="<?php echo $exam_result_obt ?>"
@@ -224,13 +262,14 @@
             <div class="form-floating col-md-3">
                 <button type="submit" name="submit" class="btn btn-outline-success">Submit</button>
             </div>
-            <?php } else if ($exam_result_status == 1) { ?>
+            <?php } elseif ($exam_result_status == 1) { ?>
             <div class="form-floating col-md-3">
                 <button type="submit" name="submit" class="d-none btn btn-outline-success">Submit</button>
             </div>
             <?php } ?>
         </form>
         <?php
+                    }
                 }
             }
         } ?>
