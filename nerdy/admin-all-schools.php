@@ -12,7 +12,7 @@
                 $user_id = $_POST['user_id'];
             }
 
-            $query = "SELECT * FROM users WHERE user_type = 2 AND user_added_by = 0";
+            $query = "SELECT * FROM users WHERE user_type = 2 AND user_added_by = 1";
             $result = mysqli_query($connection, $query);
             while ($row = mysqli_fetch_assoc($result)) {
                 $user_id = $row['user_id'];
