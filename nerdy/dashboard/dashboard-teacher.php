@@ -58,7 +58,7 @@
 
 
 
-        <!-- =================== TEACHING SCHEDULE START =================== -->
+        <!-- =================== SUBJECTS ASSIGNED START =================== -->
         <div class="section-header animate__animated animate__fadeIn">
             <h3 class="section-heading-dashboard">
                 <ion-icon name="calendar-outline" class="section-heading-icon"></ion-icon>
