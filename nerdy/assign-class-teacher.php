@@ -36,7 +36,7 @@
                 }
             }
             ?>
-            <form method="POST" action="" class="card p-3 mt-3">
+            <form method="POST" action="" class="card p-3 mt-3 col-md-6">
                 <div class="form-floating mb-3">
                     <select class="form-select" name="class_id" id="floatingSelect"
                         aria-label="Floating label select example">
@@ -61,8 +61,9 @@
                         aria-label="Floating label select example">
                         <option>Showing available teachers</option>
                         <?php
-                        $fetch_class_teacher = "SELECT * FROM users WHERE user_type = 3 AND user_added_by = $session_user_id";
+                        $fetch_class_teacher = "SELECT * FROM users WHERE user_type = 3 OR user_type = 5 AND user_added_by = $session_user_id";
                         $fetch_class_teacher_result = mysqli_query($connection, $fetch_class_teacher);
+                        $user_id = "";
                         while ($row = mysqli_fetch_assoc($fetch_class_teacher_result)) {
                             $user_id = $row['user_id'];
                             $user_name = $row['user_name']; ?>
@@ -75,6 +76,96 @@
                 <button type="submit" name="update" class="btn btn-outline-primary mb-3 mt-3">Assign Class
                     Teacher</button>
             </form>
+
+            <div class="table-responsive mt-3 card p-4">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">Class teacher name</th>
+                            <th scope="col">Class Assigned</th>
+                            <th scope="col">Assigned on</th>
+                            <th scope="col">Class Status</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                        $results_per_page = 10;
+
+                        $query = "SELECT * FROM `classes`";
+                        $result = mysqli_query($connection, $query);
+                        $number_of_result = mysqli_num_rows($result);
+
+                        $number_of_page = ceil($number_of_result / $results_per_page);
+
+                        if (!isset($_GET['page'])) {
+                            $page = 1;
+                        } else {
+                            $page = $_GET['page'];
+                        }
+
+                        $page_first_result = ($page - 1) * $results_per_page;
+
+                        $fetch_class_details = "SELECT * FROM `classes` WHERE `class_added_by` = $session_user_id LIMIT " . $page_first_result . ',' . $results_per_page;;
+                        $fetch_class_details_res = mysqli_query($connection, $fetch_class_details);
+
+                        while ($row = mysqli_fetch_assoc($fetch_class_details_res)) {
+                            $class_id = $row['class_id'];
+                            $class_name = $row['class_name'];
+                            $class_section = $row['class_section'];
+                            $class_teacher = $row['class_teacher'];
+                            $class_added_date = $row['class_added_date'];
+                            $class_status = $row['class_status'];
+
+                            $get_teacher = "SELECT * FROM `users` WHERE `user_id` = '$class_teacher'";
+                            $get_teacher_res = mysqli_query($connection, $get_teacher);
+                            $user_id = "";
+                            while ($row = mysqli_fetch_assoc($get_teacher_res)) {
+                                $user_id = $row['user_id'];
+                                $user_name = $row['user_name'];
+                            }
+                        ?>
+                        <tr>
+
+                            <?php
+                                if ($user_id == $class_teacher) {
+                                ?>
+                            <td><?php echo $user_name ?></td>
+                            <?php } ?>
+
+                            <td><?php echo $class_name . $class_section ?></td>
+                            <td><?php echo $class_added_date ?></td>
+                            <?php if ($class_status == 1) { ?>
+                            <td>Active</td>
+                            <?php }
+                                if ($class_status == 2) { ?>
+                            <td>In-Active</td>
+                            <?php } ?>
+                            <td class="text-center">
+                                <form action="assign-class-teacher-2.php" method="POST">
+                                    <input type="text" name="class_teacher" value="<?php echo $class_teacher ?>" hidden>
+                                    <button type="submit" name="edit" class="btn btn-sm btn-outline-primary">
+                                        <ion-icon name="create-outline"></ion-icon>
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+                        <?php } ?>
+                    </tbody>
+                </table>
+            </div>
+            <nav aria-label="Page navigation example" class="mt-4">
+                <ul class="pagination">
+                    <?php
+                    for ($page = 1; $page <= $number_of_page; $page++) {
+                        echo '<li class="page-item"><a class="page-link" href = "assign-class-teacher.php?page=' . $page . '">' . $page . ' </a></>';
+                    }
+
+                    ?>
+
+
+                </ul>
+            </nav>
         </div>
     </div>
 </div>

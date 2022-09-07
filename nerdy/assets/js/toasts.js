@@ -159,3 +159,10 @@ function classTeacherAttendanceModal() {
     $("#classTeacherAttendanceModal").modal("show");
   });
 }
+
+function updateClassTeacherModal() {
+  console.log("clicked");
+  $(document).ready(function () {
+    $("#updateClassTeacher").modal("show");
+  });
+}
