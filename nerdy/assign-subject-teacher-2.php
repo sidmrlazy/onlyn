@@ -144,68 +144,72 @@
                             </thead>
                             <tbody>
                                 <?php
-                                $results_per_page = 6;
 
-                                $query = "SELECT * FROM `teacher_class_assignment`";
-                                $result = mysqli_query($connection, $query);
+                                if (isset($_POST['filter'])) {
+                                    $teacher_assigned = $_POST['teacher_assigned'];
+                                    $results_per_page = 6;
 
-                                $number_of_result = mysqli_num_rows($result);
+                                    $query = "SELECT * FROM `teacher_class_assignment` WHERE teacher_assigned = $teacher_assigned";
+                                    $result = mysqli_query($connection, $query);
 
-                                $number_of_page = ceil($number_of_result / $results_per_page);
+                                    $number_of_result = mysqli_num_rows($result);
 
-                                if (!isset($_GET['page'])) {
-                                    $page = 1;
-                                } else {
-                                    $page = $_GET['page'];
-                                }
+                                    $number_of_page = ceil($number_of_result / $results_per_page);
 
-                                $page_first_result = ($page - 1) * $results_per_page;
-
-                                $fetch = "SELECT * FROM `teacher_class_assignment` WHERE teacher_assigned_by = $session_user_id ORDER BY `teacher_assigned_date` DESC LIMIT " . $page_first_result . ',' . $results_per_page;
-                                $fetch_res = mysqli_query($connection, $fetch);
-
-                                while ($row = mysqli_fetch_assoc($fetch_res)) {
-                                    $teacher_assigned = $row['teacher_assigned'];
-                                    $teacher_assigned_subject = $row['teacher_assigned_subject'];
-                                    $teacher_assigned_class = $row['teacher_assigned_class'];
-                                    $teacher_assigned_date = $row['teacher_assigned_date'];
-
-
-                                    $get_classes = "SELECT * FROM classes WHERE class_id = $teacher_assigned_class";
-                                    $get_classes_result = mysqli_query($connection, $get_classes);
-                                    $count_subjects = mysqli_num_rows($get_classes_result);
-                                    $class_id = "";
-                                    $class_name = "";
-                                    $class_section = "";
-                                    while ($row = mysqli_fetch_array($get_classes_result)) {
-                                        $class_id = $row['class_id'];
-                                        $class_name = $row['class_name'];
-                                        $class_section = $row['class_section'];
-
-                                        $teacher_assigned_class = $class_name . $class_section;
+                                    if (!isset($_GET['page'])) {
+                                        $page = 1;
+                                    } else {
+                                        $page = $_GET['page'];
                                     }
+
+                                    $page_first_result = ($page - 1) * $results_per_page;
+
+                                    $fetch = "SELECT * FROM `teacher_class_assignment` WHERE teacher_assigned = $teacher_assigned ORDER BY `teacher_assigned_date` DESC LIMIT " . $page_first_result . ',' . $results_per_page;
+                                    $fetch_res = mysqli_query($connection, $fetch);
+
+                                    while ($row = mysqli_fetch_assoc($fetch_res)) {
+                                        $teacher_assigned = $row['teacher_assigned'];
+                                        $teacher_assigned_subject = $row['teacher_assigned_subject'];
+                                        $teacher_assigned_class = $row['teacher_assigned_class'];
+                                        $teacher_assigned_date = $row['teacher_assigned_date'];
+
+
+                                        $get_classes = "SELECT * FROM classes WHERE class_id = $teacher_assigned_class";
+                                        $get_classes_result = mysqli_query($connection, $get_classes);
+                                        $count_subjects = mysqli_num_rows($get_classes_result);
+                                        $class_id = "";
+                                        $class_name = "";
+                                        $class_section = "";
+                                        while ($row = mysqli_fetch_array($get_classes_result)) {
+                                            $class_id = $row['class_id'];
+                                            $class_name = $row['class_name'];
+                                            $class_section = $row['class_section'];
+
+                                            $teacher_assigned_class = $class_name . $class_section;
+                                        }
                                 ?>
                                 <tr>
                                     <?php
-                                        $get_teacher = "SELECT * FROM users WHERE user_added_by = $session_user_id";
-                                        $get_teacher_result = mysqli_query($connection, $get_teacher);
-                                        $count_subjects = mysqli_num_rows($get_teacher_result);
-                                        $user_id = "";
-                                        while ($row = mysqli_fetch_array($get_teacher_result)) {
-                                            $user_id = $row['user_id'];
-                                            $user_name = $row['user_name'];
-                                            $user_type = $row['user_type'];
+                                            $get_teacher = "SELECT * FROM users WHERE user_added_by = $session_user_id";
+                                            $get_teacher_result = mysqli_query($connection, $get_teacher);
+                                            $count_subjects = mysqli_num_rows($get_teacher_result);
+                                            $user_id = "";
+                                            while ($row = mysqli_fetch_array($get_teacher_result)) {
+                                                $user_id = $row['user_id'];
+                                                $user_name = $row['user_name'];
+                                                $user_type = $row['user_type'];
 
-                                            if ($user_id == $teacher_assigned) { ?>
+                                                if ($user_id == $teacher_assigned) { ?>
                                     <td><?php echo $user_name ?></td>
                                     <?php }
-                                        } ?>
+                                            } ?>
 
                                     <td><?php echo $teacher_assigned_subject ?></td>
                                     <td><?php echo $teacher_assigned_class ?></td>
                                     <td><?php echo date('d-M-Y', strtotime($teacher_assigned_date)) ?></td>
                                 </tr>
-                                <?php } ?>
+                                <?php }
+                                } ?>
                             </tbody>
                         </table>
                     </div>

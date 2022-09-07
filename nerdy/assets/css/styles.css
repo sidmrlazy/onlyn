@@ -732,7 +732,9 @@ body {
   transition: 0.3s all ease-in-out !important;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
-
+.assigned-table {
+  margin-left: 15px !important;
+}
 .inner-tab-staff {
   flex: 1 1 1 300px !important;
   border: 1px solid #e7e7e7 !important;
@@ -1551,6 +1553,15 @@ hr {
   color: #610856 !important;
   font-weight: bold;
 }
+.filter-card {
+  border: 1px solid #e7e7e7;
+  background-color: #fff;
+  width: 32%;
+  height: fit-content !important;
+  margin-right: 10px;
+  padding: 20px;
+  border-radius: 5px;
+}
 .change-date-btn-new:hover {
   background-color: #610856;
   color: #fff !important;
@@ -1979,5 +1990,18 @@ hr {
   .activity-bar-img {
     width: 25px !important;
     height: auto;
+  }
+  .assigned-table {
+    margin-left: 0px !important;
+  }
+
+  .filter-card {
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    width: 100%;
+    height: fit-content !important;
+    margin-right: 0;
+    padding: 20px;
+    border-radius: 5px;
   }
 }
