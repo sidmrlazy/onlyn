@@ -190,7 +190,7 @@
                 <ul class="pagination">
                     <?php
                     for ($page = 1; $page <= $number_of_page; $page++) {
-                        echo '<li class="page-item"><a class="page-link" href = "index2.php?page=' . $page . '">' . $page . ' </a></li>';
+                        echo '<li class="page-item"><a class="page-link" href = "assign-subject-teacher.php?page=' . $page . '">' . $page . ' </a></li>';
                     }
                     ?>
                 </ul>
