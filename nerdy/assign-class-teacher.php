@@ -85,7 +85,7 @@
                             <th scope="col">Class Assigned</th>
                             <th scope="col">Assigned on</th>
                             <th scope="col">Class Status</th>
-                            <th scope="col">Action</th>
+                            <!-- <th scope="col">Action</th> -->
                         </tr>
                     </thead>
                     <tbody>
@@ -141,14 +141,14 @@
                                 if ($class_status == 2) { ?>
                             <td>In-Active</td>
                             <?php } ?>
-                            <td class="text-center">
+                            <!-- <td class="text-center">
                                 <form action="assign-class-teacher-2.php" method="POST">
                                     <input type="text" name="class_teacher" value="<?php echo $class_teacher ?>" hidden>
                                     <button type="submit" name="edit" class="btn btn-sm btn-outline-primary">
                                         <ion-icon name="create-outline"></ion-icon>
                                     </button>
                                 </form>
-                            </td>
+                            </td> -->
                         </tr>
                         <?php } ?>
                     </tbody>
