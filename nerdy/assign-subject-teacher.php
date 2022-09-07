@@ -121,7 +121,7 @@
                     </thead>
                     <tbody>
                         <?php
-                        $results_per_page = 10;
+                        $results_per_page = 6;
 
                         $query = "SELECT * FROM `teacher_class_assignment`";
                         $result = mysqli_query($connection, $query);
