@@ -351,7 +351,7 @@ body {
 /* ============ EXAM & RESULTS ============ */
 .result-data {
   width: 100%;
-  height: 100px;
+  height: 200px !important;
   border-radius: 5px;
   background-color: #fff;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2) !important;
@@ -360,6 +360,10 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   margin-bottom: 15px !important;
+}
+.student-ans-img {
+  width: 25px !important;
+  height: auto;
 }
 .exam-section {
   flex: 1;
@@ -373,6 +377,10 @@ body {
   font-size: 16px;
   margin: 0;
   font-weight: 500;
+}
+.exam-instructions {
+  font-size: 14px;
+  margin: 0;
 }
 .exam-section-file {
   flex: 1;
@@ -712,7 +720,7 @@ body {
 .inner-tab {
   /* flex: 1 1 1 300px !important; */
   border: 1px solid #e7e7e7 !important;
-  width: 360px;
+  width: 220px !important;
   height: 120px;
   margin: 5px;
   padding: 10px;
