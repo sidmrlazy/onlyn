@@ -87,7 +87,7 @@
 
                 <div class="dashboard-tabs">
                     <p class="dashboard-tab-label"><?php echo $teacher_assigned_subject ?> |</p>
-                    <p class="dashboard-tab-subject"><?php echo $class_name . $class_section ?></p>
+                    <p class="dashboard-tab-subject">Class <?php echo $class_name . $class_section ?></p>
                     <!-- <p><?php echo $tt_time . " (" . $tt_day . ")" ?></p> -->
                 </div>
 
