@@ -57,7 +57,7 @@
             <p class="transaction-amount">₹<?php echo $transaction_amount ?></p>
             <div class="tran-row">
                 <p class="tran-id"><?php echo $transaction_id ?></p>
-                <p><?php echo date('d | M | Y', strtotime($transaction_date)) ?></p>
+                <p><?php echo date('d-M-Y', strtotime($transaction_date)) ?></p>
                 <!-- <button class="download-btn">
                     <ion-icon name="download-outline"></ion-icon>
                 </button> -->
