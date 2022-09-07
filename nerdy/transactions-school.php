@@ -58,9 +58,9 @@
             <div class="tran-row">
                 <p class="tran-id"><?php echo $transaction_id ?></p>
                 <p><?php echo date('d | M | Y', strtotime($transaction_date)) ?></p>
-                <button class="download-btn">
+                <!-- <button class="download-btn">
                     <ion-icon name="download-outline"></ion-icon>
-                </button>
+                </button> -->
             </div>
         </div>
         <?php
