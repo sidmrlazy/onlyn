@@ -90,7 +90,7 @@
                     </thead>
                     <tbody>
                         <?php
-                        $results_per_page = 10;
+                        $results_per_page = 4;
 
                         $query = "SELECT * FROM `classes`";
                         $result = mysqli_query($connection, $query);
