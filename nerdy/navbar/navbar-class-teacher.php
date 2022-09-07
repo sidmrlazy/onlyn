@@ -150,7 +150,7 @@
                         ?>
                         <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="navbarDropdown">
                             <li>
-                                <a class="dropdown-item" href="profile-teacher.php">
+                                <a class="dropdown-item" href="profile-class-teacher.php">
                                     <ion-icon name="person-circle-outline"></ion-icon> Profile
                                 </a>
                             </li>

@@ -1,11 +1,11 @@
 <?php include('main/header.php'); ?>
 <?php include('navbar/navbar.php'); ?>
 <div class="container-fluid">
-    <?php include('navbar/teacher-side-nav.php') ?>
+    <?php include('navbar/class-teacher-side-nav.php') ?>
     <div class="school-main-dashboard animate__animated animate__fadeIn mt-3">
         <?php
         require_once('main/config.php');
-        $fetch_school_details = "SELECT * FROM `users` WHERE `user_id` = $session_user_id AND `user_type` = 3";
+        $fetch_school_details = "SELECT * FROM `users` WHERE `user_id` = $session_user_id AND `user_type` = 5";
         $fetch_school_details_result = mysqli_query($connection, $fetch_school_details);
 
         while ($row = mysqli_fetch_assoc($fetch_school_details_result)) {
