@@ -109,6 +109,8 @@
                 </form>
             </div>
 
+            <p>Subject teachers assigned</p>
+
             <div class="table-responsive mt-3 card p-3">
                 <table class="table table-bordered">
                     <thead>
@@ -138,7 +140,7 @@
 
                         $page_first_result = ($page - 1) * $results_per_page;
 
-                        $fetch = "SELECT * FROM `teacher_class_assignment` WHERE teacher_assigned_by = $session_user_id LIMIT " . $page_first_result . ',' . $results_per_page;
+                        $fetch = "SELECT * FROM `teacher_class_assignment` WHERE teacher_assigned_by = $session_user_id ORDER BY `teacher_assigned_date` DESC LIMIT " . $page_first_result . ',' . $results_per_page;
                         $fetch_res = mysqli_query($connection, $fetch);
 
                         while ($row = mysqli_fetch_assoc($fetch_res)) {
