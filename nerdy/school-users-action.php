@@ -2,7 +2,7 @@
 <?php include('navbar/navbar.php'); ?>
 <div class="d-flex container-fluid">
     <?php include('navbar/school-side-nav.php') ?>
-    <div class="school-main-dashboard container mb-5 animate__animated animate__fadeIn">
+    <div class="school-main-dashboard mb-5 animate__animated animate__fadeIn">
 
         <div class="section-header">
             <h3 class="section-heading">
@@ -12,7 +12,7 @@
             <p class="section-desc">Add or Edit Teachers and Staff</p>
         </div>
 
-        <div class="container w-100">
+        <div class="w-100">
             <div class="d-flex">
                 <a href="setup-add-teacher.php" type="submit"
                     class="btn btn-outline-primary mb-3 d-flex justify-content-center align-items-center">Add
