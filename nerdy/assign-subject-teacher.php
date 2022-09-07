@@ -107,7 +107,6 @@
                     </div>
                     <button type="submit" name="assign" class="btn btn-outline-primary w-100 mt-3">Assign</button>
                 </form>
-
             </div>
 
             <div class="table-responsive mt-3 card p-3">
@@ -122,7 +121,24 @@
                     </thead>
                     <tbody>
                         <?php
-                        $fetch = "SELECT * FROM `teacher_class_assignment` WHERE teacher_assigned_by = $session_user_id";
+                        $results_per_page = 10;
+
+                        $query = "SELECT * FROM `teacher_class_assignment`";
+                        $result = mysqli_query($connection, $query);
+
+                        $number_of_result = mysqli_num_rows($result);
+
+                        $number_of_page = ceil($number_of_result / $results_per_page);
+
+                        if (!isset($_GET['page'])) {
+                            $page = 1;
+                        } else {
+                            $page = $_GET['page'];
+                        }
+
+                        $page_first_result = ($page - 1) * $results_per_page;
+
+                        $fetch = "SELECT * FROM `teacher_class_assignment` WHERE teacher_assigned_by = $session_user_id LIMIT " . $page_first_result . ',' . $results_per_page;
                         $fetch_res = mysqli_query($connection, $fetch);
 
                         while ($row = mysqli_fetch_assoc($fetch_res)) {
@@ -130,7 +146,6 @@
                             $teacher_assigned_subject = $row['teacher_assigned_subject'];
                             $teacher_assigned_class = $row['teacher_assigned_class'];
                             $teacher_assigned_date = $row['teacher_assigned_date'];
-
 
 
                             $get_classes = "SELECT * FROM classes WHERE class_id = $teacher_assigned_class";
@@ -170,8 +185,17 @@
                         <?php } ?>
                     </tbody>
                 </table>
-
             </div>
+            <nav aria-label="Page navigation example" class="mt-3">
+                <ul class="pagination">
+                    <?php
+                    for ($page = 1; $page <= $number_of_page; $page++) {
+                        echo '<li class="page-item"><a class="page-link" href = "index2.php?page=' . $page . '">' . $page . ' </a></li>';
+                    }
+                    ?>
+                </ul>
+            </nav>
+
         </div>
     </div>
 </div>
