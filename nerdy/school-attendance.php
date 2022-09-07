@@ -29,33 +29,38 @@
                     $class_section = $row['class_section'];
                     $class_status = $row['class_status'];
 
-                    if ($class_name == 1) {
-                        $class_name = $class_name . 'st';
-                    }
-                    if ($class_name == 2) {
-                        $class_name = $class_name . 'nd';
-                    }
-                    if ($class_name == 3) {
-                        $class_name = $class_name . 'rd';
-                    }
-                    if (
-                        $class_name == 4 ||
-                        $class_name == 5 ||
-                        $class_name == 6 ||
-                        $class_name == 7 ||
-                        $class_name == 8 ||
-                        $class_name == 9 ||
-                        $class_name == 10 ||
-                        $class_name == 11 ||
-                        $class_name == 12
-                    ) {
-                        $class_name = $class_name . 'th';
-                    }
+
                 ?>
 
                 <form action="show-class-wise-attendance.php" method="POST" class="inner-tab">
                     <input type="text" name="class_id" value="<?php echo $class_id; ?>" hidden>
+                    <?php
+                        if ($class_name == 1) {
+                            $class_name = $class_name . 'st ';
+                        }
+                        if ($class_name == 2) {
+                            $class_name = $class_name . 'nd ';
+                        }
+                        if ($class_name == 3) {
+                            $class_name = $class_name . 'rd ';
+                        }
+                        if (
+                            $class_name == 4 ||
+                            $class_name == 5 ||
+                            $class_name == 6 ||
+                            $class_name == 7 ||
+                            $class_name == 8 ||
+                            $class_name == 9 ||
+                            $class_name == 10 ||
+                            $class_name == 11 ||
+                            $class_name == 12
+                        ) {
+                            $class_name = $class_name . 'th ';
+                        } ?>
+
+
                     <p class="profile-teacher-name"><?php echo $class_name . $class_section; ?></p>
+
                     <div class="d-flex justify-content-center align-items-start">
                         <?php if ($class_status == "1") { ?>
                         <p class="profile-teacher-active-pill w-100">Active</p>
