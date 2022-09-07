@@ -6,7 +6,7 @@
     <div class="school-main-dashboard container mt-3">
         <p>Activity Menu</p>
 
-        <a href="admin-upload-activity" class="custom-tab">
+        <a href="admin-upload-activity.php" class="custom-tab">
             <ion-icon class="tab-icon" name="document-attach-outline"></ion-icon>
             <p>Upload Acitivity</p>
             <ion-icon class="tab-icon-right" name="caret-forward-outline"></ion-icon>
