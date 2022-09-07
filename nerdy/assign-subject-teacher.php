@@ -4,7 +4,7 @@
 <div class="d-flex container-fluid">
     <?php include('navbar/school-side-nav.php') ?>
     <div class="school-main-dashboard container section-container mb-5 animate__animated animate__fadeIn">
-        <div class="mb-5 col-md-6">
+        <div class="mb-5 w-100">
             <div class="section-header">
                 <h3 class="section-heading">
                     <ion-icon name="glasses" class="section-heading-icon"></ion-icon>
@@ -13,7 +13,7 @@
                 <p class="section-desc">Assign Teacher and class to a subject</p>
             </div>
 
-            <div class="card p-3">
+            <div class="card p-3 col-md-6">
                 <?php
                 if (isset($_POST['assign'])) {
                     $user_id = $_POST['teacher_assigned'];
@@ -107,6 +107,69 @@
                     </div>
                     <button type="submit" name="assign" class="btn btn-outline-primary w-100 mt-3">Assign</button>
                 </form>
+
+            </div>
+
+            <div class="table-responsive mt-3 card p-3">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">Teacher Name</th>
+                            <th scope="col">Subject Assigned</th>
+                            <th scope="col">Class Assigned</th>
+                            <th scope="col">Assignment Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                        $fetch = "SELECT * FROM `teacher_class_assignment` WHERE teacher_assigned_by = $session_user_id";
+                        $fetch_res = mysqli_query($connection, $fetch);
+
+                        while ($row = mysqli_fetch_assoc($fetch_res)) {
+                            $teacher_assigned = $row['teacher_assigned'];
+                            $teacher_assigned_subject = $row['teacher_assigned_subject'];
+                            $teacher_assigned_class = $row['teacher_assigned_class'];
+                            $teacher_assigned_date = $row['teacher_assigned_date'];
+
+
+
+                            $get_classes = "SELECT * FROM classes WHERE class_id = $teacher_assigned_class";
+                            $get_classes_result = mysqli_query($connection, $get_classes);
+                            $count_subjects = mysqli_num_rows($get_classes_result);
+                            $class_id = "";
+                            $class_name = "";
+                            $class_section = "";
+                            while ($row = mysqli_fetch_array($get_classes_result)) {
+                                $class_id = $row['class_id'];
+                                $class_name = $row['class_name'];
+                                $class_section = $row['class_section'];
+
+                                $teacher_assigned_class = $class_name . $class_section;
+                            }
+                        ?>
+                        <tr>
+                            <?php
+                                $get_teacher = "SELECT * FROM users WHERE user_added_by = $session_user_id";
+                                $get_teacher_result = mysqli_query($connection, $get_teacher);
+                                $count_subjects = mysqli_num_rows($get_teacher_result);
+                                $user_id = "";
+                                while ($row = mysqli_fetch_array($get_teacher_result)) {
+                                    $user_id = $row['user_id'];
+                                    $user_name = $row['user_name'];
+                                    $user_type = $row['user_type'];
+
+                                    if ($user_id == $teacher_assigned) { ?>
+                            <td><?php echo $user_name ?></td>
+                            <?php }
+                                } ?>
+
+                            <td><?php echo $teacher_assigned_subject ?></td>
+                            <td><?php echo $teacher_assigned_class ?></td>
+                            <td><?php echo date('d-M-Y', strtotime($teacher_assigned_date)) ?></td>
+                        </tr>
+                        <?php } ?>
+                    </tbody>
+                </table>
 
             </div>
         </div>

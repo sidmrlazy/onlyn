@@ -78,6 +78,46 @@
             ?>
         </div>
 
+        <!-- =================== SUBJECTS ASSIGNED START =================== -->
+        <div class="section-header animate__animated animate__fadeIn">
+            <h3 class="section-heading-dashboard">
+                <ion-icon name="calendar-outline" class="section-heading-icon"></ion-icon>
+                Subjects Assigned
+            </h3>
+        </div>
+        <div class="mt-4 animate__animated animate__fadeIn">
+            <div class="tab-wrap-view mb-3">
+                <?php
+                $get_subejcts = "SELECT * FROM `teacher_class_assignment` WHERE `teacher_assigned` = $session_user_id";
+                $get_subject_res = mysqli_query($connection, $get_subejcts);
+
+                while ($row = mysqli_fetch_assoc($get_subject_res)) {
+                    $teacher_assigned_subject = $row['teacher_assigned_subject'];
+                    $teacher_assigned_class = $row['teacher_assigned_class'];
+
+                    $fetch_class = "SELECT * FROM classes WHERE class_id = '$teacher_assigned_class'";
+                    $fetch_class_res = mysqli_query($connection, $fetch_class);
+
+                    $class_name = "";
+                    $class_section = "";
+                    while ($row = mysqli_fetch_assoc($fetch_class_res)) {
+                        $class_name = $row['class_name'];
+                        $class_section = $row['class_section'];
+                    } ?>
+
+                <div class="dashboard-tabs">
+                    <p class="dashboard-tab-label"><?php echo $teacher_assigned_subject ?> |</p>
+                    <p class="dashboard-tab-subject">Class <?php echo $class_name . $class_section ?></p>
+                    <!-- <p><?php echo $tt_time . " (" . $tt_day . ")" ?></p> -->
+                </div>
+
+                <?php
+                }
+
+                ?>
+            </div>
+        </div>
+
 
         <!-- =================== TEACHING SCHEDULE START =================== -->
         <p class="mb-3">
