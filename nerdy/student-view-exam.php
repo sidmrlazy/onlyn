@@ -8,7 +8,7 @@
             <p>New Offline Exams | Tests</p>
             <ion-icon class="tab-icon-right" name="caret-forward-outline"></ion-icon>
         </a>
-        <a href="#" class="custom-tab">
+        <a href="student-view-result.php" class="custom-tab">
             <ion-icon class="tab-icon" name="ribbon-outline"></ion-icon>
             <p>Results</p>
             <ion-icon class="tab-icon-right" name="caret-forward-outline"></ion-icon>

@@ -13,7 +13,8 @@
 
         <?php
         if (isset($_POST['create'])) {
-            $exam_name = $_POST['exam_name'];
+            $exam_name = mysqli_real_escape_string($connection, $_POST['exam_title']);
+            $exam_instructions = mysqli_real_escape_string($connection, $_POST['exam_instructions']);
             $exam_class_id = $_POST['exam_class_id'];
             $exam_type = $_POST['exam_type'];
             $exam_subject_id = $_POST['exam_subject_id'];
@@ -32,6 +33,7 @@
 
             $insert_query = "INSERT INTO `exam`(
                     `exam_title`,
+                    `exam_instructions`,
                     `exam_class_id`,
                     `exam_type`,
                     `exam_subject_id`,
@@ -43,6 +45,7 @@
                 )
                 VALUES(
                     '$exam_name',
+                    '$exam_instructions',
                     '$exam_class_id',
                     '$exam_type',
                     '$exam_subject_id',
@@ -67,8 +70,14 @@
 
         <form action="" method="POST" enctype="multipart/form-data" class="card p-4 col-md-6">
             <div class="form-floating mb-3">
-                <input type="text" class="form-control" name="exam_name" id="examName" placeholder="exam_name" required>
+                <input type="text" class="form-control" name="exam_title" id="examName" placeholder="exam_name"
+                    required>
                 <label for="examName">Exam | Test Title </label>
+            </div>
+            <div class="form-floating mb-3">
+                <textarea class="form-control" name="exam_instructions" placeholder="Leave a comment here"
+                    id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Instructions</label>
             </div>
             <div class="form-floating mb-3">
                 <select class="form-select" name="exam_class_id" id="examSubject"

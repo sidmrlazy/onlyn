@@ -118,7 +118,7 @@
 
         ?>
         <div class="result-data">
-            <div class="exam-section">
+            <div class="exam-section-desc">
                 <p class="exam-section-label">Exam Title</p>
                 <p class="exam-title"><?php echo $exam_title ?></p>
                 <p class="exam-instructions"><?php echo $exam_instructions ?></p>
@@ -144,7 +144,7 @@
                 <?php if ($exam_end_date == 0) { ?>
                 <p>No end date</p>
                 <?php } else { ?>
-                <p><?php echo date('d-M-Y', strtotime($exam_end_date_name)) ?></p>
+                <p><?php echo date('d-M-Y', strtotime($exam_end_date)) ?></p>
                 <?php } ?>
             </div>
 

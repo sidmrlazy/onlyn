@@ -79,6 +79,7 @@
             while ($row = mysqli_fetch_assoc($fetch_exam_query_res)) {
                 $exam_id = $row['exam_id'];
                 $exam_title = $row['exam_title'];
+                $exam_instructions = $row['exam_instructions'];
                 $exam_class_id = $row['exam_class_id'];
                 $exam_type = $row['exam_type'];
                 $exam_subject_id = $row['exam_subject_id'];
@@ -148,15 +149,12 @@
         <form action="" method="POST" class="result-data">
             <input type="text" name="exam_id" value="<?php echo $exam_id ?>" hidden>
 
-            <div class="exam-section">
+            <div class="exam-section-desc">
                 <p class="exam-section-label">Exam Title</p>
                 <p class="exam-title"><?php echo $exam_title ?></p>
+                <p class="exam-instructions"><?php echo $exam_instructions ?></p>
             </div>
 
-            <div class="exam-section">
-                <p class="exam-section-label">Class</p>
-                <p><?php echo $class ?></p>
-            </div>
 
             <div class="exam-section">
                 <p class="exam-section-label">Type</p>

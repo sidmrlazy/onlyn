@@ -351,7 +351,7 @@ body {
 /* ============ EXAM & RESULTS ============ */
 .result-data {
   width: 100%;
-  height: 200px !important;
+  height: 220px !important;
   border-radius: 5px;
   background-color: #fff;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2) !important;
@@ -367,6 +367,9 @@ body {
 }
 .exam-section {
   flex: 1;
+}
+.exam-section-desc {
+  flex: 2 !important;
 }
 .exam-section-label {
   font-size: 12px;
@@ -413,6 +416,16 @@ body {
 .student-marks-section {
   margin: 0;
   margin-right: 10px;
+}
+.student-result-view {
+  width: fit-content;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2) !important;
+  padding: 20px;
+  border-radius: 5px;
+}
+.student-result-view p {
+  margin: 0 !important;
 }
 
 /* ============ DASHBOARD TEACHER ============ */
@@ -2004,5 +2017,9 @@ hr {
     margin-right: 0;
     padding: 20px;
     border-radius: 5px;
+  }
+  .student-result-view p {
+    margin: 0 !important;
+    font-size: 14px !important;
   }
 }
