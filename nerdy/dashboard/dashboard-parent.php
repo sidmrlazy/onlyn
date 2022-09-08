@@ -63,7 +63,7 @@
                         } else if ($tt_day_original == 3) {
                             $tt_day = 'Wed';
                         } else if ($tt_day_original == 4) {
-                            $tt_day = 'Thur';
+                            $tt_day = 'Thu';
                         } else if ($tt_day_original == 5) {
                             $tt_day = 'Fri';
                         } else if ($tt_day_original == 6) {

@@ -152,7 +152,7 @@
                         $tt_day = "Wed";
                     }
                     if ($tt_day == 4) {
-                        $tt_day = "Thur";
+                        $tt_day = "Thu";
                     }
                     if ($tt_day == 5) {
                         $tt_day = "Fri";
