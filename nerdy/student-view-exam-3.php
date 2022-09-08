@@ -60,8 +60,6 @@
                 $exam_end_date = $row['exam_end_date'];
                 $exam_file = "assets/docs/" . $row['exam_file'];
 
-
-
                 $exam_file_ext = pathinfo($exam_file, PATHINFO_EXTENSION);
 
                 if ($exam_file_ext == "pdf") {
@@ -158,21 +156,56 @@
         </div>
         <?php
             }
-        }
+            $data = "SELECT * FROM `exam_answer` WHERE `ea_exam_id` = '$exam_id' AND `ea_student_id` = '$student_id'";
+            $data_res = mysqli_query($connection, $data);
 
-        $data = "SELECT * FROM `exam_answer` WHERE `exam_id` = '$exam_id'";
-        $data_res = mysqli_query($connection, $data);
-
-        while ($row = mysqli_fetch_assoc($data_res)) {
-            $ea_student_id = $row['ea_student_id'];
-            $ea_status = $row['ea_status'];
-
-            if ($ea_status == 1 && $ea_student_id = $student_id) {
+            $ea_student_id = "";
+            $ea_status = "";
+            while ($row = mysqli_fetch_assoc($data_res)) {
+                $ea_student_id = $row['ea_student_id'];
+                $ea_status = $row['ea_status'];
             }
-        }
-        ?>
-        <p>Upload Answer Document</p>
 
+            if ($ea_status == 1 && $ea_student_id === $student_id) { ?>
+
+        <div class="alert alert-info" role="alert">
+            You have already submitted your answer
+        </div>
+        <form action="" enctype="multipart/form-data" method="POST" class="d-none card p-3 col-md-6">
+            <input type="text" name="ea_exam_id" value="<?php echo $exam_id ?>" hidden>
+            <input type="text" name="ea_student_id" value="<?php echo $student_id ?>" hidden>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Upload Answer (.jpg | .word | .pdf | .xlsx |
+                    .png)</label>
+                <input type="file" name="ea_file" class="form-control" id="exampleInputEmail1"
+                    aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <button type="submit" name="submit" class="w-100 btn btn-outline-success">Submit</button>
+            </div>
+        </form>
+
+        <?php } else if ($ea_status == 2 && $ea_student_id === $student_id) { ?>
+
+        <div class="alert alert-info" role="alert">
+            You have already submitted your answer
+        </div>
+        <form action="" enctype="multipart/form-data" method="POST" class="d-none card p-3 col-md-6">
+            <input type="text" name="ea_exam_id" value="<?php echo $exam_id ?>" hidden>
+            <input type="text" name="ea_student_id" value="<?php echo $student_id ?>" hidden>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Upload Answer (.jpg | .word | .pdf | .xlsx |
+                    .png)</label>
+                <input type="file" name="ea_file" class="form-control" id="exampleInputEmail1"
+                    aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <button type="submit" name="submit" class="w-100 btn btn-outline-success">Submit</button>
+            </div>
+        </form>
+
+        <?php } else { ?>
+        <p>Upload Answer Document</p>
         <form action="" enctype="multipart/form-data" method="POST" class="card p-3 col-md-6">
             <input type="text" name="ea_exam_id" value="<?php echo $exam_id ?>" hidden>
             <input type="text" name="ea_student_id" value="<?php echo $student_id ?>" hidden>
@@ -186,6 +219,9 @@
                 <button type="submit" name="submit" class="w-100 btn btn-outline-success">Submit</button>
             </div>
         </form>
+
+        <?php }
+        } ?>
 
     </div>
 </div>

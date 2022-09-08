@@ -18,7 +18,7 @@
             if ($diary_to == 1 && !empty($diary_to)) {
                 $diary_to = $_POST['diary_to'];
                 $diary_student_id = 0;
-                $diary_topic = $_POST['diary_topic'];
+                $diary_topic = mysqli_real_escape_string($connection, $_POST['diary_topic']);
                 $diary_details = mysqli_real_escape_string($connection, $_POST['diary_details']);
                 $session_user_id;
 
