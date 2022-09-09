@@ -49,6 +49,7 @@
                         $student_name = $row['student_name'];
                     }
                 }
+
         ?>
         <div class="diary-card diary-row p-1">
             <div class="col-md-10">

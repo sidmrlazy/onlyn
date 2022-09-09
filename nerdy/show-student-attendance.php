@@ -79,7 +79,7 @@
                         }
                     ?>
                     <tr>
-                        <td scope="row"><?php echo $attendance_date ?></td>
+                        <td scope="row"><?php echo date('d-M-Y', strtotime($attendance_date)) ?></td>
 
                         <td class="text-center"><?php echo $attendance_value_name ?></td>
                     </tr>

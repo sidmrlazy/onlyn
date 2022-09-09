@@ -53,7 +53,7 @@
                     }
                     $tt_created_by = $row['tt_created_by'];
                 ?>
-                <form action="show-tt.php" method="POST">
+                <form action="parent-show-tt.php" method="POST">
                     <input type="text" name="tt_created_by" value="<?php echo $tt_created_by ?>" hidden>
                     <input type="text" name="tt_day" value="<?php echo $tt_day_original ?>" hidden>
                     <button type="submit" name="submit" class="att-carrot">

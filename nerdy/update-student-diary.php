@@ -13,90 +13,39 @@
         </div>
         <?php
         if (isset($_POST['submit'])) {
-            $diary_to = $_POST['diary_to'];
+            $diary_student_id = $_POST['diary_student_id'];
+            $diary_topic = $_POST['diary_topic'];
+            $diary_details = mysqli_real_escape_string($connection, $_POST['diary_details']);
+            $session_user_id;
 
-            if ($diary_to == 1 && !empty($diary_to)) {
-                $diary_to = $_POST['diary_to'];
-                $diary_student_id = 0;
-                $diary_topic = mysqli_real_escape_string($connection, $_POST['diary_topic']);
-                $diary_details = mysqli_real_escape_string($connection, $_POST['diary_details']);
-                $session_user_id;
-
-                $query = "INSERT INTO `student_diary`(
-                    `diary_to`,
+            $query = "INSERT INTO `student_diary`(
                     `diary_student_id`,
                     `diary_topic`,
                     `diary_details`,
                     `diary_added_by`
                 )
                 VALUES(
-                    '$diary_to',
                     '$diary_student_id',
                     '$diary_topic',
                     '$diary_details',
                     '$session_user_id'
                 )";
-                $result = mysqli_query($connection, $query);
+            $result = mysqli_query($connection, $query);
 
-                if (!$result) {
-                    die("<div class='col-md-6 mb-3 alert alert-danger' role='alert'>Error!</div>" . " " . mysqli_error($connection));
-                } else {
-                    echo "<div class='col-md-6 mb-3 alert alert-success' role='alert'>Diary Updated! <a href='class-teacher-student-diary-menu.php'>Click here </a> to go back. </div>";
-                }
-            } else if ($diary_to == 2 && !empty($diary_to)) {
-                $diary_to = $_POST['diary_to'];
-                $diary_student_id = $_POST['diary_student_id'];
-                $diary_topic = $_POST['diary_topic'];
-                $diary_details = mysqli_real_escape_string($connection, $_POST['diary_details']);
-                $session_user_id;
-
-                $query = "INSERT INTO `student_diary`(
-                    `diary_to`,
-                    `diary_student_id`,
-                    `diary_topic`,
-                    `diary_details`,
-                    `diary_added_by`
-                )
-                VALUES(
-                    '$diary_to',
-                    '$diary_student_id',
-                    '$diary_topic',
-                    '$diary_details',
-                    '$session_user_id'
-                )";
-                $result = mysqli_query($connection, $query);
-
-                if (!$result) {
-                    die("<div class='col-md-6 mb-3 alert alert-danger' role='alert'>Error!</div>" . " " . mysqli_error($connection));
-                } else {
-                    echo "<div class='col-md-6 mb-3 alert alert-success' role='alert'>Diary Updated! <a href='class-teacher-student-diary-menu.php'>Click here </a> to go back. </div>";
-                }
+            if (!$result) {
+                die("<div class='col-md-6 mb-3 alert alert-danger' role='alert'>Error!</div>" . " " . mysqli_error($connection));
             } else {
-                echo "<div class='col-md-6 mb-3 alert alert-danger' role='alert'>
-                Please select who are you updating this diary for!
-              </div>";
+                echo "<div class='col-md-6 mb-3 alert alert-success' role='alert'>Diary Updated! <a href='class-teacher-student-diary-menu.php'>Click here </a> to go back. </div>";
             }
         }
-
         ?>
 
         <form action="" method="POST">
-
             <div class="card col-md-6 p-4">
-                <div class="form-floating mb-3">
-                    <select name="diary_to" onchange="toggleDrop()" id="box" class="form-select"
-                        aria-label="Floating label select example">
-                        <option selected>Update Diary for </option>
-                        <option value="1">All Students</option>
-                        <option value="2">Select Student</option>
-                    </select>
-                    <label for="floatingSelect">Click here to open options</label>
-                </div>
-
-                <div class="form-floating mb-3 show" id="boxOne">
+                <div class="form-floating mb-3 show">
                     <select name="diary_student_id" class="form-select" id="floatingSelect"
                         aria-label="Floating label select example">
-                        <option selected>Select Student</option>
+                        <option>Select Student</option>
                         <?php
                         $get_students_list = "SELECT * FROM students WHERE student_added_by = $session_user_id";
                         $get_student_list_result = mysqli_query($connection, $get_students_list);

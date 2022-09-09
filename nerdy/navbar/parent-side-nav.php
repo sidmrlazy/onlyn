@@ -65,7 +65,7 @@
     </li>
 
     <li class="nav-item side-nav-link">
-        <a class="nav-link side-nav-text" href="#">
+        <a class="nav-link side-nav-text" href="student-select-diary-date.php">
             <ion-icon id="flourescent-green" name="book-outline"></ion-icon>
             Student Diary
         </a>

@@ -48,8 +48,10 @@ function toggleDrop() {
 
   if (select == 1) {
     document.getElementById("boxOne").style.display = "none";
+    document.getElementById("boxTwo").style.display = "block";
   } else if (select == 2) {
     document.getElementById("boxOne").style.display = "block";
+    document.getElementById("boxTwo").style.display = "none";
   }
 }
 
