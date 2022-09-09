@@ -18,7 +18,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $user_city = $_POST["user_city"];
     $user_address = $_POST["user_address"];
     $user_pincode = $_POST["user_pincode"];
-    $user_type = "2";
+    $user_type = $_POST["user_type"];
+    $user_board = $_POST["user_board"];
     $user_password = $_POST["user_password"];
     $user_cpassword = $_POST["user_cpassword"];
     $user_plan_amount = $_POST["user_plan_amount"];
@@ -40,6 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                          `user_address`,
                          `user_pincode`,
                          `user_type`,
+                         `user_board`,
                          `user_plan_amount`, 
                          `user_password`, 
                          `user_added_date`) VALUES (
@@ -51,6 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                              '$user_address',
                              '$user_pincode',
                              '$user_type',
+                             '$user_board',
                              '$user_plan_amount',
                              '$hash', 
                              current_timestamp())";

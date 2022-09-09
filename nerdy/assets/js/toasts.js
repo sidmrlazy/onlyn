@@ -166,3 +166,10 @@ function updateClassTeacherModal() {
     $("#updateClassTeacher").modal("show");
   });
 }
+
+function hwModal() {
+  console.log("HW clicked");
+  $(document).ready(function () {
+    $("#hwModalOpen").modal("show");
+  });
+}

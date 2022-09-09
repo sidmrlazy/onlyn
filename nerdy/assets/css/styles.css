@@ -685,6 +685,11 @@ body {
 .tab-icon {
   font-size: 18px !important;
 }
+.tab-lord-icon {
+  width: 35px;
+  height: 35px;
+  margin: 0;
+}
 .tab-icon-right {
   font-size: 20px !important;
   margin-right: 0 !important;
@@ -1163,6 +1168,10 @@ hr {
   border-radius: 3px;
   transition: 0.3s all ease-in-out !important;
 }
+.side-nav-icon {
+  width: 20px;
+  height: 20px;
+}
 .side-nav-text {
   color: #e7e7e7 !important;
   font-weight: 200 !important;
@@ -1289,6 +1298,58 @@ hr {
   font-size: 14px !important;
   font-weight: 500;
   color: #cf3037;
+}
+
+/* ========== HOMEWORK ========== */
+.hw-card {
+  width: 220px;
+  height: 80px;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-right: 10px;
+  background-color: #fff;
+  border: 0;
+}
+.hw-btn {
+  background-color: #fff;
+  width: 100%;
+  border: 0;
+  text-align: left;
+}
+.hw-card-title {
+  margin: 0;
+  font-weight: 500;
+}
+.hw-card-date {
+  font-size: 14px;
+  color: #777;
+  margin: 0 !important;
+}
+.hw-modal-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+.hw-modal-details {
+  margin: 0;
+  font-size: 16px;
+}
+.hw-modal-date {
+  margin-bottom: 20px;
+  color: #777;
+  font-size: 14px !important;
+}
+.hw-modal-doc {
+  text-decoration: none !important;
+}
+.hw-modal-doc img {
+  width: 25px;
+  height: auto;
 }
 
 /* ========== CLASS TEACHER PROFILE SECTION ========== */

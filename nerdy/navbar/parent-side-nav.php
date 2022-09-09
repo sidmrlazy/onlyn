@@ -58,7 +58,7 @@
     </li>
 
     <li class="nav-item side-nav-link">
-        <a class="nav-link side-nav-text" href="#">
+        <a class="nav-link side-nav-text" href="student-select-hw.php">
             <ion-icon id="pale-orange" name="receipt"></ion-icon>
             Homework
         </a>
