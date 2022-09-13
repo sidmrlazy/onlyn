@@ -337,6 +337,7 @@ body {
   align-items: center !important;
   height: 100% !important;
 }
+
 .register {
   display: flex !important;
   justify-content: center !important;
@@ -345,12 +346,26 @@ body {
 }
 .login-background {
   display: flex !important;
-  justify-content: flex-start !important;
-  align-items: flex-start !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-direction: column;
   max-width: 100% !important;
+  margin-right: 30px !important;
+}
+.login-content-header {
+  font-size: 44px !important;
+  line-height: 50px !important;
+  text-align: center;
+}
+.login-content-sub-header {
+  font-size: 24px !important;
+  color: #1d4474;
+  margin: 0;
+  text-align: center !important;
+  width: 100% !important;
 }
 .login-background img {
-  width: 80%;
+  width: 30%;
   height: auto;
 }
 .login-form input {
@@ -438,6 +453,54 @@ body {
   color: #cf3037;
 }
 
+/* ============ DASHBOARD PARENT ============ */
+.dashboard-notification {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2) !important;
+  width: 100%;
+  border-radius: 5px;
+  text-decoration: none !important;
+  margin-bottom: 15px !important;
+}
+.dashboard-notification-btn {
+  background-color: #fff;
+  border: 0;
+  margin: 0 !important;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.notification-name {
+  background: rgb(255, 88, 60);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 88, 60, 1) 0%,
+    rgba(255, 164, 106, 1) 100%
+  );
+  width: 20% !important;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-top-left-radius: 10px !important;
+  border-bottom-left-radius: 10px !important;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2) !important;
+  padding: 10px;
+}
+.notification-name-text {
+  margin: 0;
+  color: #fff !important;
+  font-weight: 500;
+  text-align: left;
+}
+.dashboard-notification p {
+  margin: 0;
+  margin-left: 20px;
+  color: #000;
+}
 /* ============ EXAM & RESULTS ============ */
 .result-data {
   width: 100%;
@@ -1214,6 +1277,7 @@ body {
 }
 
 /* Forms */
+
 .horizontal-form-row {
   display: flex;
   justify-content: center;
@@ -1224,13 +1288,19 @@ body {
   margin: 0;
   color: #262625 !important;
 }
-.section-form p {
+/* .section-form p {
   font-weight: 400;
   font-size: 16px !important;
   margin: 0 !important;
   font-family: "Fredoka", sans-serif !important;
   line-height: 22px !important;
   color: #777;
+} */
+.login-header {
+  font-size: 28px !important;
+  font-weight: 500 !important;
+  margin: 0 !important;
+  color: #000 !important;
 }
 hr {
   margin: 0;
@@ -2003,10 +2073,27 @@ hr {
     justify-content: center !important;
     align-items: center !important;
     max-width: 100% !important;
+    margin-bottom: 20px !important;
+    background-color: #121952;
+    padding: 20px;
+    border-radius: 5px;
   }
   .login-background img {
     width: 50%;
     height: auto;
+  }
+  .login-content-header {
+    font-size: 30px !important;
+    line-height: 30px !important;
+    text-align: center;
+    color: #fff;
+  }
+  .login-content-sub-header {
+    font-size: 20px !important;
+    color: #23b3e0 !important;
+    margin: 0;
+    text-align: center !important;
+    width: 100% !important;
   }
 
   /* ============ ADMIN DASHBOARD ============ */

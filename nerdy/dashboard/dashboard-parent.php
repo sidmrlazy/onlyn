@@ -1,7 +1,39 @@
 <div class="d-flex container-fluid">
     <?php include('navbar/parent-side-nav.php') ?>
     <div class="school-main-dashboard w-100">
+        <?php
+        $get_user = "SELECT * FROM users WHERE user_id = $session_user_id";
+        $get_user_r = mysqli_query($connection, $get_user);
+
+        $user_contact = "";
+        while ($row = mysqli_fetch_assoc($get_user_r)) {
+            $user_contact = $row['user_contact'];
+        }
+
+        $get_student = "SELECT * FROM `students` WHERE student_father_contact = $user_contact";
+        $get_student_r = mysqli_query($connection, $get_student);
+        $student_status = "";
+        while ($row = mysqli_fetch_assoc($get_student_r)) {
+            $student_id = $row['student_id'];
+            $student_status = $row['student_status'];
+        }
+
+        if ($student_status == 2) { ?>
+        <form action="profile-update-parent.php" method="POST" class="dashboard-notification">
+            <input type="text" name="student_id" value="<?php echo $student_id ?>" hidden>
+            <button type="submit" name="submit" href="" class="dashboard-notification-btn">
+                <div class="notification-name">
+                    <p class="notification-name-text">Profile Update</p>
+                </div>
+                <p>Please complete student profile to continue!</p>
+            </button>
+        </form>
+        <?php } ?>
+
         Time table for <?php echo date('D'); ?>
+
+
+
         <div class="table-responsive card p-4 mt-3">
             <table class="table table-bordered">
                 <thead>
