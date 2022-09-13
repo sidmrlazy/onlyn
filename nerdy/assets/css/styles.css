@@ -344,6 +344,14 @@ body {
   align-items: flex-start !important;
   height: 100% !important;
 }
+.reg-login-background {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+  flex-direction: column;
+  max-width: 100% !important;
+  margin-right: 30px !important;
+}
 .login-background {
   display: flex !important;
   justify-content: center !important;
@@ -353,7 +361,7 @@ body {
   margin-right: 30px !important;
 }
 .login-content-header {
-  font-size: 44px !important;
+  font-size: 55px !important;
   line-height: 50px !important;
   text-align: left;
 }
@@ -368,6 +376,10 @@ body {
   width: 30%;
   height: auto;
 }
+.reg-login-background img {
+  width: 100%;
+  height: auto;
+}
 .login-form input {
   border: 0 !important;
   border-bottom: 1px solid #e7e7e7 !important;
@@ -378,6 +390,38 @@ body {
 }
 .check-custom {
   margin-left: 5px !important;
+}
+.login-banner-btn {
+  background-color: #3b6ad1 !important;
+  text-decoration: none !important;
+  color: #fff !important;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 100px;
+  font-size: 14px;
+}
+
+/* ============ SAY HI  ============ */
+.say-hi-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  background-color: #e667b3;
+  padding: 20px;
+  border-radius: 10px;
+}
+.say-hi-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.say-hi-lottie {
+  width: 400px;
+  height: 400px;
+}
+.say-hi-form-section {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2) !important;
 }
 
 /* ============ DASHBOARD SCHOOL ============ */
@@ -579,6 +623,51 @@ body {
 }
 .student-result-view p {
   margin: 0 !important;
+}
+
+/* ============ SCHOOL ACTIVITY SECTION ============ */
+.school-activity-section {
+  max-width: 350px;
+  width: 350px;
+  height: 350px;
+  border: 1px solid #e7e7e7;
+  border-radius: 5px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2) !important;
+  background-color: #fff !important;
+  margin-right: 15px !important;
+}
+.school-act-content-section {
+  padding: 5px;
+}
+.school-act-name {
+  margin: 0;
+  line-height: 20px;
+  font-size: 16px;
+  max-width: 350px !important;
+  width: 350px;
+}
+.school-act-price {
+  color: green;
+  font-size: 22px;
+  margin: 0;
+  margin-top: 10px;
+  font-weight: 500;
+}
+.school-activity-img {
+  max-width: 350px;
+  max-height: 200px;
+  width: 350px;
+  height: auto;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.school-activity-video {
+  max-width: 350px;
+  max-height: 200px;
+  width: 350px;
+  height: auto !important;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 /* ============ DASHBOARD TEACHER ============ */
@@ -2282,5 +2371,30 @@ hr {
     height: auto !important;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+  }
+
+  /* ============ SAY HI  ============ */
+  .say-hi-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+    background-color: #e667b3;
+    padding: 10px;
+    border-radius: 0;
+  }
+  .say-hi-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .say-hi-lottie {
+    width: 400px;
+    height: 400px;
+    display: none;
+  }
+  .say-hi-form-section {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2) !important;
   }
 }
