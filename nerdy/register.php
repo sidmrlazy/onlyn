@@ -2,8 +2,8 @@
 <?php include('main/web-navbar.php') ?>
 <div class="container section-container mt-5 mb-5">
     <div class="register">
-        <div class="col-md-4 login-background">
-            <img src="assets/images/vectors/vec-1.png" alt="" class="login-img">
+        <div class="col-md-4 reg-login-background">
+            <img src="assets/images/vectors/vec-1.png" alt="" class="reg-login-img">
         </div>
 
         <div class="col-md-8 section-form">
