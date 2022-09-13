@@ -17,7 +17,7 @@
                 $class_name = $row['class_name'];
 
             ?>
-            <form action="admin-show-acitvity.php" method="POST">
+            <form action="admin-show-activity.php" method="POST">
                 <input type="text" name="class_name" value="<?php echo $class_name ?>" hidden>
                 <button type="submit" name="submit" class="att-carrot">
                     <p><?php echo $class_name ?></p>

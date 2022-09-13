@@ -20,7 +20,94 @@ body {
 }
 
 /* ============ ADMIN DASHBOARD ============ */
-.activity-bar {
+.activity-holder {
+  max-width: 250px;
+  max-height: 300px;
+  width: 250px;
+  height: 300px;
+  border: 1px solid #e7e7e7;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.activity-media-holder {
+  flex: 1 !important;
+}
+.activity-img {
+  max-height: 140px;
+  width: 250px;
+  height: auto !important;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.activity-video {
+  max-height: 140px;
+  width: 250px;
+  height: auto !important;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.activity-details-holder {
+  flex: 2 !important;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start !important;
+  flex-direction: column;
+  padding: 10px;
+  width: 100%;
+}
+.activity-name {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.activity-date {
+  font-size: 12px;
+  color: #777;
+  margin: 0 !important;
+}
+.activity-btn-holder {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  flex: 1;
+}
+.activity-download-file {
+  text-decoration: none;
+  color: #000;
+  font-size: 24px;
+  color: #467a35;
+  flex: 1;
+}
+.activity-btn {
+  font-size: 12px;
+  padding: 3px !important;
+}
+.activity-del-btn {
+  background-color: #ffff;
+  border: 0;
+  font-size: 18px;
+  color: #de4b4e;
+  flex: 1;
+  text-align: right;
+  margin-top: 20px;
+}
+.pagination-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 50px !important;
+}
+/* .activity-bar {
   width: 100%;
   background-color: #fff;
   border-radius: 5px;
@@ -69,7 +156,7 @@ body {
 .activity-bar-img {
   width: 25px !important;
   height: auto;
-}
+} */
 .admin-section-file {
   font-size: 0;
   margin-right: 20px;
@@ -280,6 +367,7 @@ body {
 .school-main-dashboard {
   position: relative !important;
   margin-left: 220px !important;
+  margin-bottom: 50px !important;
 }
 .dashboard-custom-card {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2) !important;
@@ -2082,5 +2170,27 @@ hr {
   .student-result-view p {
     margin: 0 !important;
     font-size: 14px !important;
+  }
+
+  .activity-holder {
+    max-width: 100% !important;
+    max-height: auto !important;
+    width: 100%;
+    height: 300px;
+  }
+  .activity-img {
+    max-width: auto !important;
+    max-height: auto !important;
+    width: 100%;
+    height: auto !important;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .activity-video {
+    max-height: auto !important;
+    width: 250px;
+    height: auto !important;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
   }
 }

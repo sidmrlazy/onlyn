@@ -16,6 +16,10 @@
             $activity_file_temp = $_FILES["activity_file"]["tmp_name"];
             $folder = "assets/activities/" . $activity_file;
 
+            $activity_thumbnail_file = $_FILES["activity_thumbnail_file"]["name"];
+            $activity_thumbnail_file_temp = $_FILES["activity_thumbnail_file"]["tmp_name"];
+            $folder2 = "assets/activities/" . $activity_thumbnail_file;
+
             $activity_status = 1;
 
             $insert_query = "INSERT INTO `activity`(
@@ -23,6 +27,7 @@
                 `ac_name`,
                 `ac_details`,
                 `ac_file`,
+                `ac_thumbnail_file`,
                 `ac_status`
             )
             VALUES(
@@ -30,6 +35,7 @@
                 '$activity_name',
                 '$ac_details',
                 '$activity_file',
+                '$activity_thumbnail_file',
                 '$activity_status'
                 )";
             $insert_result = mysqli_query($connection, $insert_query);
@@ -37,7 +43,9 @@
                 die(mysqli_error($connection));
             } else {
                 if (move_uploaded_file($activity_file_temp, $folder)) {
-                    echo "<div class='alert alert-success mb-3' role='alert'>$activity_name uploaded successfully!</div>";
+                    if (move_uploaded_file($activity_thumbnail_file_temp, $folder2)) {
+                        echo "<div class='alert alert-success mb-3' role='alert'>$activity_name uploaded successfully!</div>";
+                    }
                 } else {
                     echo "<div class='alert w-100 alert-danger mb-3' role='alert'>There was some error</div>";
                 }
@@ -46,6 +54,10 @@
         ?>
 
         <form class="card p-3 col-md-6" action="" method="POST" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label for="formFile" class="form-label">Upload Activity Thumbnail (jpeg | jpg | png )</label>
+                <input class="form-control" type="file" name="activity_thumbnail_file" id="formFile">
+            </div>
             <div class="form-floating mb-3">
                 <select required class="form-select" name="activity_class" id="floatingSelect"
                     aria-label="Floating label select example">
