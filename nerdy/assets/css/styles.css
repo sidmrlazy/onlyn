@@ -340,14 +340,14 @@ body {
 
 .register {
   display: flex !important;
-  justify-content: center !important;
+  justify-content: flex-start !important;
   align-items: flex-start !important;
   height: 100% !important;
 }
 .login-background {
   display: flex !important;
   justify-content: center !important;
-  align-items: center !important;
+  align-items: flex-start !important;
   flex-direction: column;
   max-width: 100% !important;
   margin-right: 30px !important;
@@ -355,13 +355,13 @@ body {
 .login-content-header {
   font-size: 44px !important;
   line-height: 50px !important;
-  text-align: center;
+  text-align: left;
 }
 .login-content-sub-header {
   font-size: 24px !important;
   color: #1d4474;
   margin: 0;
-  text-align: center !important;
+  text-align: left !important;
   width: 100% !important;
 }
 .login-background img {
@@ -2068,6 +2068,7 @@ hr {
     font-weight: 400 !important;
     text-align: center !important;
   }
+
   .login-background {
     display: flex !important;
     justify-content: center !important;
@@ -2077,10 +2078,10 @@ hr {
     background-color: #121952;
     padding: 20px;
     border-radius: 5px;
+    margin-right: 0 !important;
   }
   .login-background img {
-    width: 50%;
-    height: auto;
+    display: none;
   }
   .login-content-header {
     font-size: 30px !important;
