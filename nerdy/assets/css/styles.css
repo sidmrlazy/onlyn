@@ -18,7 +18,9 @@ input::-webkit-inner-spin-button {
 body {
   background-color: #fafafa;
 }
-
+.broken-img-icon {
+  font-size: 30px !important;
+}
 /* ============ ADMIN DASHBOARD ============ */
 .activity-holder {
   max-width: 250px;

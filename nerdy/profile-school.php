@@ -38,8 +38,14 @@
         <div class="card p-4">
             <div class="school-profile-card">
                 <div class="user-school-logo">
+                    <?php
+                        if (!file_exists($user_school_logo)) { ?>
+                    <ion-icon name="image-outline" class="broken-img-icon"></ion-icon>
+                    <?php } else { ?>
                     <img src="<?php echo $user_school_logo ?>" alt="<?php echo $user_school_logo ?>"
                         class="user-school-logo-img">
+                    <?php  }                    ?>
+
                 </div>
                 <div class="school-profile-details">
                     <h4 class="user-school"><?php echo $user_school_name ?></h4>
