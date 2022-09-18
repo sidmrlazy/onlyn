@@ -145,31 +145,6 @@ $link = "https://wa.me/+917388565681?text=Hi%20";
                         Manage School
                     </a>
                 </li>
-
-                <!-- <li class="nav-item nav-mobile">
-                    <a class="nav-link active" aria-current="page" href="#">
-                        <ion-icon name="notifications"></ion-icon>
-                        Notification
-                    </a>
-                </li> -->
-
-                <!-- <li class="nav-item active dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-bs-toggle="dropdown" data-bs-toggle="tooltip" data-bs-placement="top"
-                        title="Learning Management System" aria-expanded="false">
-                        <ion-icon name="bulb"></ion-icon>
-                        Download Activities
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Add Student Data</a></li>
-                        <li><a class="dropdown-item" href="#">View | Edit Student Data</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Add Subjects</a></li>
-                        <li><a class="dropdown-item" href="#">View | Edit Subjects</a></li>
-                    </ul>
-                </li> -->
             </ul>
             <div class="d-flex">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -218,6 +193,16 @@ $link = "https://wa.me/+917388565681?text=Hi%20";
                             <ion-icon name="home"></ion-icon>
                             Home
                         </a> -->
+                    </li>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link" aria-current="page" href="#">
+                            <ion-icon name="game-controller-outline"></ion-icon> Your Activities
+                        </a>
+                    </li>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link" aria-current="page" href="#">
+                            <ion-icon name="cart-outline" class="navbar-cart"></ion-icon>
+                        </a>
                     </li>
                     <li class="nav-item dropdown">
                         <?php

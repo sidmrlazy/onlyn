@@ -51,14 +51,6 @@
             Fee
         </a>
     </li>
-
-    <!-- <li class="nav-item side-nav-link">
-        <a class="nav-link side-nav-text" href="#">
-            <ion-icon id="flourescent-green" name="notifications"></ion-icon>
-            Notifications
-        </a>
-    </li> -->
-
     <li class="nav-item side-nav-link">
         <a class="nav-link side-nav-text" href="manage.php">
             <ion-icon id="bright-red" name="settings"></ion-icon>

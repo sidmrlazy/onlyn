@@ -3,9 +3,9 @@
 <div class="container-fluid">
     <?php include('navbar/class-teacher-side-nav.php') ?>
     <div class="school-main-dashboard animate__animated animate__fadeIn">
-        <a href="upload-offline-exam.php" class="custom-tab">
+        <a href="upload-online-exam.php" class="custom-tab">
             <ion-icon class="tab-icon" name="stopwatch-outline"></ion-icon>
-            <p>Upload Offline Exam | Test</p>
+            <p>Upload Online Exam | Test</p>
             <ion-icon class="tab-icon-right" name="caret-forward-outline"></ion-icon>
         </a>
         <a href="class-teacher-upload-result.php" class="custom-tab">

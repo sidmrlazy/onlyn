@@ -26,7 +26,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.php">Say Hi!</a>
+                    <a class="nav-link active" aria-current="page" href="say-hi.php">Say Hi!</a>
                 </li>
             </ul>
         </div>

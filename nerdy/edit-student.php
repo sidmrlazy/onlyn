@@ -92,7 +92,7 @@
             </div>
             <div class="mb-3">
                 <label for="studentFullName" class="form-label">Student Full Name</label>
-                <input readonly type="text" name="student_name" value="<?php echo $student_name ?>"
+                <input type="text" name="student_name" value="<?php echo $student_name ?>"
                     placeholder="<?php echo $student_name ?>" class="form-control" id="studentFullName"
                     aria-describedby="fullName">
             </div>

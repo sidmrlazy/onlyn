@@ -11,18 +11,17 @@ $show_error = false;
 $user_exists = false;
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $user_id = $_POST["user_id"];
-    $user_school_name = $_POST["user_school_name"];
-    $user_contact = $_POST["user_contact"];
-    $user_email = $_POST["user_email"];
-    $user_plan_amount = $_POST["user_plan_amount"] / 100;
+    $purchase_activity_id = $_POST['purchase_activity_id'];
+    $purchase_user_id = $_POST['purchase_user_id'];
+    $purchase_activity_amount = $_POST['purchase_activity_amount'];
+    $purchase_status = 1;
 
     $keyId = "rzp_test_XlQzoAPXt17Eag";
     $keySecret = "RmBRy7F186o8bLQhuUC5kf0Y";
     $api = new Api($keyId, $keySecret);
     $orderData = [
         'receipt' => rand(1000, 9999) . 'ORD',
-        'amount' => $user_plan_amount * 100,
+        'amount' => $purchase_activity_amount * 100,
         'currency' => 'INR',
         'payment_capture' => 1
     ];
@@ -38,9 +37,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         "description" => 'Taking your school from Analog to Digital',
         "image" => "assets/images/logo/logo-round.png",
         "prefill" => [
-            "name" => $user_school_name,
-            "email" => $user_email,
-            "contact" => $user_contact,
+            "name" => $purchase_user_id,
+            "email" => $purchase_user_id,
+            "contact" => $purchase_user_id,
         ],
         "theme" => [
             "color" => "#610856"
@@ -98,8 +97,17 @@ data-dismiss="alert" aria-label="Close">
 <!-- ============== ALERT END ============== -->
 
 <?php include('main/session-less-header.php') ?>
-<div class="container mt-5 d-flex justify-content-center align-items-center">
-    <button id="rzp-button1" class="btn btn-primary">Pay with Razorpay</button>
+<?php include('navbar/navbar.php') ?>
+<div class="d-flex container-fluid">
+    <?php include('navbar/school-side-nav.php') ?>
+    <div class="school-main-dashboard container">
+        <div class="container mt-5 d-flex justify-content-center align-items-center">
+            <div>
+
+            </div>
+            <button id="rzp-button1" class="btn btn-primary">Pay with Razorpay</button>
+        </div>
+    </div>
 </div>
 <?php include('main/footer.php') ?>
 

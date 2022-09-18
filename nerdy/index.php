@@ -1,12 +1,12 @@
 <?php include('main/header.php') ?>
 <?php include('main/web-navbar.php') ?>
-<div class="container mt-5">
+<div class="container mt-5 mb-5">
     <div class="centered-row">
         <div class="col-md-6 login-background">
             <img src="assets/images/vectors/vec-1.png" alt="" class="login-img">
             <h1 class="login-content-header">Take your School from Analog to Digital</h1>
             <h2 class="login-content-sub-header">with Onlyn Nerdy</h2>
-
+            <a href="" class="login-banner-btn">Know more</a>
         </div>
 
         <div class="p-3 col-md-6 section-form">

@@ -14,43 +14,55 @@
             <ul class="navbar-nav mx-auto me-auto mb-2 mb-lg-0">
                 <li class="nav-item nav-mobile">
                     <a class="nav-link active" aria-current="page" href="dashboard.php">
-                        <ion-icon name="home"></ion-icon> Home
+                        <ion-icon id="light-blue-icon" name="home"></ion-icon> Home
                     </a>
                 </li>
                 <li class="nav-item nav-mobile">
                     <a class="nav-link active" aria-current="page" href="class-teacher-select-class-activity">
-                        <ion-icon name="balloon"></ion-icon>
+                        <ion-icon id="pale-orange" name="balloon"></ion-icon>
                         Activities
                     </a>
                 </li>
                 <li class="nav-item nav-mobile">
                     <a class="nav-link active" aria-current="page" href="student.php">
-                        <ion-icon name="person"></ion-icon>
+                        <ion-icon id="dark-blue-icon" name="person"></ion-icon>
                         Students
                     </a>
                 </li>
                 <li class="nav-item nav-mobile">
                     <a class="nav-link active" aria-current="page" href="mark-student-attendance.php">
-                        <ion-icon name="shield-checkmark"></ion-icon>
+                        <ion-icon id="pale-yellow" name="shield-checkmark"></ion-icon>
                         Attendance
                     </a>
                 </li>
                 <li class="nav-item nav-mobile">
-                    <a class="nav-link active" aria-current="page" href="#">
-                        <ion-icon name="megaphone"></ion-icon>
+                    <a class="nav-link active" aria-current="page" href="announcement-teacher.php">
+                        <ion-icon id="dark-blue-icon" name="megaphone"></ion-icon>
                         Announcements
                     </a>
                 </li>
                 <li class="nav-item nav-mobile">
-                    <a class="nav-link active" aria-current="page" href="#">
-                        <ion-icon name="calendar"></ion-icon>
+                    <a class="nav-link active" aria-current="page" href="time-table-menu.php">
+                        <ion-icon id="pale-orange" name="calendar"></ion-icon>
                         Time Table
                     </a>
                 </li>
                 <li class="nav-item nav-mobile">
                     <a class="nav-link active" aria-current="page" href="class-teacher-student-diary-menu.php">
-                        <ion-icon name="book"></ion-icon>
+                        <ion-icon id="flourescent-green" name="book"></ion-icon>
                         Student Diary
+                    </a>
+                </li>
+                <li class="nav-item nav-mobile">
+                    <a class="nav-link active" aria-current="page" href="exam-menu.php">
+                        <ion-icon id="bright-red" name="rocket"></ion-icon>
+                        Exams & Results
+                    </a>
+                </li>
+                <li class="nav-item nav-mobile">
+                    <a class="nav-link active" aria-current="page" href="class-teacher-home-work-menu.php">
+                        <ion-icon id="pale-orange" name="receipt"></ion-icon>
+                        Homework
                     </a>
                 </li>
 

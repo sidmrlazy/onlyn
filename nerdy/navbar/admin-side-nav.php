@@ -25,6 +25,12 @@
         </a>
     </li>
     <li class="nav-item side-nav-link">
+        <a class="nav-link side-nav-text" aria-current="page" href="admin-promotions.php">
+            <ion-icon id="dark-blue-icon" name="rocket"></ion-icon>
+            Promotions
+        </a>
+    </li>
+    <li class="nav-item side-nav-link">
         <a class="nav-link side-nav-text" href="#">
             <ion-icon id="bright-red" name="notifications"></ion-icon>
             Notifications

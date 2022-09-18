@@ -396,9 +396,11 @@ body {
   text-decoration: none !important;
   color: #fff !important;
   padding: 10px;
-  margin-top: 5px;
+  margin-top: 15px;
   border-radius: 100px;
   font-size: 14px;
+  width: 150px !important;
+  text-align: center;
 }
 
 /* ============ SAY HI  ============ */
@@ -627,9 +629,10 @@ body {
 
 /* ============ SCHOOL ACTIVITY SECTION ============ */
 .school-activity-section {
-  max-width: 350px;
-  width: 350px;
-  height: 350px;
+  max-width: 250px;
+  max-height: 330px;
+  width: 250px;
+  height: 330px;
   border: 1px solid #e7e7e7;
   border-radius: 5px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2) !important;
@@ -637,37 +640,68 @@ body {
   margin-right: 15px !important;
 }
 .school-act-content-section {
-  padding: 5px;
+  padding: 10px;
 }
 .school-act-name {
   margin: 0;
   line-height: 20px;
   font-size: 16px;
-  max-width: 350px !important;
-  width: 350px;
+  max-width: 250px !important;
+  width: 250px !important;
+  font-weight: 500;
 }
 .school-act-price {
   color: green;
-  font-size: 22px;
-  margin: 0;
+  font-size: 20px;
   margin-top: 10px;
+  margin-bottom: 10px;
   font-weight: 500;
 }
 .school-activity-img {
-  max-width: 350px;
+  max-width: 250px;
   max-height: 200px;
-  width: 350px;
-  height: auto;
+  width: 250px;
+  height: 150px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
 .school-activity-video {
-  max-width: 350px;
+  max-width: 250px;
   max-height: 200px;
-  width: 350px;
-  height: auto !important;
+  width: 249px;
+  height: 150px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+}
+.act-btn-details {
+  border: 0;
+  background-color: #23b3e0;
+  width: 100%;
+  color: #fff;
+  padding: 3px;
+  flex: 1 !important;
+  text-decoration: none;
+}
+.add-btn-row {
+  display: flex !important;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.add-to-cart-btn:hover {
+  background-color: green;
+  color: #fff;
+  transition: 0.2s all ease-in-out;
+  border-radius: 5px;
+}
+.add-to-cart-btn {
+  border: 1px solid #e7e7e7;
+  background-color: #fff;
+  width: 80px;
+  height: 30px;
+  font-size: 12px;
+  padding: 3px;
+  margin-left: 5px;
 }
 
 /* ============ DASHBOARD TEACHER ============ */
@@ -1462,7 +1496,9 @@ hr {
   font-size: 14px !important;
   margin-right: 5px;
 }
-
+.navbar-cart {
+  font-size: 24px;
+}
 .nav-mobile {
   display: none;
 }

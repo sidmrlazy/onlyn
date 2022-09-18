@@ -30,7 +30,11 @@
                 </li>
 
                 <li class="nav-item nav-mobile">
-                    <a class="nav-link active" aria-current="page" href="#">Manage</a>
+                    <a class="nav-link active" aria-current="page" href="#">Notifications</a>
+                </li>
+
+                <li class="nav-item nav-mobile">
+                    <a class="nav-link active" aria-current="page" href="admin-promotions.php">Promotions</a>
                 </li>
             </ul>
             <div class="d-flex">

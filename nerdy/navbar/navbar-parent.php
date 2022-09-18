@@ -10,14 +10,22 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item nav-mobile">
-                    <a class="nav-link " aria-current="page" href="dashboard.php">Home</a>
+                    <a class="nav-link " aria-current="page" href="dashboard.php">
+                        <ion-icon id="light-blue-icon" name="home"></ion-icon>
+                        Home
+                    </a>
                 </li>
                 <li class="nav-item nav-mobile">
-                    <a class="nav-link " aria-current="page" href="show-student-attendance.php">Attendance</a>
+                    <a class="nav-link " aria-current="page" href="show-student-attendance.php">
+                        <ion-icon id="pale-yellow" name="shield-checkmark"></ion-icon>
+                        Attendance
+                    </a>
                 </li>
 
                 <li class="nav-item nav-mobile">
-                    <a class="nav-link " aria-current="page" href="#">Announcements
+                    <a class="nav-link " aria-current="page" href="#">
+                        <ion-icon id="dark-blue-icon" name="megaphone"></ion-icon>
+                        Announcements
                         <?php
                         require_once('main/config.php');
                         if (!empty($_SESSION['user_type'])) {
@@ -46,19 +54,31 @@
                 </li>
 
                 <li class="nav-item nav-mobile">
-                    <a class="nav-link " aria-current="page" href="#">Time Table</a>
+                    <a class="nav-link " aria-current="page" href="parent-show-tt-day.php">
+                        <ion-icon id="pale-orange" name="calendar"></ion-icon>
+                        Time Table
+                    </a>
                 </li>
 
                 <li class="nav-item nav-mobile">
-                    <a class="nav-link " aria-current="page" href="#">Exams & Results</a>
+                    <a class="nav-link " aria-current="page" href="student-view-exam.php">
+                        <ion-icon id="bright-red" name="rocket"></ion-icon>
+                        Exams & Results
+                    </a>
                 </li>
 
                 <li class="nav-item nav-mobile">
-                    <a class="nav-link " aria-current="page" href="#">Homework</a>
+                    <a class="nav-link " aria-current="page" href="student-select-hw.php">
+                        <ion-icon id="pale-orange" name="receipt"></ion-icon>
+                        Homework
+                    </a>
                 </li>
 
                 <li class="nav-item nav-mobile">
-                    <a class="nav-link " aria-current="page" href="#">Student Diary</a>
+                    <a class="nav-link " aria-current="page" href="student-select-diary-date.php">
+                        <ion-icon id="flourescent-green" name="book"></ion-icon>
+                        Student Diary
+                    </a>
                 </li>
             </ul>
 
@@ -93,12 +113,12 @@
                         <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="navbarDropdown">
                             <li>
                                 <a class="dropdown-item" href="#">
-                                    <ion-icon name="person-circle-outline"></ion-icon> Profile
+                                    <ion-icon name="person-circle"></ion-icon> Profile
                                 </a>
                             </li>
                             <li>
                                 <a class="dropdown-item" href="logout.php">
-                                    <ion-icon name="log-out-outline"></ion-icon>
+                                    <ion-icon name="log-out"></ion-icon>
                                     Logout
                                 </a>
                             </li>

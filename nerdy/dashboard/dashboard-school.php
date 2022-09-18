@@ -107,6 +107,8 @@
 
         <div class="school-main-dashboard container mt-3">
             <?php include('dashboard/pills.php') ?>
+            <?php // include('components/branding-carousel.php') 
+            ?>
             <?php
             $current_date = date('d-m-Y');
             $date_today = strtotime($current_date);
@@ -272,12 +274,6 @@
 
 <div class="container mt-3">
     <div class="animate__animated animate__fadeIn mb-5">
-        <!-- <div class="section-header mb-3">
-            <h3 class="section-heading-dashboard">
-                <ion-icon name="school-outline" class="section-heading-icon"></ion-icon>
-                Subscription Status
-            </h3>
-        </div> -->
         <?php
             $current_date = date('d-m-Y');
             $date_today = strtotime($current_date);
@@ -372,6 +368,5 @@
 </div>
 
 <!-- ============== EXPIRED SUBSCRIPTION DATA END ============== -->
-<?php
-        }
+<?php }
     } ?>

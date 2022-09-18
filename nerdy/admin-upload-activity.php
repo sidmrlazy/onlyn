@@ -21,6 +21,7 @@
             $folder2 = "assets/activities/" . $activity_thumbnail_file;
 
             $activity_status = 1;
+            $activity_price = $_POST['activity_price'];
 
             $insert_query = "INSERT INTO `activity`(
                 `ac_class_name`,
@@ -28,6 +29,7 @@
                 `ac_details`,
                 `ac_file`,
                 `ac_thumbnail_file`,
+                `ac_price`,
                 `ac_status`
             )
             VALUES(
@@ -36,6 +38,7 @@
                 '$ac_details',
                 '$activity_file',
                 '$activity_thumbnail_file',
+                '$activity_price',
                 '$activity_status'
                 )";
             $insert_result = mysqli_query($connection, $insert_query);
@@ -90,6 +93,12 @@
             <div class="mb-4">
                 <label for="formFile" class="form-label">Upload File (jpeg | jpg | png | pdf | word )</label>
                 <input class="form-control" type="file" name="activity_file" id="formFile">
+            </div>
+
+            <div class="form-floating mb-3">
+                <input required type="number" class="form-control" name="activity_price" id="floatingInput"
+                    placeholder="Activity Name">
+                <label for="floatingInput">Activity Price (in ₹)</label>
             </div>
 
             <div class="mb-3">
