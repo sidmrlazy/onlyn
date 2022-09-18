@@ -10,27 +10,14 @@
                 Attendance
             </h3>
             <?php
-            if (isset($_POST['submit'])) {
-                $tt_created_by = $_POST['tt_created_by'];
-                $tt_day_original = $_POST['tt_day'];
-                if ($tt_day_original == 1) {
-                    $tt_day = "Monday";
-                } else if ($tt_day_original == 2) {
-                    $tt_day = "Tuesday";
-                } else if ($tt_day_original == 3) {
-                    $tt_day = "Wednesday";
-                } else if ($tt_day_original == 4) {
-                    $tt_day = "Thursday";
-                } else if ($tt_day_original == 5) {
-                    $tt_day = "Friday";
-                } else if ($tt_day_original == 6) {
-                    $tt_day = "Saturday";
-                } else if ($tt_day_original == 7) {
-                    $tt_day = "Sunday";
-                }
+            if (isset($_POST['delete'])) {
+                echo "Delete";
+            }
+            if (isset($_POST['edit'])) {
+                echo "Edit";
             }
             ?>
-            <p class="section-desc">Showing attendance for <?php echo $tt_day ?></p>
+
         </div>
 
 
@@ -48,6 +35,7 @@
                         die(mysqli_error($connection));
                     } else {
                         while ($row = mysqli_fetch_assoc($result)) {
+                            $tt_id = $row['tt_id'];
                             $tt_period = $row['tt_period'];
 
                             $tt_subject = $row['tt_subject'];
@@ -77,15 +65,41 @@
                     <p class="att-card-period"><?php echo $tt_period ?>th Period</p>
                     <?php } ?>
                     <div class="d-flex justify-content-center align-items-start">
+                        <?php
+                                    $get_subject = "SELECT * FROM `subjects` WHERE subject_id = $tt_subject";
+                                    $get_subject_r = mysqli_query($connection, $get_subject);
+                                    $subject_name = "";
+                                    while ($row = mysqli_fetch_assoc($get_subject_r)) {
+                                        $subject_id = $row['subject_id'];
+                                        $subject_name = $row['subject_name'];
+
+                                        if ($tt_subject == $subject_id) {
+                                            $tt_subject = $subject_name;
+                                        }
+                                    }
+                                    ?>
                         <p class="att-card-subject"><?php echo $tt_subject ?></p>
                         <p><?php echo $tt_time ?></p>
                     </div>
                     <div class="tt-row">
                         <p class="tt-teacher"><?php echo $tt_teacher ?></p>
-                        <button type="submit" name="edit" class="tt-btn" data-bs-toggle="tooltip"
-                            data-bs-placement="bottom" title="Edit ">
-                            <ion-icon name="create-outline"></ion-icon> Edit
-                        </button>
+                        <div class="d-flex">
+                            <form action="" method="POST">
+                                <input type="text" name="tt_id" value="<?php echo $tt_id ?>" hidden>
+                                <button type="submit" name="edit" class="tt-btn" data-bs-toggle="tooltip"
+                                    data-bs-placement="bottom" title="Edit ">
+                                    <ion-icon name="create-outline"></ion-icon>
+                                </button>
+                            </form>
+
+                            <form action="" method="POST">
+                                <input type="text" name="tt_id" value="<?php echo $tt_id ?>" hidden>
+                                <button type="submit" name="delete" class="tt-btn ml-4" data-bs-toggle="tooltip"
+                                    data-bs-placement="bottom" title="Delete">
+                                    <ion-icon name="trash-outline"></ion-icon>
+                                </button>
+                            </form>
+                        </div>
                     </div>
                 </div>
                 <?php
@@ -95,8 +109,6 @@
                 ?>
             </div>
         </div>
-
-
     </div>
 </div>
 <?php include('main/footer.php');  ?>

@@ -2,129 +2,111 @@
 <?php include('navbar/navbar.php'); ?>
 <?php include('toasts.php'); ?>
 <div class="d-flex container-fluid">
-    <?php include('navbar/class-teacher-side-nav.php') ?>
+    <?php include('navbar/school-side-nav.php') ?>
     <div class="school-main-dashboard container section-container mb-5 animate__animated animate__fadeIn">
         <div class="section-header">
             <h3 class="section-heading">
                 <ion-icon name="calendar-outline" class="section-heading-icon"></ion-icon>
-                Set Time Table
+                Edit Time Table
             </h3>
 
-            <p class="section-desc">Set time table for your assigned class</p>
+            <p class="section-desc">Edit time table set by the teacher</p>
         </div>
         <?php
-        if (isset($_POST['set'])) {
-            $fetched_tt_day = $_POST['tt_day'];
-            if ($fetched_tt_day == 1) {
-                $tt_day_name = "Monday";
-            } else if ($fetched_tt_day == 2) {
-                $tt_day_name = "Tuesday";
-            } else if ($fetched_tt_day == 3) {
-                $tt_day_name = "Wednesday";
-            } else if ($fetched_tt_day == 4) {
-                $tt_day_name = "Thursday";
-            } else if ($fetched_tt_day == 5) {
-                $tt_day_name = "Friday";
-            } else if ($fetched_tt_day == 6) {
-                $tt_day_name = "Saturday";
-            } else if ($fetched_tt_day == 7) {
-                $tt_day_name = "Sunday";
-            }
-        }
-
-        $select_class = "SELECT * FROM classes WHERE class_teacher = $session_user_id";
-        $select_class_result = mysqli_query($connection, $select_class);
-
-        $class_id = "";
-        $class_name = "";
-        $class_section = "";
-        while ($row = mysqli_fetch_assoc($select_class_result)) {
-            $class_id = $row['class_id'];
-            $class_name = $row['class_name'];
-            $class_section = $row['class_section'];
-        }
-
-        $select_subject = "SELECT * FROM subjects WHERE subject_added_by = $user_added_by";
-        $select_subject_result = mysqli_query($connection, $select_subject);
-
-        $subject_name = "";
-        while ($row = mysqli_fetch_assoc($select_subject_result)) {
-            $subject_name = $row['subject_name'];
-        }
-
-        if (isset($_POST['submit'])) {
-            $tt_day = $_POST['tt_day'];
+        if (isset($_POST['update'])) {
+            $tt_id = $_POST['tt_id'];
             $tt_period = $_POST['tt_period'];
-            $tt_subject = $_POST['tt_subject'];
             $tt_time = $_POST['tt_time'];
+            $tt_subject = $_POST['tt_subject'];
             $tt_teacher = $_POST['tt_teacher'];
-            $user_name;
-            $class_id;
 
-            $create_tt = "INSERT INTO `time_table`(
-                `tt_day`,
-                `tt_period`,
-                `tt_subject`,
-                `tt_time`,
-                `tt_teacher`,
-                `tt_class`,
-                `tt_created_by`
-            )
-            VALUES(
-                '$tt_day',
-                '$tt_period',
-                '$tt_subject',
-                '$tt_time',
-                '$tt_teacher',
-                '$class_id',
-                '$session_user_id'
-                )";
-            $create_tt_res = mysqli_query($connection, $create_tt);
-            if (!$create_tt_res) {
-                die(mysqli_error($connection));
-            } else {
-                echo "<div class='alert alert-success mb-3' role='alert'>
-                Time Table Updated
+            $update_tt = "UPDATE
+            `time_table`
+        SET
+            `tt_period` = '$tt_period',
+            `tt_subject` = '$tt_subject',
+            `tt_time` = '$tt_time',
+            `tt_teacher` = $tt_teacher
+        WHERE
+            `tt_id` = '$tt_id'";
+            $update_tt_res = mysqli_query($connection, $update_tt);
+
+            if (!$update_tt_res) {
+                echo "<div class='alert alert-danger mb-3 mt-3' role='alert'>
+                Error 404!
               </div>";
-                echo "<script>timeTableSuccess();</script>";
+            } else {
+                echo "<div class='alert alert-success mb-3 mt-3' role='alert'>
+                Time table updated!
+              </div>";
             }
         }
 
 
-        ?>
 
+        if (isset($_POST['edit'])) {
+            $tt_id = $_POST['tt_id'];
+            $get_tt = "SELECT * FROM `time_table` WHERE `tt_id` = '$tt_id'";
+            $get_tt_res = mysqli_query($connection, $get_tt);
+            while ($row = mysqli_fetch_assoc($get_tt_res)) {
+                $tt_day = $row['tt_day'];
+                if ($tt_day == 1) {
+                    $tt_day_name = "Monday";
+                } else if ($tt_day == 2) {
+                    $tt_day_name = "Tuesday";
+                } else if ($tt_day == 3) {
+                    $tt_day_name = "Wednesday";
+                } else if ($tt_day == 4) {
+                    $tt_day_name = "Thursday";
+                } else if ($tt_day == 5) {
+                    $tt_day_name = "Friday";
+                } else if ($tt_day == 6) {
+                    $tt_day_name = "Saturday";
+                } else if ($tt_day == 7) {
+                    $tt_day_name = "Sunday";
+                }
+                $tt_period = $row['tt_period'];
+                $tt_subject = $row['tt_subject'];
+                $tt_time = $row['tt_time'];
+                $tt_teacher = $row['tt_teacher'];
+                $tt_class = $row['tt_class'];
+            }
+        }
+        ?>
         <form action="" method="POST" class="time-table-row">
-            <input type="number" name="tt_day" class="form-control" value="<?php echo $fetched_tt_day ?>"
-                id="floatingInput" placeholder="###" hidden>
+            <input type="text" name="tt_id" value="<?php echo $tt_id ?>" hidden>
+
             <div class="form-floating input-time-table">
-                <input required type="number" name="tt_period" class="form-control" id="floatingInput"
-                    placeholder="1st Period">
+                <input required type="number" name="tt_period" value="<?php echo $tt_period ?>" class="form-control"
+                    id="floatingInput" placeholder="1st Period">
                 <label for="floatingInput">Period (Ex: 1 / 2 / 3)</label>
             </div>
 
             <div class="form-floating input-time-table">
-                <input required type="time" class="form-control" name="tt_time" id="floatingInput" placeholder="00:00">
+                <input required type="time" class="form-control" name="tt_time" value="<?php echo $tt_time ?>"
+                    id="floatingInput" placeholder="00:00">
                 <label for="floatingInput">Select Time</label>
             </div>
+
             <div class="form-floating input-time-table">
                 <select required class="form-select" name="tt_subject" id="floatingSelect"
                     aria-label="Floating label select example">
-                    <option selected>Subject List</option>
                     <?php
-                    require_once('main/config.php');
-                    if (!empty($_SESSION['user_type'])) {
-                        $session_user_id = $_SESSION['user_id'];
-                    } else {
-                        $session_user_id = 0;
+                    $query_subject = "SELECT * FROM `subjects` WHERE `subject_id` = $tt_subject";
+                    $result_subject = mysqli_query($connection, $query_subject);
+                    $fetched_subject_id = "";
+                    $fetched_subject_name = "";
+                    while ($row = mysqli_fetch_assoc($result_subject)) {
+                        $fetched_subject_id = $row['subject_id'];
+                        $fetched_subject_name = $row['subject_name'];
                     }
-                    $fetch_admin = "SELECT * FROM `users` WHERE user_id = $session_user_id";
-                    $fetch_admin_res = mysqli_query($connection, $fetch_admin);
-                    $user_added_by = "";
-                    while ($row = mysqli_fetch_assoc($fetch_admin_res)) {
-                        $user_added_by = $row['user_added_by'];
-                    }
-                    $query = "SELECT * FROM subjects WHERE subject_added_by = $user_added_by";
+                    ?>
+                    <option value="<?php echo $fetched_subject_id ?>">
+                        <?php echo $fetched_subject_name . " (Assigned)" ?></option>
+                    <?php
+                    $query = "SELECT * FROM `subjects` WHERE `subject_added_by` = '$session_user_id'";
                     $result = mysqli_query($connection, $query);
+                    $subject_name = "";
                     while ($row = mysqli_fetch_assoc($result)) {
                         $subject_id = $row['subject_id'];
                         $subject_name = $row['subject_name'];
@@ -136,28 +118,25 @@
                 <label for="floatingSelect">Select Subject</label>
             </div>
 
-
-
             <div class="form-floating input-time-table">
                 <select required class="form-select" id="floatingSelect" name="tt_teacher"
                     aria-label="Floating label select example">
-                    <option selected>Teacher List</option>
                     <?php
-                    require_once('main/config.php');
-                    if (!empty($_SESSION['user_type'])) {
-                        $session_user_id = $_SESSION['user_id'];
-                    } else {
-                        $session_user_id = 0;
+                    $query_subject = "SELECT * FROM `users` WHERE `user_id` = $tt_teacher";
+                    $result_subject = mysqli_query($connection, $query_subject);
+                    $fetched_teacher_id = "";
+                    $fetched_teacher = "";
+                    while ($row = mysqli_fetch_assoc($result_subject)) {
+                        $fetched_teacher_id = $row['user_id'];
+                        $fetched_teacher = $row['user_name'];
                     }
-                    $fetch_admin = "SELECT * FROM `users` WHERE user_id = $session_user_id";
-                    $fetch_admin_res = mysqli_query($connection, $fetch_admin);
-                    $user_added_by = "";
-                    while ($row = mysqli_fetch_assoc($fetch_admin_res)) {
-                        $user_added_by = $row['user_added_by'];
-                    }
-                    $query = "SELECT * FROM users WHERE user_added_by = $user_added_by";
-                    $result = mysqli_query($connection, $query);
-                    while ($row = mysqli_fetch_assoc($result)) {
+                    ?>
+                    <option value="<?php echo $fetched_teacher_id  ?>"><?php echo $fetched_teacher . " (Assigned)" ?>
+                    </option>
+                    <?php
+                    $query_teacher = "SELECT * FROM users WHERE user_added_by = $session_user_id";
+                    $result_teacher = mysqli_query($connection, $query_teacher);
+                    while ($row = mysqli_fetch_assoc($result_teacher)) {
                         $user_id = $row['user_id'];
                         $user_name = $row['user_name'];
                         $user_type = $row['user_type'];
@@ -172,8 +151,9 @@
                 <label for="floatingSelect">Select Teacher</label>
             </div>
 
-            <button type="submit" name="submit" class="btn btn-sm btn-outline-success time-table-btn">+</button>
+            <button type="submit" name="update" class="btn btn-sm btn-outline-success time-table-btn">+</button>
         </form>
+
 
         <!-- <div class="table-responsive card p-4 mt-4">
             <table class="table table-bordered">

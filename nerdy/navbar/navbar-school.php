@@ -85,63 +85,63 @@ $link = "https://wa.me/+917388565681?text=Hi%20";
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item nav-mobile">
                     <a class="nav-link active" aria-current="page" href="dashboard.php">
-                        <ion-icon name="home"></ion-icon>
+                        <ion-icon id="light-blue-icon" name="home"></ion-icon>
                         Home
                     </a>
                 </li>
 
                 <li class="nav-item nav-mobile">
                     <a class="nav-link active" aria-current="page" href="select-class-activity.php">
-                        <ion-icon name="balloon"></ion-icon>
+                        <ion-icon id="pale-orange" name="balloon"></ion-icon>
                         Activities
                     </a>
                 </li>
 
                 <li class="nav-item nav-mobile">
                     <a class="nav-link active" aria-current="page" href="school-users-action.php">
-                        <ion-icon name="people"></ion-icon>
+                        <ion-icon id="dark-blue-icon" name="people"></ion-icon>
                         Teachers & Staff
                     </a>
                 </li>
 
                 <li class="nav-item nav-mobile">
                     <a class="nav-link active" aria-current="page" href="school-students.php">
-                        <ion-icon name="person"></ion-icon>
+                        <ion-icon id="flourescent-green" name="person"></ion-icon>
                         Students
                     </a>
                 </li>
 
                 <li class="nav-item nav-mobile">
                     <a class="nav-link active" aria-current="page" href="school-attendance.php">
-                        <ion-icon name="shield-checkmark"></ion-icon>
+                        <ion-icon id="pale-yellow" name="shield-checkmark"></ion-icon>
                         Attendance
                     </a>
                 </li>
 
                 <li class="nav-item nav-mobile">
                     <a class="nav-link active" aria-current="page" href="announcement.php">
-                        <ion-icon name="megaphone"></ion-icon>
+                        <ion-icon id="dark-blue-icon" name="megaphone"></ion-icon>
                         Announcements
                     </a>
                 </li>
 
                 <li class="nav-item nav-mobile">
                     <a class="nav-link active" aria-current="page" href="select-class-tt.php">
-                        <ion-icon name="calendar"></ion-icon>
+                        <ion-icon id="pale-orange" name="calendar"></ion-icon>
                         Time Table
                     </a>
                 </li>
 
                 <li class="nav-item nav-mobile">
                     <a class="nav-link active" aria-current="page" href="fee-menu.php">
-                        <ion-icon name="card"></ion-icon>
+                        <ion-icon id="pale-yellow" name="card"></ion-icon>
                         Fee
                     </a>
                 </li>
 
                 <li class="nav-item nav-mobile">
                     <a class="nav-link active" aria-current="page" href="manage.php">
-                        <ion-icon name="settings"></ion-icon>
+                        <ion-icon id="bright-red" name="settings"></ion-icon>
                         Manage School
                     </a>
                 </li>

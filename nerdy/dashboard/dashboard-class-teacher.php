@@ -123,13 +123,6 @@
         <p class="mb-3">
             <ion-icon id="pale-orange" name="calendar"></ion-icon> Your teaching schedule
         </p>
-
-        <!-- <div class="section-header animate__animated animate__fadeIn">
-            <h3 class="section-heading-dashboard">
-                <ion-icon name="calendar-outline" class="section-heading-icon"></ion-icon>
-                Your teaching schedule
-            </h3>
-        </div> -->
         <div class="mt-4 animate__animated animate__fadeIn">
             <div class="tab-wrap-view">
                 <?php
@@ -178,7 +171,16 @@
                 ?>
                 <div class="dashboard-tabs">
                     <p class="dashboard-tab-label">Class <?php echo $tt_class ?> |</p>
-                    <p class="dashboard-tab-subject"><?php echo $tt_subject ?></p>
+                    <?php
+                            $fetch_subject = "SELECT * FROM subjects WHERE `subject_id` = '$tt_subject'";
+                            $fetch_subject_res = mysqli_query($connection, $fetch_subject);
+                            $subject_name = "";
+                            while ($row = mysqli_fetch_assoc($fetch_subject_res)) {
+                                $subject_id = $row['subject_id'];
+                                $subject_name = $row['subject_name'];
+                            }
+                            ?>
+                    <p class="dashboard-tab-subject"><?php echo $subject_name ?></p>
                     <p><?php echo $tt_time . " (" . $tt_day . ")" ?></p>
                 </div>
                 <?php

@@ -71,6 +71,12 @@
                     $update_user_result = mysqli_query($connection, $update_user_limit);
                     if ($update_user_result) {
 
+                        $fetch_id = "SELECT * FROM `students` WHERE student_father_contact = $student_father_contact";
+                        $fetch_id_r = mysqli_query($connection, $fetch_id);
+                        $student_id = "";
+                        while ($row = mysqli_fetch_assoc($fetch_id_r)) {
+                            $student_id = $row['student_id'];
+                        }
 
                         // Parent Login Generation.
                         $temp_password_first = substr($student_name, 0, 4);
@@ -84,7 +90,7 @@
 
                         $parent_user_type = 4;
 
-                        $search_query = "SELECT * FROM `users` WHERE user_contact = $student_father_contact";
+                        $search_query = "SELECT * FROM `users` WHERE `user_contact` = '$student_father_contact'";
                         $search_result = mysqli_query($connection, $search_query);
                         $search_count = mysqli_num_rows($search_result);
 
@@ -92,12 +98,14 @@
                             echo "Looks like this user is already registered as a student in our system";
                         } else if ($search_count == 0) {
                             $insert_parent = "INSERT INTO `users`(
+                                `user_student_id`,  
                                 `user_name`,  
                                 `user_contact`, 
                                 `user_password`, 
                                 `user_status`, 
                                 `user_type`, 
                                 `user_added_by`) VALUES(
+                                    '$student_id',
                                     '$student_name',
                                     '$parent_login_id',
                                     '$parent_login_password',

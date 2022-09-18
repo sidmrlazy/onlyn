@@ -1097,6 +1097,9 @@ body {
   border: 1px solid #e7e7e7 !important;
   border-radius: 5px !important;
 }
+.change-att-btn {
+  font-size: 12px !important;
+}
 .double-flex-attendance {
   flex: 2 !important;
 }

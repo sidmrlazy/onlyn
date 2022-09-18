@@ -26,6 +26,7 @@
             $student_roll_number = $_POST['student_roll_number'];
             $student_name = $_POST['student_name'];
             $student_father_name = $_POST['student_father_name'];
+            $student_father_contact = $_POST['student_father_contact'];
             $student_father_email = $_POST['student_father_email'];
             $student_mother_name = $_POST['student_mother_name'];
             $student_mother_contact = $_POST['student_mother_contact'];
@@ -36,27 +37,43 @@
             $student_pincode = $_POST['student_pincode'];
             $student_status = $_POST['student_status'];
 
+
+
             $update_data = "UPDATE `students` SET 
-        `student_roll_number`= '$student_roll_number',
-        `student_name`= '$student_name',
-        `student_father_name`= '$student_father_name',
-        `student_father_email`= '$student_father_email',
-        `student_mother_name`='$student_mother_name',
-        `student_mother_contact`= '$student_mother_contact',
-        `student_mother_email`= '$student_mother_email',
-        `student_address`='$student_address',
-        `student_state`='$student_state',
-        `student_city`='$student_city',
-        `student_pincode`='$student_pincode',
-        `student_added_by`='$session_user_id',
-        `student_status`='$student_status' WHERE student_id = $student_id";
+            `student_roll_number`= '$student_roll_number',
+            `student_name`= '$student_name',
+            `student_father_name`= '$student_father_name',
+            `student_father_email`= '$student_father_email',
+            `student_father_contact`= '$student_father_contact',
+            `student_mother_name`='$student_mother_name',
+            `student_mother_contact`= '$student_mother_contact',
+            `student_mother_email`= '$student_mother_email',
+            `student_address`='$student_address',
+            `student_state`='$student_state',
+            `student_city`='$student_city',
+            `student_pincode`='$student_pincode',
+            `student_added_by`='$session_user_id',
+            `student_status`='$student_status' WHERE student_id = $student_id";
             $update_data_result = mysqli_query($connection, $update_data);
             if (!$update_data_result) {
-                die("ERROR 404: " . mysqli_error($connection));
+                die("ERROR 404 - (01): " . mysqli_error($connection));
             } else {
-                echo "<div class='alert alert-success mb-3 mt-2' role='alert'>
-            Student Data Updated!
-          </div>";
+                $temp_password_first = substr($student_name, 0, 4);
+                $temp_password_last = substr($student_father_contact, -4);
+                $temp_login_password = strtolower($temp_password_first . $temp_password_last);
+                $parent_login_password = password_hash($temp_login_password, PASSWORD_DEFAULT);
+
+                // echo $student_id . "<br><br>";
+                // echo $student_father_contact;
+
+                $update_login = "UPDATE `users` SET `user_contact` = '$student_father_contact', `user_password` = '$parent_login_password' WHERE user_student_id = $student_id";
+                $update_login_res = mysqli_query($connection, $update_login);
+
+                if (!$update_login_res) {
+                    die("ERROR 404 - (02): " . mysqli_error($connection));
+                } else {
+                    echo "<div class='alert alert-success mb-3 mt-2' role='alert'>Student Data Updated!</div>";
+                }
             }
         }
 
@@ -105,7 +122,7 @@
                 </div>
                 <div class="w-100 m-1">
                     <label for="studentFullName" class="form-label">Father's Contact</label>
-                    <input disabled type="number" placeholder="<?php echo $student_father_contact ?>"
+                    <input type="number" placeholder="<?php echo $student_father_contact ?>"
                         value="<?php echo $student_father_contact ?>" name="student_father_contact" class="form-control"
                         id="studentFullName" aria-describedby="fullName">
                 </div>

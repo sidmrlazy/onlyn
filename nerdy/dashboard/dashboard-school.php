@@ -189,12 +189,17 @@
                 while ($row = mysqli_fetch_assoc($attendance_res)) {
                     $staff_name = $row['staff_attendance_user_name'];
                     $staff_attendance_date = $row['staff_attendance_date'];
+                    $staff_attendance_time = $row['staff_attendance_time'];
                     $staff_attendance_value = $row['staff_attendance_value'];
+
+                    $timezone = date_default_timezone_set("Asia/Kolkata");;
+
                     if ($current_date == $staff_attendance_date) { ?>
                 <div class="dashboard-live-tab">
                     <div class="live-att-col">
                         <p class="live-att-name"><?php echo $staff_name; ?></p>
-                        <p class="live-att-date"><?php echo $staff_attendance_date; ?></p>
+                        <p class="live-att-date">
+                            <?php echo $staff_attendance_date . " " . date('h:i:s a', $staff_attendance_time); ?></p>
                     </div>
                     <?php
                             if ($staff_attendance_value == 1) { ?>

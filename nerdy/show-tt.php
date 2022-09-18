@@ -6,8 +6,8 @@
 
         <div class="section-header">
             <h3 class="section-heading">
-                <ion-icon name="people" class="section-heading-icon"></ion-icon>
-                Attendance
+                <ion-icon name="calendar" class="section-heading-icon"></ion-icon>
+                Time Table
             </h3>
             <?php
             if (isset($_POST['submit'])) {
@@ -40,28 +40,19 @@
                 require_once('main/config.php');
                 if (isset($_POST['submit'])) {
                     $tt_created_by = $_POST['tt_created_by'];
-                    $tt_day = $_POST['tt_day'];
+                    $tt_day_original = $_POST['tt_day'];
 
-                    $query = "SELECT * FROM `time_table` WHERE `tt_day` LIKE '$tt_day' AND `tt_created_by` LIKE '$tt_created_by'";
+                    $query = "SELECT * FROM `time_table` WHERE `tt_day` LIKE $tt_day_original AND `tt_created_by` LIKE '$tt_created_by'";
                     $result = mysqli_query($connection, $query);
                     if (!$result) {
                         die(mysqli_error($connection));
                     } else {
                         while ($row = mysqli_fetch_assoc($result)) {
+                            $tt_id = $row['tt_id'];
                             $tt_period = $row['tt_period'];
-
                             $tt_subject = $row['tt_subject'];
                             $tt_time = $row['tt_time'];
                             $tt_teacher = $row['tt_teacher'];
-
-                            $get_teacher = "SELECT * FROM users WHERE user_id = $tt_teacher";
-                            $get_teacher_res = mysqli_query($connection, $get_teacher);
-                            $teacher_name = "";
-                            while ($row = mysqli_fetch_assoc($get_teacher_res)) {
-                                $teacher_name = $row['user_name'];
-                            }
-                            $tt_teacher = $teacher_name;
-
                 ?>
                 <div class="att-card">
                     <?php if ($tt_period == 1) { ?>
@@ -77,16 +68,40 @@
                     <p class="att-card-period"><?php echo $tt_period ?>th Period</p>
                     <?php } ?>
                     <div class="d-flex justify-content-center align-items-start">
+                        <?php
+                                    $get_subject = "SELECT * FROM `subjects` WHERE subject_added_by = $session_user_id";
+                                    $get_subject_r = mysqli_query($connection, $get_subject);
+                                    $subject_name = "";
+                                    while ($row = mysqli_fetch_assoc($get_subject_r)) {
+                                        $subject_id = $row['subject_id'];
+                                        $subject_name = $row['subject_name'];
+
+                                        if ($tt_subject == $subject_id) {
+                                            $tt_subject = $subject_name;
+                                        }
+                                    }
+                                    ?>
                         <p class="att-card-subject"><?php echo $tt_subject ?></p>
                         <p><?php echo $tt_time ?></p>
                     </div>
-                    <div class="tt-row">
+                    <form action="school-edit-time-table.php" method="POST" class="tt-row">
+                        <input type="text" name="tt_id" value="<?php echo $tt_id ?>" hidden>
+                        <?php
+                                    $get_teacher = "SELECT * FROM users WHERE user_id = $tt_teacher";
+                                    $get_teacher_res = mysqli_query($connection, $get_teacher);
+                                    $teacher_name = "";
+                                    while ($row = mysqli_fetch_assoc($get_teacher_res)) {
+                                        $teacher_name = $row['user_name'];
+                                    }
+                                    $tt_teacher = $teacher_name;
+
+                                    ?>
                         <p class="tt-teacher"><?php echo $tt_teacher ?></p>
                         <button type="submit" name="edit" class="tt-btn" data-bs-toggle="tooltip"
                             data-bs-placement="bottom" title="Edit ">
                             <ion-icon name="create-outline"></ion-icon> Edit
                         </button>
-                    </div>
+                    </form>
                 </div>
                 <?php
                         }

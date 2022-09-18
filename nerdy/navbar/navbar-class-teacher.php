@@ -69,14 +69,19 @@
             </ul>
 
             <div class="d-flex">
+
                 <?php
+
+
                 if (!empty($_SESSION['user_type'])) {
                     $session_user_id = $_SESSION['user_id'];
                 } else {
                     $session_user_id = 0;
                 }
-                $current_date = date('d-m-Y');
+                $date = date('d-m-Y');
+                $time = time();
 
+                $current_date = $date;
                 $query = "SELECT * FROM `staff_attendance` WHERE staff_attendance_user_id = $session_user_id AND staff_attendance_date = '$current_date'";
                 $result = mysqli_query($connection, $query);
                 $count = mysqli_num_rows($result);
@@ -93,6 +98,7 @@
                            `staff_attendance_user_id`,
                            `staff_attendance_user_name`,
                            `staff_attendance_date`,
+                           `staff_attendance_time`,
                            `staff_attendance_admin_user`,
                            `staff_attendance_value`
                        )
@@ -100,6 +106,7 @@
                            '$staff_attendance_user_id',
                            '$staff_attendance_user_name',
                            '$staff_attendance_date',
+                           '$time',
                            '$staff_attendance_admin_user',
                            '$staff_attendance_value')";
                         $mark_att_res = mysqli_query($connection, $mark_staff_att);
