@@ -840,6 +840,42 @@ body {
 }
 
 /* Reusable Components */
+.student-details-receipt {
+  margin-bottom: 10px !important;
+}
+.student-details-receipt-label {
+  margin: 0 !important;
+  color: #777;
+  font-size: 14px;
+}
+.student-details-receipt-name {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+.receipt-details {
+  display: flex !important;
+  justify-content: flex-start !important;
+  align-items: flex-start;
+  flex-direction: row !important;
+}
+.receipt-flex {
+  flex: 1;
+}
+.receipt-number {
+  margin: 0 !important;
+  font-size: 18px;
+  font-weight: 500;
+}
+.receipt-date {
+  font-size: 12px;
+}
+.receipt-fee-txn-amt {
+  font-size: 22px;
+  color: #467a35;
+  margin: 0;
+  font-weight: 500;
+}
 .card {
   background-color: #fff !important;
 }

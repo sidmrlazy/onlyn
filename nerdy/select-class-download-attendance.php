@@ -52,7 +52,7 @@
                     aria-label="Floating label select example">
                     <option selected>Type</option>
                     <option value="1">Excel</option>
-                    <option value="2">PDF</option>
+                    <!-- <option value="2">PDF</option> -->
                 </select>
                 <label for="fileType">Click here for options</label>
             </div>
