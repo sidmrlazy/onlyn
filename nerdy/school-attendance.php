@@ -3,13 +3,21 @@
 <div class="d-flex container-fluid">
     <?php include('navbar/school-side-nav.php') ?>
     <div class="school-main-dashboard container section-container mb-5 animate__animated animate__fadeIn">
-        <div class="section-header">
-            <h3 class="section-heading">
-                <ion-icon name="shield-checkmark" class="section-heading-icon"></ion-icon>
-                Attendance
-            </h3>
-            <p class="section-desc">Select class to show attendance</p>
+        <div class="section-header section-heading-row">
+            <div class="section-flex">
+                <h3 class="section-heading">
+                    <ion-icon name="shield" class="section-heading-icon"></ion-icon>
+                    Attendance
+                </h3>
+                <p class="section-desc">Select class to show attendance</p>
+            </div>
+
+            <a href="select-class-download-attendance.php" class="section-heading-btn">
+                <ion-icon name="cloud-download-outline" class="section-heading-btn-icon">
+                </ion-icon> Download Attendance
+            </a>
         </div>
+
 
 
         <div class="w-100">
