@@ -13,8 +13,8 @@
                     parent sign's in the Onlyn Nerdy Panel</p>
             </div>
         </div>
-
         <?php
+        // Data from user value
         if (isset($_POST['submit'])) {
             $fee_month = $_POST['fee_month'];
             $fee_contact = $_POST['fee_contact'];
@@ -101,8 +101,18 @@
             <p class="receipt-fee-txn-amt">₹<?php echo $fee_collection_amount ?></p>
         </div>
         <!-- ============== PAYMENT DETAILS ============== -->
+        <?php } ?>
+        <form action="download-receipt.php" method="POST">
+            <!-- ============== HIDDEN DATA ============== -->
+            <input type="text" name="fee_month" value="<?php echo $fee_month ?>" hidden>
+            <input type="text" name="fee_contact" value="<?php echo $fee_contact ?>" hidden>
+            <!-- ============== HIDDEN DATA ============== -->
+
+            <button type="submit" name="download" class="btn btn-sm btn-outline-success w-200">
+                <ion-icon name="download-outline"></ion-icon> Download
+            </button>
+        </form>
         <?php
-                }
             }
         }
         ?>

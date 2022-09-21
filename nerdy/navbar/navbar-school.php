@@ -79,8 +79,7 @@ $link = "https://wa.me/+917388565681?text=Hi%20";
                     </li>
                 </ul>
             </div>
-            <?php
-                }
+            <?php }
                 if ($setup_remove_status == 2 && $setup_payment_status == 1) { ?>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item nav-mobile">
@@ -149,8 +148,7 @@ $link = "https://wa.me/+917388565681?text=Hi%20";
             <div class="d-flex">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item ">
-                        <?php
-                                $current_date = date('d-m-Y');
+                        <?php $current_date = date('d-m-Y');
                                 $date_today = strtotime($current_date);
                                 $query = "SELECT * FROM `subscription` WHERE `subscription_user_id` = '$session_user_id'";
                                 $subscription_res = mysqli_query($connection, $query);

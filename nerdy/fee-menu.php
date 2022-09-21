@@ -37,11 +37,11 @@
             <p>Check Fee Status</p>
             <ion-icon class="tab-icon-right" name="caret-forward-outline"></ion-icon>
         </a>
-        <a href="select-data-fee-receipt.php" class="custom-tab">
+        <!-- <a href="select-data-fee-receipt.php" class="custom-tab">
             <ion-icon class="tab-icon" name="print-outline"></ion-icon>
             <p>Download Fee Receipt</p>
             <ion-icon class="tab-icon-right" name="caret-forward-outline"></ion-icon>
-        </a>
+        </a> -->
     </div>
 </div>
 <?php include('main/footer.php'); ?>
