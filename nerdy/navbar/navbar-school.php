@@ -213,6 +213,7 @@ $link = "https://wa.me/+917388565681?text=Hi%20";
                                     while ($row = mysqli_fetch_assoc($result)) {
                                         $user_school_logo = "assets/images/school-logo/" . $row['user_school_logo'];
                                         $user_school_name = $row['user_school_name'];
+                                        if (file_exists($user_school_logo)) {
                                 ?>
                         <a class="nav-link dropdown-toggle class-teacher-box-label navbar-profile-icon-container"
                             href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
@@ -220,15 +221,15 @@ $link = "https://wa.me/+917388565681?text=Hi%20";
                             aria-expanded="false">
                             <img src="<?php echo $user_school_logo ?>" alt="">
                         </a>
-                        <?php
-                                    }
-                                } else { ?>
+                        <?php } else { ?>
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" data-bs-toggle="tooltip" data-bs-placement="top"
                             title="Learning Management System" aria-expanded="false">
-                            <ion-icon name="person-outline"></ion-icon>
+                            <ion-icon name="person-outline" class="broken-profile-img"></ion-icon>
                         </a>
-                        <?php } ?>
+                        <?php }
+                                    }
+                                } ?>
                         <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="navbarDropdown">
                             <li>
                                 <a class="dropdown-item" href="profile-school.php">
