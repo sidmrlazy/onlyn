@@ -47,9 +47,34 @@
             } else {
                 if (move_uploaded_file($activity_file_temp, $folder)) {
                     if (move_uploaded_file($activity_thumbnail_file_temp, $folder2)) {
-                        echo "<div class='alert alert-success mb-3' role='alert'>$activity_name uploaded successfully!</div>";
+
+                        $fetch_schools = "SELECT * FROM `users`";
+                        $fetch_schools_res = mysqli_query($connection, $fetch_schools);
+
+                        while ($row = mysqli_fetch_assoc($fetch_schools_res)) {
+                            $user_type = $row['user_type'];
+                            $user_email = $row['user_email'];
+
+                            if (
+                                $user_type == 2 ||
+                                $user_type == 7 ||
+                                $user_type == 8 ||
+                                $user_type == 9
+                            ) {
+                                $email_to = $user_email;
+                                $email_subject = "New Activities Available!";
+                                $email_body = "Hey! We have uploaded new actvities for class " . $activity_class . "Do make sure to check them out.";
+
+                                $headers = "MIME-Version: 1.0" . "\r\n";
+                                $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+                                $headers .= 'From: <connectonlyn@onlynus.com>' . "\r\n";
+                                mail($email_to, $email_subject, $email_body, $headers);
+                                echo "<div class='alert alert-success mb-3' role='alert'>$activity_name uploaded successfully!</div>";
+                            }
+                        }
                     }
                 } else {
+
                     echo "<div class='alert w-100 alert-danger mb-3' role='alert'>There was some error</div>";
                 }
             }
