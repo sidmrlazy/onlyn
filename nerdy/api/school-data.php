@@ -25,14 +25,14 @@ if ($user_count > 0) {
         'Error' => 0,
         'Status' => 'Success!',
         'Message' => 'User details found',
-        'User Data' => $user_data,
+        'userData' => $user_data,
     );
 } else {
     $response = array(
         'Error' => 1,
         'Status' => 'Failed!',
         'Message' => 'User Not Found',
-        'User Data' => $user_data
+        'userData' => $user_data
     );
 }
 echo json_encode($response);
