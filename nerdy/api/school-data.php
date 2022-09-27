@@ -1,6 +1,5 @@
 <?php
-
-include './connection.php';
+require('./connection.php');
 
 // Create connection
 // $connection = new mysqli($host_name, $host_user, $host_password, $host_db);
