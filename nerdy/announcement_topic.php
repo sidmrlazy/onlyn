@@ -64,6 +64,7 @@
                 if (!$insert_result) {
                     die("ERROR: " . mysqli_error($connection));
                 } else {
+
                     echo '<script>announced()</script>';
                 }
             }
@@ -137,6 +138,27 @@
                 if (!$insert_result) {
                     die("ERROR TYPE 3: " . mysqli_error($connection));
                 } else {
+                    $fetch_schools = "SELECT * FROM `users`";
+                    $fetch_schools_res = mysqli_query($connection, $fetch_schools);
+
+                    while ($row = mysqli_fetch_assoc($fetch_schools_res)) {
+                        $user_type = $row['user_type'];
+                        $user_email = $row['user_email'];
+
+                        if (
+                            $user_type == 3 ||
+                            $user_type == 6
+                        ) {
+                            $email_img = "https://onlynus.com/nerdy/assets/images/vectors/ann-vec.png";
+                            $email_to = $user_email;
+                            $email_subject = "New Announcement";
+                            $email_body = "<img src='" . $email_img . "' />";
+
+                            $headers = "MIME-Version: 1.0" . "\r\n";
+                            $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+                            $headers .= 'From: <connectonlyn@onlynus.com>' . "\r\n";
+                        }
+                    }
                     echo '<script>announced()</script>';
                 }
             }
@@ -174,6 +196,23 @@
                 if (!$insert_result) {
                     die("ERROR TYPE 4: " . mysqli_error($connection));
                 } else {
+                    $fetch_schools = "SELECT * FROM `users` WHERE user_id = $user_id";
+                    $fetch_schools_res = mysqli_query($connection, $fetch_schools);
+                    $user_email = "";
+                    while ($row = mysqli_fetch_assoc($fetch_schools_res)) {
+                        $user_type = $row['user_type'];
+                        $user_email = $row['user_email'];
+                    }
+                    $email_img = "https://onlynus.com/nerdy/assets/images/vectors/ann-vec.png";
+                    $email_to = $user_email;
+                    $email_subject = "New Announcement";
+                    $email_body = "<img src='" . $email_img . "' />";
+
+                    $headers = "MIME-Version: 1.0" . "\r\n";
+                    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+                    $headers .= 'From: <connectonlyn@onlynus.com>' . "\r\n";
+
+
                     echo '<script>announced()</script>';
                 }
             }
