@@ -25,7 +25,7 @@
                 <label for="floatingSelect">Click here for dropdown menu</label>
             </div>
 
-            <!-- <div id="selectClass" class="form-floating mb-3" style="display: none;">
+            <div id="selectClass" class="form-floating mb-3" style="display: none;">
                 <select name="ann_to_class" class="form-select" id="floatingSelect"
                     aria-label="Floating label select example">
                     <option>Select Class</option>
@@ -43,7 +43,7 @@
                     } ?>
                 </select>
                 <label for="floatingSelect">Click here for dropdown menu</label>
-            </div> -->
+            </div>
 
             <div id="selectIndividualTeacher" class="form-floating mb-3" style="display: none;">
                 <select name="ann_to_teacher" class="form-select" id="floatingSelect"
