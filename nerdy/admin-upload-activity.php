@@ -63,15 +63,19 @@
                             ) {
                                 $email_to = $user_email;
                                 $email_subject = "New Activities Available!";
-                                $email_body = $activity_thumbnail_file . "</br></br></br>";
+                                $email_body = "assets/activities/" . $activity_file . "</br></br></br>";
+                                $email_body .= "";
+                                $email_body .= "";
                                 $email_body .= "Hey! We have uploaded new actvities for class " . $activity_class . " Do make sure to check them out.";
 
                                 $headers = "MIME-Version: 1.0" . "\r\n";
                                 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
                                 $headers .= 'From: <connectonlyn@onlynus.com>' . "\r\n";
-                                mail($email_to, $email_subject, $email_body, $headers);
+
+                                if (mail($email_to, $email_subject, $email_body, $headers)) {
+                                    echo "<div class='alert alert-success mb-3' role='alert'>$activity_name uploaded successfully!</div>";
+                                }
                             }
-                            echo "<div class='alert alert-success mb-3' role='alert'>$activity_name uploaded successfully!</div>";
                         }
                     }
                 } else {
