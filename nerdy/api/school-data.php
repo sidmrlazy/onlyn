@@ -22,14 +22,14 @@ if ($user_count > 0) {
         );
     }
     $response = array(
-        'Error' => 0,
+        'error' => 0,
         'Status' => 'Success!',
         'Message' => 'User details found',
         'userData' => $user_data,
     );
 } else {
     $response = array(
-        'Error' => 1,
+        'error' => 1,
         'Status' => 'Failed!',
         'Message' => 'User Not Found',
         'userData' => $user_data
