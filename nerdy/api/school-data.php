@@ -20,6 +20,7 @@ $result_array = array();
 if ($count > 0) {
     while ($row = mysqli_fetch_array($result)) {
         $result_array[] = array(
+            'user_id' => $row['user_id'],
             'user_school_name' => $row['user_school_name'],
         );
     }
