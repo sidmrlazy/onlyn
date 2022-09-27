@@ -61,7 +61,7 @@
                                 $user_type == 8 ||
                                 $user_type == 9
                             ) {
-                                $email_img = "https://onlynus/nerdy/assets/activities/" . $activity_thumbnail_file;
+                                $email_img = "https://onlynus.com/nerdy/assets/activities/" . $activity_thumbnail_file;
                                 $email_to = $user_email;
                                 $email_subject = "New Activities Available!";
                                 $email_body = "<img src='" . $email_img . "' />";
