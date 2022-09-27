@@ -1,38 +1,37 @@
 <?php
-require('./connection.php');
+
+include './connection.php';
 
 // Create connection
-// $connection = new mysqli($host_name, $host_user, $host_password, $host_db);
+$con = new mysqli($HostName, $HostUser, $HostPass, $DatabaseName);
 
-// if ($connection->connect_error) {
-//     die("Connection failed: " . $connection->connect_error);
-// }
+if ($conn->connect_error) {
+    die("Connection failed: " . $con->connect_error);
+}
 
-$json = json_decode(file_get_contents('php://input'), true);
-$ProfileData = array();
-$search_user = "SELECT * FROM `users` WHERE `user_type` = 2";
-$search_user_res = mysqli_query($connection, $search_user);
-$user_count = mysqli_num_rows($search_user_res);
-
-if ($user_count > 0) {
-    while ($row = mysqli_fetch_assoc($search_user_res)) {
-        $user_data[] = array(
+//Get All Category from Database 
+$Search_Category = "SELECT * FROM `users` WHERE `user_type` = '3' OR `user_type` = '5'";
+$Check_Search_Category = mysqli_query($con, $Search_Category);
+$categoryList = array();
+if ($Check_Search_Category->num_rows > 0) {
+    while ($row = mysqli_fetch_array($Check_Search_Category)) {
+        $categoryList[] = array(
             'user_school_name' => $row['user_school_name'],
         );
     }
-    $response = array(
+    $Response = array(
         'error' => 0,
-        'Status' => 'Success!',
-        'Message' => 'User details found',
-        'userData' => $user_data,
+        'status' => 'Success!',
+        'CategoryList' => $categoryList
     );
 } else {
-    $response = array(
+    $Response = array(
         'error' => 1,
-        'Status' => 'Failed!',
-        'Message' => 'User Not Found',
-        'userData' => $user_data
+        'status' => 'Success!',
+        'CategoryList' => $categoryList
     );
 }
-echo json_encode($response);
-mysqli_close($connection);
+
+echo json_encode($Response);
+
+mysqli_close($con);
