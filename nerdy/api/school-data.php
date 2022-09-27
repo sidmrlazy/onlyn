@@ -12,28 +12,30 @@ if ($connection->connect_error) {
 }
 
 //Get All Category from Database 
-$Search_Category = "SELECT * FROM `users` WHERE `user_type` = '2'";
-$Check_Search_Category = mysqli_query($con, $Search_Category);
-$categoryList = array();
-if ($Check_Search_Category->num_rows > 0) {
-    while ($row = mysqli_fetch_array($Check_Search_Category)) {
-        $categoryList[] = array(
+$query = "SELECT * FROM `users` WHERE `user_type` = '2'";
+$result = mysqli_query($con, $query);
+$count = mysqli_num_rows($result);
+$result_array = array();
+
+if ($count > 0) {
+    while ($row = mysqli_fetch_array($result)) {
+        $result_array[] = array(
             'user_school_name' => $row['user_school_name'],
         );
     }
-    $Response = array(
+    $response = array(
         'error' => 0,
         'status' => 'Success!',
-        'CategoryList' => $categoryList
+        'userData' => $result_array
     );
 } else {
-    $Response = array(
+    $response = array(
         'error' => 1,
         'status' => 'Failed!',
-        'CategoryList' => $categoryList
+        'userData' => $result_array
     );
 }
 
-echo json_encode($Response);
+echo json_encode($response);
 
 mysqli_close($con);
