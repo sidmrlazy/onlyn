@@ -3,14 +3,14 @@
 include './connection.php';
 
 // Create connection
-$con = new mysqli($HostName, $HostUser, $HostPass, $DatabaseName);
+$con = new mysqli($servername, $username, $password, $database);
 
-if ($conn->connect_error) {
+if ($connection->connect_error) {
     die("Connection failed: " . $con->connect_error);
 }
 
 //Get All Category from Database 
-$Search_Category = "SELECT * FROM `users` WHERE `user_type` = '3' OR `user_type` = '5'";
+$Search_Category = "SELECT * FROM `users` WHERE `user_type` = '2'";
 $Check_Search_Category = mysqli_query($con, $Search_Category);
 $categoryList = array();
 if ($Check_Search_Category->num_rows > 0) {
@@ -27,7 +27,7 @@ if ($Check_Search_Category->num_rows > 0) {
 } else {
     $Response = array(
         'error' => 1,
-        'status' => 'Success!',
+        'status' => 'Failed!',
         'CategoryList' => $categoryList
     );
 }
