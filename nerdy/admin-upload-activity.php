@@ -63,7 +63,7 @@
                             ) {
                                 $email_to = $user_email;
                                 $email_subject = "New Activities Available!";
-                                $email_body = "assets/activities/" . $activity_file . "</br></br></br>";
+                                $email_body = "<img src='" . $activity_thumbnail_file . "' />";
                                 $email_body .= "";
                                 $email_body .= "";
                                 $email_body .= "Hey! We have uploaded new actvities for class " . $activity_class . " Do make sure to check them out.";
@@ -79,7 +79,6 @@
                         }
                     }
                 } else {
-
                     echo "<div class='alert w-100 alert-danger mb-3' role='alert'>There was some error</div>";
                 }
             }
