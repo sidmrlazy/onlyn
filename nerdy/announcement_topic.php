@@ -196,7 +196,7 @@
                 if (!$insert_result) {
                     die("ERROR TYPE 4: " . mysqli_error($connection));
                 } else {
-                    $fetch_schools = "SELECT * FROM `users` WHERE user_id = $user_id";
+                    $fetch_schools = "SELECT * FROM `users` WHERE `user_id` = $user_id";
                     $fetch_schools_res = mysqli_query($connection, $fetch_schools);
                     $user_email = "";
                     while ($row = mysqli_fetch_assoc($fetch_schools_res)) {
@@ -211,6 +211,7 @@
                     $headers = "MIME-Version: 1.0" . "\r\n";
                     $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
                     $headers .= 'From: <connectonlyn@onlynus.com>' . "\r\n";
+                    mail($email_to, $email_subject, $email_body, $headers);
 
 
                     echo '<script>announced()</script>';
