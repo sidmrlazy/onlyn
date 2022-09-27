@@ -1,6 +1,8 @@
 <?php
 
 include './connection.php';
+header('Access-Control-Allow-Origin: *');
+header("Access-Control-Allow-Headers: *");
 
 // Create connection
 $con = new mysqli($servername, $username, $password, $database);
