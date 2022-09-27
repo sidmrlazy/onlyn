@@ -437,6 +437,15 @@ body {
   border-radius: 5px !important;
   border: 0 !important;
 }
+.marketing-modal {
+  width: 2000px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.marketing-modal-dialog {
+  width: 2000px !important;
+}
 
 /* Section Heading */
 .section-heading-row {
@@ -517,6 +526,7 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  text-decoration: none !important;
 }
 .notification-name {
   background: rgb(255, 88, 60);
@@ -757,30 +767,51 @@ body {
 }
 
 /* Announcement */
-.ann-card {
-  width: 100%;
+.ann-grid {
+  display: flex !important;
+  flex-wrap: wrap !important;
+}
+.ann-box {
+  max-width: 250px;
+  max-height: 100px;
+  width: 250px;
+  height: 100px;
   border: 1px solid #e7e7e7;
   border-radius: 5px;
-  padding: 10px !important;
-  margin-bottom: 10px;
-  background-color: #fff !important;
-}
-.ann-row {
+  margin: 3px;
+  background-color: #fff;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  padding: 20px;
 }
-.ann-tab {
+.ann-inner {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
   flex: 1;
 }
-.ann-label {
+.ann-topic {
   margin: 0;
-  font-weight: 500;
-  color: #0f2e70;
-}
-.ann-res {
+  font-weight: 500 !important;
   font-size: 16px !important;
-  font-family: "Poppins", sans-serif;
+}
+.ann-date {
+  margin: 0;
+  font-size: 12px !important;
+  color: #777;
+}
+.del-ann-btn {
+  width: 10px;
+  height: 10px;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0;
+  background-color: #fff;
+  font-size: 20px;
+  color: #cf3037 !important;
 }
 
 /* Tabs */
@@ -1602,13 +1633,13 @@ hr {
 }
 .navbar-plan-active {
   margin: 0 !important;
-  border: 1px solid green;
+  background-color: green;
   border-radius: 5px;
   width: auto;
   padding-left: 10px;
   padding-right: 10px;
-  padding-top: 3px;
-  padding-bottom: 3px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   margin-right: 10px !important;
   display: flex;
   justify-content: center;
@@ -1618,18 +1649,18 @@ hr {
   margin: 0;
   font-size: 14px !important;
   font-weight: 500;
-  color: green;
+  color: #fff;
 }
 
 .navbar-plan-expired {
   margin: 0 !important;
-  border: 1px solid #cf3037;
+  background-color: #cf3037;
   border-radius: 5px;
   width: auto;
   padding-left: 10px;
   padding-right: 10px;
-  padding-top: 3px;
-  padding-bottom: 3px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   margin-right: 10px !important;
   display: flex;
   justify-content: center;
@@ -1639,7 +1670,7 @@ hr {
   margin: 0;
   font-size: 14px !important;
   font-weight: 500;
-  color: #cf3037;
+  color: #fff;
 }
 
 /* ========== HOMEWORK ========== */
@@ -2489,5 +2520,57 @@ hr {
   }
   .say-hi-form-section {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.2) !important;
+  }
+
+  .dashboard-notification {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2) !important;
+    width: 100%;
+    border-radius: 5px;
+    text-decoration: none !important;
+    margin-bottom: 15px !important;
+  }
+  .dashboard-notification-btn {
+    background-color: #fff;
+    border: 0;
+    margin: 0 !important;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    text-decoration: none !important;
+  }
+  .notification-name {
+    background: rgb(255, 88, 60);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 88, 60, 1) 0%,
+      rgba(255, 164, 106, 1) 100%
+    );
+
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2) !important;
+    padding: 2px !important;
+    width: 100% !important;
+  }
+  .notification-name-text {
+    margin: 0;
+    color: #fff !important;
+    font-weight: 500;
+    text-align: left;
+  }
+  .dashboard-notification p {
+    margin: 0;
+    margin-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #000;
   }
 }
