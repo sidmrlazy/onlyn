@@ -63,9 +63,7 @@
                             ) {
                                 $email_to = $user_email;
                                 $email_subject = "New Activities Available!";
-                                $email_body = "<img src='" . $activity_thumbnail_file . "' />";
-                                $email_body .= "";
-                                $email_body .= "";
+                                $email_body = "<img src='assets/activities/'" . $activity_thumbnail_file . "'" . "/>'";
                                 $email_body .= "Hey! We have uploaded new actvities for class " . $activity_class . " Do make sure to check them out.";
 
                                 $headers = "MIME-Version: 1.0" . "\r\n";
