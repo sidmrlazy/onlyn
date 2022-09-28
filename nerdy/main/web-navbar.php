@@ -18,7 +18,8 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.php">Nerdy's Super Powers</a>
+                    <a class="nav-link active" aria-current="page" href="nerdys-super-power.php">Nerdy's Super
+                        Powers</a>
                 </li>
 
                 <li class="nav-item">

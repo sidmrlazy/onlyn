@@ -75,4 +75,5 @@
         </div>
     </div>
 </div>
-<?php include('main/footer.php') ?>
+<?php include('web/home-page-pricing.php') ?>
+<?php include('main/web-footer.php') ?>

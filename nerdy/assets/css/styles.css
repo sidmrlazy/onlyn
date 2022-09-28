@@ -21,6 +21,221 @@ body {
 .broken-img-icon {
   font-size: 30px !important;
 }
+/* ============ MAIN WEBSITE ============ */
+.website-heading-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.website-heading-section h2 {
+  color: #fbe165 !important;
+  text-align: center;
+  margin: 0;
+  font-size: 44px !important;
+}
+.website-heading-section p {
+  color: #fff !important;
+  text-align: center;
+  margin: 0;
+  font-weight: 300 !important;
+}
+.website-section {
+  background-color: #1d4474;
+  padding: 30px;
+  margin-bottom: 50px;
+}
+.website-common-row {
+  display: flex;
+  flex-wrap: wrap !important;
+  justify-content: space-evenly !important;
+  align-items: center;
+  margin-top: 30px;
+}
+.website-pricing-card {
+  background-color: #fff !important;
+  width: 300px;
+  height: 200px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.2) !important;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.website-plan-name {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 500;
+  color: #121952 !important;
+}
+.website-plan-user {
+  margin: 0 !important;
+  margin-top: -10px !important;
+}
+.website-plan-price {
+  font-size: 36px;
+  font-weight: 500;
+  color: #27c24c;
+  margin-top: 15px;
+}
+.website-plan-price span {
+  color: #1d4474;
+  font-size: 14px !important;
+}
+.website-pricing-btn {
+  width: 100% !important;
+  background-color: #1d4474 !important;
+  border: 0;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none !important;
+}
+.website-pricing-btn:hover {
+  width: 100% !important;
+  background-color: #3b6ad1 !important;
+  border: 0;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  color: #fff;
+  transition: 0.3s all ease-in-out;
+  text-decoration: none !important;
+}
+.plans-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+.plans-card {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2) !important;
+  border: 1px solid #e7e7e7;
+  border-radius: 5px !important;
+  background-color: #fff;
+  width: 350px !important;
+  padding: 20px;
+}
+.super-power-heading-section {
+  display: flex !important;
+  justify-content: flex-start !important;
+  align-items: flex-end !important;
+  width: 100% !important;
+}
+.super-power-lottie {
+  width: 100px;
+  height: 100px;
+}
+.website-super-power-section-para {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+.super-power-name {
+  text-align: center !important;
+  font-size: 30px;
+  color: #3b6ad1 !important;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.super-power-btn {
+  width: 100% !important;
+  text-align: center;
+  border: 1px solid #e7e7e7;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #23b3e0;
+}
+.super-power-btn:hover {
+  width: 100% !important;
+  text-align: center;
+  border: 1px solid #e7e7e7;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #0f2e70;
+  transition: 0.3s all ease-in-out;
+}
+.super-power-btn a {
+  text-decoration: none !important;
+  color: #0f2e70;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+.super-power-btn:hover a {
+  text-decoration: none !important;
+  transition: 0.3s all ease-in-out;
+  color: #fff !important;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+.website-footer {
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2) !important;
+}
+.footer-content-section {
+  flex: 1;
+}
+.footer-brand {
+  max-width: 80px;
+  max-height: 80px;
+}
+.footer-brand img {
+  width: 100%;
+  height: auto;
+}
+.footer-part {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.footer-part-label {
+  font-size: 14px;
+  margin: 0;
+  color: #777;
+}
+.footer-menu li {
+  list-style-type: none !important;
+  margin-bottom: 15px !important;
+}
+.footer-menu a {
+  text-decoration: none;
+  color: #262625;
+}
+.footer-menu a:hover {
+  text-decoration: none;
+  color: #1d4474;
+  transition: 0.3s all ease-in-out;
+  font-weight: 500;
+}
+.web-bottom-footer {
+  max-width: 100%;
+  background-color: #1d4474;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.web-bottom-footer p {
+  color: #fff;
+  font-weight: 400;
+  margin: 0;
+}
+.web-bottom-footer a {
+  text-decoration: none !important;
+  color: #fff;
+  font-weight: 400;
+}
+
 /* ============ ADMIN DASHBOARD ============ */
 .activity-holder {
   max-width: 250px;
@@ -2572,5 +2787,32 @@ hr {
     padding-top: 15px;
     padding-bottom: 15px;
     color: #000;
+  }
+  .website-pricing-card {
+    background-color: #fff !important;
+    width: 300px;
+    height: 200px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.2) !important;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .website-footer {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column !important;
+  }
+  .footer-content-section {
+    margin-bottom: 30px !important;
+  }
+  .plans-card {
+    margin-bottom: 15px;
   }
 }
