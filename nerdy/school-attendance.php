@@ -2,8 +2,8 @@
 <?php include('navbar/navbar.php'); ?>
 <div class="d-flex container-fluid">
     <?php include('navbar/school-side-nav.php') ?>
-    <div class="school-main-dashboard container section-container mb-5 animate__animated animate__fadeIn">
-        <div class="section-header section-heading-row">
+    <div class="school-main-dashboard  mb-5 animate__animated animate__fadeIn">
+        <div class="section-header section-heading-row w-100">
             <div class="section-flex">
                 <h3 class="section-heading">
                     <ion-icon name="shield" class="section-heading-icon"></ion-icon>

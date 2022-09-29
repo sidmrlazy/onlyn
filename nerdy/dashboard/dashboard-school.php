@@ -105,8 +105,10 @@
     <div class="d-flex">
         <?php include('navbar/school-side-nav.php') ?>
 
-        <div class="school-main-dashboard container mt-3">
+        <div class="school-main-dashboard container">
             <?php include('dashboard/pills.php') ?>
+            <?php include('components/marketing-alert.php')
+            ?>
             <?php // include('components/branding-carousel.php') 
             ?>
             <?php

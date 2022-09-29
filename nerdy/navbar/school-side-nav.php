@@ -1,4 +1,40 @@
 <ul class="pt-3 nav flex-column side-nav">
+    <li class="nav-item ">
+        <?php $current_date = date('d-m-Y');
+        $date_today = strtotime($current_date);
+        $query = "SELECT * FROM `subscription` WHERE `subscription_user_id` = '$session_user_id'";
+        $subscription_res = mysqli_query($connection, $query);
+        $subscription_end_date = "";
+        while ($row = mysqli_fetch_assoc($subscription_res)) {
+            $subscription_end_date = $row['subscription_end_date'];
+        }
+        $expiry_date = strtotime($subscription_end_date);
+
+        if ($date_today == $expiry_date) {
+            $update_setup = "UPDATE `setup_status` SET `setup_payment_status`= 2 WHERE setup_school_id = $session_user_id";
+            $update_setup_res = mysqli_query($connection, $update_setup);
+        ?>
+        <div class="animate__animated animate__flash animate__infinite infinite navbar-plan-expired mb-3" role="">
+            <p>Subscription Expired</p>
+        </div>
+
+        <?php }
+        if ($date_today < $expiry_date) { ?>
+        <div class="navbar-plan-active mb-3" role="">
+            <p>Plan Active</p>
+        </div>
+
+        <?php }
+        if ($date_today > $expiry_date) {
+            $update_setup = "UPDATE `setup_status` SET `setup_payment_status`= 2 WHERE setup_school_id = $session_user_id";
+            $update_setup_res = mysqli_query($connection, $update_setup);
+        ?>
+        <div class="animate__animated animate__flash animate__infinite infinite navbar-plan-expired mb-3" role="">
+            <p>Subscription Expired on <?php echo $subscription_end_date ?>.</p>
+        </div>
+        <?php } ?>
+    </li>
+    <hr>
     <li class="nav-item side-nav-link">
         <a class="nav-link side-nav-text " aria-current="page" href="dashboard.php">
             <ion-icon id="light-blue-icon" name="home"></ion-icon>
