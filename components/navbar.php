@@ -9,7 +9,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="index">
                         <ion-icon name="toggle-outline"></ion-icon>
@@ -108,6 +108,14 @@
                 </li>
 
             </ul>
+            <div class="d-flex" role="search">
+                <a href="" class="nav-link">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+                <a href="" class="nav-link">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </div>
 
         </div>
     </div>

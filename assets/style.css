@@ -24,6 +24,7 @@ input::-webkit-inner-spin-button {
 }
 .nav-link {
   font-weight: 400 !important;
+  font-size: 14px !important;
 }
 .nav-link:hover {
   color: #3b8b18 !important;
