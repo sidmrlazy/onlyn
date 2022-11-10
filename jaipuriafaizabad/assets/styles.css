@@ -157,6 +157,42 @@
   color: #5650ab;
   margin: 0;
 }
+.homepage-why-us-centered {
+  display: flex;
+  justify-content: space-evenly !important;
+  align-items: center;
+}
+.homepage-why-us-card {
+  background-color: #fff;
+  width: 600px;
+  height: 300px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  margin: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3) !important;
+}
+.homepage-why-us-icon {
+  font-size: 40px;
+  font-weight: 100 !important;
+  margin-bottom: 20px;
+  color: #ff9e38;
+}
+.homepage-why-us-card h3 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.homepage-why-us-card p {
+  margin: 0;
+  text-align: center;
+  line-height: 35px;
+}
 
 /* ============= FOOTER ============= */
 .footer {
@@ -265,6 +301,27 @@
   }
   .homepage-brief-centered {
     margin-bottom: 30px !important;
+  }
+
+  /* ============= HOME PAGE WHY US ============= */
+  .homepage-why-us-centered {
+    display: flex;
+    justify-content: space-evenly !important;
+    align-items: center;
+    flex-direction: column;
+  }
+  .homepage-why-us-card {
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3) !important;
   }
 
   /* ============= FOOTER ============= */
