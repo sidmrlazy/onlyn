@@ -28,6 +28,7 @@ if (!empty($json['mobile'])) {
             $json = json_encode($SuccesMSG);
             echo $json;
         } else {
+            $insert_user = "INSERT INTO `users`";
             //Failure Response
             $FailureMSG = array(
                 'error' => 2,

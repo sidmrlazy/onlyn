@@ -1,0 +1,275 @@
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* ============= NAVIGATION ============= */
+.navbar {
+  margin: 10px;
+  background-color: #fff !important;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3) !important;
+  border-radius: 10px;
+}
+.navbar-brand {
+  max-width: 100%;
+  max-width: 100%;
+}
+.navbar-brand img {
+  width: 30% !important;
+  height: auto;
+}
+.nav-link {
+  color: #5650ab !important;
+  font-size: 14px;
+  font-weight: 600;
+}
+.nav-link:hover {
+  color: #d28440 !important;
+  transition: 0.3s all ease-in-out;
+}
+.dropdown-item {
+  color: #5650ab !important;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* ============= HOME SCREEN BANNER ============= */
+.home-screen-banner-container {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 100%;
+  height: auto;
+}
+.home-screen-banner-container img {
+  width: 100% !important;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3) !important;
+}
+.homepage-chevron-container {
+  text-decoration: none !important;
+  margin-top: -60px !important;
+}
+.homepage-chevron {
+  font-size: 50px;
+  color: #fff;
+}
+
+/* ============= HOME PAGE BRIEF ============= */
+.homepage-brief-row {
+  display: flex !important;
+  margin: 10px !important;
+  margin-top: 50px !important;
+  justify-content: center;
+  align-items: center;
+}
+.brief-content {
+  width: 100% !important;
+}
+.brief-content h1 {
+  margin: 0 !important;
+  font-weight: 800;
+  color: #5650ab !important;
+  margin-bottom: 20px !important;
+  line-height: 50px;
+}
+.brief-content p {
+  margin: 0 !important;
+  margin-bottom: 30px !important;
+  margin-top: 30px;
+}
+.brief-content a {
+  background-color: #fff;
+  width: 100% !important;
+  text-decoration: none !important;
+  color: #d28440;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #d28440;
+}
+.brief-content a:hover {
+  background-color: #5650ab;
+  transition: 0.3s all ease-in-out !important;
+  color: #fff;
+  border: 1px solid #5650ab;
+}
+.brief-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brief-img img {
+  width: 80% !important;
+  height: auto;
+}
+.homepage-brief-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.brief-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  margin-bottom: 15px;
+}
+#purple {
+  background-color: #5650ab !important;
+}
+#orange {
+  background-color: #ff9e38 !important;
+  color: #ff9e38;
+}
+.brief-circle img {
+  width: 60% !important;
+  height: auto;
+}
+.homepage-brief-centered h2 {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 800;
+}
+.homepage-brief-centered p {
+  margin: 0;
+  text-align: center;
+}
+
+/* ============= HOME PAGE WHY US ============= */
+.homepage-why-us-container {
+  background-color: #e7e7e7;
+  margin-top: 50px;
+  padding: 50px;
+}
+.homepage-why-us-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.homepage-why-us-header h2 {
+  font-weight: 800;
+  color: #5650ab;
+  margin: 0;
+}
+
+/* ============= FOOTER ============= */
+.footer {
+  margin: 10px;
+  box-shadow: 0 0 8px rgba(11, 22, 38, 0.3) !important;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+  margin-top: 50px;
+}
+.footer-menu {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  flex: 1;
+}
+.footer-nav {
+  text-decoration: none !important;
+  color: #5650ab !important;
+  list-style: none;
+}
+.footer-nav:hover {
+  color: #0b1626 !important;
+}
+.footer-nav li {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.footer-logo {
+  width: 50% !important;
+  height: auto;
+  margin-bottom: 15px;
+}
+.footer-label {
+  margin: 0 !important;
+  color: #d28440 !important;
+}
+
+/* ============= DEVELOPER SIGNATURE ============= */
+.developer-signature {
+  margin: 10px;
+  background-color: #0b1626;
+  box-shadow: 0 0 8px rgba(11, 22, 38, 0.3) !important;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.developer-signature a {
+  margin: 0;
+  text-align: center;
+  color: #abababab;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+/* ============= MEDIA QUERY ============= */
+@media only screen and (max-width: 768px) {
+  /* ============= NAVIGATION ============= */
+  .navbar-brand img {
+    max-width: 100% !important;
+    width: 100px !important;
+    height: auto !important;
+  }
+  .nav-link {
+    color: #0a1057 !important;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .dropdown-item {
+    color: #0a1057 !important;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  /* ============= HOME SCREEN BANNER ============= */
+  .homepage-chevron-container {
+    margin-top: 0px !important;
+    display: none !important;
+  }
+
+  /* ============= HOME PAGE BRIEF ============= */
+  .homepage-brief-row {
+    flex-direction: column !important;
+    margin-top: 20px !important;
+    margin-bottom: 50px !important;
+    box-shadow: none !important;
+    background-color: #fff;
+    border-radius: 0;
+  }
+  .brief-content h1 {
+    margin: 0 !important;
+    font-weight: 800;
+    color: #5650ab !important;
+    font-size: 24px !important;
+    margin-bottom: 20px !important;
+    line-height: 30px !important;
+  }
+  .brief-img {
+    display: none !important;
+  }
+  .homepage-brief-centered {
+    margin-bottom: 30px !important;
+  }
+
+  /* ============= FOOTER ============= */
+  .footer {
+    flex-direction: column !important;
+    margin-top: initial !important;
+  }
+}
