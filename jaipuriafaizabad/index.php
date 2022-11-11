@@ -3,4 +3,5 @@
 <?php include('views/homescreen-banner.php') ?>
 <?php include('views/homepage-brief.php') ?>
 <?php include('views/homepage-why-us.php') ?>
+<?php include('views/homepage-services.php') ?>
 <?php include('includes/footer.php') ?>
