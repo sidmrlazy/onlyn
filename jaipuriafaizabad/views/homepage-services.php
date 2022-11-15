@@ -5,24 +5,24 @@
     </div>
 
     <div class="homepage-why-us-centered">
-        <div>
-            <ion-icon name="navigate-outline"></ion-icon>
+        <div class="col-md-4 homepage-services-content">
+            <ion-icon name="navigate-outline" class="homepage-services-icon"></ion-icon>
             <h3>Lorem Ipsum</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore
                 magna aliqua.</p>
         </div>
 
-        <div>
-            <ion-icon name="navigate-outline"></ion-icon>
+        <div class="col-md-4 homepage-services-content">
+            <ion-icon name="navigate-outline" class="homepage-services-icon"></ion-icon>
             <h3>Lorem Ipsum</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore
                 magna aliqua.</p>
         </div>
 
-        <div>
-            <ion-icon name="navigate-outline"></ion-icon>
+        <div class="col-md-4 homepage-services-content">
+            <ion-icon name="navigate-outline" class="homepage-services-icon"></ion-icon>
             <h3>Lorem Ipsum</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore
@@ -31,24 +31,24 @@
     </div>
 
     <div class="homepage-why-us-centered">
-        <div>
-            <ion-icon name="navigate-outline"></ion-icon>
+        <div class="col-md-4 homepage-services-content">
+            <ion-icon name="navigate-outline" class="homepage-services-icon"></ion-icon>
             <h3>Lorem Ipsum</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore
                 magna aliqua.</p>
         </div>
 
-        <div>
-            <ion-icon name="navigate-outline"></ion-icon>
+        <div class="col-md-4 homepage-services-content">
+            <ion-icon name="navigate-outline" class="homepage-services-icon"></ion-icon>
             <h3>Lorem Ipsum</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore
                 magna aliqua.</p>
         </div>
 
-        <div>
-            <ion-icon name="navigate-outline"></ion-icon>
+        <div class="col-md-4 homepage-services-content">
+            <ion-icon name="navigate-outline" class="homepage-services-icon"></ion-icon>
             <h3>Lorem Ipsum</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore

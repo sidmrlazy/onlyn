@@ -1,6 +1,10 @@
 * {
   font-family: "Open Sans", sans-serif;
 }
+::selection {
+  color: #fff;
+  background: #5650ab;
+}
 
 /* ============= NAVIGATION ============= */
 .navbar {
@@ -198,6 +202,102 @@
 .homepage-services-container {
   margin-top: 100px;
 }
+.homepage-services-icon {
+  font-size: 30px !important;
+}
+.homepage-services-content {
+  margin-bottom: 50px;
+}
+.homepage-services-content h3 {
+  font-size: 20px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.homepage-services-content p {
+  font-size: 16px;
+  margin: 0;
+}
+
+/* ============= HOME PAGE NEWS & EVENTS ============= */
+.news-events-container {
+  margin-top: 100px;
+  padding: 30px;
+}
+.news-events-container h3 {
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: #5650ab;
+}
+.news-events-row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.news-events-card {
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(11, 22, 38, 0.3) !important;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+.news-events-img-container {
+  max-width: 300px;
+  width: 300px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.news-events-img-container img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.news-events-content {
+  padding: 10px;
+}
+.news-events-content p {
+  margin: 0;
+  color: #777;
+  font-size: 14px;
+}
+.news-events-content h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+.carousel-control-prev {
+  background-color: #00000000;
+  border: 0;
+}
+.carousel-control-next {
+  background-color: #00000000;
+  border: 0;
+}
+.carousel-control-prev-icon {
+  color: #000;
+  background-color: #000;
+  margin-left: -50px;
+}
+.carousel-control-next-icon {
+  color: #000;
+  background-color: #000;
+  margin-right: -50px;
+}
+.news-event-grid {
+  display: none;
+  flex-wrap: wrap;
+}
+
+/* ============= PAGE HEADER ============= */
+.page-header-container {
+  margin: 10px;
+}
 
 /* ============= FOOTER ============= */
 .footer {
@@ -327,6 +427,49 @@
     padding: 20px;
     margin-bottom: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3) !important;
+  }
+
+  /* ============= HOME PAGE NEWS & EVENTS ============= */
+  .news-event-carousel {
+    display: none;
+  }
+  .news-event-grid {
+    display: flex !important;
+    flex-wrap: wrap;
+  }
+  .news-events-card {
+    width: 100% !important;
+    height: 450px !important;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(11, 22, 38, 0.3) !important;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+  }
+  .news-events-img-container {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+  .news-events-img-container img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .news-events-content p {
+    margin: 0;
+    color: #777;
+    font-size: 16px;
+  }
+  .news-events-content h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
   }
 
   /* ============= FOOTER ============= */
