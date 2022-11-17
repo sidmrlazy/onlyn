@@ -6,10 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO -->
-    <meta name="keywords"
-        content="social media marketing, social media as marketing strategy, social media marketing services, social media marketing company, social media marketing agency, website development on wordpress, 
-website development company lucknow, website development company in lucknow, software development company lucknow, website development near me, product design website, website development package price india, branding promotion company, top marketing consulting firms in india, marketing consultancy agency, consultant software developer, software consultancy near me">
+    <!-- ============ SEO KEYWORDS ============ -->
+    <meta name="keywords" content="best digital marketing company, best digital marketing agency, mobile app development, 
+        website development company in Lucknow, seo services, content marketing, advertising agency, 
+        graphic designing, mobile app development company, web development company, marketing services">
+
+    <!-- ============ SEO DESCRIPTION ============ -->
+    <meta name="description"
+        content="At onlyn we offer innovative software development and marketing services to businesses. 
+        Our design-focused approach and project execution processes help us deliver the right solutions for exponential growth of businesses. 
+        We help shape brands through our content marketing exploration, applying in-depth research to challenge assumptions at every turn.">
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -17,6 +23,11 @@ website development company lucknow, website development company in lucknow, sof
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
+
+    <!-- 
+        Measurement ID: G-61WD9BRF8L 
+        Strem ID: 4292125462
+    -->
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,8 +52,9 @@ website development company lucknow, website development company in lucknow, sof
     <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QCZD9XBNQC"></script>
+    <!-- ========== Google Tag Start ========== -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-61WD9BRF8L"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -51,13 +63,9 @@ website development company lucknow, website development company in lucknow, sof
     }
     gtag('js', new Date());
 
-    gtag('config', 'G-QCZD9XBNQC');
+    gtag('config', 'G-61WD9BRF8L');
     </script>
-
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TC736P9" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+    <!-- ========== Google Tag End ========== -->
 
     <title>Top Web, Mobile App and Custom Software Development Company</title>
 </head>
