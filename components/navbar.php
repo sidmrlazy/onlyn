@@ -1,7 +1,6 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="index">
-            <!-- <img src="assets/images/logo/Logo.png" alt="" id="desktop-navbar-brand"> -->
             <img src="assets/images/logo/Logo-Half.png" alt="onlyn brand logo" id="mobile-navbar-brand">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -102,15 +101,6 @@
                     </a>
                 </li>
             </ul>
-            <!-- <div class="d-flex" role="search">
-                <a href="" class="nav-link">
-                    <ion-icon name="logo-facebook"></ion-icon>
-                </a>
-                <a href="" class="nav-link">
-                    <ion-icon name="logo-instagram"></ion-icon>
-                </a>
-            </div> -->
-
         </div>
     </div>
 </nav>
