@@ -11,7 +11,7 @@
         content="mobile app development, search engine optimization, content marketing, advertising agency, website development, marketing services">
 
     <!-- ============ SEO DESCRIPTION ============ -->
-    <meta name="description" content="At onlyn we offer innovative search engine optimization, mobile app development, 
+    <meta name="description" content="At Onlyn we offer innovative search engine optimization, mobile app development, 
         website development, marketing services and content marketing stratergies to businesses.">
 
     <!-- ============ GOOGLE TAG MANAGER START ============ -->
