@@ -7,15 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- ============ SEO KEYWORDS ============ -->
-    <meta name="keywords" content="best digital marketing company, best digital marketing agency, mobile app development, 
-        website development company in Lucknow, seo services, content marketing, advertising agency, 
-        graphic designing, mobile app development company, web development company, marketing services">
+    <meta name="keywords"
+        content="mobile app development, search engine optimization, content marketing, advertising agency, website development, marketing services">
 
     <!-- ============ SEO DESCRIPTION ============ -->
     <meta name="description"
         content="At onlyn we offer innovative software development and marketing services to businesses. 
         Our design-focused approach and project execution processes help us deliver the right solutions for exponential growth of businesses. 
-        We help shape brands through our content marketing exploration, applying in-depth research to challenge assumptions at every turn.">
+        We help shape brands through our content marketing exploration, applying in-depth research to search engine optimization that challenge assumptions at every turn.">
 
     <!-- ============ GOOGLE TAG MANAGER START ============ -->
     <!-- Google Tag Manager -->
