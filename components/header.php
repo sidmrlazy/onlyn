@@ -63,6 +63,7 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/images/logo/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="assets/images/logo/favicon.png" type="image/x-icon">
 
     <!-- LottieFiles -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
