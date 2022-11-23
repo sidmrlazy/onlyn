@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <a class="navbar-brand" href="index">
             <!-- <img src="assets/images/logo/Logo.png" alt="" id="desktop-navbar-brand"> -->
-            <img src="assets/images/logo/Logo-Half.png" alt="onlyn-logo" id="mobile-navbar-brand">
+            <img src="assets/images/logo/Logo-Half.png" alt="onlyn brand logo" id="mobile-navbar-brand">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

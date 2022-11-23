@@ -1,6 +1,6 @@
 <section class="container footer-section">
     <div class="col-md-3 footer-col">
-        <img src="assets/images/logo/Logo.png" alt="">
+        <img src="assets/images/logo/Logo.png" alt="onlyn brand logo">
         <div class="row-one">
             <p>Get Free Estimation</p>
             <p id="email">connectonlyn@onlynus.com</p>
@@ -9,7 +9,7 @@
         <div class="footer-call-out">
             <p>Call</p>
             <a href="#" class="footer-call-out-inner">
-                <img src="assets/images/other/flag.png" alt="">
+                <img src="assets/images/other/flag.png" alt="indian flag">
                 <p>+91 73554 10185</p>
             </a>
         </div>
