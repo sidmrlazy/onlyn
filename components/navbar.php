@@ -102,14 +102,14 @@
                     </a>
                 </li>
             </ul>
-            <div class="d-flex" role="search">
+            <!-- <div class="d-flex" role="search">
                 <a href="" class="nav-link">
                     <ion-icon name="logo-facebook"></ion-icon>
                 </a>
                 <a href="" class="nav-link">
                     <ion-icon name="logo-instagram"></ion-icon>
                 </a>
-            </div>
+            </div> -->
 
         </div>
     </div>
