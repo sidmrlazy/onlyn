@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <a class="navbar-brand" href="index">
             <!-- <img src="assets/images/logo/Logo.png" alt="" id="desktop-navbar-brand"> -->
-            <img src="assets/images/logo/Logo-Half.png" alt="" id="mobile-navbar-brand">
+            <img src="assets/images/logo/Logo-Half.png" alt="onlyn-logo" id="mobile-navbar-brand">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -101,12 +101,6 @@
                         Contact Us
                     </a>
                 </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="nerdy/index.php">
-                        <img src="assets/images/logo/ol_logo.png" alt="" class="ol_logo">
-                    </a>
-                </li> -->
-
             </ul>
             <div class="d-flex" role="search">
                 <a href="" class="nav-link">
