@@ -18,9 +18,9 @@
                  <li class="nav-item">
                      <a class="nav-link" href="admissions.php">ADMISSIONS</a>
                  </li>
-                 <li class="nav-item">
+                 <!-- <li class="nav-item">
                      <a class="nav-link disabled" href="#">MEDIA & GALLERY</a>
-                 </li>
+                 </li> -->
                  <li class="nav-item">
                      <a class="nav-link disabled" href="#">CONTACT</a>
                  </li>

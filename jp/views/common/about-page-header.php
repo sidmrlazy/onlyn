@@ -1,11 +1,11 @@
 <div class="container">
     <div class="section-container-row">
         <div class="col-md-6 section-content-header order-xxl-last order-2">
-            <h1>Learn, speak and live a new language</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla odio repellat optio placeat iure aut
-                nesciunt
-                sunt nisi quos rem. Doloribus ipsa ut, qui, cum nihil ullam quos voluptatum deserunt praesentium vitae,
-                inventore voluptatem.</p>
+            <h1>Learn, Speak and Live a New Language</h1>
+            <p>Seth M. R. Jaipuria School, Faizabad, a dream of visionaries par excellence, Shri Ved Prakash Gupta and
+                Shri Chandra Prakash Gupta, is situated in a picturesque environment amidst serene surroundings just off
+                the Lucknow-Faizabad expressway. Based on a CBSE pattern, the school would offer a curriculum with a
+                holistic approach extending beyond the classroom.</p>
             <a href="#" class="section-header-btn">Read More</a>
         </div>
         <div class="col-md-6 section-img-container order-xxl-fist order-1">
