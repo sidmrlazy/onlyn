@@ -18,14 +18,10 @@
                  <li class="nav-item">
                      <a class="nav-link" href="admissions.php">ADMISSIONS</a>
                  </li>
-                 <!-- <li class="nav-item">
-                     <a class="nav-link disabled" href="#">MEDIA & GALLERY</a>
-                 </li> -->
                  <li class="nav-item">
-                     <a class="nav-link disabled" href="#">CONTACT</a>
+                     <a class="nav-link" href="contact.php">CONTACT</a>
                  </li>
              </ul>
-
          </div>
      </div>
  </nav>

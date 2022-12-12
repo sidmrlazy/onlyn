@@ -13,6 +13,31 @@
         </div>
     </div>
 </div>
+
+<div class="container team-header">
+    <h2>Our <span id="team-text-color">Story</span></h2>
+</div>
+
+<div class="container story-container">
+
+    <div class="col-md-6 story-img">
+        <img src="assets/images/building.jpeg" alt="">
+    </div>
+    <div class="col-md-6 story-content">
+        <p>
+            Long ago in 1945, Jaipuria started its journey in education with the establishment of Jaipuria College in
+            Calcutta (now Kolkata) by the great visionary and educationist Padma Bhushan Seth Anandram Jaipuria, It is
+            this unique heritage spanning 7 decades and 4 generations that sets apart Seth M.R. Jaipuria Schools from
+            other educational institutes.
+
+            The journey continued with the establishment of its first K-12 ICSE school in Lucknow, Uttar Pradesh in
+            1992, which was followed by 4 management institutes in Lucknow, Noida, Jaipur, and Indore.
+
+            Since 2014, the journey scaled up to higher peaks. Seth M.R. Jaipuria School has witnessed exponential
+            growth with 42+ CBSE schools across 24 cities. and is ambitious to reach 75 schools by 2025.</p>
+    </div>
+</div>
+
 <div class="container mt-5">
     <h2 class="col-md-6">Lorem ipsum dolor sit amet consectetur adipisicing elit</h2>
     <div class="custom-wrapper">

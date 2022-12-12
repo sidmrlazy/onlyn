@@ -339,6 +339,27 @@
 }
 
 /* ============= ABOUT PAGE ============= */
+.story-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.story-img {
+  max-width: 600px;
+  height: auto;
+}
+.story-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.story-content {
+  margin-left: 20px;
+}
+.story-content p {
+  line-height: 30px;
+  margin: 0;
+}
 .custom-vector-icon {
   max-width: 100%;
   width: 100px;
@@ -746,6 +767,37 @@
   transition: 0.3s all ease-in-out;
 }
 
+/* ============= CONTACT SECTION ============= */
+.form-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.form-container {
+  border: 1px solid #5650ab;
+  border-radius: 10px;
+  padding: 20px;
+}
+.form-label-custom {
+  font-size: 14px !important;
+}
+.form-btn {
+  background-color: #fff;
+  color: #5650ab;
+  border: 1px solid #5650ab;
+  border-radius: 10px;
+  padding: 10px;
+}
+.form-btn:hover {
+  background-color: #5650ab;
+  color: #fff;
+  border: 1px solid #5650ab;
+  border-radius: 10px;
+  padding: 10px;
+  transition: 0.3s all ease-in-out;
+}
+
 /* ============= FOOTER ============= */
 .footer {
   margin: 10px;
@@ -965,6 +1017,18 @@
   }
 
   /* ============= ABOUT PAGE ============= */
+  .story-container {
+    flex-direction: column;
+  }
+  .story-content {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+  .story-content p {
+    line-height: 30px;
+    margin: 0;
+    text-align: center;
+  }
   .card-1 {
     width: 100%;
     margin-bottom: 10px;
@@ -1162,6 +1226,38 @@
   }
   .download-section {
     margin-bottom: 40px !important;
+  }
+  /* ============= CONTACT SECTION ============= */
+  .form-row {
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 100% !important;
+  }
+  .form-lottie {
+    display: none;
+  }
+  .form-container {
+    border: 1px solid #5650ab;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  .form-label-custom {
+    font-size: 14px !important;
+  }
+  .form-btn {
+    background-color: #fff;
+    color: #5650ab;
+    border: 1px solid #5650ab;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .form-btn:hover {
+    background-color: #5650ab;
+    color: #fff;
+    border: 1px solid #5650ab;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.3s all ease-in-out;
   }
 
   /* ============= FOOTER ============= */
