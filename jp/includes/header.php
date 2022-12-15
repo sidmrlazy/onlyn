@@ -29,7 +29,7 @@
     <!-- ============ LottieFiles ============ -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
-    <title>Seth M.R. Jaipuria School - Faizabad</title>
+    <title><?php echo $title; ?> Seth M.R. Jaipuria School - Faizabad</title>
 
 
 </head>

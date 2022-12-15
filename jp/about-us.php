@@ -1,4 +1,6 @@
-<?php include('includes/header.php') ?>
+<?php
+$title = "About Seth M.R. Jaipuria Faizabad School";
+include('includes/header.php') ?>
 <?php include('includes/navigation.php') ?>
 <?php include('views/common/about-page-header.php') ?>
 <?php include('views/common/team.php') ?>

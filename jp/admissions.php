@@ -1,4 +1,6 @@
-<?php include('includes/header.php') ?>
+<?php
+$title = "Admissions |";
+require('includes/header.php') ?>
 <?php include('includes/navigation.php') ?>
 <?php include('views/common/admission-banner.php') ?>
 <?php include('views/common/eligibility.php') ?>

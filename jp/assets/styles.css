@@ -342,10 +342,10 @@
 .story-container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 .story-img {
-  max-width: 600px;
+  max-width: 750px;
   height: auto;
 }
 .story-img img {
@@ -357,8 +357,15 @@
   margin-left: 20px;
 }
 .story-content p {
-  line-height: 30px;
+  line-height: 25px;
   margin: 0;
+  font-size: 15px !important;
+}
+.story-content ul {
+  margin-top: 10px;
+}
+.story-content li {
+  font-size: 15px !important;
 }
 .custom-vector-icon {
   max-width: 100%;
@@ -413,6 +420,111 @@
   font-weight: bold;
   font-size: 36px;
   line-height: 50px;
+}
+
+/* ============= STUDENT EXCELLENCE ============= */
+.excellence-heading {
+  margin-top: 50px;
+}
+.excellence-heading h1 {
+  font-weight: bold;
+  font-size: 24px !important;
+}
+.excellence-heading span {
+  font-weight: bold;
+  font-size: 24px !important;
+  color: #5650ab;
+}
+.excellence-heading p {
+  margin: 0;
+  margin-bottom: 30px;
+}
+.section-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.xs-tab {
+  width: 175px;
+  height: 160px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  border: 1px solid #e7e7e7;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 10px;
+  margin: 5px;
+}
+.xs-tab:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) !important;
+  border: 0;
+  border-radius: 10px;
+  background-color: #5650ab;
+  color: #fff;
+  transition: 0.3s all ease-in-out;
+}
+
+.xs-tab#excellence-1:hover {
+  background-image: url("../assets/images/svg/excellence-1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.3s all ease-in-out;
+}
+.xs-tab#excellence-2:hover {
+  background-image: url("../assets/images/svg/excellence-2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.3s all ease-in-out;
+}
+.xs-tab#excellence-3:hover {
+  background-image: url("../assets/images/svg/excellence-3.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.3s all ease-in-out;
+}
+.xs-tab#excellence-4:hover {
+  background-image: url("../assets/images/svg/excellence-4.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.3s all ease-in-out;
+}
+.xs-tab#excellence-5:hover {
+  background-image: url("../assets/images/svg/excellence-5.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.3s all ease-in-out;
+}
+.xs-tab#excellence-6:hover {
+  background-image: url("../assets/images/svg/excellence-6.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.3s all ease-in-out;
+}
+.xs-tab h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  color: #ff9e38;
+}
+.xs-tab p {
+  font-size: 10px;
+  margin: 0;
+}
+
+/* ============= ART OF SELF LEARNING ============= */
+.self-learning-heading {
+  margin-top: 50px;
+}
+.self-learning-heading h1 {
+  font-weight: bold;
+  font-size: 24px !important;
+}
+.self-learning-heading span {
+  font-weight: bold;
+  font-size: 24px !important;
+  color: #5650ab;
 }
 
 /* ============= CHRONOLOGY SECTION ============= */

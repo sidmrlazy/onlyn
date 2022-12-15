@@ -15,7 +15,7 @@
 </div>
 
 <div class="container team-header">
-    <h2>Our <span id="team-text-color">Story</span></h2>
+    <h2>Jaipuria <span id="team-text-color">Faizabad</span></h2>
 </div>
 
 <div class="container story-container">

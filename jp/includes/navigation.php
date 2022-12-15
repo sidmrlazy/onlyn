@@ -16,6 +16,9 @@
                      <a class="nav-link" href="about-us.php">ABOUT US</a>
                  </li>
                  <li class="nav-item">
+                     <a class="nav-link" href="student-excellence.php">STUDENT EXCELLENCE</a>
+                 </li>
+                 <li class="nav-item">
                      <a class="nav-link" href="admissions.php">ADMISSIONS</a>
                  </li>
                  <li class="nav-item">
