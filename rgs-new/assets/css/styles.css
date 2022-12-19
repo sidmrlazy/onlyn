@@ -110,6 +110,8 @@
   .developer-footer {
     background-color: #1c3746;
     padding: 10px;
+    position: fixed;
+    bottom: 0;
   }
   .developer-footer p {
     margin: 0;
