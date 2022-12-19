@@ -37,10 +37,14 @@
 /* ========= MAIN NAVBAR ========= */
 .navbar {
   background-color: #138dd5 !important;
+  border-top: 2px solid #138dd5;
+  border-bottom: 2px solid #138dd5;
 }
 .navbar:hover {
   background-color: #1c3746 !important;
   transition: 0.3s all ease-in-out;
+  border-top: 2px solid #138dd5;
+  border-bottom: 2px solid #138dd5;
 }
 .nav-link {
   color: #e0e0e0;
