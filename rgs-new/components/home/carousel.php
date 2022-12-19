@@ -17,7 +17,7 @@
                 alt="rgs-college-homepage-slider">
         </div>
         <div class="carousel-item">
-            <img src="assets/slider-images/homepage-slider-1.svg" class="d-block w-100"
+            <img src="assets/slider-images/homepage-slider-3.svg" class="d-block w-100"
                 alt="rgs-college-homepage-slider">
         </div>
     </div>
