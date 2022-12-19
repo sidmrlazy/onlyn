@@ -52,7 +52,7 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="departments.php">Departments</a></li>
-                        <li><a class="dropdown-item" href="#">Calendar</a></li>
+                        <li><a class="dropdown-item" href="calendar.php">Calendar</a></li>
                         <!-- <li>
                             <hr class="dropdown-divider">
                         </li>
@@ -60,19 +60,20 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link">Research | Development</a>
+                    <a class="nav-link" href="research.php">Research & Development</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="iqac.php">IQAC</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link">IQAC</a>
+                    <a class="nav-link" href="brochures.php">Brochures</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link">Brochures</a>
+                    <a class="nav-link" href="videos.php">Videos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link">Videos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link">Events</a>
+                    <a class="nav-link" href="events.php">Events</a>
                 </li>
             </ul>
             <!-- <form class="d-flex" role="search">

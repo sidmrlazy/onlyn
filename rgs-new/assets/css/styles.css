@@ -36,10 +36,10 @@
 
 /* ========= MAIN NAVBAR ========= */
 .navbar {
-  background-color: #1c3746 !important;
+  background-color: #138dd5 !important;
 }
 .navbar:hover {
-  background-color: #138dd5 !important;
+  background-color: #1c3746 !important;
   transition: 0.3s all ease-in-out;
 }
 .nav-link {
