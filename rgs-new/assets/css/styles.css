@@ -1,3 +1,8 @@
+::selection {
+  color: #000;
+  background: #f0c424;
+}
+
 /* ========= TOP NAVBAR ========= */
 .top-nav {
   width: 100%;
@@ -20,7 +25,7 @@
   margin-right: 20px;
 }
 .top-nav-icon {
-  color: #1c3746 !important;
+  color: #138dd5 !important;
   font-size: 20px;
   font-weight: bold;
   margin: 0;
@@ -32,6 +37,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
 }
 
 /* ========= MAIN NAVBAR ========= */
