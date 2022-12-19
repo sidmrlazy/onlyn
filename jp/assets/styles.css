@@ -526,6 +526,34 @@
   font-size: 24px !important;
   color: #5650ab;
 }
+.self-learning-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.section-grid-tab {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #e7e7e7;
+  padding: 10px;
+  border-radius: 10px;
+}
+.section-grid-lottie {
+  width: 150px;
+  height: 150px;
+}
+.section-grid-tab p {
+  font-weight: bold;
+  font-size: 10px;
+  color: #5650ab;
+  text-align: center;
+}
 
 /* ============= CHRONOLOGY SECTION ============= */
 .chronology-section-heading {
@@ -838,6 +866,81 @@
 .fee-section-accordian-header {
   background-color: #5650ab !important;
   color: #fff !important;
+}
+
+/* ============= SCHOOL HOUSES ============= */
+.school-houses-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.school-houses-header h2 {
+  font-weight: bold;
+  font-size: 44px;
+  color: #ff9e38 !important;
+  text-align: center;
+}
+.school-houses-header span {
+  color: #5650ab !important;
+}
+.school-houses-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.school-houses-text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 600px;
+  border: 1px solid #e7e7e7;
+}
+.school-houses-text {
+  flex: 1;
+  padding: 10px;
+  height: 170px;
+}
+.school-houses-text h3 {
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: #777 !important;
+}
+.school-houses-text h4 {
+  font-weight: bold;
+  text-align: center;
+  color: #5650ab;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.school-houses-text p {
+  margin: 0;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+}
+.school-houses-img {
+  flex: 1;
+  max-width: 100%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.school-houses-img img {
+  width: 100%;
+  height: auto;
+}
+.school-houses-img:hover {
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  transition: 0.3s all ease-in-out;
 }
 
 /* ============= DOWNLOAD SECTION ============= */
@@ -1370,6 +1473,28 @@
     border-radius: 10px;
     padding: 10px;
     transition: 0.3s all ease-in-out;
+  }
+  /* ============= ART OF SELF LEARNING ============= */
+  .section-3 {
+    max-width: 100% !important;
+  }
+  .section-3 p {
+    margin: 0 !important;
+  }
+  .section-grid-tab {
+    margin-bottom: 10px;
+    height: 300px;
+    justify-content: center;
+  }
+  .section-grid-lottie {
+    width: 150px;
+    height: 150px;
+  }
+  .section-grid-tab p {
+    font-weight: bold;
+    font-size: 14px;
+    color: #5650ab;
+    text-align: center;
   }
 
   /* ============= FOOTER ============= */

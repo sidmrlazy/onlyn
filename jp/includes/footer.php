@@ -31,6 +31,12 @@
             <li>Admissions</li>
         </a>
         <a href="" class="footer-nav">
+            <li>Student Excellence</li>
+        </a>
+        <a href="" class="footer-nav">
+            <li>Jaipuria Edge</li>
+        </a>
+        <a href="" class="footer-nav">
             <li>Media & Gallery</li>
         </a>
         <a href="" class="footer-nav">
