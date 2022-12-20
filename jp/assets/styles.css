@@ -555,6 +555,44 @@
   text-align: center;
 }
 
+/* ============= INNOVATIVE CURRICULUM SECTION ============= */
+.innovative-section h2 {
+  font-weight: bold;
+  color: #5650ab;
+}
+.innovative-section span {
+  color: #ff9e38;
+}
+.curriculum-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.curriculum-details-card {
+  width: 200px;
+  height: auto;
+}
+.curriculum-details-card img {
+  width: 40%;
+  margin-bottom: 10px;
+}
+.curriculum-details-card h5 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #3d3d3d;
+}
+.caption {
+  color: #777;
+  font-weight: 600;
+  font-size: 12px !important;
+}
+.curriculum-details-card p {
+  color: #777;
+  font-size: 12px;
+}
+
 /* ============= CHRONOLOGY SECTION ============= */
 .chronology-section-heading {
   font-weight: bold;
@@ -1495,6 +1533,81 @@
     font-size: 14px;
     color: #5650ab;
     text-align: center;
+  }
+
+  /* ============= INNOVATIVE CURRICULUM SECTION ============= */
+  .innovative-section h2 {
+    margin-bottom: 20px;
+  }
+  .curriculum-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 10px;
+  }
+  .curriculum-details-card {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .curriculum-details-card img {
+    width: 20%;
+    margin-bottom: 20px;
+  }
+  .curriculum-details-card h5 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3d3d3d;
+  }
+  .caption {
+    color: #777;
+    font-weight: 600;
+    font-size: 16px !important;
+  }
+  .curriculum-details-card p {
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  /* ============= SCHOOL HOUSES ============= */
+  .school-houses-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .school-houses-text-container {
+    height: 680px;
+    margin-bottom: 30px;
+  }
+  .school-houses-text {
+    flex: 1;
+    padding: 10px;
+    height: 180px;
+  }
+  .school-houses-text p {
+    margin: 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .school-houses-img {
+    flex: 1;
+    max-width: 100%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+  .school-houses-img img {
+    width: 100%;
+    height: auto;
+  }
+  .school-houses-img:hover {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    transition: 0.3s all ease-in-out;
   }
 
   /* ============= FOOTER ============= */

@@ -19,6 +19,9 @@
                      <a class="nav-link" href="student-excellence.php">STUDENT EXCELLENCE</a>
                  </li>
                  <li class="nav-item">
+                     <a class="nav-link" href="jaipuria-edge.php">JAIPURIA EDGE</a>
+                 </li>
+                 <li class="nav-item">
                      <a class="nav-link" href="admissions.php">ADMISSIONS</a>
                  </li>
                  <li class="nav-item">
