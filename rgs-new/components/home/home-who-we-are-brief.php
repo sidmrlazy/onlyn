@@ -1,6 +1,6 @@
-<div class="container-fluid">
+<div class="home-page-brief">
     <div class="home-page-brief-section">
-        <div class="home-page-brief-lottie">
+        <div class="home-page-brief-lottie col-md-6">
             <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_uqkdufr5.json" background="transparent"
                 speed="1" loop autoplay></lottie-player>
         </div>

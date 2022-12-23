@@ -111,6 +111,15 @@
 }
 
 /* ========= HOME PAGE BRIEF SECTION ========= */
+.home-page-brief {
+  background: rgb(57, 97, 120);
+  background: linear-gradient(
+    132deg,
+    rgba(57, 97, 120, 1) 10%,
+    rgba(3, 30, 46, 1) 90%
+  );
+  padding: 20px;
+}
 .home-page-brief-section {
   display: flex;
   justify-content: center;
@@ -135,6 +144,7 @@
   font-size: 60px;
   line-height: 55px;
   margin-bottom: 20px;
+  color: #fff;
 }
 .home-page-brief-btn {
   background-color: #138dd5;
@@ -145,10 +155,15 @@
   justify-content: center;
   align-items: center;
   display: flex;
+  border: 2px solid #138dd5;
 }
 .home-page-brief-btn:hover {
   background-color: #1c3746;
   transition: 0.3s all ease-in-out;
+  border: 2px solid #fff;
+}
+.home-page-brief-content p {
+  color: #fff;
 }
 .home-page-brief-btn a {
   text-decoration: none;
@@ -274,6 +289,9 @@
   }
 
   /* ========= HOME PAGE BRIEF SECTION ========= */
+  .home-page-brief {
+    padding: 10px;
+  }
   .home-page-brief-section {
     flex-direction: column;
   }
@@ -285,8 +303,8 @@
   .home-page-brief-content h1 {
     font-weight: bolder;
     margin: 0;
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 44px;
+    line-height: 42px;
     margin-bottom: 20px;
     text-align: center;
   }
