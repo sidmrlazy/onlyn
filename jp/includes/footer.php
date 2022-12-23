@@ -21,26 +21,26 @@
     </div>
 
     <ul class="footer-menu">
-        <a href="" class="footer-nav">
+        <a href="index.php" class="footer-nav">
             <li>Home</li>
         </a>
-        <a href="" class="footer-nav">
+        <a href="about-us.php" class="footer-nav">
             <li>About us</li>
         </a>
-        <a href="" class="footer-nav">
+        <a href="admissions.php" class="footer-nav">
             <li>Admissions</li>
         </a>
-        <a href="" class="footer-nav">
+        <a href="student-excellence.php" class="footer-nav">
             <li>Student Excellence</li>
         </a>
-        <a href="" class="footer-nav">
+        <a href="jaipuria-edge.php" class="footer-nav">
             <li>Jaipuria Edge</li>
         </a>
-        <a href="" class="footer-nav">
-            <li>Media & Gallery</li>
-        </a>
-        <a href="" class="footer-nav">
+        <a href="contact.php" class="footer-nav">
             <li>Contact us</li>
+        </a>
+        <a href="https://jsfaizabad.edunexttech.com/Index" target="_blank" rel="noopener noreferrer" class="footer-nav">
+            <li>Student Portal</li>
         </a>
     </ul>
 
