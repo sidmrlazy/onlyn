@@ -98,6 +98,51 @@
   font-weight: 600;
 }
 
+/* ========= HOME PAGE BRIEF SECTION ========= */
+.home-page-brief-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-page-brief-lottie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-page-brief-lottie lottie-player {
+  width: 350px;
+  height: 350px;
+}
+.home-page-brief-content {
+  padding: 20px;
+  max-width: 100%;
+}
+.home-page-brief-content h1 {
+  font-weight: bold;
+  margin: 0;
+  font-size: 60px;
+  line-height: 55px;
+  margin-bottom: 20px;
+}
+.home-page-brief-btn {
+  background-color: #138dd5;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  width: 150px !important;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.home-page-brief-btn:hover {
+  background-color: #1c3746;
+  transition: 0.3s all ease-in-out;
+}
+.home-page-brief-btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
 /* ========= DEVELOPER FOOTER ========= */
 .developer-footer {
   background-color: #1c3746;
@@ -150,11 +195,56 @@
     margin-bottom: 20px;
   }
 
+  /* ========= HOME PAGE BRIEF SECTION ========= */
+  .home-page-brief-section {
+    flex-direction: column;
+  }
+  .home-page-brief-lottie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-page-brief-content h1 {
+    font-weight: bolder;
+    margin: 0;
+    font-size: 44px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .home-page-brief-content p {
+    text-align: center;
+  }
+  .home-page-brief-lottie lottie-player {
+    width: 300px;
+    height: 300px;
+    margin: 0 !important;
+  }
+
+  .home-page-brief-btn {
+    background-color: #138dd5;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 100% !important;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .home-page-brief-btn:hover {
+    background-color: #1c3746;
+    transition: 0.3s all ease-in-out;
+  }
+  .home-page-brief-btn a {
+    text-decoration: none;
+    color: #fff;
+  }
+
   /* ========= DEVELOPER FOOTER ========= */
   .developer-footer {
     background-color: #1c3746;
     padding: 10px;
-    position: fixed;
+    position: initial;
     bottom: 0;
   }
   .developer-footer p {

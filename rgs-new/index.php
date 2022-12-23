@@ -4,4 +4,5 @@ include('includes/header.php') ?>
 <?php include('includes/navbar.php') ?>
 <?php include('components/home/carousel.php') ?>
 <?php include('components/home/college-affiliations.php') ?>
+<?php include('components/home/home-who-we-are-brief.php') ?>
 <?php include('includes/footer.php') ?>

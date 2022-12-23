@@ -11,7 +11,7 @@
             <div class="reg-section-card col-md-4">
                 <img src="assets/svg/reg-4.svg" alt="">
                 <p><span>Approved by</span><br>
-                    Pharmacy Council <br> of India (PCI)</p>
+                    Pharmacy Council of <br> India (PCI)</p>
             </div>
 
             <div class="reg-section-card col-md-4">
