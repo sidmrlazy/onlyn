@@ -27,6 +27,10 @@
                  <li class="nav-item">
                      <a class="nav-link" href="contact.php">CONTACT</a>
                  </li>
+                 <li class="nav-item">
+                     <a class="nav-link" href="https://jsfaizabad.edunexttech.com/Index" target="_blank"
+                         rel="noopener noreferrer">STUDENT PORTAL</a>
+                 </li>
              </ul>
          </div>
      </div>

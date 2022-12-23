@@ -981,6 +981,32 @@
   transition: 0.3s all ease-in-out;
 }
 
+/* ============= JAIPURIA EDGE SECTION ============= */
+.je-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.je-img-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.je-img-holder img {
+  width: 50%;
+  height: auto;
+}
+.je-content-holder {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+  flex-direction: column;
+}
+.je-content-holder p {
+  font-size: 14px;
+}
+
 /* ============= DOWNLOAD SECTION ============= */
 .download-section-row {
   display: flex;
@@ -1608,6 +1634,15 @@
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
     transition: 0.3s all ease-in-out;
+  }
+
+  /* ============= JAIPURIA EDGE SECTION ============= */
+  .je-section {
+    flex-direction: column;
+  }
+  .je-content-holder p {
+    font-size: 14px;
+    text-align: justify;
   }
 
   /* ============= FOOTER ============= */
