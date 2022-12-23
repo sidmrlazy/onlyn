@@ -74,28 +74,40 @@
 .section-grid {
   display: flex;
   flex-wrap: wrap;
+  padding: 20px;
   justify-content: space-evenly;
 }
 .reg-section-card {
+  max-width: 350px !important;
+  max-height: 300px !important;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
 }
-.reg-section-card img {
-  width: 20%;
+.reg-section-img {
+  max-width: 150px;
+  max-height: fit-content;
+  margin-right: 20px;
 }
-.reg-section-card span {
-  font-size: 10px;
+.reg-section-img img {
+  width: 70px;
+  height: auto;
+}
+.reg-section-txt {
+  width: 150px;
+}
+.xs-txt {
   margin: 0;
-  color: #777;
-  font-weight: 700;
-}
-.reg-section-card p {
-  font-size: 14px;
-  margin: 0 !important;
-  margin-left: 5px !important;
   font-weight: 600;
+  font-size: 12px;
+  color: #777;
+}
+.xl-txt {
+  font-weight: 600;
+  color: #000;
+  margin: 0 !important;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 /* ========= HOME PAGE BRIEF SECTION ========= */
@@ -143,6 +155,66 @@
   color: #fff;
 }
 
+/* ========= HOMEPAGE FEATURE TAB ========= */
+.home-feature-section {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.feature-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.feature-tab {
+  border: 1px solid #e7e7e7;
+  border-radius: 5px;
+  width: 350px;
+  height: 250px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) !important;
+  text-decoration: none;
+}
+.feature-tab#color-1 {
+  background-color: #1c3746;
+  color: #fff;
+}
+.feature-tab#color-1:hover {
+  color: #fff;
+  background-image: url("../svg/feature-tab-1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.5s all ease-in-out !important;
+}
+.feature-tab#color-2 {
+  background-color: #138dd5;
+  color: #fff;
+}
+.feature-tab#color-2:hover {
+  color: #fff;
+  background-image: url("../svg/feature-tab-2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.5s all ease-in-out !important;
+}
+.feature-tab#color-3 {
+  background-color: #f0c424;
+  color: #fff;
+}
+.feature-tab#color-3:hover {
+  color: #fff;
+  background-image: url("../svg/feature-tab-3.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.5s all ease-in-out !important;
+}
+.feature-tab ion-icon {
+  font-size: 30px;
+}
+
 /* ========= DEVELOPER FOOTER ========= */
 .developer-footer {
   background-color: #1c3746;
@@ -188,6 +260,12 @@
   }
 
   /* ========= COLLEGE REGISTRATIONS ========= */
+  .section-grid {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
   .reg-section-card {
     display: flex;
     justify-content: center;
@@ -207,20 +285,20 @@
   .home-page-brief-content h1 {
     font-weight: bolder;
     margin: 0;
-    font-size: 44px;
+    font-size: 40px;
     line-height: 40px;
     margin-bottom: 20px;
     text-align: center;
   }
   .home-page-brief-content p {
     text-align: center;
+    font-size: 16px !important;
   }
   .home-page-brief-lottie lottie-player {
-    width: 300px;
-    height: 300px;
+    width: 200px !important;
+    height: 200px !important;
     margin: 0 !important;
   }
-
   .home-page-brief-btn {
     background-color: #138dd5;
     padding: 10px;
@@ -238,6 +316,35 @@
   .home-page-brief-btn a {
     text-decoration: none;
     color: #fff;
+  }
+
+  /* ========= HOMEPAGE FEATURE TAB ========= */
+  .home-feature-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .feature-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .feature-tab {
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 200px !important;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) !important;
+    margin-bottom: 10px;
+  }
+
+  .feature-tab ion-icon {
+    font-size: 30px !important;
   }
 
   /* ========= DEVELOPER FOOTER ========= */

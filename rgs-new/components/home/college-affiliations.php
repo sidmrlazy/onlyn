@@ -2,22 +2,34 @@
     <div class="section-container ">
         <div class="section-grid">
 
-            <div class="reg-section-card col-md-4">
-                <img src="assets/svg/reg-2.svg" alt="">
-                <p><span>Affiliated with</span><br>
-                    Abdul Kalam <br>Technical University (AKTU)</p>
+            <div class="reg-section-card">
+                <div class="reg-section-img">
+                    <img src="assets/svg/reg-1.svg" alt="">
+                </div>
+                <div class="reg-section-txt">
+                    <p class="xs-txt">Affiliated with</p>
+                    <p class="xl-txt">Abdul Kalam Technical University (AKTU)</p>
+                </div>
             </div>
 
-            <div class="reg-section-card col-md-4">
-                <img src="assets/svg/reg-4.svg" alt="">
-                <p><span>Approved by</span><br>
-                    Pharmacy Council of <br> India (PCI)</p>
+            <div class="reg-section-card">
+                <div class="reg-section-img">
+                    <img src="assets/svg/reg-2.svg" alt="">
+                </div>
+                <div class="reg-section-txt">
+                    <p class="xs-txt">Approved by</p>
+                    <p class="xl-txt">Pharmacy Council of India (PCI)</p>
+                </div>
             </div>
 
-            <div class="reg-section-card col-md-4">
-                <img src="assets/svg/reg-4.svg" alt="">
-                <p><span>Approved by</span><br>
-                    Board of Technical <br> Education (BTE)</p>
+            <div class="reg-section-card">
+                <div class="reg-section-img">
+                    <img src="assets/svg/reg-4.svg" alt="">
+                </div>
+                <div class="reg-section-txt">
+                    <p class="xs-txt">Approved by</p>
+                    <p class="xl-txt">Board of Technical Education (BTE)</p>
+                </div>
             </div>
         </div>
     </div>
