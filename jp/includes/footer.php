@@ -30,6 +30,9 @@
         <a href="admissions.php" class="footer-nav">
             <li>Admissions</li>
         </a>
+        <a href="curriculum.php" class="footer-nav">
+            <li>Curriculum</li>
+        </a>
         <a href="student-excellence.php" class="footer-nav">
             <li>Student Excellence</li>
         </a>
