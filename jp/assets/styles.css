@@ -23,7 +23,7 @@
 }
 .nav-link {
   color: #5650ab !important;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
 }
 .nav-link:hover {
@@ -379,7 +379,6 @@
   margin-top: 40px;
 }
 .card-1 {
-  width: 370px;
   height: 350px;
   border: 1px solid #e7e7e7;
   background-color: #fff;
@@ -412,14 +411,86 @@
 }
 .about-section-row {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin-top: 50px;
 }
 .about-section-row h3 {
   font-weight: bold;
-  font-size: 36px;
-  line-height: 50px;
+  font-size: 38px;
+  line-height: 55px;
+}
+.about-section-btn-mid {
+  text-decoration: none;
+  color: #fff;
+  background-color: #5650ab;
+  margin-top: 20px !important;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.about-section-btn-mid:hover {
+  font-weight: 600;
+  color: #fff;
+  transition: 0.3s all ease-in-out;
+}
+
+/* ============= CURRICULUM PAGE ============= */
+.curriculum-section-top {
+  margin-top: 50px;
+}
+.curriculum-section-top h1 {
+  font-weight: bold;
+  color: #ff9e38;
+  margin: 0;
+}
+.curriculum-section-top p {
+  color: #000;
+  margin: 0;
+  line-height: 35px;
+  font-size: 20px;
+}
+.accordion-body {
+  margin-top: 20px;
+}
+.accordion-body h4 {
+  font-weight: bold;
+}
+.inner-accordian {
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #e7e7e7;
+  -webkit-box-shadow: 5px 5px 25px -10px rgba(0, 0, 0, 0.63);
+  -moz-box-shadow: 5px 5px 25px -10px rgba(0, 0, 0, 0.63);
+  box-shadow: 5px 5px 25px -10px rgba(0, 0, 0, 0.63);
+  background-color: #fff;
+  margin-bottom: 30px;
+}
+.inner-accordian h2 {
+  font-weight: bold;
+  color: #5650ab;
+  margin: 0;
+}
+.inner-accordian h3 {
+  font-weight: bold;
+  color: #ff9e38;
+  font-size: 18px;
+  margin-top: 10px;
+}
+.inner-accordian p {
+  font-weight: bold;
+  color: #000;
+  margin: 0;
+}
+.inner-accordian span {
+  font-weight: 400;
+  color: #000;
+  margin: 0;
+}
+.inner-text {
+  font-weight: 500 !important;
+  margin-bottom: 10px !important;
 }
 
 /* ============= STUDENT EXCELLENCE ============= */
@@ -1047,34 +1118,58 @@
 }
 
 /* ============= CONTACT SECTION ============= */
-.form-row {
+.contact-section {
+  margin: 0;
+  top: 0;
+  padding: 10px;
+}
+.contact-section-row {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  background-color: blanchedalmond;
 }
-.form-container {
-  border: 1px solid #5650ab;
-  border-radius: 10px;
+.section-1 {
+  padding: 40px;
+  background-color: #fff;
+}
+.contact-section h1 {
+  font-weight: bold;
+  font-size: 55px;
+  margin-bottom: 30px;
+  color: #000 !important;
+}
+.contact-section span {
+  font-weight: bold;
+  font-size: 55px;
+  margin-bottom: 30px;
+  color: #ff9e38;
+}
+.section-2 {
+  max-height: 100%;
   padding: 20px;
 }
-.form-label-custom {
-  font-size: 14px !important;
+.section-2-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 50px;
 }
-.form-btn {
-  background-color: #fff;
-  color: #5650ab;
-  border: 1px solid #5650ab;
-  border-radius: 10px;
-  padding: 10px;
+.section-2-icon {
+  margin-right: 20px;
+  font-size: 36px;
 }
-.form-btn:hover {
-  background-color: #5650ab;
-  color: #fff;
+.section-2-heading {
+  margin: 0;
+  color: #000;
+  font-weight: bold;
+}
+.contact-section-btn {
+  background-color: #5650ab !important;
   border: 1px solid #5650ab;
-  border-radius: 10px;
+  width: 60%;
   padding: 10px;
-  transition: 0.3s all ease-in-out;
+  border-radius: 100px;
 }
 
 /* ============= FOOTER ============= */
@@ -1506,38 +1601,7 @@
   .download-section {
     margin-bottom: 40px !important;
   }
-  /* ============= CONTACT SECTION ============= */
-  .form-row {
-    flex-direction: column;
-    margin-bottom: 20px;
-    width: 100% !important;
-  }
-  .form-lottie {
-    display: none;
-  }
-  .form-container {
-    border: 1px solid #5650ab;
-    border-radius: 10px;
-    padding: 20px;
-  }
-  .form-label-custom {
-    font-size: 14px !important;
-  }
-  .form-btn {
-    background-color: #fff;
-    color: #5650ab;
-    border: 1px solid #5650ab;
-    border-radius: 10px;
-    padding: 10px;
-  }
-  .form-btn:hover {
-    background-color: #5650ab;
-    color: #fff;
-    border: 1px solid #5650ab;
-    border-radius: 10px;
-    padding: 10px;
-    transition: 0.3s all ease-in-out;
-  }
+
   /* ============= ART OF SELF LEARNING ============= */
   .section-3 {
     max-width: 100% !important;
@@ -1634,6 +1698,43 @@
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
     transition: 0.3s all ease-in-out;
+  }
+
+  /* ============= CONTACT SECTION ============= */
+  .contact-section-row {
+    flex-direction: column;
+  }
+  .section-1 {
+    padding: 0px;
+    background-color: #fff;
+    width: 100%;
+  }
+  .contact-section h1 {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #000 !important;
+  }
+  .contact-section span {
+    color: #ff9e38;
+    font-size: 30px;
+  }
+  .section-2-row {
+    margin-bottom: 50px;
+    flex-direction: column;
+  }
+  .section-2-icon {
+    margin-right: 0px;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .contact-section-btn {
+    background-color: #5650ab !important;
+    border: 1px solid #5650ab;
+    width: 60%;
+    padding: 10px;
+    border-radius: 100px;
+    margin-bottom: 50px;
   }
 
   /* ============= JAIPURIA EDGE SECTION ============= */
