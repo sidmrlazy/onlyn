@@ -230,7 +230,63 @@
   font-size: 30px;
 }
 
-/* ========= HOMEPAGE COURSES TAB ========= */
+/* ========= WHY RGS ========= */
+.why-rgs-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.why-rgs-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: auto;
+}
+.why-rgs-img {
+  width: 70%;
+  height: auto;
+}
+.why-rgs-content {
+  padding: 10px;
+}
+.why-rgs-content h3 {
+  font-weight: bold;
+  color: #1c3746;
+  font-size: 36px;
+  margin-bottom: 50px !important;
+}
+.why-rgs-card {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.why-rgs-icon-holder {
+  background-color: #1c3746;
+  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+.why-rgs-icon {
+  font-size: 24px;
+  color: #fff;
+}
+.why-rgs-card h4 {
+  font-weight: 500;
+  color: #1c3746;
+  font-size: 20px;
+  margin: 0;
+}
+.why-rgs-card p {
+  margin: 0;
+}
 
 /* ========= DEVELOPER FOOTER ========= */
 .developer-footer {

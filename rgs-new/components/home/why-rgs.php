@@ -1,23 +1,25 @@
-<div>
-    <div class="col-md-4">
-        <div class="home-page-brief-lottie ">
-            <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_uqkdufr5.json" background="transparent"
-                speed="1" loop autoplay></lottie-player>
-        </div>
+<div class="why-rgs-container mb-5">
+    <div class="col-md-6 why-rgs-img-container">
+        <img src="assets/svg/course-1.svg" alt="" class="why-rgs-img">
     </div>
-    <div class="col-md-8">
+    <div class="col-md-6 why-rgs-content">
         <div>
             <h3>Why should you choose RGS College of Pharmacy?</h3>
-            <div>
-                <ion-icon name="bar-chart-outline"></ion-icon>
+
+            <div class="why-rgs-card">
+                <div class="why-rgs-icon-holder">
+                    <ion-icon class="why-rgs-icon" name="bar-chart-outline"></ion-icon>
+                </div>
                 <div>
                     <h4>Lorem ipsum dolor sit.</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit non architecto aliquam.</p>
                 </div>
             </div>
 
-            <div>
-                <ion-icon name="medal-outline"></ion-icon>
+            <div class="why-rgs-card">
+                <div class="why-rgs-icon-holder">
+                    <ion-icon class="why-rgs-icon" name="medal-outline"></ion-icon>
+                </div>
                 <div>
                     <h4>Lorem ipsum dolor sit.</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit non architecto aliquam.</p>
