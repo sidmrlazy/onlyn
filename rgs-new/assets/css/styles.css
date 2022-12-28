@@ -231,60 +231,6 @@
 }
 
 /* ========= HOMEPAGE COURSES TAB ========= */
-.home-page-courses-tab-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgb(19, 141, 213);
-  background: linear-gradient(
-    132deg,
-    rgba(19, 141, 213, 1) 10%,
-    rgba(131, 181, 210, 1) 90%
-  );
-  padding: 30px;
-}
-.course-tab-inner-row {
-  display: flex;
-  justify-content: space-between !important;
-  align-items: center;
-}
-.courses-inner-card {
-  border: 2px solid #fff;
-  border-radius: 5px;
-  padding: 20px;
-  margin: 5px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) !important;
-}
-.courses-inner-card h3 {
-  color: #535353;
-  margin: 0;
-}
-.courses-inner-card p {
-  color: #535353;
-  margin: 0;
-  font-size: 16px;
-}
-.courses-inner-card#blue:hover {
-  border: 2px solid #138dd5;
-  border-radius: 5px;
-  transition: 0.5s all ease-in-out;
-}
-.courses-inner-card#dark-blue:hover {
-  border: 2px solid #1c3746;
-  border-radius: 5px;
-  transition: 0.5s all ease-in-out;
-}
-.courses-inner-card#grey:hover {
-  border: 2px solid #777;
-  border-radius: 5px;
-  transition: 0.5s all ease-in-out;
-}
-.courses-inner-card#yellow:hover {
-  border: 2px solid #f0c424;
-  border-radius: 5px;
-  transition: 0.5s all ease-in-out;
-}
 
 /* ========= DEVELOPER FOOTER ========= */
 .developer-footer {
@@ -430,15 +376,6 @@
   }
 
   /* ========= HOMEPAGE COURSES TAB ========= */
-  .home-page-courses-tab-section {
-    flex-direction: column;
-  }
-  .course-tab-inner-row {
-    flex-direction: column;
-  }
-  .mobile-view {
-    display: none;
-  }
 
   /* ========= DEVELOPER FOOTER ========= */
   .developer-footer {
