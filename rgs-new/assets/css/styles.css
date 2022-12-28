@@ -230,6 +230,43 @@
   font-size: 30px;
 }
 
+/* ========= HOMEPAGE COURSES TAB ========= */
+.home-page-courses-tab-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.course-tab-inner-row {
+  display: flex;
+  justify-content: space-between !important;
+  align-items: center;
+}
+.courses-inner-card {
+  border: 1px solid #e7e7e7e7;
+  padding: 20px;
+  margin: 5px;
+}
+.courses-inner-card#blue:hover {
+  border: 1px solid #138dd5;
+  border-radius: 5px;
+  transition: 0.5s all ease-in-out;
+}
+.courses-inner-card#dark-blue:hover {
+  border: 1px solid #1c3746;
+  border-radius: 5px;
+  transition: 0.5s all ease-in-out;
+}
+.courses-inner-card#grey:hover {
+  border: 1px solid #777;
+  border-radius: 5px;
+  transition: 0.5s all ease-in-out;
+}
+.courses-inner-card#yellow:hover {
+  border: 1px solid #f0c424;
+  border-radius: 5px;
+  transition: 0.5s all ease-in-out;
+}
+
 /* ========= DEVELOPER FOOTER ========= */
 .developer-footer {
   background-color: #1c3746;
@@ -371,6 +408,17 @@
 
   .feature-tab ion-icon {
     font-size: 30px !important;
+  }
+
+  /* ========= HOMEPAGE COURSES TAB ========= */
+  .home-page-courses-tab-section {
+    flex-direction: column;
+  }
+  .course-tab-inner-row {
+    flex-direction: column;
+  }
+  .mobile-view {
+    display: none;
   }
 
   /* ========= DEVELOPER FOOTER ========= */
