@@ -254,8 +254,9 @@
 .why-rgs-content h3 {
   font-weight: bold;
   color: #1c3746;
-  font-size: 36px;
+  font-size: 40px;
   margin-bottom: 50px !important;
+  line-height: 60px;
 }
 .why-rgs-card {
   display: flex;
@@ -431,7 +432,23 @@
     font-size: 30px !important;
   }
 
-  /* ========= HOMEPAGE COURSES TAB ========= */
+  /* ========= WHY RGS ========= */
+  .why-rgs-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+  }
+  .why-rgs-content h3 {
+    font-size: 30px;
+    line-height: initial;
+    text-align: center;
+  }
+  .why-rgs-icon-holder {
+    width: 100px;
+    height: 50px;
+  }
 
   /* ========= DEVELOPER FOOTER ========= */
   .developer-footer {
