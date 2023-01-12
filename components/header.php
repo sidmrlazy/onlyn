@@ -91,7 +91,7 @@
     <title>Innovative Software Development and Marketing Company</title>
 
     <!-- ============ FACEBOOK META TAGS ============ -->
-    <meta property="og:title" content="Onlyn Us">
+    <meta property="og:title" content="Onlyn">
     <meta property="og:description" content="Offering innovative search engine optimization, mobile app development, 
         website development, marketing services and content marketing strategies.">
     <meta property="og:image" content="assets/images/logo/favicon.png">
