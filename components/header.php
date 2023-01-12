@@ -14,8 +14,6 @@
     <meta name="description" content="Offering innovative search engine optimization, mobile app development, 
         website development, marketing services and content marketing strategies.">
 
-
-
     <!-- ============ GOOGLE TAG MANAGER START ============ -->
     <!-- Google Tag Manager -->
     <script>
