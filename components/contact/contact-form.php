@@ -44,12 +44,36 @@
                     '$contact_service')";
 
                     $to = "connectonlyn@onlynus.com";
-                    $subject = "Visitor Alert";
-                    $message = "Someone has filled the contact form from the website. Please check Database !";
+                    $subject = "Website Visitor Alert";
+                    $message = "
+                    <html>
+                    <head>
+                    </head>
+                    <body>
+                    <table>
+                    <tr>
+                    <th>Name</th>
+                    <th>Contact</th>
+                    <th>Email</th>
+                    <th>Service</th>
+                    </tr>
+                    <tr>
+                    <td>$contact_first_name $contact_last_name</td>
+                    <td>$contact_mobile</td>
+                    <td>$contact_email</td>
+                    <td>$contact_service</td>
+                    </tr>
+                    </table>
+                    </body>
+                    </html>
+                    ";
+                    $headers = "MIME-Version: 1.0" . "\r\n";
+                    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+
 
                     if ($connection->query($insert) === TRUE) {
                         echo $success_msg;
-                        mail($to, $subject, $message,);
+                        mail($to, $subject, $message, $headers);
                     } else {
                         echo "Error: " . $insert . "</br>" . $connection->error;
                     }
