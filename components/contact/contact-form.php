@@ -37,7 +37,7 @@
                 $result = mysqli_query($connection, $query);
 
                 if ($result) {
-                    $to = "connectonlyn@onlynus.com";
+                    $to = "connectonlyn@gmail.com";
                     $subject = "Website Visitor!";
 
                     $message = "
