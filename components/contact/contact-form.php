@@ -13,80 +13,74 @@
         <form class="custom-form" action="" method="post">
             <?php
             if (isset($_POST['submit'])) {
-                $contact_first_name = $_POST['contact_first_name'];
-                $contact_last_name = $_POST['contact_last_name'];
-                $contact_email = $_POST['contact_email'];
-                $contact_mobile = $_POST['contact_mobile'];
-                $contact_service = $_POST['contact_service'];
-                $error_msg = "<div class='alert alert-danger text-center' role='alert'>Oops! Looks like you have missed out a field.</div>";
-                $success_msg = "<div class='alert alert-success text-center' role='alert'>Form Submitted! We will connect with you soon</div>";
+                $contact_firstname = mysqli_real_escape_string($connection, $_POST['contact_firstname']);
+                $contact_lastname = mysqli_real_escape_string($connection, $_POST['contact_lastname']);
+                $contact_email = mysqli_real_escape_string($connection, $_POST['contact_email']);
+                $contact_number = mysqli_real_escape_string($connection, $_POST['contact_number']);
+                $contact_service = mysqli_real_escape_string($connection, $_POST['contact_service']);
 
-                if (
-                    $contact_first_name === "" ||
-                    $contact_last_name === "" ||
-                    $contact_email === "" ||
-                    $contact_mobile === "" ||
-                    $contact_service === ""
-                ) {
-                    echo $error_msg;
-                } else {
-
-                    $insert = "INSERT INTO `contact_form`(                
-                `contact_first_name`, 
-                `contact_last_name`, 
-                `contact_email`, 
-                `contact_mobile`,
-                `contact_service`) VALUES (
-                    '$contact_first_name',
-                    '$contact_last_name',
+                $query = "INSERT INTO `contact`(
+                    `contact_firstname`,
+                    `contact_lastname`,
+                    `contact_email`,
+                    `contact_number`,
+                    `contact_service`
+                )
+                VALUES(
+                    '$contact_firstname',
+                    '$contact_lastname',
                     '$contact_email',
-                    '$contact_mobile',
-                    '$contact_service')";
+                    '$contact_number',
+                    '$contact_service'
+                )";
 
+                $result = mysqli_query($connection, $query);
+
+                if ($result) {
                     $to = "connectonlyn@onlynus.com";
-                    $subject = "Website Visitor Alert";
+                    $subject = "Website Visitor!";
+
                     $message = "
-                    <html>
-                    <head>
-                    </head>
-                    <body>
-                    <table>
-                    <tr>
-                    <th>Name</th>
-                    <th>Contact</th>
-                    <th>Email</th>
-                    <th>Service</th>
-                    </tr>
-                    <tr>
-                    <td>$contact_first_name $contact_last_name</td>
-                    <td>$contact_mobile</td>
-                    <td>$contact_email</td>
-                    <td>$contact_service</td>
-                    </tr>
-                    </table>
-                    </body>
-                    </html>
-                    ";
+                            <html>
+                            <head>
+                            </head>
+                            <body>
+                            <table>
+                            <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Contact</th>
+                            <th>Contacting For</th>
+                            <th>Date</th>
+                            </tr>
+                            <tr>
+                            <td>$contact_firstname $contact_lastname</td>
+                            <td>$contact_email</td>
+                            <td>$contact_number</td>
+                            <td>$contact_service</td>
+                            </tr>
+                            </table>
+                            </body>
+                            </html>
+                            ";
+
                     $headers = "MIME-Version: 1.0" . "\r\n";
                     $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+                    mail($to, $subject, $message, $headers);
 
-
-                    if ($connection->query($insert) === TRUE) {
-                        echo $success_msg;
-                        mail($to, $subject, $message, $headers);
-                    } else {
-                        echo "Error: " . $insert . "</br>" . $connection->error;
-                    }
-
-                    $connection->close();
+            ?>
+            <div class="alert alert-success mt-3 mb-3" role="alert">
+                Thanks for dropping by! We'll be in touch before you know it.
+            </div>
+            <?php
                 }
-            };
+            }
             ?>
             <div class="mb-3">
                 <label for="" class="form-label">Name</label>
                 <div class="inner-form-input">
-                    <input type="text" name="contact_first_name" class="form-control" placeholder="First Name">
-                    <input type="text" name="contact_last_name" class="form-control" placeholder="Last Name">
+                    <input type="text" name="contact_firstname" class="form-control" placeholder="First Name" required>
+                    <input type="text" name="contact_lastname" class="form-control" placeholder="Last Name" required>
                 </div>
             </div>
             <div class="mb-3">
@@ -97,8 +91,8 @@
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Mobile phone</label>
 
-                <input type="number" class="form-control noscroll" name="contact_mobile" id="exampleInputEmail1"
-                    aria-describedby="emailHelp" placeholder="+91">
+                <input type="number" class="form-control noscroll" name="contact_number" id="exampleInputEmail1"
+                    aria-describedby="emailHelp" placeholder="+91" required>
 
             </div>
             <div class="mb-3">
@@ -106,17 +100,17 @@
                 <select class="form-select contact-form-dropdown" name="contact_service"
                     aria-label="Default select example">
                     <option selected>Select a Service</option>
-                    <option name="contact_service" value="Software Development">Software Development </option>
-                    <option name="contact_service" value="Web Application development">Web Application development
+                    <option value="Software Development">Software Development </option>
+                    <option value="Web Application development">Web Application development
                     </option>
-                    <option name="contact_service" value="UI/UX Design">UI/UX Design </option>
-                    <option name="contact_service" value="Digital Marketing Services">Digital Marketing Services
+                    <option value="UI/UX Design">UI/UX Design </option>
+                    <option value="Digital Marketing Services">Digital Marketing Services
                     </option>
-                    <option name="contact_service" value="Offline Marketing Design">Offline Marketing Design </option>
-                    <option name="contact_service" value="Online Branding Services">Online Branding Services</option>
-                    <option name="contact_service" value="Offline Branding Services">Offline Branding Services</option>
-                    <option name="contact_service" value="Graphic Design Services ">Graphic Design Services </option>
-                    <option name="contact_service" value="Printing Solutions">Printing Solutions </option>
+                    <option value="Offline Marketing Design">Offline Marketing Design </option>
+                    <option value="Online Branding Services">Online Branding Services</option>
+                    <option value="Offline Branding Services">Offline Branding Services</option>
+                    <option value="Graphic Design Services ">Graphic Design Services </option>
+                    <option value="Printing Solutions">Printing Solutions </option>
                 </select>
             </div>
 

@@ -1234,9 +1234,10 @@ input::-webkit-inner-spin-button {
   justify-content: center;
   align-items: center;
   padding: 10px;
-  max-width: fit-content !important;
+  max-width: 100% !important;
 }
 .rectangle {
+  max-width: 100%;
   width: 650px;
   height: 400px;
   border: 1px solid #efefefef;
