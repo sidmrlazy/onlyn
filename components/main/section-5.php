@@ -1,7 +1,8 @@
 <div class="container">
     <div class="homepage-section-5-row">
         <div class="col-md-6">
-            <img src="assets/webp/artwork-1.webp" alt="">
+            <img src="assets/webp/artwork-1.webp"
+                alt="Explore the history of Onlyn - Our journey from inception to the present day.">
         </div>
 
         <div class="col-md-6">
