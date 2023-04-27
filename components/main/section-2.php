@@ -1,49 +1,39 @@
-<section class="container process-section">
-    <h2>Simplifying the Design Process</h2>
+<div class="container homepage-section-2-container">
+    <h3>Streamlining Your Design Process with Our <span>Software Expertise</span></h3>
 
-    <div class="process-col">
-        <div class="col-md-3">
-            <div class="process-row">
-                <ion-icon name="disc-outline" class="process-icon"></ion-icon>
-                <div class="dotted-line"></div>
-            </div>
-
-            <h2>Discover</h2>
-            <p>We shape brands through exploration, applying in-depth research to challenge assumptions at every turn.
-            </p>
+    <div class="homepage-secion-2-row">
+        <div class="homepage-section-2-card">
+            <lottie-player src="assets/json/discover.json" background="transparent" speed="1"
+                class="homepage-section-2-lottie" loop autoplay></lottie-player>
+            <h4>Discover</h4>
+            <p>Our company explores and conducts extensive research to challenge assumptions, shaping brands for
+                exponential
+                growth in India.</p>
         </div>
 
-        <div class="col-md-3">
-            <div class="process-row">
-                <ion-icon name="brush-outline" class="process-icon"></ion-icon>
-                <div class="dotted-line"></div>
-            </div>
-            <h2>Design</h2>
-            <p>Our design approach is to simplify. We embrace the joy in creating something unique that is easy for end
-                users.
-            </p>
+        <div class="homepage-section-2-card">
+            <lottie-player src="assets/json/design.json" background="transparent" speed="1"
+                class="homepage-section-2-lottie" loop autoplay></lottie-player>
+            <h4>Design</h4>
+            <p>At our software development company in India, we simplify design and prioritize user experience, crafting
+                unique and intuitive solutions for end users.</p>
         </div>
 
-        <div class="col-md-3">
-            <div class="process-row">
-                <ion-icon name="construct-outline" class="process-icon"></ion-icon>
-                <div class="dotted-line"></div>
-            </div>
-            <h2>Build</h2>
-            <p>Using modern tech, we build with efficiency & skill, creating flexible & scalable
-                business-driven solutions.
-            </p>
+        <div class="homepage-section-2-card">
+            <lottie-player src="assets/json/build.json" background="transparent" speed="1"
+                class="homepage-section-2-lottie" loop autoplay></lottie-player>
+            <h4>Build</h4>
+            <p>We utilize modern technology to efficiently create flexible and scalable business solutions that are
+                driven
+                by skill and expertise.</p>
         </div>
 
-        <div class="col-md-3">
-            <div class="process-row">
-                <ion-icon name="paper-plane-outline" class="process-icon"></ion-icon>
-                <div class="dotted-line"></div>
-            </div>
-            <h2>Deliver</h2>
-            <p>We take an iterative approach to both our work and our practice, always looking for ways to improve what
-                we do.
-            </p>
+        <div class="homepage-section-2-card">
+            <lottie-player src="assets/json/deliver.json" background="transparent" speed="1"
+                class="homepage-section-2-lottie" loop autoplay></lottie-player>
+            <h4>Deliver</h4>
+            <p>Using an iterative approach, we constantly seek to improve our work and practices for optimal results and
+                client satisfaction.</p>
         </div>
     </div>
-</section>
+</div>

@@ -14,9 +14,10 @@ input::-webkit-inner-spin-button {
 /* ============ Navbar ============ */
 .navbar {
   background-color: #fff !important;
+  padding: 10px;
 }
 .navbar-brand img {
-  width: 80% !important;
+  width: 100% !important;
   height: auto;
 }
 .nav-item {
@@ -24,7 +25,7 @@ input::-webkit-inner-spin-button {
 }
 .nav-link {
   font-weight: 400 !important;
-  font-size: 14px !important;
+  font-size: 18px !important;
 }
 .nav-link:hover {
   color: #3b8b18 !important;
@@ -54,7 +55,7 @@ input::-webkit-inner-spin-button {
   width: 80px !important;
   height: auto;
 }
-/* ================= Product Banner ================= */
+/* ================= HOMEPAGE SECTION 1 ================= */
 .product-banner {
   display: flex;
   justify-content: center;
@@ -66,6 +67,14 @@ input::-webkit-inner-spin-button {
   font-weight: 900 !important;
   font-size: 50px !important;
 }
+.product-banner h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900 !important;
+  font-size: 50px !important;
+}
+.product-banner p {
+  font-size: 16px;
+}
 .lottie-holder {
   display: flex;
   justify-content: center;
@@ -74,6 +83,83 @@ input::-webkit-inner-spin-button {
 .lottie {
   width: 80%;
   height: auto;
+}
+
+/* ============ HOMEPAGE SECTION 2  ============ */
+.homepage-section-2-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.homepage-section-2-container h3 {
+  text-align: left;
+  font-weight: 900;
+  font-size: 50px !important;
+}
+.homepage-section-2-container span {
+  color: #3b8b18 !important;
+}
+.homepage-secion-2-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.homepage-section-2-card {
+  width: 800px !important;
+  height: 380px;
+  border: 1px solid #e7e7e7e7;
+  border-radius: 5px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 20px;
+}
+.homepage-section-2-card p {
+  margin: 0;
+  font-size: 16px;
+}
+.homepage-section-2-lottie {
+  width: 30%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* ============ HOMEPAGE SECTION 5  ============ */
+.homepage-section-5-row {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+.homepage-section-5-row img {
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+}
+.homepage-section-5-row h3 {
+  color: #3b8b18;
+  font-weight: 900;
+  font-size: 50px;
+}
+.homepage-section-5-row p {
+  font-size: 16px;
+  margin-bottom: 60px;
+}
+.homepage-section-5-row a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #3b8b18;
+  border: 1px solid #3b8b18;
+  padding: 10px;
+}
+.homepage-section-5-row a:hover {
+  background-color: #3b8b18;
+  color: #fff;
+  transition: 0.3s all ease-in-out;
 }
 
 /* ================= Marketing Section ================= */
@@ -250,57 +336,6 @@ input::-webkit-inner-spin-button {
 .col-two a {
   text-decoration: none;
   color: #000;
-}
-/* ============== Process Section ============== */
-.process-section {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  background: #3b8b18 !important;
-  padding: 100px;
-  border-radius: 5px;
-  -webkit-box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.75);
-}
-.process-section h2 {
-  font-weight: 800 !important;
-  color: #fff !important;
-}
-.process-col {
-  margin-top: 100px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-.process-col h2 {
-  font-weight: 700;
-  font-size: 22px;
-  color: #fff;
-}
-.process-col p {
-  padding-right: 20px;
-  margin-top: 20px;
-  color: #fff;
-}
-.process-row {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-bottom: 30px;
-}
-.process-icon {
-  font-size: 30px;
-  margin-right: 20px;
-  color: #fff;
-}
-.dotted-line {
-  border-bottom-width: 0.5px solid;
-  border-bottom-color: #fff;
-  border-top-width: 0;
-  border-left-width: 0;
-  border-right-width: 0;
-  border-style: dashed;
-  width: 150px;
 }
 
 /* ============ Tech Work ============ */
@@ -1091,32 +1126,66 @@ input::-webkit-inner-spin-button {
   .dropdown-menu {
     border: 0 !important;
   }
+
+  /* ============ HOMEPAGE SECTION 1  ============ */
   .product-banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 20px;
     flex-direction: column-reverse;
-    margin-top: 100px;
   }
   .product-banner h1 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 900 !important;
-    font-size: 44px;
+    font-size: 20px !important;
+    text-align: center;
+  }
+  .product-banner h2 {
+    font-size: 20px !important;
+    text-align: center;
   }
   .product-banner p {
-    font-family: "Poppins", sans-serif;
-    text-align: left;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 20px;
   }
   .lottie-holder {
-    max-width: fit-content;
-    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .lottie {
-    width: 80%;
+    width: 60%;
     height: auto;
+  }
+  /* ============ HOMEPAGE SECTION 2  ============ */
+  .homepage-section-2-container h3 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 30px !important;
+  }
+  .homepage-secion-2-row {
+    flex-direction: column;
+  }
+  .homepage-section-2-card {
+    width: 100% !important;
+  }
+
+  /* ============ HOMEPAGE SECTION 5  ============ */
+  .homepage-section-5-row {
+    flex-direction: column;
+  }
+  .homepage-section-5-row img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .homepage-section-5-row h3 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .homepage-section-5-row p {
+    font-size: 16px;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  .homepage-section-5-row a {
+    display: none;
   }
 
   /* Hero Section */
@@ -1139,52 +1208,6 @@ input::-webkit-inner-spin-button {
     text-align: center;
   }
 
-  /* Process Section */
-  .process-section {
-    margin-top: 50px;
-    margin-bottom: 10px !important;
-    background: #3b8b18 !important;
-    padding: 50px;
-    border-radius: 0;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-  }
-  .process-section h1 {
-    font-weight: 800;
-    color: #fff;
-    text-align: center;
-    font-size: 44px;
-  }
-  .process-icon {
-    font-size: 44px;
-    margin-right: 20px;
-  }
-  .dotted-line {
-    border-bottom-width: 0.5px solid;
-    border-bottom-color: #fff;
-    border-top-width: 0;
-    border-left-width: 0;
-    border-right-width: 0;
-    border-style: dashed;
-    width: 150px;
-  }
-
-  .process-col {
-    flex-direction: column !important;
-  }
-  .process-row {
-    margin-top: 50px;
-  }
-  .process-col h2 {
-    font-weight: 700;
-    font-size: 22px;
-  }
-  .process-col p {
-    padding-right: 10px;
-    margin-top: 20px;
-    max-width: max-content !important;
-  }
   /* ================ Middle Section ================ */
   .middle-section {
     display: flex;
