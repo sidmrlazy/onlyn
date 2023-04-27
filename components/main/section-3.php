@@ -1,7 +1,7 @@
 <section class="container-fluid middle-section">
     <div class="col-md-5">
         <h5>Ensuring that customers are completely satisfied with their experience.</h5>
-        <h2>We Promise. We Deliver.</h2>
+        <h6>We Promise. We Deliver.</h6>
         <p>Looking for a reliable software development company in India that delivers quality results? Look no further
             than our team of experts. As the best custom software development company in India, we specialize in web and
             mobile app development, ecommerce development, and digital marketing services. With a commitment to going
@@ -13,7 +13,8 @@
         </div>
     </div>
     <div class="col-md-6 lottie-holder">
-        <lottie-player src="assets/json/happy.json" background="transparent" speed="1" class="lottie" loop autoplay>
+        <lottie-player src="assets/json/happy.json" background="transparent" speed="1" class="homepage-section-3-lottie"
+            loop autoplay>
         </lottie-player>
     </div>
 </section>

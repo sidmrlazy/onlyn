@@ -23,9 +23,18 @@
                         About
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="about">
+                        <li><a class="dropdown-item" href="about#discover-us">
+                                <ion-icon id="inner-icon" name="search-outline"></ion-icon>Discover Us
+                            </a>
+                        </li>
+                        <li><a class="dropdown-item" href="about#about-us">
+                                <ion-icon id="inner-icon" name="airplane-outline"></ion-icon>Unveiling Our Story
+                            </a>
+                        </li>
+                        <li><a class="dropdown-item" href="about#how-we-work">
                                 <ion-icon id="inner-icon" name="sparkles-outline"></ion-icon>How we work
-                            </a></li>
+                            </a>
+                        </li>
                     </ul>
                 </li>
 

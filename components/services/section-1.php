@@ -1,11 +1,12 @@
 <div class="container-fluid all-services" id="mobile">
     <div class="col-md-6">
-        <h1>Mobile Apps Development</h1>
-        <p>From B2B or B2E apps for enterprises, small businesses and startups, we have a proven track record of
-            offering high-impact, result driven and engaging mobile application development & Web development services.
-            Our agency is renowned for delivering native Android app development, native iOS app development, hybrid and
-            cross-platform app development services to build next-gen mobile & web applications using the latest
-            technology stack.</p>
+        <h2>Mobile App Development</h2>
+        <p>Our software development company in India has a proven track record of delivering high-impact, engaging, and
+            result-driven mobile application development and web development services to enterprises, small businesses,
+            and startups. We are recognized for our expertise in native Android app development, native iOS app
+            development, hybrid and cross-platform app development services, using the latest technology stack. As one
+            of the best software companies in India, we offer custom software development, web development, mobile app
+            development, ecommerce development, and digital marketing services.</p>
         <div class="icon-holder">
             <div class="all-services-inner-img">
                 <img src="assets/images/icons/apple.png" alt="">
@@ -33,11 +34,12 @@
             speed="1" loop class="all-services-lottie" autoplay></lottie-player>
     </div>
     <div class="col-md-6">
-        <h1>Web Development</h1>
-        <p>Being a leading website application development company, our certified developers have unparalleled expertise
-            in working with the latest web technologies to deliver custom web solutions. Whether creating a web presence
-            for your company, an information hub for your business or empowering your apps/IoT devices through backend-
-            IndiaNIC does it all by covering a wide spectrum of web solutions and framework.</p>
+        <h2>Web Development</h2>
+        <p>Onlyn is a renowned software development company in India with expertise in website application
+            development. Our team of certified developers excels in the latest web technologies and delivers custom web
+            solutions. We cater to a wide range of web solutions and frameworks, creating a web presence, information
+            hub, and empowering apps/IoT devices through backend. Our services cover a spectrum of web solutions, making
+            us a top web development company in India.</p>
         <div class="icon-holder">
             <div class="all-services-inner-img">
                 <img src="assets/images/icons/php.png" alt="">
@@ -69,11 +71,12 @@
 
 <div class="container-fluid all-services" id="ui-ux">
     <div class="col-md-6">
-        <h1>UI/UX Design</h1>
-        <p>UI/UX design is the catalyst behind the success of any web or mobile app. ONLYN is a leading web design and
-            mobile app design agency with a knack of turning great ideas into meaningful interactions. Starting from
-            conceptualization, information architecture, visual identity, and UX design to timely delivery of appealing
-            websites and mobile apps resulting in maximum user engagement- Online does it all! </p>
+        <h2>UI/UX Design</h2>
+        <p>ONLYN, a leading web design and mobile app design agency, understands the importance of UI/UX design in the
+            success of any web or mobile app. They excel in turning great ideas into meaningful interactions by
+            providing services ranging from conceptualization, information architecture, visual identity, and UX design
+            to timely delivery of appealing websites and mobile apps, resulting in maximum user engagement. Whether you
+            need a website or a mobile app, ONLYN, a top software development company in India, has got you covered.</p>
         <div class="icon-holder">
             <div class="all-services-inner-img">
                 <img src="assets/images/icons/photoshop.png" alt="">
@@ -110,19 +113,19 @@
             background="transparent" speed="1" loop autoplay></lottie-player>
     </div>
     <div class="col-md-6">
-        <h1>Branding Services</h1>
-        <p>First, let's clear up the biggest misconception about brand strategy: Your brand is not your product, your
-            logo, your website, or your name. In fact, your brand is much more than that -- it's the stuff that feels
-            intangible. But it's that hard-to-pin-down feeling that separates powerhouse and mediocre brands from each
-            other. At ONLYN we work with your Brand with the following Building process: </p>
+        <h2>Branding Services</h2>
+        <p>Let's debunk the biggest myth about brand strategy: Your brand is not just your product, logo, website, or
+            name. It's much more than that, encompassing intangible elements that set great brands apart from mediocre
+            ones. ONLYN understands this and follows a specific process for building your brand:</p>
         <div>
             <ul>
-                <li>Understanding what brands look like today</li>
-                <li>Creating your brand strategy</li>
-                <li>Implementing your brand into marketing efforts</li>
-                <li>Monitoring and measuring impact</li>
+                <li>Understanding what modern brands entail</li>
+                <li>Developing your brand strategy</li>
+                <li>Integrating your brand into your marketing efforts</li>
+                <li>Measuring and monitoring your brand's impact.</li>
             </ul>
         </div>
+        <p>As a leading software development company in India, we can help elevate your brand to new heights.</p>
         <div class="icon-holder mb-5">
             <div class="all-services-inner-img">
                 <img src="assets/images/icons/facebook.png" alt="">
@@ -154,7 +157,7 @@
 
 <div class="container-fluid all-services" id="offline-designing-printing">
     <div class="col-md-6">
-        <h1>Offline Designing & Printing Solutions</h1>
+        <h2>Offline Designing & Printing Solutions</h2>
 
         <div class="mb-5">
             <ul>
@@ -183,18 +186,19 @@
 
 <div class="container-fluid all-services" id="marketing-services">
     <div class="col-md-6">
-        <h1>Marketing Services</h1>
-        <p>The new way to sell is by providing ‘the right content’ to the customer at the ‘time they need it most’, on
-            the ‘platform or channel they are expecting to find it’. Following are the components of Marketing
-            strategies ONLYN includes while working with your business: </p>
+        <h2>Marketing Services</h2>
+        <p>ONLYN incorporates the following components into their marketing strategies to provide customers with the
+            right content at the right time and on the right platform:</p>
         <div class="mb-5">
             <ul>
-                <li>Strategize gaining Insights through research (Customer, Industry, Competition) </li>
-                <li>Strategize quality traffic through SEO (Onpage, Offpage) </li>
-                <li>Strategize content marketing </li>
-                <li>Strategy to engage audience through social media</li>
+                <li>Gaining insights through research (customer, industry, and competition)</li>
+                <li>Driving quality traffic through SEO (on-page and off-page)</li>
+                <li>Implementing content marketing</li>
+                <li>Engaging the audience through social media.</li>
             </ul>
         </div>
+        <p>As a software development company in India, ONLYN uses these strategies to help businesses achieve their
+            marketing goals.</p>
         <a href="#all-marketing-services" class="custom-new-btn mt-5">
             Know More
         </a>

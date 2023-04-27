@@ -21,9 +21,10 @@
         <div class="carousel-item">
             <div class="product-banner">
                 <div class="col-md-4">
-                    <h2>Innovative Software Development Solutions for Global Businesses: </h2>
-                    <p>Partner with a Top IT Company
-                        in India</p>
+                    <h2>Partner with a Top IT Company
+                        in India</h2>
+                    <p>Innovative Software Development Solutions for Global Businesses: </p>
+
                 </div>
                 <div class="col-md-8 lottie-holder">
                     <lottie-player src="assets/json/homepage-banner-2.json" background="transparent" speed="1"
