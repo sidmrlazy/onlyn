@@ -1,6 +1,5 @@
 <!-- Digital Inbound Marketing Services Modal -->
-<div class="modal fade" id="digital-inbound-marketing-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
+<div class="modal fade" id="digital-inbound-marketing-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -53,8 +52,7 @@
 </div>
 
 <!-- Social Media Marketing Modal -->
-<div class="modal fade" id="social-media-marketing-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
+<div class="modal fade" id="social-media-marketing-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -115,8 +113,7 @@
 </div>
 
 <!-- Paid Advertizing Modal -->
-<div class="modal fade" id="paid-advertizing-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
+<div class="modal fade" id="paid-advertizing-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -185,11 +182,10 @@
 <div class="onlyn-top-section" id="all-marketing-services">
     <div>
         <h3>HOW WE EMPOWER YOU</h3>
-        <h1>Unleash Your Brand's Potential with Exceptional Content Marketing</h1>
+        <h2>Unleash Your Brand's Potential with Exceptional Content Marketing</h2>
 
         <div class="container new-row">
-            <a href="" class="box" data-bs-toggle="modal" data-bs-target="#digital-inbound-marketing-modal"
-                id="digital-inbound-marketing">
+            <a href="" class="box" data-bs-toggle="modal" data-bs-target="#digital-inbound-marketing-modal" id="digital-inbound-marketing">
                 <h4>Digital Inbound Marketing</h4>
                 <p>Revolutionize the way you market and sell with our Inbound Marketing approach that attracts, engages,
                     and delights potential customers ...</p>
@@ -199,8 +195,7 @@
                 <p>At our company, we believe that every brand has a story to tell, and we have the expertise to tell
                     those stories effectively online...</p>
             </a>
-            <a class="box" data-bs-toggle="modal" id="social-media-marketing"
-                data-bs-target="#social-media-marketing-modal">
+            <a class="box" data-bs-toggle="modal" id="social-media-marketing" data-bs-target="#social-media-marketing-modal">
                 <h4>Social Media Marketing</h4>
                 <p>At ONLYN, social media is our playground. We understand how to humanize your brand and connect it
                     with a wider audience...</p>
