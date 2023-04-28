@@ -48,11 +48,11 @@
                         <!-- <li><a class="dropdown-item" href="services#all-services">
                                 <ion-icon id="inner-icon" name="ribbon-outline"></ion-icon>All Services
                             </a></li> -->
-                        <li><a class="dropdown-item" href="#mobile">
+                        <li><a class="dropdown-item" href="services#mobile">
                                 <ion-icon id="inner-icon" name="phone-portrait-outline"></ion-icon>Mobile App
                                 Development
                             </a></li>
-                        <li><a class="dropdown-item" href="#web-development">
+                        <li><a class="dropdown-item" href="services#web-development">
                                 <ion-icon id="inner-icon" name="tv-outline"></ion-icon>Web Development
                             </a></li>
                         <li><a class="dropdown-item" href="services#ui-ux">
