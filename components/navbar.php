@@ -93,13 +93,6 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="methodology">
-                        <ion-icon name="color-wand-outline"></ion-icon>
-                        Methodology
-                    </a>
-                </li>
-
-                <li class="nav-item">
 
                     <a class="nav-link" href="contact">
                         <ion-icon name="id-card-outline"></ion-icon>
