@@ -16,7 +16,7 @@
                 next
                 level.</p>
 
-            <a href="contact.php">Connect Now</a>
+            <a href="contact">Connect Now</a>
         </div>
     </div>
 </div>

@@ -9,7 +9,7 @@
             Choose us and experience why we are one of the top IT companies in India.</p>
 
         <div class="new-btn-holder">
-            <a href="contact.php" class="new-btn mt-5">Connect Now</a>
+            <a href="contact" class="new-btn mt-5">Connect Now</a>
         </div>
     </div>
     <div class="col-md-6 lottie-holder">
