@@ -13,7 +13,7 @@
 
     <!-- ============ SEO DESCRIPTION ============ -->
     <meta name="description"
-        content="Looking for the best software development company in India? Look no further! We offer custom software, web, and mobile app development services, as well as digital marketing solutions. Partner with us for innovative ecommerce development and grow your business. Choose a top-rated IT company in India - choose us!">
+        content="Choose the best software development company in India! We offer custom software, web & mobile app development, digital marketing services & innovative ecommerce solutions. Partner with the top IT company in India.">
 
     <!-- ============ GOOGLE TAG MANAGER START ============ -->
     <!-- Google Tag Manager -->
@@ -87,8 +87,8 @@
     </script>
     <!-- ========== Google Tag End ========== -->
 
-    <title>Top Software Development Co. in India | Custom Software & Web Dev | Mobile App & Ecommerce | Digital
-        Marketing - Onlyn</title>
+    <title>Expert software development in India - Custom software, web & mobile app dev, ecommerce, digital marketing -
+        Top company</title>
 
     <!-- ============ FACEBOOK META TAGS ============ -->
     <meta property="og:title" content="Onlyn">
