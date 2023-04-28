@@ -8,18 +8,18 @@
 
         <div class="footer-call-out">
             <p>Call</p>
-            <a href="#" class="footer-call-out-inner">
+            <a href="tel:+917355410185" class="footer-call-out-inner">
                 <img src="assets/images/other/flag.png" alt="indian flag">
                 <p>+91 73554 10185</p>
             </a>
         </div>
 
-        <div class="footer-call-out">
+        <!-- <div class="footer-call-out">
             <div class="footer-call-out-inner">
                 <ion-icon name="mail-outline" class="footer-icon"></ion-icon>
                 <p>connectonlyn@onlynus.com</p>
             </div>
-        </div>
+        </div> -->
 
         <!-- <div class="footer-call-out">
             <div class="footer-call-out-inner">
@@ -32,22 +32,19 @@
     <div class="col-md-3 footer-col">
         <h5>Company</h5>
         <div class="col-two">
-            <a href="about">
-                <p>About Us</p>
+            <a href="about#discover-us">
+                <p>Discover Us</p>
             </a>
-            <a href="contact">
-                <p>Career</p>
+            <a href="about#about-us">
+                <p>Unveiling Our Story</p>
             </a>
-            <a href="contact">
-                <p>How to Engage</p>
+            <a href="about#how-we-work">
+                <p>How we work</p>
             </a>
-            <a href="services">
-                <p>We Work With</p>
+            <a href="consultancy">
+                <p>Consultancy</p>
             </a>
-            <a href="#">
-                <p>Policies</p>
-            </a>
-            <a href="#">
+            <a href="sitemap.xml">
                 <p>Sitemap</p>
             </a>
             <a href="contact">
@@ -60,44 +57,44 @@
         <h5>Services</h5>
 
         <div class="col-two">
-            <a href="http://">
+            <a href="services#mobile">
                 <p>Mobile App Development</p>
             </a>
-            <a href="http://">
+            <a href="services#web-development">
                 <p>Web Development</p>
             </a>
-            <a href="http://">
+            <a href="services#ui-ux">
                 <p>UI|UX Design</p>
             </a>
-            <a href="http://">
+            <a href="services#branding-services">
                 <p>Branding Services</p>
             </a>
-            <a href="http://">
+            <a href="services#offline-designing-printing">
                 <p>Offline Designing & Printing Solutions</p>
             </a>
-            <a href="http://">
+            <a href="services#marketing-services">
                 <p>Marketing Solutions</p>
             </a>
-            <a href="http://">
+            <a href="services#digital-inbound-marketing">
                 <p>Digital Inbound Marketing Services</p>
             </a>
 
-            <a href="http://">
+            <a href="services#content-marketing-services">
                 <p>Content Marketing</p>
             </a>
-            <a href="http://">
+            <a href="services#social-media-marketing">
                 <p>Social Media Marketing Services</p>
             </a>
 
-            <a href="http://">
+            <a href="services#seo-services">
                 <p>Search Engine Optimization</p>
             </a>
 
-            <a href="http://">
+            <a href="services#paid-campaigns">
                 <p>Paid Advertizing Campaigns</p>
             </a>
 
-            <a href="http://">
+            <a href="services#analytics-services">
                 <p>Analytics Services</p>
             </a>
 
