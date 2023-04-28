@@ -6,7 +6,8 @@
 <div class="container contact-form ">
 
     <div class="contact-section col-md-6">
-        <img src="assets/images/other/contact-img.webp" alt="">
+        <img src="assets/images/other/contact-img.webp"
+            alt="Contact Onlyn - Top software development company in India for custom software, web & mobile app dev, ecommerce, and digital marketing.">
     </div>
 
     <div class="contact-form-section col-md-6">

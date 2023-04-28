@@ -9,13 +9,16 @@
             development, ecommerce development, and digital marketing services.</p>
         <div class="icon-holder">
             <div class="all-services-inner-img">
-                <img src="assets/images/icons/apple.png" alt="">
+                <img src="assets/images/icons/apple.png"
+                    alt="Onlyn's mobile app development - Custom Android & iOS solutions by top software company in India">
             </div>
             <div class="all-services-inner-img">
-                <img src="assets/images/icons/android.png" alt="">
+                <img src="assets/images/icons/android.png"
+                    alt="Onlyn - Expert mobile app development in India - Custom solutions for Android & iOS devices, top software developer">
             </div>
             <div class="all-services-inner-img">
-                <img src="assets/images/icons/react-native.png" alt="">
+                <img src="assets/images/icons/react-native.png"
+                    alt="Onlyn - Expert mobile app development services in India for Android & iOS devices. Custom solutions by a top software company.">
             </div>
         </div>
         <!-- <a type="button" class="custom-new-btn mt-5">
@@ -42,25 +45,32 @@
             us a top web development company in India.</p>
         <div class="icon-holder">
             <div class="all-services-inner-img">
-                <img src="assets/images/icons/php.png" alt="">
+                <img src="assets/images/icons/php.png"
+                    alt="Onlyn - Professional web development services in India. Custom solutions by a top software company for a responsive website design.">
             </div>
             <div class="all-services-inner-img">
-                <img src="assets/images/icons/java.png" alt="">
+                <img src="assets/images/icons/java.png"
+                    alt="Onlyn - Top web development company in India. Custom website solutions by expert software developers for your business.">
             </div>
             <div class="all-services-inner-img">
-                <img src="assets/images/icons/html.png" alt="">
+                <img src="assets/images/icons/html.png"
+                    alt="Onlyn - Professional web development services in India for custom website solutions. Top software company for web design and development.">
             </div>
             <div class="all-services-inner-img">
-                <img src="assets/images/icons/css.png" alt="">
+                <img src="assets/images/icons/css.png"
+                    alt="Onlyn - Expert web development services in India for custom solutions. Top software company for your web development needs.">
             </div>
             <div class="all-services-inner-img">
-                <img src="assets/images/icons/js.png" alt="">
+                <img src="assets/images/icons/js.png"
+                    alt="Onlyn - Top web development company in India offering custom solutions for websites. Expert services by a leading software developer.">
             </div>
             <div class="all-services-inner-img">
-                <img src="assets/images/icons/react-native.png" alt="">
+                <img src="assets/images/icons/react-native.png"
+                    alt="Onlyn - Top web development company in India for custom website solutions. Expert team for design, development, and maintenance.">
             </div>
             <div class="all-services-inner-img">
-                <img src="assets/images/icons/python.png" alt="">
+                <img src="assets/images/icons/python.png"
+                    alt="Onlyn - Expert web development services in India for custom websites. Top software developer for high-quality web solutions.">
             </div>
         </div>
         <!-- <a type="button" class="custom-new-btn mt-5">
@@ -79,22 +89,28 @@
             need a website or a mobile app, ONLYN, a top software development company in India, has got you covered.</p>
         <div class="icon-holder">
             <div class="all-services-inner-img">
-                <img src="assets/images/icons/photoshop.png" alt="">
+                <img src="assets/images/icons/photoshop.png"
+                    alt="Onlyn - Expert UI/UX design services in India for custom software and mobile apps. Top software company for innovative design solutions.">
             </div>
             <div class="all-services-inner-img">
-                <img src="assets/images/icons/illustrator.png" alt="">
+                <img src="assets/images/icons/illustrator.png"
+                    alt="Onlyn - Expert UI/UX design services in India for custom software & web development. Top software company for intuitive & user-friendly design.">
             </div>
             <div class="all-services-inner-img">
-                <img src="assets/images/icons/coreldraw.png" alt="">
+                <img src="assets/images/icons/coreldraw.png"
+                    alt="Onlyn - Expert UI/UX design services in India. Top software developer for intuitive, user-friendly designs that enhance user experience.">
             </div>
             <div class="all-services-inner-img">
-                <img src="assets/images/icons/adobexd.png" alt="">
+                <img src="assets/images/icons/adobexd.png"
+                    alt="Onlyn - Custom UI/UX design services in India. Top software company for user-friendly and visually appealing website and app designs.">
             </div>
             <div class="all-services-inner-img">
-                <img src="assets/images/icons/figma.png" alt="">
+                <img src="assets/images/icons/figma.png"
+                    alt="Onlyn - Custom UI/UX design services in India for optimal user experience. Top software developer for visually stunning designs.">
             </div>
             <div class="all-services-inner-img">
-                <img src="assets/images/icons/canva.png" alt="">
+                <img src="assets/images/icons/canva.png"
+                    alt="Onlyn - Expert UI/UX design services in India for custom software and app development. Top software company for user-centered design.">
             </div>
         </div>
         <!-- <a type="button" class="custom-new-btn mt-5">
@@ -128,25 +144,32 @@
         <p>As a leading software development company in India, we can help elevate your brand to new heights.</p>
         <div class="icon-holder mb-5">
             <div class="all-services-inner-img">
-                <img src="assets/images/icons/facebook.png" alt="">
+                <img src="assets/images/icons/facebook.png"
+                    alt="Onlyn - Expert branding services in India for digital marketing. Top software company for building a strong brand identity.">
             </div>
             <div class="all-services-inner-img">
-                <img src="assets/images/icons/instagram.png" alt="">
+                <img src="assets/images/icons/instagram.png"
+                    alt="Onlyn - Expert branding services in India for custom software and digital marketing solutions. Top software company for brand strategy.">
             </div>
             <div class="all-services-inner-img">
-                <img src="assets/images/icons/youtube.png" alt="">
+                <img src="assets/images/icons/youtube.png"
+                    alt="Onlyn - Expert branding services in India for businesses. Top software company for creating unique and memorable brand experiences.">
             </div>
             <div class="all-services-inner-img">
-                <img src="assets/images/icons/whatsapp.png" alt="">
+                <img src="assets/images/icons/whatsapp.png"
+                    alt="Onlyn - Expert branding services in India for digital marketing solutions. Top software company for brand strategy and design.">
             </div>
             <div class="all-services-inner-img">
-                <img src="assets/images/icons/messenger.png" alt="">
+                <img src="assets/images/icons/messenger.png"
+                    alt="Onlyn - Expert branding services in India for digital marketing. Top software company for effective branding strategies and growth.">
             </div>
             <div class="all-services-inner-img">
-                <img src="assets/images/icons/twitter.png" alt="">
+                <img src="assets/images/icons/twitter.png"
+                    alt="Onlyn - Expert branding services in India for digital marketing solutions. Top software company for building a strong brand identity.">
             </div>
             <div class="all-services-inner-img">
-                <img src="assets/images/icons/linkedin.png" alt="">
+                <img src="assets/images/icons/linkedin.png"
+                    alt="Onlyn - Expert branding services in India for businesses. Top software company for building a strong brand identity and digital presence.">
             </div>
         </div>
         <!-- <a type="button" class="custom-new-btn mt-5">
