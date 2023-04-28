@@ -1,4 +1,4 @@
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
-Redirect 301 /old-page.html https://onlynus.com
+Redirect 301 /http://onlynus.com https://onlynus.com
