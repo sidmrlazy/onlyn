@@ -1313,7 +1313,7 @@ input::-webkit-outer-spin-button {
     text-align: center;
   }
   .homepage-section-5-row p {
-    font-size: 16px;
+    font-size: 18px !important;
     margin-bottom: 60px;
     text-align: center;
   }
