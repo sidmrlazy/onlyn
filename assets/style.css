@@ -1189,13 +1189,14 @@ input::-webkit-outer-spin-button {
   }
   .product-banner h1,
   .product-banner h2 {
-    font-size: 20px !important;
+    font-size: 24px !important;
     text-align: center;
   }
   .product-banner p {
     text-align: center;
     line-height: 20px;
     margin-top: 20px;
+    font-size: 18px;
   }
   .icon-holder,
   .inner-form-input,
