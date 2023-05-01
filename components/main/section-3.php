@@ -13,8 +13,7 @@
         </div>
     </div>
     <div class="col-md-6 lottie-holder">
-        <lottie-player src="assets/json/happy.json" background="transparent" speed="1" class="homepage-section-3-lottie"
-            loop autoplay>
+        <lottie-player src="assets/json/happy.json" background="transparent" speed="1" class="homepage-section-3-lottie" loop autoplay>
         </lottie-player>
     </div>
 </section>

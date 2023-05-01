@@ -1223,9 +1223,16 @@ input::-webkit-outer-spin-button {
   .homepage-section-2-card {
     width: 100% !important;
   }
+  .homepage-section-2-card p {
+    margin: 0;
+    font-size: 18px;
+  }
   .about-section-1-container,
   .middle-section {
     flex-direction: column-reverse;
+  }
+  .middle-section p {
+    font-size: 18px !important;
   }
   .custom-card,
   .hero-section {
