@@ -1,34 +1,41 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-		<!--	created with www.mysitemapgenerator.com	-->
-		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-	<loc>https://onlynus.com/</loc>
-	<lastmod>2023-04-27T15:20:20+01:00</lastmod>
-	<priority>1.0</priority>
+﻿<url>
+<loc>https://onlynus.com/</loc>
+<lastmod>2023-05-03T09:28:01+00:00</lastmod>
+<priority>1.00</priority>
 </url>
 <url>
-	<loc>https://onlynus.com/index</loc>
-	<lastmod>2023-04-27T15:20:20+01:00</lastmod>
-	<priority>1.0</priority>
+<loc>https://onlynus.com/index</loc>
+<lastmod>2023-05-03T09:28:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-	<loc>https://onlynus.com/about</loc>
-	<lastmod>2023-04-27T15:20:20+01:00</lastmod>
-	<priority>1.0</priority>
+<loc>https://onlynus.com/about</loc>
+<lastmod>2023-05-03T09:28:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-	<loc>https://onlynus.com/services</loc>
-	<lastmod>2023-04-27T15:20:20+01:00</lastmod>
-	<priority>1.0</priority>
+<loc>https://onlynus.com/services</loc>
+<lastmod>2023-05-03T09:28:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-	<loc>https://onlynus.com/consultancy</loc>
-	<lastmod>2023-04-27T15:20:20+01:00</lastmod>
-	<priority>1.0</priority>
+<loc>https://onlynus.com/consultancy</loc>
+<lastmod>2023-05-03T09:28:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-	<loc>https://onlynus.com/contact</loc>
-	<lastmod>2023-04-27T15:20:20+01:00</lastmod>
-	<priority>1.0</priority>
+<loc>https://onlynus.com/blogs</loc>
+<lastmod>2023-05-03T09:28:01+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://onlynus.com/contact</loc>
+<lastmod>2023-05-03T09:28:01+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://onlynus.com/blog-1.php</loc>
+<lastmod>2023-05-03T09:28:01+00:00</lastmod>
+<priority>0.64</priority>
 </url>
 </urlset>
