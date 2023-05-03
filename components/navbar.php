@@ -93,6 +93,13 @@
                 </li>
 
                 <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="blogs">
+                        <ion-icon name="desktop-outline"></ion-icon>
+                        Blogs
+                    </a>
+                </li>
+
+                <li class="nav-item">
 
                     <a class="nav-link" href="contact">
                         <ion-icon name="id-card-outline"></ion-icon>
