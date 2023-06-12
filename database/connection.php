@@ -1,15 +1,15 @@
     <?php
     // Production
-    $servername = "localhost";
-    $username = "u976956619_nerdy";
-    $database = "u976956619_nerdy";
-    $password = "Darthvader@order66";
+    // $servername = "localhost";
+    // $username = "u976956619_nerdy";
+    // $database = "u976956619_nerdy";
+    // $password = "Darthvader@order66";
 
     // Development
-    // $servername = "localhost";
-    // $username = "root";
-    // $database = "onlyn";
-    // $password = "";
+    $servername = "localhost";
+    $username = "root";
+    $database = "onlyn";
+    $password = "";
 
     // Validate Connection
     $connection = new mysqli($servername, $username, $password, $database);
