@@ -43,7 +43,7 @@
     ?>
     <form class="add-user-form" method="POST" action="generate-invoice.php">
         <input type="text" name="bora_invoice_student_id" value="<?php echo $student_id ?>" hidden>
-        <input type="text" name="bora_invoice_student_id" value="<?php echo $student_id ?>" hidden>
+
         <div class="receipt-upper-section">
             <img src="../assets/images/logo/brand-logo.webp" alt="">
             <h5>Bora Institute of Allied Health Sciences</h5>
@@ -53,32 +53,66 @@
             </p>
         </div>
 
-        <div class="receipt-row">
-            <?php
-            $current_month = date('m');
-            $current_year = date('y');
-            $new_query = "SELECT * FROM `bora_invoice`";
-            $new_res = mysqli_query($connection, $new_query);
-            $bora_invoice_number = "";
-            while ($row = mysqli_fetch_assoc($new_res)) {
-                $bora_invoice_number = $row['bora_invoice_number'];
-            }
-            if ($bora_invoice_number && strpos($bora_invoice_number, $current_month . $current_year) !== false) {
-                $last_number = intval(substr($bora_invoice_number, -4)) + 1;
-            } else {
-                $last_number = 1;
-            }
-            $receipt_number = 'BIAHS' . $current_month . $current_year . str_pad($last_number, 4, '0', STR_PAD_LEFT);
-            ?>
-            <div>
-                <p>Invoice Number: <strong><?php echo $receipt_number; ?></strong></p>
-                <input type="text" name="bora_invoice_number" value="<?php echo $receipt_number; ?>" hidden>
-            </div>
+        <div class="table-responsive mt-3">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col" colspan="4" class="table-active">INVOICE NUMBER</th>
+                        <th scope="col" class="table-active">INVOICE DATE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                    $current_month = date('m');
+                    $current_year = date('y');
+                    $new_query = "SELECT * FROM `bora_invoice`";
+                    $new_res = mysqli_query($connection, $new_query);
+                    $bora_invoice_number = "";
+                    while ($row = mysqli_fetch_assoc($new_res)) {
+                        $bora_invoice_number = $row['bora_invoice_number'];
+                    }
+                    if ($bora_invoice_number && strpos($bora_invoice_number, $current_month . $current_year) !== false) {
+                        $last_number = intval(substr($bora_invoice_number, -4)) + 1;
+                    } else {
+                        $last_number = 1;
+                    }
+                    $receipt_number = 'BIAHS' . $current_month . $current_year . str_pad($last_number, 4, '0', STR_PAD_LEFT);
+                    ?>
+                    <tr>
+                        <th scope="row" colspan="4"><strong><?php echo $receipt_number; ?></strong></th>
+                        <td>
+                            <input type="date" name="bora_invoice_date" required>
+                        </td>
+                    </tr>
+                    <input type="text" name="bora_invoice_number" value="<?php echo $receipt_number ?>" hidden>
+                </tbody>
+            </table>
+        </div>
 
-            <div>
-                <p>Invoice Date</p>
-                <input type="date" name="bora_invoice_date" required>
-            </div>
+        <div class="table-responsive mt-3">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col" colspan="4" class="table-active">BILL TO</th>
+                        <th scope="col" class="table-active">BILLING FOR</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" colspan="4">
+                            <div class="recipient">
+                                <h4><?php echo $student_name ?></h4>
+                                <p><?php echo $student_aadhar_address ?> | <?php echo $student_contact ?></p>
+                            </div>
+                        </th>
+                        <td>
+                            <div class="recipient ">
+                                <h4><?php echo $student_course ?></h4>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
         <div class="receipt-billing-info-row">
@@ -86,21 +120,11 @@
             <input type="text" name="bora_invoice_student_address" value="<?php echo $student_aadhar_address ?>" hidden>
             <input type="text" name="bora_invoice_student_contact" value="<?php echo $student_contact ?>" hidden>
             <input type="text" name="bora_invoice_student_course" value="<?php echo $student_course ?>" hidden>
-            <div class="mt-3 recipient">
-                <h6><strong>BILL TO</strong></h6>
-                <h4><?php echo $student_name ?></h4>
-                <p><?php echo $student_aadhar_address ?> | <?php echo $student_contact ?></p>
-            </div>
-
-            <div class="mt-3 recipient recipient-flex-end">
-                <h6><strong>BILLING FOR</strong></h6>
-                <h4><?php echo $student_course ?></h4>
-            </div>
         </div>
 
-        <div class="table-responsive mt-5">
-            <table class="table">
-                <thead class="table-header">
+        <div class="table-responsive mt-3">
+            <table class="table table-bordered ">
+                <thead class="table-active">
                     <tr>
                         <th scope="col">ITEM</th>
                         <th scope="col">SEMESTER</th>
@@ -162,16 +186,25 @@
             </table>
         </div>
 
-        <div class="receipt-calculation-row">
-            <div class="receipt-calculation">
-                <h6>Discount:</h6>
-                <p id="difference"></p>
-            </div>
-
-            <div class="receipt-calculation">
-                <h6>Total Amount:</h6>
-                <p id="output"></p>
-            </div>
+        <div class="table-responsive mt-5">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col" class="table-active">
+                            <div class="receipt-calculation">
+                                <h6>Discount:</h6>
+                                <p id="difference"></p>
+                            </div>
+                        </th>
+                        <th scope="col" class="table-active">
+                            <div class="receipt-calculation">
+                                <h6>Total Amount: </h6>
+                                <p id="output"> </p>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+            </table>
         </div>
 
         <button type="submit" name="generate" class="btn btn-success mt-3">Generate Invoice</button>

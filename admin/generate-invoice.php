@@ -5,7 +5,6 @@ include('includes/header.php') ?>
 <div class="container mt-5 add-user-success">
     <?php
     require('includes/connection.php');
-
     if (isset($_COOKIE['user_id'])) {
         $user_contact = $_COOKIE['user_id'];
         $fetch_data = "SELECT * FROM `bora_users` WHERE `user_contact` = '$user_contact'";

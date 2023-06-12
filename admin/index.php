@@ -40,58 +40,59 @@
 </head>
 
 <body>
-    <?php
-    require('includes/connection.php');
-    ini_set('display_errors', 1);
-    ini_set('display_startup_errors', 1);
-    error_reporting(E_ALL);
-    if (isset($_COOKIE["loggedin"]) && $_COOKIE["loggedin"] === "true") {
-        echo "Redirecting to dashboard...";
-        header("location:dashboard.php");
-        exit;
-    }
+    <div class="container form-container">
+        <?php
+        require('includes/connection.php');
+        ini_set('display_errors', 1);
+        ini_set('display_startup_errors', 1);
+        error_reporting(E_ALL);
+        if (isset($_COOKIE["loggedin"]) && $_COOKIE["loggedin"] === "true") {
+            echo "Redirecting to dashboard...";
+            header("location:dashboard.php");
+            exit;
+        }
 
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $user_contact = mysqli_real_escape_string($connection, $_POST['user_contact']);
-        $user_password = mysqli_real_escape_string($connection, $_POST['user_password']);
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $user_contact = mysqli_real_escape_string($connection, $_POST['user_contact']);
+            $user_password = mysqli_real_escape_string($connection, $_POST['user_password']);
 
-        if (empty($user_contact)) { ?>
-    <div class="alert alert-danger w-50" role="alert">
-        Please enter Registered Mobile Number
-    </div>
-    <?php
-        } else if (empty($user_password)) { ?>
-    <div class="alert alert-danger w-50" role="alert">
-        Please enter Password
-    </div>
-    <?php
-        } else {
-            try {
-                $search_user_query = "SELECT * FROM `bora_users` WHERE `user_contact` = '$user_contact'";
-                $search_user_result = mysqli_query($connection, $search_user_query);
-                $search_user_count = mysqli_num_rows($search_user_result);
+            if (empty($user_contact)) { ?>
+        <div class="alert alert-danger w-50" role="alert">
+            Please enter Registered Mobile Number
+        </div>
+        <?php
+            } else if (empty($user_password)) { ?>
+        <div class="alert alert-danger w-50" role="alert">
+            Please enter Password
+        </div>
+        <?php
+            } else {
+                try {
+                    $search_user_query = "SELECT * FROM `bora_users` WHERE `user_contact` = '$user_contact'";
+                    $search_user_result = mysqli_query($connection, $search_user_query);
+                    $search_user_count = mysqli_num_rows($search_user_result);
 
-                if ($search_user_count == 1) {
-                    while ($row = mysqli_fetch_assoc($search_user_result)) {
-                        if (password_verify($user_password, $row['user_password'])) {
-                            setcookie("loggedin", "true", time() + (86400 * 30), "/");
-                            setcookie("user_id", $user_contact, time() + (86400 * 30), "/");
-                            setcookie("user_type", $row['user_type'], time() + (86400 * 30), "/");
-                            header("location:dashboard.php");
-                        } else { ?>
-    <div class="alert alert-danger w-50" role="alert">
-        Invalid Password!
-    </div>
-    <?php }
+                    if ($search_user_count == 1) {
+                        while ($row = mysqli_fetch_assoc($search_user_result)) {
+                            if (password_verify($user_password, $row['user_password'])) {
+                                setcookie("loggedin", "true", time() + (86400 * 30), "/");
+                                setcookie("user_id", $user_contact, time() + (86400 * 30), "/");
+                                setcookie("user_type", $row['user_type'], time() + (86400 * 30), "/");
+                                header("location:dashboard.php");
+                            } else { ?>
+        <div class="alert alert-danger w-50" role="alert">
+            Invalid Password!
+        </div>
+        <?php }
+                        }
                     }
+                } catch (Exception $e) {
+                    echo "Error: " . $e->getMessage();
                 }
-            } catch (Exception $e) {
-                echo "Error: " . $e->getMessage();
             }
         }
-    }
-    ?>
-    <div class="container form-container">
+        ?>
+
         <form class="login-form" method="POST" action="">
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Registered Mobile Number</label>
