@@ -21,6 +21,18 @@ if (isset($_POST['invoice'])) {
         $bora_invoice_value = $row['bora_invoice_value'];
         $bora_invoice_disc = $row['bora_invoice_disc'];
 
+        $bora_invoice_payment_mode = $row['bora_invoice_payment_mode'];
+
+        if ($bora_invoice_payment_mode == 'cheque') {
+            $bora_invoice_payment_mode = 'CHEQUE';
+        } else if ($bora_invoice_payment_mode == 'online') {
+            $bora_invoice_payment_mode = 'ONLINE';
+        } else if ($bora_invoice_payment_mode == 'DemandDraft') {
+            $bora_invoice_payment_mode = 'DD';
+        } else if ($bora_invoice_payment_mode == 'cash') {
+            $bora_invoice_payment_mode = 'CASH';
+        }
+
         $pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
         $pdf->SetAutoPageBreak(true, 0);
 
@@ -113,6 +125,8 @@ if (isset($_POST['invoice'])) {
                 </tr>
             </thead>
         </table>
+
+       
         
     
         <table class="table table-bordered ">
@@ -144,6 +158,14 @@ if (isset($_POST['invoice'])) {
             </tbody>
         </table>
 
+        <table style="margin-top: 5px;">
+        <thead>
+            <tr>
+                <th scope="col" colspan="4" style="border: 1px solid #000">PAYMENT MODE:<strong> ' . $bora_invoice_payment_mode . '</strong></th>
+            </tr>
+        </thead>
+    </table>
+
         <div>
             <p>Authorized Signatory: </p>
         </div>
@@ -171,6 +193,6 @@ if (isset($_POST['invoice'])) {
 
         ob_end_clean();
 
-        $pdf->Output('invoice.pdf', 'I');
+        $pdf->Output('assets/invoice/invoice.pdf', 'I');
     }
 }

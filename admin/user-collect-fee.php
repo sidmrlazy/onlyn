@@ -1,5 +1,7 @@
 <?php include('includes/header.php') ?>
 <?php include('components/navbar/user-navbar.php') ?>
+
+
 <div class="container user-form-container">
     <div class="page-marker">
         <a href="dashboard.php">
@@ -161,30 +163,148 @@
                                     $semester_name = $row['semester_name'];
                                     $semester_fee = $row['semester_fee'];
                                 ?>
-                                <option value="<?php echo $semester_name ?>">
-                                    <?php echo $semester_name ?> | ₹(<?php echo $semester_fee ?>)
-                                </option>
+                                    <option value="<?php echo $semester_name ?>">
+                                        <?php echo $semester_name ?> | ₹(<?php echo $semester_fee ?>)
+                                    </option>
                                 <?php } ?>
                             </select>
                         </td>
 
                         <td>
                             <div>
-                                <input type="number" name="invoice_value" id="collectingAmount" class="form-control"
-                                    id="exampleFormControlInput1" placeholder="">
+                                <input type="number" name="invoice_value" id="collectingAmount" class="form-control" id="exampleFormControlInput1" placeholder="">
                             </div>
                         </td>
 
                         <td>
                             <div>
-                                <input type="number" name="invoice_disc" id="discount" class="form-control"
-                                    id="exampleFormControlInput1" placeholder="">
+                                <input type="number" name="invoice_disc" id="discount" class="form-control" id="exampleFormControlInput1" placeholder="">
                             </div>
                         </td>
                     </tr>
                 </tbody>
             </table>
         </div>
+
+
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead class="table-active">
+                    <tr>
+                        <th scope="col" colspan="4">Payment Mode</th>
+                        <th scope="col">Selection</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" colspan="4">Cash</th>
+                        <td>
+                            <div class="form-check">
+                                <input name="payment_mode" class="form-check-input" type="checkbox" value="cash" onchange="handleCheckboxChange(this)" id="flexCheckDefault">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row" colspan="4">Cheque</th>
+                        <td>
+                            <div class="form-check">
+                                <input name="payment_mode" class="form-check-input" type="checkbox" value="cheque" onchange="handleCheckboxChange(this)" id="flexCheckDefault">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row" colspan="4">Online</th>
+                        <td>
+                            <div class="form-check">
+                                <input name="payment_mode" class="form-check-input" type="checkbox" value="online" id="flexCheckDefault" onchange="handleCheckboxChange(this)">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row" colspan="4">Demand Draft</th>
+                        <td>
+                            <div class="form-check">
+                                <input name="payment_mode" class="form-check-input" type="checkbox" value="DemandDraft" id="flexCheckDefault" onchange="handleCheckboxChange(this)">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="ddNumberField" style="display: none;" class="table-responsive">
+            <table class="table table-bordered">
+                <thead class="table-active">
+                    <tr>
+                        <th scope="col">Demand Draft Number</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div>
+                                <input type="text" name="bora_invoice_dd_number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="paymentIdField" style="display: none;" class="table-responsive">
+            <table class="table table-bordered">
+                <thead class="table-active">
+                    <tr>
+                        <th scope="col">Payment ID</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div>
+                                <input type="text" name="bora_invoice_payment_id" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="table-responsive" id="chequeFields" style="display: none;">
+            <table class="table table-bordered">
+                <thead class="table-active">
+                    <tr>
+                        <th scope="col">Cheque Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div>
+                                <input type="text" name="bora_invoice_cheque_number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Cheque Number">
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div>
+                                <input type="text" name="bora_invoice_bank_name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Bank Name">
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div>
+                                <input type="text" name="bora_invoice_ifsc" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Bank IFSC Code">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
 
         <div class="table-responsive mt-5">
             <table class="table table-bordered">

@@ -46,3 +46,27 @@ function calculateAmount() {
   outputDiv.textContent = "₹" + calculatedAmount;
   differenceDiv.textContent = "₹" + difference;
 }
+
+function handleCheckboxChange(checkbox) {
+  // Hide all input fields by default
+  document.getElementById("paymentIdField").style.display = "none";
+  document.getElementById("chequeFields").style.display = "none";
+  document.getElementById("ddNumberField").style.display = "none";
+
+  if (checkbox.checked) {
+    switch (checkbox.value) {
+      case "cash":
+        // No additional fields to show for Cash option
+        break;
+      case "cheque":
+        document.getElementById("chequeFields").style.display = "block";
+        break;
+      case "online":
+        document.getElementById("paymentIdField").style.display = "block";
+        break;
+      case "DemandDraft":
+        document.getElementById("ddNumberField").style.display = "block";
+        break;
+    }
+  }
+}
