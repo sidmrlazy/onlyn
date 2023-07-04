@@ -94,6 +94,9 @@ input::-webkit-inner-spin-button {
   background-color: #e7e7e7 !important;
   color: #db7414 !important;
 }
+.desktop-view {
+  display: none;
+}
 
 /* ========== HOMEPAGE MODAL ========== */
 .lang-selection-radio {
@@ -198,6 +201,35 @@ input::-webkit-inner-spin-button {
   }
   .nav-link-hindi {
     font-size: 16px !important;
+  }
+  .mobile-flex {
+    display: flex;
+    flex-direction: column;
+  }
+  .desktop-view {
+    display: initial;
+  }
+  .change-lang-btn {
+    border: 1px solid #e7e7e7 !important;
+    background-color: #db7414 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    color: #e7e7e7;
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .change-lang-btn ion-icon {
+    font-size: 18px !important;
+    margin-right: 5px;
+    color: #e7e7e7;
+  }
+  .change-lang-btn:hover {
+    border: 1px solid #e7e7e7 !important;
+    background-color: #e7e7e7 !important;
+    color: #db7414 !important;
   }
 
   /* ========== HOMEPAGE MODAL ========== */
