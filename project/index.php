@@ -5,6 +5,21 @@ setcookie('session_id', $sessionId, time() + (86400 * 30), '/');
 $title = "Home | Dr. Neeraj Bora";
 require('includes/header.php');
 require('includes/db.php');
+
+if (isset($_POST['update_lang'])) {
+    $session_user_id = $_POST['session_user_id'];
+    $session_selected_lang = $_POST['session_selected_lang'];
+
+    $update_lang = "UPDATE
+    `session`
+SET
+    `session_selected_lang` = '$session_selected_lang'
+WHERE
+    `session_user_id` = '$session_user_id'";
+    $update_lang_r = mysqli_query($connection, $update_lang);
+}
+
+
 if (isset($_POST['store'])) {
     $session_user_id = mysqli_real_escape_string($connection, $_POST['session_user_id']);
     $session_selected_lang = mysqli_real_escape_string($connection, $_POST['session_selected_lang']);

@@ -10,14 +10,16 @@
                 <div class="lang-selection-radio">
                     <input type="text" name="session_user_id" value="<?php echo $sessionId ?>" hidden>
                     <div class="form-check lang-options">
-                        <input id="languageSelect" class="form-check-input" type="radio" value="1" name="session_selected_lang" id="flexRadioDefault1">
+                        <input id="languageSelect" class="form-check-input" type="radio" value="1"
+                            name="session_selected_lang" id="flexRadioDefault1">
                         <img src="assets/images/eng-lang.png" alt="">
                         <label class="form-check-label" for="flexRadioDefault1">
                             English
                         </label>
                     </div>
                     <div class="form-check lang-options">
-                        <input id="languageSelect" class="form-check-input" type="radio" value="2" name="session_selected_lang" id="flexRadioDefault2" checked>
+                        <input id="languageSelect" class="form-check-input" type="radio" value="2"
+                            name="session_selected_lang" id="flexRadioDefault2" checked>
                         <img src="assets/images/hindi-lang.png" alt="">
                         <label class="form-check-label" for="flexRadioDefault2">
                             हिंदी
@@ -49,7 +51,8 @@
         </div>
 
         <div class="top-nav-row">
-            <button type="button" class="btn btn-sm btn-primary change-lang-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" class="btn btn-sm btn-primary change-lang-btn" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
                 <ion-icon name="language"></ion-icon>
                 भाषा बदलें
             </button>
@@ -62,31 +65,32 @@
         <a class="navbar-brand" href="index.php">
             <img src="assets/logo/1.png" alt="">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto me-auto mb-2 mb-lg-0">
                 <?php
                 if ($title == 'Home | Dr. Neeraj Bora') { ?>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-hindi active" aria-current="page" href="index.php">होम</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-hindi active" aria-current="page" href="index.php">होम</a>
+                </li>
                 <?php } else { ?>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-hindi" aria-current="page" href="index.php">होम</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-hindi" aria-current="page" href="index.php">होम</a>
+                </li>
                 <?php } ?>
 
                 <?php
                 if ($title == 'About Me | Dr. Neeraj Bora') { ?>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-hindi active" aria-current="page" href="about-me.php">मेरे बारे में </a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-hindi active" aria-current="page" href="about-me.php">मेरे बारे में </a>
+                </li>
                 <?php } else { ?>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-hindi" aria-current="page" href="about-me.php">मेरे बारे में </a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-hindi" aria-current="page" href="about-me.php">मेरे बारे में </a>
+                </li>
                 <?php } ?>
 
                 <li class="nav-item">
