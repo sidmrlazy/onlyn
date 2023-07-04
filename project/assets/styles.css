@@ -54,6 +54,10 @@ input::-webkit-inner-spin-button {
   width: 100% !important;
   height: auto;
 }
+.top-nav-row ion-icon {
+  color: #fff !important;
+  font-size: 50px !important;
+}
 .navbar {
   background-color: #fff !important;
   border-bottom: 1px solid #e7e7e7;
@@ -68,6 +72,27 @@ input::-webkit-inner-spin-button {
 .navbar-brand img {
   width: 100% !important;
   height: auto;
+}
+.nav-link-hindi {
+  font-size: 20px !important;
+}
+.change-lang-btn {
+  border: 1px solid #e7e7e7 !important;
+  background-color: #db7414 !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  color: #e7e7e7;
+}
+.change-lang-btn ion-icon {
+  font-size: 18px !important;
+  margin-right: 5px;
+  color: #e7e7e7;
+}
+.change-lang-btn:hover {
+  border: 1px solid #e7e7e7 !important;
+  background-color: #e7e7e7 !important;
+  color: #db7414 !important;
 }
 
 /* ========== HOMEPAGE MODAL ========== */
@@ -170,6 +195,9 @@ input::-webkit-inner-spin-button {
   .navbar-brand img {
     width: 80% !important;
     height: auto;
+  }
+  .nav-link-hindi {
+    font-size: 16px !important;
   }
 
   /* ========== HOMEPAGE MODAL ========== */

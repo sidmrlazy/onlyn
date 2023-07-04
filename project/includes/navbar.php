@@ -1,3 +1,40 @@
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <form action="index.php" method="POST" class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Please select your language:</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="lang-selection-radio">
+                    <input type="text" name="session_user_id" value="<?php echo $sessionId ?>" hidden>
+                    <div class="form-check lang-options">
+                        <input id="languageSelect" class="form-check-input" type="radio" value="1"
+                            name="session_selected_lang" id="flexRadioDefault1">
+                        <img src="assets/images/eng-lang.png" alt="">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            English
+                        </label>
+                    </div>
+                    <div class="form-check lang-options">
+                        <input id="languageSelect" class="form-check-input" type="radio" value="2"
+                            name="session_selected_lang" id="flexRadioDefault2" checked>
+                        <img src="assets/images/hindi-lang.png" alt="">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            हिंदी
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" name="update_lang" class="change-lang-btn btn btn-primary">Change</button>
+            </div>
+        </form>
+    </div>
+</div>
+
 <div class="top-nav">
     <a href="https://up.bjp.org/" target="_Blank" class="top-nav-brand">
         <img src="assets/icons/bjp-logo.png" alt="">
@@ -11,6 +48,13 @@
             <p>Contact:</p>
             <a href="tel:05222771141">0522-2771141</a>
             <a href="tel:05222771115">| 0522-2771115</a>
+        </div>
+        <div class="top-nav-row">
+            <button type="button" class="btn btn-sm btn-primary change-lang-btn" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                <ion-icon name="language"></ion-icon>
+                Change Language
+            </button>
         </div>
     </div>
 </div>

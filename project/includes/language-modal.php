@@ -1,4 +1,4 @@
-<div class="modal fade" id="languageModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+<div class="modal fade hide" id="languageModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
     aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-xl">
         <form action="index.php" method="POST" class="modal-content">
@@ -21,7 +21,7 @@
                             name="session_selected_lang" id="flexRadioDefault2" checked>
                         <img src="assets/images/hindi-lang.png" alt="">
                         <label class="form-check-label" for="flexRadioDefault2">
-                            Hindi
+                            हिंदी
                         </label>
                     </div>
                 </div>
