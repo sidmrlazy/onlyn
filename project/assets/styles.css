@@ -1,4 +1,5 @@
 * {
+  /* font-family: "Caveat", cursive; */
   font-family: "Poppins", sans-serif;
 }
 ::selection {
@@ -13,6 +14,12 @@ input::-webkit-inner-spin-button {
 }
 
 /* ========== NAVBAR ========== */
+.navbar-container {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  top: 0;
+}
 .top-nav {
   background-color: #db7414;
   width: 100%;
@@ -116,6 +123,188 @@ input::-webkit-inner-spin-button {
   height: auto;
   margin-left: 5px;
   margin-right: 5px;
+}
+
+/* ========== HOMEPAGE SECTION 1 ========== */
+.carosuel-container {
+  margin-top: 170px;
+}
+
+/* ========== HOMEPAGE SECTION 2 ========== */
+.section-2-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-2-container h1 {
+  font-weight: bold;
+  margin: 0;
+  text-align: right;
+}
+.section-2-container p {
+  font-size: 20px;
+  text-align: right;
+}
+.homepage-section-2-content {
+  margin-top: 30px;
+  width: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.homepage-section-2-content p {
+  font-size: 16px;
+  text-align: right;
+}
+.homepage-section-2-btn {
+  text-decoration: none;
+  border: 0;
+  border-radius: 50px;
+  background-color: #db7414;
+  color: #fff;
+  padding: 10px;
+  text-align: right;
+}
+.homepage-section-2-btn:hover {
+  transition: 0.5s all ease-in-out;
+  background: rgb(219, 116, 20);
+  background: linear-gradient(
+    132deg,
+    rgba(219, 116, 20, 1) 10%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(135, 203, 56, 1) 100%
+  );
+  border: 0;
+  color: #000;
+}
+.homepage-section-2-carousel-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* ========== HOMEPAGE SECTION 3 ========== */
+.homepage-section-3-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+  max-height: 50%;
+}
+.homepage-section-3-container.fade-in {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.homepage-section-3-container.fade-in.visible {
+  opacity: 1;
+}
+
+/* ========== HOMEPAGE SECTION 4 ========== */
+.homepage-section-4-container {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 100%;
+  padding: 50px;
+}
+.section-heading {
+  margin-bottom: 100px;
+}
+.section-heading h2 {
+  text-align: center;
+  font-size: 66px;
+  font-weight: bold;
+}
+.homepage-section-4-video-tab-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+}
+.homepage-section-4-video-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+  margin-bottom: 100px;
+}
+.homepage-section-video-container {
+  width: 100%;
+  height: 315px;
+  border-radius: 20px;
+}
+.homepage-section-4-content-tab {
+  margin-left: 20px;
+}
+.homepage-section-4-content-tab h3 {
+  font-family: "Caveat", cursive;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.homepage-section-4-content-tab p {
+  font-weight: 600;
+  font-size: 24px;
+  width: 75%;
+  line-height: 30px;
+}
+
+/* ========== HOMEPAGE SECTION 5 ========== */
+.homepage-section-5-container {
+  background-color: #f8f6f1 !important;
+  padding: 40px;
+}
+.homepage-section-5-container h4 {
+  font-size: 100px !important;
+  font-weight: bold;
+}
+.homepage-section-5-container p {
+  font-size: 30px !important;
+  font-weight: bold;
+  margin-top: 100px;
+  width: 35%;
+}
+.homepage-section-4-press-release-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 200px;
+}
+.homepage-section-4-press-release-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  max-width: 400px;
+  max-height: 400px;
+  width: 400px;
+  height: 400px;
+  margin-bottom: 50px;
+}
+.homepage-section-4-press-release-card:hover {
+  background-color: #fff;
+  transition: 0.5s all ease-in-out;
+  -webkit-box-shadow: 0px 21px 91px -36px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 21px 91px -36px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 21px 91px -36px rgba(0, 0, 0, 0.75);
+}
+.homepage-section-5-press-release-content {
+  font-size: 24px !important;
+  width: 100% !important;
+  font-weight: 500;
+}
+.homepage-section-4-press-release-card p {
+  font-size: 18px !important;
+  font-family: "Caveat", cursive;
+  width: 100% !important;
+  margin: 0 !important;
 }
 
 /* ========== FOOTER ========== */
@@ -252,6 +441,124 @@ input::-webkit-inner-spin-button {
     height: auto;
     margin-left: 5px;
     margin-right: 5px;
+  }
+
+  /* ========== HOMEPAGE SECTION 1 ========== */
+  .carosuel-container {
+    margin-top: 85px;
+  }
+
+  /* ========== HOMEPAGE SECTION 2 ========== */
+  .section-2-container {
+    flex-direction: column-reverse;
+  }
+  .section-2-container h1 {
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .section-2-container p {
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .homepage-section-2-content {
+    margin-top: 30px;
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .homepage-section-2-content p {
+    font-size: 16px;
+    text-align: justify;
+    font-weight: 400;
+  }
+  .homepage-section-2-btn {
+    text-decoration: none;
+    border: 0;
+    border-radius: 50px;
+    background-color: #db7414;
+    color: #fff;
+    padding: 10px;
+    text-align: right;
+  }
+  .homepage-section-2-btn:hover {
+    transition: 0.5s all ease-in-out;
+    background: rgb(219, 116, 20);
+    background: linear-gradient(
+      132deg,
+      rgba(219, 116, 20, 1) 10%,
+      rgba(255, 255, 255, 1) 50%,
+      rgba(135, 203, 56, 1) 100%
+    );
+    border: 0;
+    color: #000;
+  }
+  .homepage-section-2-carousel-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  /* ========== HOMEPAGE SECTION 4 ========== */
+  .homepage-section-4-video-tab-row {
+    flex-direction: column;
+  }
+  .homepage-section-4-video-tab {
+    max-width: 100%;
+    flex-direction: column;
+  }
+  .homepage-section-video-container {
+    width: 100%;
+    height: 315px;
+    border-radius: 20px;
+  }
+  .homepage-section-4-content-tab {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  .homepage-section-4-content-tab p {
+    width: 100%;
+  }
+
+  /* ========== HOMEPAGE SECTION 5 ========== */
+  .homepage-section-5-container {
+    background-color: #f8f6f1 !important;
+    padding: 40px;
+  }
+  .homepage-section-5-container h4 {
+    font-size: 30px !important;
+    font-weight: bold;
+    margin: 0;
+  }
+  .homepage-section-5-container p {
+    font-size: 18px !important;
+    font-weight: 500;
+    margin-top: 0;
+    width: 100%;
+    margin: 0;
+  }
+  .homepage-section-4-press-release-row {
+    margin-top: 50px;
+  }
+  .homepage-section-4-press-release-card {
+    height: 300px;
+  }
+  .homepage-section-5-press-release-content {
+    font-size: 20px !important;
+    width: 100% !important;
+    font-weight: 500;
+  }
+  .homepage-section-4-press-release-card p {
+    font-size: 20px !important;
+    font-family: "Caveat", cursive;
+    width: 100% !important;
+    margin: 0 !important;
   }
 
   /* ========== FOOTER ========== */

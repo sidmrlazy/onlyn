@@ -1,4 +1,4 @@
-<div class="container-row">
+<div class="container-row carosuel-container">
     <div id="carouselExample" class="carousel carousel-dark slide">
         <div class="carousel-inner">
             <div class="carousel-item active">

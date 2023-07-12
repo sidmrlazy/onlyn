@@ -47,6 +47,9 @@ if ($session_selected_lang == '1') {
     require('includes/navbar.php');
     require('components/home/section-1-eng.php');
     require('components/home/section-2-eng.php');
+    require('components/home/section-3-eng.php');
+    require('components/home/section-4-eng.php');
+    require('components/home/section-5-eng.php');
     require('includes/footer.php');
 } else if ($session_selected_lang == '2') {
     require('includes/navbar-hindi.php');
@@ -57,5 +60,8 @@ if ($session_selected_lang == '1') {
     require('includes/navbar.php');
     require('components/home/section-1-eng.php');
     require('components/home/section-2-eng.php');
+    require('components/home/section-3-eng.php');
+    require('components/home/section-4-eng.php');
+    require('components/home/section-5-eng.php');
     require('includes/footer.php');
 }

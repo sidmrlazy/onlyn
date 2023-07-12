@@ -30,15 +30,12 @@ while ($row = mysqli_fetch_assoc($fetch_session_var_r)) {
 }
 if ($session_selected_lang == '1') {
     require('includes/navbar.php');
-    require('components/home/section-1.php');
     require('includes/footer.php');
 } else if ($session_selected_lang == '2') {
     require('includes/navbar-hindi.php');
-    require('components/home/section-1-hindi.php');
     require('includes/footer-hindi.php');
 } else if (!$session_user_id) {
     require('includes/language-modal.php');
     require('includes/navbar.php');
-    require('components/home/section-1.php');
     require('includes/footer.php');
 }

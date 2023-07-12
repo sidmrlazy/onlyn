@@ -15,7 +15,7 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
     <!-- =========== STYLESHEET =========== -->
-    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 
     <!-- =========== GOOGLE FONTS =========== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +25,7 @@
         rel="stylesheet">
 
     <!-- =========== FAVICON =========== -->
-    <link rel="shortcut icon" href="assets/logo/3.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/logo/3.png" type="image/x-icon">
 
     <!-- =========== ANIMATE.CSS =========== -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -35,7 +35,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 
 
-    <title><?php echo $title; ?></title>
+    <title>Admin | Dr. Neeraj Bora</title>
 </head>
 
 <body>

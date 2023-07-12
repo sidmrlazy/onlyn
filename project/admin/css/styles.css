@@ -1,0 +1,9 @@
+body {
+  background-color: #fafafa !important;
+}
+.form-container {
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 0px;
+  border: 1px solid #e7e7e7e7;
+}
