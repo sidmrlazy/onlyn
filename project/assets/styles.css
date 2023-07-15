@@ -269,17 +269,18 @@ input::-webkit-inner-spin-button {
   margin-top: 100px;
   width: 35%;
 }
-.homepage-section-4-press-release-row {
+.homepage-section-5-press-release-row {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin-top: 200px;
+  width: 100% !important;
 }
-.homepage-section-4-press-release-card {
+.homepage-section-5-press-release-card {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
   padding: 20px;
   max-width: 400px;
@@ -288,7 +289,7 @@ input::-webkit-inner-spin-button {
   height: 400px;
   margin-bottom: 50px;
 }
-.homepage-section-4-press-release-card:hover {
+.homepage-section-5-press-release-card:hover {
   background-color: #fff;
   transition: 0.5s all ease-in-out;
   -webkit-box-shadow: 0px 21px 91px -36px rgba(0, 0, 0, 0.75);
@@ -300,11 +301,58 @@ input::-webkit-inner-spin-button {
   width: 100% !important;
   font-weight: 500;
 }
-.homepage-section-4-press-release-card p {
+.homepage-section-5-press-release-card p {
   font-size: 18px !important;
   font-family: "Caveat", cursive;
   width: 100% !important;
   margin: 0 !important;
+}
+.homepage-section-5-read-more-btn {
+  border: 0 !important;
+  background-color: #00000000 !important;
+  margin-top: 20px !important;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.homepage-section-5-read-more-btn p {
+  text-align: left;
+}
+
+/* ========== PRESS RELEASE SOLO ========== */
+.press-release-solo-container {
+  margin-top: 250px;
+  margin-bottom: 100px;
+}
+.solo-press-release-tab {
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.solo-press-release-tab img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.solo-press-release-tab h2 {
+  font-weight: bold;
+}
+.solo-press-release-tab p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.solo-press-release-tab a {
+  text-decoration: none;
+  margin-bottom: 20px;
+  color: #db7414;
+  font-weight: bold;
+  font-family: "Caveat", cursive;
+  font-size: 24px;
 }
 
 /* ========== FOOTER ========== */
@@ -449,6 +497,9 @@ input::-webkit-inner-spin-button {
   }
 
   /* ========== HOMEPAGE SECTION 2 ========== */
+  .section-2-container #homepageSection2Carousel {
+    display: none;
+  }
   .section-2-container {
     flex-direction: column-reverse;
   }

@@ -2,7 +2,7 @@
 session_start();
 $sessionId = session_id();
 setcookie('session_id', $sessionId, time() + (86400 * 30), '/');
-$title = "About Me | Dr. Neeraj Bora";
+$title = "Press Release | Dr. Neeraj Bora";
 require('includes/header.php');
 require('includes/db.php');
 if (isset($_POST['store'])) {
@@ -30,6 +30,7 @@ while ($row = mysqli_fetch_assoc($fetch_session_var_r)) {
 }
 if ($session_selected_lang == '1') {
     require('includes/navbar.php');
+    require('components/press-release/individual.php');
     require('includes/footer.php');
 } else if ($session_selected_lang == '2') {
     require('includes/navbar-hindi.php');
@@ -37,5 +38,6 @@ if ($session_selected_lang == '1') {
 } else if (!$session_user_id) {
     require('includes/language-modal.php');
     require('includes/navbar.php');
+    require('components/press-release/individual.php');
     require('includes/footer.php');
 }

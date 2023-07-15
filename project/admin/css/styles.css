@@ -1,9 +1,176 @@
+* {
+  /* font-family: "Caveat", cursive; */
+  font-family: "Poppins", sans-serif;
+}
+
 body {
   background-color: #fafafa !important;
+}
+
+/* ============= LOGIN FORM ============= */
+.form-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100% !important;
 }
 .form-container {
   background-color: #fff;
   padding: 50px;
-  border-radius: 0px;
+  border-radius: 10px;
   border: 1px solid #e7e7e7e7;
+  width: 50%;
+  margin-top: 250px;
+}
+
+/* ============= NAVBAR ============= */
+.navbar {
+  display: none;
+}
+.side-navbar {
+  position: absolute;
+  background-color: #323538 !important;
+  height: 100%;
+  width: 250px;
+  left: 0;
+}
+.side-navbar-brand {
+  max-width: 250px;
+  max-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.side-navbar-brand img {
+  width: 40%;
+  height: auto;
+  margin-top: 30px;
+}
+.side-nav-link {
+  margin-top: 50px;
+  border-top: 1px solid #e7e7e7e7;
+  padding-top: 30px;
+}
+.side-nav-link li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+.side-nav-link a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300 !important;
+  margin: 0;
+  margin-left: 10px;
+}
+.side-nav-link ion-icon {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+/* ============= DASHBOARD ============= */
+.dashboard {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -999;
+  padding-left: 250px;
+}
+.dashboard-container {
+  width: 100%;
+  padding: 20px;
+}
+.welcome-message {
+  width: 100%;
+}
+.welcome-message h1 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+.welcome-message p {
+  margin: 0;
+  font-size: 85px;
+  font-weight: bold;
+  font-family: "Caveat", cursive;
+  color: #c76718;
+  margin-top: -20px;
+}
+
+/* ============= ADD PRESS RELEASE ============= */
+.add-press-release-form-container {
+  margin-top: 150px;
+  padding: 20px;
+}
+.add-press-release-form {
+  border: 1px solid #e7e7e7;
+  border-radius: 5px;
+  padding: 40px;
+  background-color: #fff;
+}
+.table-container {
+  padding: 20px;
+}
+.table-box {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #e7e7e7;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* ============= LOGIN FORM ============= */
+  .form-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+  }
+  .form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #e7e7e7e7;
+    width: 100%;
+    margin-top: 250px;
+  }
+
+  /* ============= NAVBAR ============= */
+  .side-navbar {
+    display: none;
+  }
+  .navbar {
+    display: block;
+    background-color: #323538 !important;
+  }
+  .navbar-brand {
+    max-width: 50px;
+    max-height: auto;
+  }
+  .navbar-brand img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* ============= DASHBOARD ============= */
+  .dashboard {
+    position: initial;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -999;
+    padding-left: 0;
+  }
+
+  /* ============= ADD PRESS RELEASE ============= */
+  .add-press-release-form-container {
+    margin-top: 0;
+    padding: 10px;
+  }
+  .add-press-release-form {
+    padding: 20px;
+  }
 }
