@@ -6,16 +6,16 @@
 // $password = "Biahs123!@#123";
 
 // LIVE TESTING
-// $servername = "localhost";
-// $username = "u976956619_nerdy";
-// $database = "u976956619_nerdy";
-// $password = "Darthvader@order66";
+$servername = "localhost";
+$username = "u976956619_nerdy";
+$database = "u976956619_nerdy";
+$password = "Darthvader@order66";
 
 // DEVELOPMENT
-$hostname = "localhost";
-$username = "root";
-$database = "drneerajbora";
-$password = "";
+// $hostname = "localhost";
+// $username = "root";
+// $database = "drneerajbora";
+// $password = "";
 
 // Validate Connection
 $connection = new mysqli($hostname, $username, $password, $database);
