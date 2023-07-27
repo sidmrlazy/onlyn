@@ -10,6 +10,10 @@
         integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <!-- =========== SEO =========== -->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
     <!-- =========== BOOTSTRAP =========== -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
@@ -39,3 +43,7 @@
 </head>
 
 <body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v17.0&appId=892389428373107&autoLogAppEvents=1"
+        nonce="AtwU2AY1"></script>

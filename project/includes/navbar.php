@@ -84,52 +84,110 @@
 
                     <?php
                     if ($title == 'About Me | Dr. Neeraj Bora') { ?>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="about-me.php">ABOUT ME</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            KNOW ME
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="about-me.php">ABOUT ME</a></li>
+                            <li><a class="dropdown-item" href="achievements.php">ACHIEVEMENTS</a></li>
+                            <li><a class="dropdown-item" href="inspiration.php">MY INSPIRATION</a></li>
+                        </ul>
+                    </li>
+                    <?php } else if ($title == 'Achievements | Dr. Neeraj Bora') { ?>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            KNOW ME
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="about-me.php">ABOUT ME</a></li>
+                            <li><a class="dropdown-item" href="achievements.php">ACHIEVEMENTS</a></li>
+                            <li><a class="dropdown-item" href="inspiration.php">MY INSPIRATION</a></li>
+                        </ul>
+                    </li>
+                    <?php } else if ($title == 'Inspiration | Dr. Neeraj Bora') { ?>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            KNOW ME
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="about-me.php">ABOUT ME</a></li>
+                            <li><a class="dropdown-item" href="achievements.php">ACHIEVEMENTS</a></li>
+                            <li><a class="dropdown-item" href="inspiration.php">MY INSPIRATION</a></li>
+                        </ul>
+                    </li>
+                    <?php } else { ?>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            KNOW ME
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="about-me.php">ABOUT ME</a></li>
+                            <li><a class="dropdown-item" href="achievements.php">ACHIEVEMENTS</a></li>
+                            <li><a class="dropdown-item" href="inspiration.php">MY INSPIRATION</a></li>
+                        </ul>
+                    </li>
+                    <?php } ?>
+
+                    <?php
+                    if ($title == 'Development Work | Dr. Neeraj Bora') { ?>
+                    <li class="nav-item ">
+                        <a class="nav-link active" aria-current="page" href="development-work.php">DEVELOPMENT WORK</a>
                     </li>
                     <?php } else { ?>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="about-me.php">ABOUT ME</a>
+                        <a class="nav-link" aria-current="page" href="development-work.php">DEVELOPMENT WORK</a>
                     </li>
                     <?php } ?>
+
+                    <?php
+                    if ($title == 'Press Release | Dr. Neeraj Bora') { ?>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">DEVELOPMENT WORK</a>
+                        <a class="nav-link active" aria-current="page" href="press-release.php">PRESS RELEASE</a>
                     </li>
+                    <?php } else { ?>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">PRESS RELEASE</a>
+                        <a class="nav-link" aria-current="page" href="press-release.php">PRESS RELEASE</a>
                     </li>
+                    <?php } ?>
+
+                    <!-- <?php if ($title == 'Gallery | Dr. Neeraj Bora') { ?>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">GALLERY</a>
+                        <a class="nav-link active" aria-current="page" href="gallery.php">GALLERY</a>
                     </li>
+                    <?php } else { ?>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">CONTACT</a>
+                        <a class="nav-link" aria-current="page" href="gallery.php">GALLERY</a>
                     </li>
-                    <!-- <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </li> -->
-                    <!-- <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                </li> -->
+                    <?php } ?> -->
+
+
+                    <?php if ($title == 'Contact | Dr. Neeraj Bora') { ?>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contact.php">CONTACT</a>
+                    </li>
+                    <?php } else { ?>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="contact.php">CONTACT</a>
+                    </li>
+                    <?php } ?>
                 </ul>
-                <div class="d-flex mobile-flex">
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                <div class="d-flex mobile-flex ">
+                    <div class="navbar-social-media-icons">
+                        <a href="https://www.facebook.com/NeerajBoraLKO/" target="_blank">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                        <a href="https://twitter.com/DrNeerajBora" target="_blank">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                        <a href="https://www.instagram.com/drneerajboraofficial/" target="_blank">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </div>
                     <div class="top-nav-row desktop-view">
                         <button type="button" class="btn btn-sm btn-primary change-lang-btn" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">

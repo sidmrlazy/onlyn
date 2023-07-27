@@ -19,7 +19,7 @@
                 held
                 his father in high regard and has aspired to work in the social sector from a young age.</p>
 
-            <a href="#" class="homepage-section-2-btn">Read More</a>
+            <a href="about-me.php" class="homepage-section-2-btn">Read More</a>
 
         </div>
     </div>

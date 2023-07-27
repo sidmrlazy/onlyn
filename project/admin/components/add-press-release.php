@@ -1,9 +1,9 @@
 <script>
-    function showToast(msg) {
-        $(document).ready(function() {
-            $("#liveToast").toast("show");
-        });
-    }
+function showToast(msg) {
+    $(document).ready(function() {
+        $("#liveToast").toast("show");
+    });
+}
 </script>
 <div class="dashboard w-100">
     <div class="add-press-release-form-container w-50">
@@ -72,18 +72,22 @@
         <form action="" method="POST" class="add-press-release-form" enctype="multipart/form-data">
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Press Release Image</label>
-                <input type="file" name="press_release_img" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                <input type="file" name="press_release_img" class="form-control" id="exampleFormControlInput1"
+                    placeholder="name@example.com">
             </div>
             <div class="form-floating mb-3">
-                <input type="text" class="form-control" name="press_release_title" id="floatingInput" placeholder="name@example.com">
+                <input type="text" class="form-control" name="press_release_title" id="floatingInput"
+                    placeholder="name@example.com">
                 <label for="floatingInput">Title</label>
             </div>
             <div class="form-floating mb-3">
-                <textarea class="form-control" name="press_release_content" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <textarea class="form-control" name="press_release_content" placeholder="Leave a comment here"
+                    id="floatingTextarea2" style="height: 100px"></textarea>
                 <label for="floatingTextarea2">Content</label>
             </div>
             <div class="form-floating mb-3">
-                <input type="text" name="press_release_link" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <input type="text" name="press_release_link" class="form-control" id="floatingInput"
+                    placeholder="name@example.com">
                 <label for="floatingInput">Add Link</label>
             </div>
             <button type="submit" name="add" class="btn btn-outline-primary w-100">Add</button>
@@ -141,22 +145,23 @@
                         $press_release_id = $row['press_release_id'];
                         $press_release_title = $row['press_release_title'];
                     ?>
-                        <tr>
-                            <th scope="row"><?php echo $press_release_id ?></th>
-                            <td><?php echo $press_release_title ?></td>
-                            <!-- <td>
+                    <tr>
+                        <th scope="row"><?php echo $press_release_id ?></th>
+                        <td><?php echo $press_release_title ?></td>
+                        <!-- <td>
                                 <form action="" method="POST">
                                     <input type="text" name="press_release_id" value="<?php echo $press_release_id ?>" hidden>
                                     <button class="btn btn-sm btn-outline-dark">Edit</button>
                                 </form>
                             </td> -->
-                            <td>
-                                <form action="" method="POST">
-                                    <input type="text" name="press_release_id" value="<?php echo $press_release_id ?>" hidden>
-                                    <button type="submit" name="del" class="btn btn-sm btn-outline-danger">Delete</button>
-                                </form>
-                            </td>
-                        </tr>
+                        <td>
+                            <form action="" method="POST">
+                                <input type="text" name="press_release_id" value="<?php echo $press_release_id ?>"
+                                    hidden>
+                                <button type="submit" name="del" class="btn btn-sm btn-outline-danger">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
                     <?php } ?>
                 </tbody>
             </table>

@@ -28,9 +28,9 @@
             <p><?php echo $press_release_content; ?></p>
             <?php
             if (empty($press_release_link)) { ?>
-                <a target="_blank" class="d-none" href="<?php echo $press_release_link; ?>">Go to link</a>
+            <a target="_blank" class="d-none" href="<?php echo $press_release_link; ?>">Go to link</a>
             <?php } else { ?>
-                <a target="_blank" href="<?php echo $press_release_link; ?>">Go to link</a>
+            <a target="_blank" href="<?php echo $press_release_link; ?>">Go to link</a>
             <?php } ?>
 
         </div>

@@ -30,6 +30,11 @@ while ($row = mysqli_fetch_assoc($fetch_session_var_r)) {
 }
 if ($session_selected_lang == '1') {
     require('includes/navbar.php');
+    require('components/about/section-1-eng.php');
+    require('components/about/section-2-eng.php');
+    require('components/about/section-3-eng.php');
+    require('components/about/section-4-eng.php');
+    require('components/about/section-5-eng.php');
     require('includes/footer.php');
 } else if ($session_selected_lang == '2') {
     require('includes/navbar-hindi.php');
@@ -37,5 +42,10 @@ if ($session_selected_lang == '1') {
 } else if (!$session_user_id) {
     require('includes/language-modal.php');
     require('includes/navbar.php');
+    require('components/about/section-1-eng.php');
+    require('components/about/section-2-eng.php');
+    require('components/about/section-3-eng.php');
+    require('components/about/section-4-eng.php');
+    require('components/about/section-5-eng.php');
     require('includes/footer.php');
 }
