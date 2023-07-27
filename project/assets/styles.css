@@ -1146,6 +1146,9 @@ input::-webkit-inner-spin-button {
     border-radius: 10px;
   }
   /* ========== ACHIEVEMENTS SECTION 1 ========== */
+  .achievement-section-1-container {
+    margin-top: 80px;
+  }
   .achivement-mobile-view {
     display: initial;
   }
