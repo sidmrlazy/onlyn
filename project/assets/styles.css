@@ -1219,6 +1219,14 @@ input::-webkit-inner-spin-button {
     font-size: 16px;
     text-align: center;
   }
+  /* ========== DEVELOPMENT SECTION 1 ========== */
+  .development-section-1-container {
+    margin-top: 80px;
+  }
+  .development-section-1-container img {
+    width: 100%;
+    height: auto;
+  }
   /* ========== CONTACT ========== */
   .contact-section-header {
     margin-top: 150px;
