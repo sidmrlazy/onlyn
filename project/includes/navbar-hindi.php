@@ -10,14 +10,16 @@
                 <div class="lang-selection-radio">
                     <input type="text" name="session_user_id" value="<?php echo $sessionId ?>" hidden>
                     <div class="form-check lang-options">
-                        <input id="languageSelect" class="form-check-input" type="radio" value="1" name="session_selected_lang" id="flexRadioDefault1">
+                        <input id="languageSelect" class="form-check-input" type="radio" value="1"
+                            name="session_selected_lang" id="flexRadioDefault1">
                         <img src="assets/images/eng-lang.png" alt="">
                         <label class="form-check-label" for="flexRadioDefault1">
                             English
                         </label>
                     </div>
                     <div class="form-check lang-options">
-                        <input id="languageSelect" class="form-check-input" type="radio" value="2" name="session_selected_lang" id="flexRadioDefault2">
+                        <input id="languageSelect" class="form-check-input" type="radio" value="2"
+                            name="session_selected_lang" id="flexRadioDefault2">
                         <img src="assets/images/hindi-lang.png" alt="">
                         <label class="form-check-label" for="flexRadioDefault2">
                             हिंदी
@@ -49,7 +51,8 @@
         </div>
 
         <div class="top-nav-row">
-            <button type="button" class="btn btn-sm btn-primary change-lang-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" class="btn btn-sm btn-primary change-lang-btn" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
                 <ion-icon name="language"></ion-icon>
                 भाषा बदलें
             </button>
@@ -62,42 +65,108 @@
         <a class="navbar-brand" href="index.php">
             <img src="assets/logo/1.png" alt="">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto me-auto mb-2 mb-lg-0">
                 <?php
-                if ($title == 'Home | Dr. Neeraj Bora') { ?>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-hindi active" aria-current="page" href="index.php">होम</a>
-                    </li>
+                if ($title == 'होम | डॉ नीरज बोरा') { ?>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-hindi active" aria-current="page" href="index.php">होम</a>
+                </li>
                 <?php } else { ?>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-hindi" aria-current="page" href="index.php">होम</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-hindi" aria-current="page" href="index.php">होम</a>
+                </li>
                 <?php } ?>
 
                 <?php
-                if ($title == 'About Me | Dr. Neeraj Bora') { ?>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-hindi active" aria-current="page" href="about-me.php">मेरे बारे में </a>
-                    </li>
+                if ($title == 'मेरे बारे में | डॉ नीरज बोरा ') { ?>
+                <li class="nav-item dropdown">
+                    <a class="nav-link nav-link-hindi active dropdown-toggle" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        मुझे जानें
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="about-me.php">मेरे बारे में</a></li>
+                        <li><a class="dropdown-item" href="achievements.php">उपलब्धियाँ</a></li>
+                        <li><a class="dropdown-item" href="inspiration.php">मेरे प्रेरणा स्रोत</a></li>
+                    </ul>
+                </li>
+                <?php } else if ($title == 'उपलब्धियाँ | डॉ नीरज बोरा') { ?>
+                <li class="nav-item dropdown">
+                    <a class="nav-link nav-link-hindi active dropdown-toggle" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        मुझे जानें
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="about-me.php">मेरे बारे में</a></li>
+                        <li><a class="dropdown-item" href="achievements.php">उपलब्धियाँ</a></li>
+                        <li><a class="dropdown-item" href="inspiration.php">मेरे प्रेरणा स्रोत</a></li>
+                    </ul>
+                </li>
+                <?php } else if ($title == 'प्रेरणा | डॉ नीरज बोरा') { ?>
+                <li class="nav-item dropdown">
+                    <a class="nav-link nav-link-hindi active dropdown-toggle" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        मुझे जानें
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="about-me.php">मेरे बारे में</a></li>
+                        <li><a class="dropdown-item" href="achievements.php">उपलब्धियाँ</a></li>
+                        <li><a class="dropdown-item" href="inspiration.php">मेरे प्रेरणा स्रोत</a></li>
+                    </ul>
+                </li>
                 <?php } else { ?>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-hindi" aria-current="page" href="about-me.php">मेरे बारे में </a>
-                    </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link nav-link-hindi dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        मुझे जानें
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="about-me.php">मेरे बारे में</a></li>
+                        <li><a class="dropdown-item" href="achievements.php">उपलब्धियाँ</a></li>
+                        <li><a class="dropdown-item" href="inspiration.php">मेरे प्रेरणा स्रोत</a></li>
+                    </ul>
+                </li>
                 <?php } ?>
 
+                <?php
+                if ($title == 'विकास कार्य | डॉ नीरज बोरा') { ?>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-hindi" aria-current="page" href="#">विकास कार्य </a>
+                    <a class="nav-link active nav-link-hindi" aria-current="page" href="development-work.php">विकास
+                        कार्य </a>
                 </li>
+                <?php } else { ?>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-hindi" aria-current="page" href="#">गैलरी</a>
+                    <a class="nav-link nav-link-hindi" aria-current="page" href="development-work.php">विकास कार्य </a>
                 </li>
+                <?php } ?>
+
+                <?php
+                if ($title == 'प्रेस रिलीज़ | डॉ नीरज बोरा') { ?>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-hindi" aria-current="page" href="#">संपर्क करें</a>
+                    <a class="nav-link active nav-link-hindi" aria-current="page" href="press-release.php">प्रेस
+                        रिलीज़</a>
                 </li>
+                <?php } else { ?>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-hindi" aria-current="page" href="press-release.php">प्रेस रिलीज़</a>
+                </li>
+                <?php } ?>
+
+                <?php
+                if ($title == 'संपर्क करें | डॉ नीरज बोरा') { ?>
+                <li class="nav-item">
+                    <a class="nav-link active nav-link-hindi" aria-current="page" href="contact.php">संपर्क करें</a>
+                </li>
+                <?php } else { ?>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-hindi" aria-current="page" href="contact.php">संपर्क करें</a>
+                </li>
+                <?php } ?>
                 <!-- <li class="nav-item">
                     <a class="nav-link" href="#">Link</a>
                 </li>
@@ -120,13 +189,21 @@
                 </li> -->
             </ul>
             <div class="d-flex mobile-flex">
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                <div class="navbar-social-media-icons">
+                    <a href="https://www.facebook.com/NeerajBoraLKO/" target="_blank">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                    <a href="https://twitter.com/DrNeerajBora" target="_blank">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                    <a href="https://www.instagram.com/drneerajboraofficial/" target="_blank">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                </div>
 
                 <div class="top-nav-row desktop-view">
-                    <button type="button" class="btn btn-sm btn-primary change-lang-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button type="button" class="btn btn-sm btn-primary change-lang-btn" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
                         <ion-icon name="language"></ion-icon>
                         भाषा बदलें
                     </button>

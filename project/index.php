@@ -2,10 +2,7 @@
 session_start();
 $sessionId = session_id();
 setcookie('session_id', $sessionId, time() + (86400 * 30), '/');
-$title = "Home | Dr. Neeraj Bora";
-require('includes/header.php');
 require('includes/db.php');
-
 if (isset($_POST['update_lang'])) {
     $session_user_id = $_POST['session_user_id'];
     $session_selected_lang = $_POST['session_selected_lang'];
@@ -44,6 +41,8 @@ while ($row = mysqli_fetch_assoc($fetch_session_var_r)) {
     $session_selected_lang = $row['session_selected_lang'];
 }
 if ($session_selected_lang == '1') {
+    $title = "Home | Dr. Neeraj Bora";
+    require('includes/header.php');
     require('includes/navbar.php');
     require('components/home/section-1-eng.php');
     require('components/home/section-2-eng.php');
@@ -54,10 +53,20 @@ if ($session_selected_lang == '1') {
     require('components/home/section-7-eng.php');
     require('includes/footer.php');
 } else if ($session_selected_lang == '2') {
+    $title = "होम | डॉ नीरज बोरा";
+    require('includes/header.php');
     require('includes/navbar-hindi.php');
     require('components/home/section-1-hindi.php');
+    require('components/home/section-2-hindi.php');
+    require('components/home/section-3-hindi.php');
+    require('components/home/section-4-hindi.php');
+    require('components/home/section-5-hindi.php');
+    require('components/home/section-6-hindi.php');
+    require('components/home/section-7-hindi.php');
     require('includes/footer-hindi.php');
 } else if (!$session_user_id) {
+    $title = "Home | Dr. Neeraj Bora";
+    require('includes/header.php');
     require('includes/language-modal.php');
     require('includes/navbar.php');
     require('components/home/section-1-eng.php');

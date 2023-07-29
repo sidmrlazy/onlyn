@@ -467,6 +467,16 @@ input::-webkit-inner-spin-button {
   color: #db7414 !important;
   text-align: center;
 }
+.about-section-2-heading-hindi h1 {
+  font-size: 100px;
+  color: #db7414 !important;
+  text-align: center;
+}
+.about-section-2-heading-hindi h2 {
+  font-size: 100px;
+  color: #db7414 !important;
+  text-align: center;
+}
 .about-section-2-row {
   display: flex;
   justify-content: center;
@@ -501,7 +511,7 @@ input::-webkit-inner-spin-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 150px;
+  margin-top: 0;
 }
 .achievement-section-1-container img {
   width: 100%;
@@ -641,7 +651,6 @@ input::-webkit-inner-spin-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 150px;
 }
 .development-section-1-container img {
   width: 100%;
@@ -660,7 +669,7 @@ input::-webkit-inner-spin-button {
 }
 .press-release-card {
   width: 400px;
-  height: 550px;
+  height: 450px;
   border: 1px solid #e7e7e7;
 }
 .press-release-card img {
@@ -1146,9 +1155,6 @@ input::-webkit-inner-spin-button {
     border-radius: 10px;
   }
   /* ========== ACHIEVEMENTS SECTION 1 ========== */
-  .achievement-section-1-container {
-    margin-top: 80px;
-  }
   .achivement-mobile-view {
     display: initial;
   }
@@ -1218,14 +1224,6 @@ input::-webkit-inner-spin-button {
   .inspiration-content p {
     font-size: 16px;
     text-align: center;
-  }
-  /* ========== DEVELOPMENT SECTION 1 ========== */
-  .development-section-1-container {
-    margin-top: 80px;
-  }
-  .development-section-1-container img {
-    width: 100%;
-    height: auto;
   }
   /* ========== CONTACT ========== */
   .contact-section-header {
