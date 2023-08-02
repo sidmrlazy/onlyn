@@ -1,3 +1,4 @@
-<div class="achievement-section-1-container">
-    <img src="assets/images/section-header-5.png" alt="">
+<div class="press-release-section-1-container-hindi">
+    <img src="assets/images/section-header-5.webp"
+        alt="Image: Neeraj Bora - Distinguished Bharatiya Janata Party MLA for Lucknow, Uttar Pradesh.">
 </div>

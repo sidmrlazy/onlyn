@@ -150,11 +150,19 @@ input::-webkit-inner-spin-button {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 .section-2-container h1 {
   font-weight: bold;
   margin: 0;
   text-align: right;
+  font-size: 40px !important;
+}
+.section-2-container h2 {
+  font-weight: bold;
+  margin: 0;
+  text-align: right;
+  font-size: 40px !important;
 }
 .section-2-container p {
   font-size: 20px;
@@ -169,7 +177,7 @@ input::-webkit-inner-spin-button {
   flex-direction: column;
 }
 .homepage-section-2-content p {
-  font-size: 16px;
+  font-size: 20px;
   text-align: right;
 }
 .homepage-section-2-btn {
@@ -434,7 +442,18 @@ input::-webkit-inner-spin-button {
   align-items: center;
   margin-top: 100px;
 }
+.about-section-1-container-hindi {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0 !important;
+}
 .about-section-1-container img {
+  width: 100%;
+  height: auto;
+}
+.about-section-1-container-hindi img {
   width: 100%;
   height: auto;
 }
@@ -511,7 +530,18 @@ input::-webkit-inner-spin-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 0;
+  margin-top: 150px;
+}
+.achievement-section-1-container-hindi {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0 !important;
+}
+.achievement-section-1-container-hindi img {
+  width: 100%;
+  height: auto;
 }
 .achievement-section-1-container img {
   width: 100%;
@@ -630,7 +660,19 @@ input::-webkit-inner-spin-button {
   margin-top: 170px;
   padding: 20px;
 }
+.inspiration-section-1-container-hindi {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0 !important;
+  padding: 20px;
+}
 .inspiration-section-1-container img {
+  width: 100%;
+  height: auto;
+}
+.inspiration-section-1-container-hindi img {
   width: 100%;
   height: auto;
 }
@@ -658,6 +700,28 @@ input::-webkit-inner-spin-button {
 }
 
 /* ========== PRESS RELEASE ========== */
+.press-release-section-1-container {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 170px;
+}
+.press-release-section-1-container img {
+  width: 100%;
+  height: auto;
+}
+.press-release-section-1-container-hindi {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0 !important;
+}
+.press-release-section-1-container-hindi img {
+  width: 100%;
+  height: auto;
+}
 .press-release-wrapper {
   max-width: 100%;
   display: flex;
@@ -709,6 +773,14 @@ input::-webkit-inner-spin-button {
 .contact-section-header {
   margin-top: 250px;
 }
+.contact-section-header-hindi {
+  margin-top: 50px !important;
+}
+.contact-section-header-hindi h2 {
+  font-weight: 600;
+  margin: 0;
+  color: #db7414;
+}
 .contact-section-header h2 {
   font-weight: 600;
   margin: 0;
@@ -716,6 +788,13 @@ input::-webkit-inner-spin-button {
 }
 .contact-form-container {
   margin-top: 50px;
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.contact-form-container-hindi {
+  margin-top: 0 !important;
   margin-bottom: 150px;
   display: flex;
   justify-content: center;

@@ -1,5 +1,6 @@
 <div class="about-section-1-container">
-    <img src="assets/images/about-section-1.png" alt="">
+    <img src="assets/images/about-section-1.webp"
+        alt="Image of Neeraj Bora - Bharatiya Janata Party (BJP) MLA from Lucknow, representing BJP in Uttar Pradesh.">
 </div>
 
 <div class="container about-section-1-content">

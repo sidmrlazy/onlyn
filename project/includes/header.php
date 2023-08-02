@@ -11,8 +11,10 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- =========== SEO =========== -->
-    <meta name="keywords" content="">
-    <meta name="description" content="">
+    <meta name="keywords"
+        content="Bharatiya Janata Party MLA, Lucknow MLA, BJP Lucknow, BJP Uttar Pradesh, Neeraj Bora">
+    <meta name="description"
+        content="Meet Dr. Neeraj Bora - BJP MLA from Lucknow, Uttar Pradesh. Explore his contributions and vision for a prosperous future with BJP Lucknow.">
 
     <!-- =========== BOOTSTRAP =========== -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -29,7 +31,7 @@
         rel="stylesheet">
 
     <!-- =========== FAVICON =========== -->
-    <link rel="shortcut icon" href="assets/logo/3.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/logo/3.webp" type="image/x-icon">
 
     <!-- =========== ANIMATE.CSS =========== -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />

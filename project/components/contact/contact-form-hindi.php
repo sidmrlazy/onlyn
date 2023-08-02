@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="contact-section-header">
+    <div class="contact-section-header-hindi">
         <h2>संपर्क</h2>
         <p>नीचे दिए गए विवरण भरें। हमारी टीम से कोई जल्द ही आपसे संपर्क करेगा!</p>
     </div>
@@ -73,7 +73,7 @@
         }
     }
     ?>
-    <div class="contact-form-container">
+    <div class="contact-form-container-hindi">
         <div class="w-100">
             <div class="contact-details">
                 <p class="contact-details-label">

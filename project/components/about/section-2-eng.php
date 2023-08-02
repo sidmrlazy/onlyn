@@ -1,16 +1,20 @@
 <div class="container-fluid about-section-2">
     <div class="about-section-2-heading">
-        <h1>Social Responsibility</h1>
+        <h2>Social Responsibility</h2>
     </div>
 
 
     <div class="about-section-2-row">
         <div class="col-md-6">
             <div class="abt-section-2-img-container">
-                <img src="assets/images/carousel/abt-1.png" alt="">
-                <img src="assets/images/carousel/abt-2.png" alt="">
-                <img src="assets/images/carousel/abt-3.png" alt="">
-                <img src="assets/images/carousel/abt-4.png" alt="">
+                <img src="assets/images/carousel/abt-1.webp"
+                    alt="Neeraj Bora - Bharatiya Janata Party MLA from Lucknow, Uttar Pradesh.">
+                <img src="assets/images/carousel/abt-2.webp"
+                    alt="Image of Neeraj Bora - Bharatiya Janata Party (BJP) MLA from Lucknow, Uttar Pradesh.">
+                <img src="assets/images/carousel/abt-3.webp"
+                    alt="Neeraj Bora - Bharatiya Janata Party MLA from Lucknow, Uttar Pradesh (UP).">
+                <img src="assets/images/carousel/abt-4.webp"
+                    alt="Image of Neeraj Bora - Affiliated with Bharatiya Janata Party (BJP), serving as MLA in Lucknow, Uttar Pradesh.">
             </div>
         </div>
         <div class="col-md-6 about-section-2-content">

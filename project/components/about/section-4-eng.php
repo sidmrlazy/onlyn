@@ -7,10 +7,14 @@
     <div class="about-section-2-row">
         <div class="col-md-6">
             <div class="abt-section-2-img-container">
-                <img src="assets/images/carousel/abt-1.png" alt="">
-                <img src="assets/images/carousel/abt-2.png" alt="">
-                <img src="assets/images/carousel/abt-3.png" alt="">
-                <img src="assets/images/carousel/abt-4.png" alt="">
+                <img src="assets/images/carousel/abt-9.webp"
+                    alt="Neeraj Bora - Bharatiya Janata Party (BJP) MLA from Lucknow, Uttar Pradesh.">
+                <img src="assets/images/carousel/abt-10.webp"
+                    alt="Image of Neeraj Bora - Bharatiya Janata Party (BJP) MLA for Lucknow, Uttar Pradesh.">
+                <img src="assets/images/carousel/abt-11.webp"
+                    alt="Image: Neeraj Bora - Bharatiya Janata Party MLA from Lucknow, Uttar Pradesh">
+                <img src="assets/images/carousel/abt-12.webp"
+                    alt="Neeraj Bora - Bharatiya Janata Party (BJP) MLA from Lucknow, Uttar Pradesh.">
             </div>
         </div>
         <div class="col-md-6 about-section-2-content">

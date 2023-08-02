@@ -12,7 +12,8 @@
                     <div class="form-check lang-options">
                         <input id="languageSelect" class="form-check-input" type="radio" value="1"
                             name="session_selected_lang" id="flexRadioDefault1">
-                        <img src="assets/images/eng-lang.png" alt="">
+                        <img src="assets/images/eng-lang.webp"
+                            alt="BJP MLA from Lucknow North, Uttar Pradesh - 2017 Election Winner - Bharatiya Janata Party (BJP) Leader">
                         <label class="form-check-label" for="flexRadioDefault1">
                             English
                         </label>
@@ -20,7 +21,8 @@
                     <div class="form-check lang-options">
                         <input id="languageSelect" class="form-check-input" type="radio" value="2"
                             name="session_selected_lang" id="flexRadioDefault2">
-                        <img src="assets/images/hindi-lang.png" alt="">
+                        <img src="assets/images/hindi-lang.webp"
+                            alt="Bharatiya Janata Party (BJP) MLA for Lucknow North, Uttar Pradesh. Elected in 2017">
                         <label class="form-check-label" for="flexRadioDefault2">
                             हिंदी
                         </label>
@@ -37,7 +39,7 @@
 
 <div class="top-nav">
     <a href="https://up.bjp.org/" target="_Blank" class="top-nav-brand">
-        <img src="assets/icons/bjp-logo.png" alt="">
+        <img src="assets/icons/bjp-logo.webp" alt="Dr. Neeraj Bora - BJP MLA from Lucknow North, Uttar Pradesh.">
     </a>
     <div class="top-nav-row">
         <div class="top-nav-row">
@@ -63,7 +65,8 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
         <a class="navbar-brand" href="index.php">
-            <img src="assets/logo/1.png" alt="">
+            <img src="assets/logo/1.webp"
+                alt="BJP MLA from Lucknow, Uttar Pradesh, representing Bharatiya Janata Party. Elected in 2017 UP election for Lucknow North constituency">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -133,8 +136,8 @@
                 </li>
                 <?php } ?>
 
-                <?php
-                if ($title == 'विकास कार्य | डॉ नीरज बोरा') { ?>
+                <!-- <?php
+                        if ($title == 'विकास कार्य | डॉ नीरज बोरा') { ?>
                 <li class="nav-item">
                     <a class="nav-link active nav-link-hindi" aria-current="page" href="development-work.php">विकास
                         कार्य </a>
@@ -143,7 +146,7 @@
                 <li class="nav-item">
                     <a class="nav-link nav-link-hindi" aria-current="page" href="development-work.php">विकास कार्य </a>
                 </li>
-                <?php } ?>
+                <?php } ?> -->
 
                 <?php
                 if ($title == 'प्रेस रिलीज़ | डॉ नीरज बोरा') { ?>

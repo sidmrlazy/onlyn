@@ -4,20 +4,18 @@
         <p>Member of Legislative Assembly, BJP (Lucknow)</p>
 
         <div class="homepage-section-2-content">
-            <p>Neeraj Bora, born in 1967, is an Indian politician who serves as a member of the Uttar Pradesh
-                Legislative
-                Assembly. He is the son of the late Shri D.P. Bora, a former MLA of Uttar Pradesh. Dr. Neeraj Bora is
-                affiliated
-                with the Bharatiya Janata Party and won the 2017 UP election for the Lucknow North constituency,
-                defeating
-                Abhishek Mishra from the Samajwadi Party.
+            <p>Neeraj Bora, born in 1967, is an Indian politician and a prominent Bharatiya Janata Party (BJP) MLA
+                representing Lucknow North constituency in the Uttar Pradesh Legislative Assembly. He secured victory in
+                the 2017 UP election, defeating Abhishek Mishra of the Samajwadi Party. Hailing from Siddharthnagar
+                district, Uttar Pradesh, Dr. Neeraj Bora has a strong dedication to social work, inspired by his late
+                father, Shri D.P. Bora, a former MLA of Uttar Pradesh.
             </p>
 
-            <p class="mb-5">Dr. Neeraj Bora hails from the Shohratgarh tehsil in Siddharthnagar district, Uttar Pradesh.
+            <!-- <p class="mb-5">Dr. Neeraj Bora hails from the Shohratgarh tehsil in Siddharthnagar district, Uttar Pradesh.
                 He has
                 always
                 held
-                his father in high regard and has aspired to work in the social sector from a young age.</p>
+                his father in high regard and has aspired to work in the social sector from a young age.</p> -->
 
             <a href="about-me.php" class="homepage-section-2-btn">Read More</a>
 
@@ -28,13 +26,15 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="homepage-section-2-carousel-img-container">
-                        <img src="assets/images/section-2-img-carousel-img-1.png" class="d-block" alt="..."
+                        <img src="assets/images/section-2-img-carousel-img-1.webp" class="d-block"
+                            alt="Image of Neeraj Bora - Bharatiya Janata Party (BJP) MLA from Lucknow, Uttar Pradesh."
                             width="400px" height="400px">
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="homepage-section-2-carousel-img-container">
-                        <img src="assets/images/section-2-img-carousel-img-2.png" class="d-block" alt="..."
+                        <img src="assets/images/section-2-img-carousel-img-2.webp" class="d-block"
+                            alt="Image of Neeraj Bora - Affiliated with Bharatiya Janata Party (BJP), serving as Lucknow MLA in BJP Uttar Pradesh."
                             width="400px" height="400px">
                     </div>
                 </div>

@@ -13,13 +13,13 @@
             $press_release_id = $row['press_release_id'];
             $press_release_title = $row['press_release_title'];
         ?>
-            <form action="press-release-solo.php" method="POST" class="homepage-section-5-press-release-card">
-                <input type="text" name="press_release_id" value="<?php echo $press_release_id ?>" hidden>
-                <h5 class="homepage-section-5-press-release-content"><?php echo $press_release_title ?></h5>
-                <button type="submit" name="read" class="homepage-section-5-read-more-btn">
-                    <p>Read More</p>
-                </button>
-            </form>
+        <form action="press-release-solo.php" method="POST" class="homepage-section-5-press-release-card">
+            <input type="text" name="press_release_id" value="<?php echo $press_release_id ?>" hidden>
+            <h5 class="homepage-section-5-press-release-content"><?php echo $press_release_title ?></h5>
+            <button type="submit" name="read" class="homepage-section-5-read-more-btn">
+                <p>Read More</p>
+            </button>
+        </form>
         <?php } ?>
     </div>
 </div>

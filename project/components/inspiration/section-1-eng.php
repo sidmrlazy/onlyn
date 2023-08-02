@@ -1,6 +1,7 @@
 <div class="inspiration-section-1-container">
     <div class="col-md-6">
-        <img src="assets/images/section-header-3.png" alt="">
+        <img src="assets/images/section-header-3.webp"
+            alt="Neeraj Bora - Bharatiya Janata Party (BJP) MLA from Lucknow, Uttar Pradesh.">
     </div>
     <div class="col-md-6 inspiration-content">
         <h2>Dr. D.P. Bora</h2>
