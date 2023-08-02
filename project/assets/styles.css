@@ -733,7 +733,7 @@ input::-webkit-inner-spin-button {
 }
 .press-release-card {
   width: 400px;
-  height: 450px;
+  height: 550px !important;
   border: 1px solid #e7e7e7;
 }
 .press-release-card img {
