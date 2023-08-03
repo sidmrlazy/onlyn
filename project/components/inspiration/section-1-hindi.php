@@ -3,7 +3,7 @@
         <img src="assets/images/section-header-3.webp"
             alt="Neeraj Bora - Bharatiya Janata Party (BJP) MLA from Lucknow, Uttar Pradesh.">
     </div>
-    <div class="col-md-6 inspiration-content">
+    <div class="col-md-6 inspiration-content-hindi">
         <h2>डॉ. डी.पी. बोरा</h2>
         <h3>परिचय</h3>
         <p>डॉ. नीरज बोरा उत्तर प्रदेश के सत्रहवें विधानसभा में एक प्रसिद्ध राजनीतिज्ञ और सामाजिक कार्यकर्ता हैं।

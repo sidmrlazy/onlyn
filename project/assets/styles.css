@@ -1321,6 +1321,24 @@ input::-webkit-inner-spin-button {
     font-weight: bold;
     text-align: center;
   }
+  .inspiration-content-hindi {
+    margin-top: 50px;
+  }
+  .inspiration-content-hindi h2 {
+    font-family: "Caveat", cursive !important;
+    margin: 0;
+    font-size: 40px !important;
+    color: #db7414;
+    font-weight: bold;
+    text-align: center;
+  }
+  .inspiration-content-hindi h3 {
+    text-align: center;
+  }
+  .inspiration-content-hindi p {
+    font-size: 16px;
+    text-align: center;
+  }
   .inspiration-content h3 {
     text-align: center;
   }
