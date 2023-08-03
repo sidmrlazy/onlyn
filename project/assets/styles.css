@@ -733,7 +733,7 @@ input::-webkit-inner-spin-button {
 }
 .press-release-card {
   width: 400px;
-  height: 550px !important;
+  height: 650px !important;
   border: 1px solid #e7e7e7;
 }
 .press-release-card img {
@@ -1016,6 +1016,12 @@ input::-webkit-inner-spin-button {
     flex-direction: column-reverse;
   }
   .section-2-container h1 {
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .section-2-container h2 {
     font-weight: bold;
     margin: 0;
     text-align: center;
