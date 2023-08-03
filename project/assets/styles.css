@@ -1211,6 +1211,11 @@ input::-webkit-inner-spin-button {
     color: #db7414 !important;
     text-align: center !important;
   }
+  .about-section-2-heading-hindi h2 {
+    font-size: 36px !important;
+    color: #db7414 !important;
+    text-align: center !important;
+  }
   .about-section-2-row {
     display: flex;
     justify-content: center;
