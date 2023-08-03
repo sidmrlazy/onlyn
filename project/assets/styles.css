@@ -781,6 +781,13 @@ input::-webkit-inner-spin-button {
   margin: 0;
   color: #db7414;
 }
+.contact-form-container-hindi {
+  margin-top: 0 !important;
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
 .contact-section-header h2 {
   font-weight: 600;
   margin: 0;
@@ -793,13 +800,7 @@ input::-webkit-inner-spin-button {
   justify-content: center;
   align-items: flex-start;
 }
-.contact-form-container-hindi {
-  margin-top: 0 !important;
-  margin-bottom: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
+
 .contact-details {
   margin-bottom: 20px;
   border: 1px solid #e7e7e7 !important;
@@ -1347,6 +1348,22 @@ input::-webkit-inner-spin-button {
     text-align: center;
   }
   /* ========== CONTACT ========== */
+  .contact-section-header-hindi {
+    margin-top: 50px !important;
+  }
+  .contact-section-header-hindi h2 {
+    font-weight: 600;
+    margin: 0;
+    color: #db7414;
+  }
+  .contact-form-container-hindi {
+    margin-top: 0 !important;
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column !important;
+  }
   .contact-section-header {
     margin-top: 150px;
   }
