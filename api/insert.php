@@ -1,8 +1,14 @@
 <?php
+// $servername = "localhost";
+// $username = "root";
+// $database = "onlyn";
+// $password = "";
+
+// Production
 $servername = "localhost";
-$username = "root";
-$database = "onlyn";
-$password = "";
+$username = "u976956619_onlyn";
+$database = "u976956619_onlyn";
+$password = "Sid12asthana";
 
 // Validate Connection
 $connection = new mysqli($servername, $username, $password, $database);
