@@ -5,7 +5,7 @@
 // $password = "";
 
 // Production
-$servername = "localhost";
+$servername = "127.0.0.1:3306";
 $username = "u976956619_nerdy";
 $database = "u976956619_nerdy";
 $password = "Darthvader@order66";
