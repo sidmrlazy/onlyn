@@ -1,44 +1,37 @@
 <?php
-include 'connection.php';
-$con = new mysqli($servername, $username, $password, $database);
+$servername = "localhost";
+$username = "root";
+$database = "onlyn";
+$password = "";
 
-if ($con->connect_error) {
-    die("Connection failed: " . $con->connect_error);
+// Validate Connection
+$connection = new mysqli($servername, $username, $password, $database);
+if ($connection->connect_error) {
+    die("Error 404: " . $connection->connect_error);
 }
 
-$json = json_decode(file_get_contents('php://input'), true);
-if (!empty($json['mobile'])) {
-    $Search_User = "SELECT * FROM `users` WHERE `user_contact` = '$json[mobile]'";
-    $Check_Search_User = mysqli_fetch_array(mysqli_query($con, $Search_User));
+$json_data = file_get_contents("php://input");
+$data = json_decode($json_data);
 
-    if (!empty($Check_Search_User)) {
+$user_contact = $data->user_contact; 
 
-        $CheckSQL = "SELECT * FROM `users` WHERE `user_contact` = '$json[mobile]'";
+// SQL query to check if the user exists
+$sql = "SELECT * FROM `user` WHERE `user_contact` = '$user_contact'";
+$result = $connection->query($sql);
 
-        $result = mysqli_fetch_array(mysqli_query($con, $CheckSQL));
-        if (!empty($result)) {
-            //Success Response
-            $SuccesMSG = array(
-                'error' => 0,
-                'status' => 'Success!',
-                'msg' => 'Welcome',
-                'user_id' => $result['user_id'],
-                'user_contact' => $result['user_contact'],
-            );
-            $json = json_encode($SuccesMSG);
-            echo $json;
-        } else {
-            $insert_user = "INSERT INTO `users`";
-            //Failure Response
-            $FailureMSG = array(
-                'error' => 2,
-                'status' => 'Failed!',
-                'msg' => 'Unregistered User'
-            );
-            $json = json_encode($FailureMSG);
-            echo $json;
-        }
-    }
+$response = array();
+
+if ($result->num_rows > 0) {
+    // Assuming user_contact is retrieved from the database and included in the response
+    $row = $result->fetch_assoc();
+    $response['statusCode'] = 1;
+    $response['message'] = "Login successful";
+    $response['user_contact'] = $row['user_contact'];
+} else {
+    $response['statusCode'] = 0; 
+    $response['message'] = "User does not exist in the database";
 }
 
-mysqli_close($con);
+$connection->close();
+
+echo json_encode($response); 
