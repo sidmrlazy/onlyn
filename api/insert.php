@@ -6,9 +6,9 @@
 
 // Production
 $servername = "localhost";
-$username = "u976956619_onlyn";
-$database = "u976956619_onlyn";
-$password = "Sid12asthana";
+$username = "u976956619_nerdy";
+$database = "u976956619_nerdy";
+$password = "Darthvader@order66";
 
 // Validate Connection
 $connection = new mysqli($servername, $username, $password, $database);
