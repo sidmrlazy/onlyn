@@ -23,6 +23,8 @@ $vivoSales = mysqli_real_escape_string($connection, $data->vivoSales);
 $samsungSales = mysqli_real_escape_string($connection, $data->samsungSales);
 $oppoSales = mysqli_real_escape_string($connection, $data->oppoSales);
 $realMeSales = mysqli_real_escape_string($connection, $data->realMeSales);
+$miSales = mysqli_real_escape_string($connection, $data->miSales);
+$honorSales = mysqli_real_escape_string($connection, $data->honorSales);
 $otherSales = mysqli_real_escape_string($connection, $data->otherSales);
 $counterSize = mysqli_real_escape_string($connection, $data->counterSize);
 $totalSales = mysqli_real_escape_string($connection, $data->totalSales);
@@ -31,7 +33,7 @@ $managerName = mysqli_real_escape_string($connection, $data->managerName);
 $selectedShop = mysqli_real_escape_string($connection, $data->selectedShop);
 $salesBy = mysqli_real_escape_string($connection, $data->salesBy);
 
-$sql = "INSERT INTO sales_data (vivo_sales, samsung_sales, oppo_sales, realme_sales, other_sales, counter_size, total_sales, whatsapp_number, manager_name, selected_shop, sales_data_by) 
+$sql = "INSERT INTO sales_data (vivo_sales, samsung_sales, oppo_sales, realme_sales, mi_sales, honor_sales, other_sales, counter_size, total_sales, whatsapp_number, manager_name, selected_shop, sales_data_by) 
         VALUES ('$vivoSales', '$samsungSales', '$oppoSales', '$realMeSales', '$otherSales', '$counterSize', '$totalSales', '$whatsappNumber', '$managerName', '$selectedShop', '$salesBy')";
 
 if ($connection->query($sql) === TRUE) {
