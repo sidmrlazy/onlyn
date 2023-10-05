@@ -28,10 +28,11 @@ $counterSize = mysqli_real_escape_string($connection, $data->counterSize);
 $totalSales = mysqli_real_escape_string($connection, $data->totalSales);
 $whatsappNumber = mysqli_real_escape_string($connection, $data->whatsappNumber);
 $managerName = mysqli_real_escape_string($connection, $data->managerName);
+$selectedShop = mysqli_real_escape_string($connection, $data->selectedShop);
 $salesBy = mysqli_real_escape_string($connection, $data->salesBy);
 
-$sql = "INSERT INTO sales_data (vivo_sales, samsung_sales, oppo_sales, realme_sales, other_sales, counter_size, total_sales, whatsapp_number, manager_name, sales_data_by) 
-        VALUES ('$vivoSales', '$samsungSales', '$oppoSales', '$realMeSales', '$otherSales', '$counterSize', '$totalSales', '$whatsappNumber', '$managerName', '$salesBy')";
+$sql = "INSERT INTO sales_data (vivo_sales, samsung_sales, oppo_sales, realme_sales, other_sales, counter_size, total_sales, whatsapp_number, manager_name, selected_shop, sales_data_by) 
+        VALUES ('$vivoSales', '$samsungSales', '$oppoSales', '$realMeSales', '$otherSales', '$counterSize', '$totalSales', '$whatsappNumber', '$managerName', '$selectedShop', '$salesBy')";
 
 if ($connection->query($sql) === TRUE) {
     $response['statusCode'] = 1;
