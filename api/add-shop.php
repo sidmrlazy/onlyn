@@ -24,6 +24,7 @@ $pincode = mysqli_real_escape_string($connection, $data->pincode);
 $dealerCode = mysqli_real_escape_string($connection, $data->dealerCode);
 $clusterCode = mysqli_real_escape_string($connection, $data->clusterCode);
 $shopName = mysqli_real_escape_string($connection, $data->shopName);
+$shopNumber = mysqli_real_escape_string($connection, $data->shopNumber);
 $currentLatitude = mysqli_real_escape_string($connection, $data->currentLatitude);
 $currentLongitude = mysqli_real_escape_string($connection, $data->currentLongitude);
 $empCode = mysqli_real_escape_string($connection, $data->empCode);
@@ -35,6 +36,7 @@ $sql = "INSERT INTO `add_shop`(
     `dealer_code`,
     `cluster_code`,
     `shop_name`,
+    `shop_number`,
     `latitude`,
     `longitude`,
     `emp_code`,
@@ -46,6 +48,7 @@ VALUES(
     '$dealerCode',
     '$clusterCode',
     '$shopName',
+    '$shopNumber',
     '$currentLatitude',
     '$currentLongitude',
     '$empCode',
