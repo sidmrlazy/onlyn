@@ -30,39 +30,48 @@ $currentLongitude = mysqli_real_escape_string($connection, $data->currentLongitu
 $empCode = mysqli_real_escape_string($connection, $data->empCode);
 $addedBy = mysqli_real_escape_string($connection, $data->addedBy);
 
-$sql = "INSERT INTO `add_shop`(
-    `district`,
-    `pincode`,
-    `dealer_code`,
-    `cluster_code`,
-    `shop_name`,
-    `shop_number`,
-    `latitude`,
-    `longitude`,
-    `emp_code`,
-    `added_by`
-)
-VALUES(
-    '$district',
-    '$pincode',
-    '$dealerCode',
-    '$clusterCode',
-    '$shopName',
-    '$shopNumber',
-    '$currentLatitude',
-    '$currentLongitude',
-    '$empCode',
-    '$addedBy'
-)";
+// Check if shopNumber already exists
+$checkQuery = "SELECT * FROM `add_shop` WHERE `shop_number` = '$shopNumber'";
+$result = $connection->query($checkQuery);
 
-$response = array();
-
-if ($connection->query($sql) === TRUE) {
-    $response['statusCode'] = 1;
-    $response['message'] = "Data inserted successfully";
+if ($result->num_rows > 0) {
+    // Shop number already exists, return error response
+    $response['statusCode'] = 3;
+    $response['message'] = 'Retailer is already registered';
 } else {
-    $response['statusCode'] = 2;
-    $response['message'] = "Error inserting data: " . $connection->error;
+    // Shop number doesn't exist, proceed with insertion
+    $sql = "INSERT INTO `add_shop`(
+        `district`,
+        `pincode`,
+        `dealer_code`,
+        `cluster_code`,
+        `shop_name`,
+        `shop_number`,
+        `latitude`,
+        `longitude`,
+        `emp_code`,
+        `added_by`
+    )
+    VALUES(
+        '$district',
+        '$pincode',
+        '$dealerCode',
+        '$clusterCode',
+        '$shopName',
+        '$shopNumber',
+        '$currentLatitude',
+        '$currentLongitude',
+        '$empCode',
+        '$addedBy'
+    )";
+
+    if ($connection->query($sql) === TRUE) {
+        $response['statusCode'] = 1;
+        $response['message'] = "Retailer Added";
+    } else {
+        $response['statusCode'] = 2;
+        $response['message'] = "Error inserting data: " . $connection->error;
+    }
 }
 
 $connection->close();
