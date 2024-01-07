@@ -43,7 +43,7 @@
                 $randomNumber = rand(100000, 999999);
                 $user_form_ref_number = "REF" . date('dmY') . $randomNumber;
 
-                $to = "tech.gizmmo.new@gmail.com";
+                $to = $user_form_email;
                 $subject = "Adira Talent Tracker Form: " . $user_form_ref_number;
                 $message = "Thank you for submitting your application. Your reference number is: " . $user_form_ref_number;
                 $headers = "From: tech.gizmmo.new@gmail.com";
