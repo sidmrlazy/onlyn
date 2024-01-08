@@ -19,12 +19,17 @@
 </script>
 <div class="form-body">
     <div class="container ">
-        <div class="brand-img">
-            <img src="assets/brand-logo.png" alt="">
+        <div class="brand-img-row">
+            <div class="brand-img">
+                <img src="assets/brand-logo.png" alt="">
+            </div>
+            <div class="brand-img-real-me">
+                <img src="assets/real-me-logo.png" alt="">
+            </div>
         </div>
         <div class="form-details-container">
-            <h1>Talent Tracker Form</h1>
-            <p>Join us at 'Adira Talent Tracker': Apply, Refer Talent, Upload Resumes. Share your details swiftly and join our dynamic team</p>
+            <h1>Employee Reference Tracker</h1>
+            <p>Join us at 'Adira Employee Reference Tracker' : Apply, Refer Talent, Upload Resumes. Share your details swiftly and join our dynamic team</p>
         </div>
         <div class="form-container">
 
@@ -35,6 +40,8 @@
                 $user_form_email = mysqli_real_escape_string($connection, $_POST['user_form_email']);
                 $user_form_ref_contact = mysqli_real_escape_string($connection, $_POST['user_form_ref_contact']);
                 $user_form_ref_name = mysqli_real_escape_string($connection, $_POST['user_form_ref_name']);
+                $user_form_ref_email = mysqli_real_escape_string($connection, $_POST['user_form_ref_email']);
+                $user_form_ref_position = mysqli_real_escape_string($connection, $_POST['user_form_ref_position']);
 
                 $user_form_ref_cv = $_FILES["user_form_ref_cv"]["name"];
                 $tempname_user_form_ref_cv = $_FILES["user_form_ref_cv"]["tmp_name"];
@@ -61,6 +68,8 @@
                             `user_form_email`,
                             `user_form_ref_contact`,
                             `user_form_ref_name`,
+                            `user_form_ref_email`,
+                            `user_form_ref_position`,
                             `user_form_ref_cv`,
                             `user_form_ref_number`
                         )
@@ -70,6 +79,8 @@
                             '$user_form_email',
                             '$user_form_ref_contact',
                             '$user_form_ref_name',
+                            '$user_form_ref_email',
+                            '$user_form_ref_position',
                             '$user_form_ref_cv',
                             '$user_form_ref_number'
                         )";
@@ -156,27 +167,39 @@
 
             <form action="" method="POST" enctype="multipart/form-data">
                 <div class="mb-3">
-                    <label for="employeeId" class="form-label">Employee ID</label>
+                    <label for="employeeId" class="form-label form-data-label">Employee ID</label>
                     <input type="text" name="user_form_emp_id" class="form-control" id="employeeId" aria-describedby="emailHelp" required>
                 </div>
                 <div class="mb-3">
-                    <label for="contactNumber" class="form-label">Contact Number</label>
+                    <label for="contactNumber" class="form-label form-data-label">Employee Mobile Number</label>
                     <input type="number" name="user_form_contact" class="form-control" id="contactNumber" aria-describedby="emailHelp" required>
                 </div>
                 <div class="mb-3">
-                    <label for="employeeEmail" class="form-label">Email</label>
+                    <label for="employeeEmail" class="form-label form-data-label">Employee Email-ID</label>
                     <input type="email" name="user_form_email" class="form-control" id="employeeEmail" aria-describedby="emailHelp" required>
                 </div>
                 <div class="mb-3">
-                    <label for="contactNumber" class="form-label">Reference Mobile Number</label>
+                    <label for="contactNumber" class="form-label form-data-label">Mobile No. of Candidate (Referred by Employee)</label>
                     <input type="number" name="user_form_ref_contact" class="form-control" id="contactNumber" aria-describedby="emailHelp" required>
                 </div>
                 <div class="mb-3">
-                    <label for="contactNumber" class="form-label">Reference Name</label>
+                    <label for="contactNumber" class="form-label form-data-label">Name of Candidate (Referred by Employee)</label>
                     <input type="text" name="user_form_ref_name" class="form-control" id="contactNumber" aria-describedby="emailHelp">
                 </div>
                 <div class="mb-3">
-                    <label for="formFile" class="form-label">Upload CV for reference</label>
+                    <label for="contactNumber" class="form-label form-data-label">Email-ID of Candidate (Referred by Employee)</label>
+                    <input type="text" name="user_form_ref_email" class="form-control" id="contactNumber" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="contactNumber" class="form-label form-data-label">Position Applied for</label>
+                    <select name="user_form_ref_position" class="form-select" aria-label="Default select example">
+                        <option selected>Open this menu</option>
+                        <option value="Realme Advisor">Realme Advisor</option>
+                        <option value="Cluster Sales Incharge">Cluster Sales Incharge</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="formFile" class="form-label form-data-label">Upload CV for reference</label>
                     <input class="form-control" name="user_form_ref_cv" type="file" id="formFile">
                 </div>
                 <button type="submit" name="submit" class="btn btn-primary form-btn">Submit</button>
