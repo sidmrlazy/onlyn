@@ -29,7 +29,8 @@
         </div>
         <div class="form-details-container">
             <h1>Employee Reference Tracker</h1>
-            <p>Join us at 'Adira Employee Reference Tracker' : Apply, Refer Talent, Upload Resumes. Share your details swiftly and join our dynamic team</p>
+            <p>Refer a Friend / Source a CV of candidate from your market, Upload his / her Resume and your own details.
+                Our HR will validate every candidate and if your referred candidate is appointed you will be suitably rewarded.</p>
         </div>
         <div class="form-container">
 
@@ -52,8 +53,9 @@
 
                 $to = $user_form_email;
                 $subject = "Adira Talent Tracker Form: " . $user_form_ref_number;
-                $message = "Thank you for submitting your application. Your reference number is: " . $user_form_ref_number;
-                $headers = "From: tech.gizmmo.new@gmail.com";
+                $message = "Thank you for refering (" . $user_form_ref_name . " /" . $user_form_ref_contact . " / . " . $user_form_ref_email . " ) for position of (" . $user_form_ref_position . "). 
+                The HR will examine the candidature. You will be suitably rewarded once your refered candidate completes first two business months. Your reference number is: " . $user_form_ref_number;
+                $headers = "From: connectonlyn@gmail.com";
 
                 if (empty($user_form_ref_cv)) {
                     echo "<script>emptyModal();</script>";
