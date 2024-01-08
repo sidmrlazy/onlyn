@@ -201,7 +201,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="formFile" class="form-label form-data-label">Upload CV for reference</label>
-                    <input class="form-control" name="user_form_ref_cv" type="file" id="formFile">
+                    <input class="form-control" name="user_form_ref_cv" type="file" id="formFile" required>
                 </div>
                 <button type="submit" name="submit" class="btn btn-primary form-btn">Submit</button>
             </form>
