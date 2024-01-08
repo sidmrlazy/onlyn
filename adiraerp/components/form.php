@@ -52,7 +52,7 @@
                 $user_form_ref_number = "REF" . date('dmY') . $randomNumber;
 
                 $to = $user_form_email;
-                $subject = "Adira Employee Reference Tracker: " . $user_form_ref_number;
+                $subject = "Adira Employee Reference Scheme: " . $user_form_ref_number;
                 $message = "Thank you for refering (" . $user_form_ref_name . " / " . $user_form_ref_contact . " / " . $user_form_ref_email . " ) for position of (" . $user_form_ref_position . "). The HR will examine the candidature. You will be suitably rewarded once your refered candidate completes first two business months. Your reference number is: " . $user_form_ref_number;
                 $headers = "From: ibasthana@adiratele.com";
 
@@ -185,15 +185,15 @@
                 </div>
                 <div class="mb-3">
                     <label for="contactNumber" class="form-label form-data-label">Name of Candidate (Referred by Employee)</label>
-                    <input type="text" name="user_form_ref_name" class="form-control" id="contactNumber" aria-describedby="emailHelp">
+                    <input type="text" name="user_form_ref_name" class="form-control" id="contactNumber" aria-describedby="emailHelp" required>
                 </div>
                 <div class="mb-3">
                     <label for="contactNumber" class="form-label form-data-label">Email-ID of Candidate (Referred by Employee)</label>
-                    <input type="text" name="user_form_ref_email" class="form-control" id="contactNumber" aria-describedby="emailHelp">
+                    <input type="text" name="user_form_ref_email" class="form-control" id="contactNumber" aria-describedby="emailHelp" required>
                 </div>
                 <div class="mb-3">
                     <label for="contactNumber" class="form-label form-data-label">Position Applied for</label>
-                    <select name="user_form_ref_position" class="form-select" aria-label="Default select example">
+                    <select name="user_form_ref_position" class="form-select" aria-label="Default select example" required>
                         <option selected>Open this menu</option>
                         <option value="Realme Advisor">Realme Advisor</option>
                         <option value="Cluster Sales Incharge">Cluster Sales Incharge</option>
