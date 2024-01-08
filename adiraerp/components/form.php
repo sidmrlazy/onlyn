@@ -54,7 +54,7 @@
                 $to = $user_form_email;
                 $subject = "Adira Employee Reference Tracker: " . $user_form_ref_number;
                 $message = "Thank you for refering (" . $user_form_ref_name . " / " . $user_form_ref_contact . " / " . $user_form_ref_email . " ) for position of (" . $user_form_ref_position . "). The HR will examine the candidature. You will be suitably rewarded once your refered candidate completes first two business months. Your reference number is: " . $user_form_ref_number;
-                $headers = "From: connectonlyn@gmail.com";
+                $headers = "From: ibasthana@adiratele.com";
 
                 if (empty($user_form_ref_cv)) {
                     echo "<script>emptyModal();</script>";
