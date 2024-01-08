@@ -66,7 +66,7 @@
                     echo "<script>emptyModal();</script>";
                 }
                 if (empty($user_form_ref_position) || $user_form_ref_position == 'null') {
-                    echo "<script>emptyModal();</script>";
+                    echo "<script>positionModal();</script>";
                 } else {
                     $file_extension = pathinfo($user_form_ref_cv, PATHINFO_EXTENSION);
                     if (strtolower($file_extension) !== "pdf") {
@@ -180,12 +180,12 @@
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Check File Format!</h1>
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Select Position!</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             <div>
-                                <p>Whoops! It appears you haven't selected a position you are referring the candiadate. Please select one from the dropdown. Thank you!</p>
+                                <p>Whoops! It appears you haven't selected a position you are referring the candidate for. Please select one from the dropdown. Thank you!</p>
                             </div>
                         </div>
                         <div class="modal-footer">
