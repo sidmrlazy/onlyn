@@ -16,6 +16,12 @@
             $("#fileType").modal("show");
         });
     }
+
+    function positionModal() {
+        $(document).ready(function() {
+            $("#position").modal("show");
+        });
+    }
 </script>
 <div class="form-body">
     <div class="container ">
@@ -57,6 +63,9 @@
                 $headers = "From: ibasthana@adiratele.com";
 
                 if (empty($user_form_ref_cv)) {
+                    echo "<script>emptyModal();</script>";
+                }
+                if (empty($user_form_ref_position) || $user_form_ref_position == 'null') {
                     echo "<script>emptyModal();</script>";
                 } else {
                     $file_extension = pathinfo($user_form_ref_cv, PATHINFO_EXTENSION);
@@ -166,6 +175,29 @@
             <!-- =============== FILE TYPE MODAL END =============== -->
 
 
+            <!-- =============== POSITION START =============== -->
+            <div class="modal fade hide" id="position" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Check File Format!</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <p>Whoops! It appears you haven't selected a position you are referring the candiadate. Please select one from the dropdown. Thank you!</p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <!-- <a href="admin-past-payments.php" class="btn btn-primary">Go back</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- =============== POSITION END =============== -->
+
+
             <form action="" method="POST" enctype="multipart/form-data">
                 <div class="mb-3">
                     <label for="employeeId" class="form-label form-data-label">Employee ID</label>
@@ -193,8 +225,8 @@
                 </div>
                 <div class="mb-3">
                     <label for="contactNumber" class="form-label form-data-label">Position Applied for</label>
-                    <select name="user_form_ref_position" class="form-select" aria-label="Default select example" required="required">
-                        <option selected>Open this menu</option>
+                    <select name="user_form_ref_position" class="form-select" aria-label="Default select example">
+                        <option value="null">Open this menu</option>
                         <option value="Realme Advisor">Realme Advisor</option>
                         <option value="Cluster Sales Incharge">Cluster Sales Incharge</option>
                     </select>
