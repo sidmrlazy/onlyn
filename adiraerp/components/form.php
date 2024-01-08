@@ -193,7 +193,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="contactNumber" class="form-label form-data-label">Position Applied for</label>
-                    <select name="user_form_ref_position" class="form-select" aria-label="Default select example" required>
+                    <select name="user_form_ref_position" class="form-select" aria-label="Default select example" required="required">
                         <option selected>Open this menu</option>
                         <option value="Realme Advisor">Realme Advisor</option>
                         <option value="Cluster Sales Incharge">Cluster Sales Incharge</option>
