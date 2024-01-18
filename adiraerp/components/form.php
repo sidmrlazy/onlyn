@@ -38,6 +38,20 @@
             <p>Refer a Friend / Source a CV of candidate from your market, Upload his / her Resume and your own details.
                 Our HR will validate every candidate and if your referred candidate is appointed you will be suitably rewarded.</p>
         </div>
+
+        <div class="form-job-details-container">
+            <h3>RA - Role & Responsibilities</h3>
+            <ul>
+                <li>In shop Demonstrations of Product features. Advantages & benefits.</li>
+                <li>Per Day Activation Target Vs Achievement</li>
+                <li>Attractive Display of Products on Shelf</li>
+                <li>Model wise Stocking as per norms</li>
+                <li>Daily Upload of Sales (IMEI Activation)</li>
+                <li>Reporting Discipline as per policy</li>
+                <li>Punctuality in Punching of Daily Attendance Online</li>
+                <li>Sell-Out as per Minimum Business Commitment (MBC) of Vol / Value.</li>
+            </ul>
+        </div>
         <div class="form-container">
 
             <?php
@@ -228,7 +242,7 @@
                     <select name="user_form_ref_position" class="form-select" aria-label="Default select example">
                         <option value="null">Open this menu</option>
                         <option value="Realme Advisor">Realme Advisor</option>
-                        <option value="Cluster Sales Incharge">Cluster Sales Incharge</option>
+                        <!-- <option value="Cluster Sales Incharge">Cluster Sales Incharge</option> -->
                     </select>
                 </div>
                 <div class="mb-3">
