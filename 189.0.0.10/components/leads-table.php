@@ -31,6 +31,22 @@ if ($count > 0) {
             <a href="index.php"><ion-icon name="arrow-back-circle-outline"></ion-icon> Go Back</a>
         </div>
 
+        <div class="search-box-container">
+            <form action="filtered-data.php" method="POST" class="d-flex" role="search">
+                <select name="data_number" class="form-select" aria-label="Default select example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">Employee ID</option>
+                    <option value="2">Employee Mobile Number</option>
+                    <option value="3">Reference Number</option>
+                    <option value="4">Candidate Mobile Number</option>
+                </select>
+                <input type="text" class="form-control" aria-label="Text input with dropdown button" name="data" placeholder="Type Here">
+                <button type="submit" name="filter" class="btn btn-outline-success">Search</button>
+            </form>
+        </div>
+
+
+
         <div class="table-container">
             <div class="table-responsive">
                 <table class="table table-bordered">
