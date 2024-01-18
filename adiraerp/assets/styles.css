@@ -88,6 +88,33 @@ body {
   color: #fff !important;
   transition: 0.3s all ease-in-out;
 }
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.company-footer {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5px;
+  margin-bottom: 20px;
+  width: 95%;
+  border-radius: 50px;
+}
+.company-footer p {
+  margin: 0;
+}
+.company-footer img {
+  width: 25%;
+  height: auto;
+}
+.footer-bottom {
+  font-weight: bold;
+  margin: 0;
+}
 
 @media only screen and (max-width: 768px) {
   .brand-img {
@@ -122,5 +149,35 @@ body {
   }
   .form-data-label {
     font-size: 10px !important;
+  }
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .company-footer {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+    margin-bottom: 20px;
+    width: 95%;
+    height: 80px;
+    border-radius: 50px;
+  }
+  .company-footer p {
+    font-size: 12px;
+    text-align: center;
+  }
+  .company-footer img {
+    width: 20%;
+    height: auto;
+  }
+  .footer-bottom {
+    font-weight: bold;
+    margin: 0;
+    font-size: 14px;
   }
 }
