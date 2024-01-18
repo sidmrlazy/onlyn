@@ -214,4 +214,16 @@ input::-webkit-outer-spin-button {
     margin: 0;
     text-align: center;
   }
+  .empty-container {
+    margin-top: 200px !important;
+  }
+  .empty-container img {
+    width: 30% !important;
+    height: auto;
+  }
+  .empty-container h1 {
+    font-size: 24px !important;
+    font-weight: 600;
+    margin-top: 15px;
+  }
 }
