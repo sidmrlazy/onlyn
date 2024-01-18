@@ -121,6 +121,21 @@ input::-webkit-outer-spin-button {
   justify-content: center;
   align-items: center;
 }
+.empty-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 150px;
+}
+.empty-container img {
+  width: 10% !important;
+  height: auto;
+}
+.empty-container h1 {
+  font-size: 36px !important;
+  font-weight: 800;
+}
 
 /* ======== DEVELOPER FOOTER ======== */
 .developer-footer {

@@ -103,4 +103,9 @@ if ($count > 0) {
             </div>
         </div>
     </div>
+<?php } else { ?>
+    <div class="empty-container">
+        <img src="assets/link.png" alt="">
+        <h1>No Data Found!</h1>
+    </div>
 <?php } ?>
