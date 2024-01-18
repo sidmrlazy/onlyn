@@ -9,15 +9,20 @@ if (isset($_POST['download'])) {
     $count = mysqli_num_rows($fetch_r);
 
     if ($count > 0) {
-        // Output headers to force a download
-        header('Content-Type: text/csv');
-        header('Content-Disposition: attachment; filename="user_form_data.csv"');
+        // Create a temporary directory for storing the CSV and Zip file
+        $tempDir = 'temp/';
+        if (!is_dir($tempDir)) {
+            mkdir($tempDir);
+        }
 
-        // Open the output stream
-        $output = fopen('php://output', 'w');
+        // Generate a unique filename for the CSV file
+        $csvFilename = $tempDir . 'user_form_data.csv';
+
+        // Open the CSV file for writing
+        $csvFile = fopen($csvFilename, 'w');
 
         // Output CSV column headers
-        fputcsv($output, array(
+        fputcsv($csvFile, array(
             'REFERENCE NUMBER',
             'EMP ID',
             'EMP MOBILE NUMBER',
@@ -29,9 +34,9 @@ if (isset($_POST['download'])) {
             'APPLIED DATE'
         ));
 
-        // Output data from user_form table
+        // Output data from user_form table to the CSV file
         while ($row = mysqli_fetch_assoc($fetch_r)) {
-            fputcsv($output, array(
+            fputcsv($csvFile, array(
                 $row['user_form_ref_number'],
                 $row['user_form_emp_id'],
                 $row['user_form_contact'],
@@ -44,10 +49,36 @@ if (isset($_POST['download'])) {
             ));
         }
 
-        // Close the output stream
-        fclose($output);
+        // Close the CSV file
+        fclose($csvFile);
 
-        // Exit to prevent any additional output
-        exit;
+        // Create a ZipArchive
+        $zip = new ZipArchive();
+        $zipFilename = $tempDir . 'user_form_data.zip';
+
+        // Open the Zip archive for writing
+        if ($zip->open($zipFilename, ZipArchive::CREATE | ZipArchive::OVERWRITE) === true) {
+            // Add the CSV file to the Zip archive
+            $zip->addFile($csvFilename, basename($csvFilename));
+
+            // Close the Zip archive
+            $zip->close();
+
+            // Output headers to force a download of the Zip file
+            header('Content-Type: application/zip');
+            header('Content-Disposition: attachment; filename="user_form_data.zip"');
+            header('Content-Length: ' . filesize($zipFilename));
+
+            // Read the Zip file and output its contents
+            readfile($zipFilename);
+
+            // Remove the temporary directory and files
+            unlink($csvFilename);
+            unlink($zipFilename);
+            rmdir($tempDir);
+
+            // Exit to prevent any additional output
+            exit;
+        }
     }
 }
