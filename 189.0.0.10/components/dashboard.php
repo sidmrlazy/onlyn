@@ -1,6 +1,6 @@
 <div class="container">
     <div class="dashboard">
-        <form action="download-csv.php" method="POST" class="dashboard-tile">
+        <form action="" method="POST" class="dashboard-tile">
             <button type="submit" name="download" class="dashboard-tile-btn">
                 <div class="tile-title">
                     <ion-icon name="download-outline"></ion-icon>
