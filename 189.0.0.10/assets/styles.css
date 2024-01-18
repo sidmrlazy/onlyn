@@ -1,0 +1,202 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* ======== NAVBAR ======== */
+.navbar {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+.navbar-brand img {
+  width: 15% !important;
+  height: auto;
+}
+.navbar-product-brand {
+  max-width: 10% !important;
+  max-height: 100% !important;
+}
+.navbar-product-brand img {
+  width: 50% !important;
+  height: auto;
+}
+
+/* ======== DASHBOARD ======== */
+.dashboard {
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+.dashboard-tile-btn {
+  background-color: #00000000;
+  text-align: left;
+  border: 0;
+}
+.dashboard-tile {
+  border: 1px solid #322b6a !important;
+  border-radius: 20px;
+  padding: 25px;
+  width: 100%;
+  margin: 5px;
+  text-decoration: none;
+  color: #000;
+  text-align: left;
+  margin: 10px;
+  background-color: #fff;
+}
+.dashboard-tile:hover {
+  /* background-color: #322b6a !important;
+  color: #fff !important;
+  transition: 0.3s all ease-in-out; */
+  -webkit-box-shadow: 10px 10px 23px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 23px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 23px -8px rgba(0, 0, 0, 0.75);
+  border: 0 !important;
+  transition: 0.5s all ease-in-out;
+}
+.tile-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.tile-title ion-icon {
+  font-size: 30px;
+  margin-bottom: 5px;
+  color: #322b6a !important;
+}
+.tile-title h3 {
+  margin: 0;
+  margin-left: 5px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #322b6a !important;
+}
+
+/* ======== LEADS ======== */
+.go-back-container {
+  margin-top: 30px;
+}
+.go-back-container a {
+  text-decoration: none;
+  color: #322b6a !important;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+.go-back-container ion-icon {
+  font-size: 20px;
+  margin-top: 5px;
+}
+.table-container {
+  margin-top: 50px;
+}
+.table-text-small {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff !important;
+  background-color: #322b6a !important;
+}
+.pdf-logo {
+  width: 8%;
+}
+.pdf-logo img {
+  width: 20% !important;
+  height: auto;
+}
+.response-text {
+  font-size: 12px;
+}
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ======== DEVELOPER FOOTER ======== */
+.developer-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #e7e7e7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.developer-footer p {
+  margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  /* ======== NAVBAR ======== */
+  .navbar {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .navbar-brand {
+    max-width: 20% !important;
+    max-height: 100% !important;
+  }
+  .navbar-brand img {
+    width: 100% !important;
+    height: auto;
+  }
+  .navbar-toggler {
+    display: none;
+  }
+  .navbar-product-brand {
+    max-width: 20% !important;
+    max-height: 100% !important;
+  }
+  .navbar-product-brand img {
+    width: 100% !important;
+    height: auto;
+  }
+
+  /* ======== DASHBOARD ======== */
+  .dashboard {
+    flex-direction: column;
+  }
+  .dashboard-tile {
+    border: 1px solid #322b6a !important;
+    border-radius: 20px;
+    padding: 25px;
+    flex: 1;
+    margin: 0 !important;
+    margin-bottom: 10px !important;
+    text-decoration: none;
+    color: #000;
+    text-align: left;
+    margin: 10px;
+    background-color: #fff;
+  }
+
+  /* ======== DEVELOPER FOOTER ======== */
+  .developer-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #e7e7e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 14px;
+    padding: 5px;
+  }
+  .developer-footer p {
+    margin: 0;
+    text-align: center;
+  }
+}
