@@ -7,6 +7,11 @@ input::-webkit-outer-spin-button {
   margin: 0;
 }
 
+::selection {
+  color: #fff;
+  background: #322b6a !important;
+}
+
 /* ======== NAVBAR ======== */
 .navbar {
   display: flex !important;
