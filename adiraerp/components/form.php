@@ -22,6 +22,12 @@
             $("#position").modal("show");
         });
     }
+
+    function duplicacyModal() {
+        $(document).ready(function() {
+            $("#duplicate").modal("show");
+        });
+    }
 </script>
 <div class="form-body">
     <div class="container ">
@@ -76,17 +82,25 @@
                 $message = "Thank you for refering (" . $user_form_ref_name . " / " . $user_form_ref_contact . " / " . $user_form_ref_email . " ) for position of (" . $user_form_ref_position . "). The HR will examine the candidature. You will be suitably rewarded once your refered candidate completes first two business months. Your reference number is: " . $user_form_ref_number;
                 $headers = "From: ibasthana@adiratele.com";
 
-                if (empty($user_form_ref_cv)) {
-                    echo "<script>emptyModal();</script>";
-                }
-                if (empty($user_form_ref_position) || $user_form_ref_position == 'null') {
-                    echo "<script>positionModal();</script>";
+                $fetch_duplicacy = "SELECT * FROM `user_form` WHERE `user_form_ref_contact` = '$user_form_ref_contact'";
+                $fetch_duplicacy_r = mysqli_query($connection, $fetch_duplicacy);
+                $fetch_duplicacy_count = mysqli_num_rows($fetch_duplicacy_r);
+
+                if ($fetch_duplicacy_count > 0) {
+                    echo "<script>duplicacyModal();</script>";
                 } else {
-                    $file_extension = pathinfo($user_form_ref_cv, PATHINFO_EXTENSION);
-                    if (strtolower($file_extension) !== "pdf") {
-                        echo "<script>fileModal();</script>";
+
+                    if (empty($user_form_ref_cv)) {
+                        echo "<script>emptyModal();</script>";
+                    }
+                    if (empty($user_form_ref_position) || $user_form_ref_position == 'null') {
+                        echo "<script>positionModal();</script>";
                     } else {
-                        $insert_query = "INSERT INTO `user_form`(
+                        $file_extension = pathinfo($user_form_ref_cv, PATHINFO_EXTENSION);
+                        if (strtolower($file_extension) !== "pdf") {
+                            echo "<script>fileModal();</script>";
+                        } else {
+                            $insert_query = "INSERT INTO `user_form`(
                             `user_form_emp_id`,
                             `user_form_contact`,
                             `user_form_email`,
@@ -109,12 +123,13 @@
                             '$user_form_ref_number'
                         )";
 
-                        $insert_r = mysqli_query($connection, $insert_query);
-                        if ($insert_r) {
-                            $move_file = move_uploaded_file($tempname_user_form_ref_cv, $folder_cv);
-                            if ($move_file) {
-                                mail($to, $subject, $message, $headers);
-                                echo "<script>successModal();</script>";
+                            $insert_r = mysqli_query($connection, $insert_query);
+                            if ($insert_r) {
+                                $move_file = move_uploaded_file($tempname_user_form_ref_cv, $folder_cv);
+                                if ($move_file) {
+                                    mail($to, $subject, $message, $headers);
+                                    echo "<script>successModal();</script>";
+                                }
                             }
                         }
                     }
@@ -200,6 +215,28 @@
                         <div class="modal-body">
                             <div>
                                 <p>Whoops! It appears you haven't selected a position you are referring the candidate for. Please select one from the dropdown. Thank you!</p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <!-- <a href="admin-past-payments.php" class="btn btn-primary">Go back</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- =============== POSITION END =============== -->
+
+            <!-- =============== POSITION START =============== -->
+            <div class="modal fade hide" id="duplicate" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title text-danger fs-5" id="exampleModalLabel">Already Referred!</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <p>Looks like you have already referred this candidate. We will inform you of the candidate status shortly!</p>
                             </div>
                         </div>
                         <div class="modal-footer">
