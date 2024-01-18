@@ -30,6 +30,7 @@ if ($count > 0) {
         <div class="go-back-container">
             <a href="index.php"><ion-icon name="arrow-back-circle-outline"></ion-icon> Go Back</a>
         </div>
+
         <div class="table-container">
             <div class="table-responsive">
                 <table class="table table-bordered">
@@ -71,13 +72,32 @@ if ($count > 0) {
                                 <td class="response-text"><?php echo $user_form_ref_email ?></td>
                                 <td class="response-text"><?php echo $user_form_ref_position ?></td>
                                 <?php
-                                if (!empty($user_form_ref_cv)) { ?>
-                                    <td class="pdf-logo text-center">
-                                        <a target="_blank" href="<?php echo $user_form_ref_cv ?>">
-                                            <img src="assets/pdf-logo.png" alt="">
-                                        </a>
+                                if (!empty($user_form_ref_cv)) {
+                                    $file_extension = pathinfo($user_form_ref_cv, PATHINFO_EXTENSION);
+                                    $allowed_image_extensions = array("jpg", "jpeg", "png");
+                                    $allowed_word_extensions = array("doc", "docx");
+                                    $allowed_pdf_extensions = array("pdf");
+                                ?>
+                                    <?php if (in_array(strtolower($file_extension), $allowed_image_extensions)) { ?>
+                                        <td class="pdf-logo text-center">
+                                            <a target="_blank" href="<?php echo $user_form_ref_cv ?>">
+                                                <img src="assets/image-icon.png" alt="">
+                                            </a>
+                                        </td>
+                                    <?php } elseif (in_array(strtolower($file_extension), $allowed_word_extensions)) { ?>
+                                        <td class="pdf-logo text-center">
+                                            <a target="_blank" href="<?php echo $user_form_ref_cv ?>">
+                                                <img src="assets/word-icon.png" alt="">
+                                            </a>
+                                        </td>
+                                    <?php } elseif (strtolower($file_extension) === "pdf") { ?>
+                                        <td class="pdf-logo text-center">
+                                            <a target="_blank" href="<?php echo $user_form_ref_cv ?>">
+                                                <img src="assets/pdf-logo.png" alt="">
+                                            </a>
+                                        </td>
+                                    <?php } ?>
 
-                                    </td>
                                 <?php } ?>
 
                                 <td class="response-text"><?php echo date('d-M-Y h:i', strtotime($user_form_submit_date)) ?></td>
