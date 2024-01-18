@@ -97,7 +97,8 @@
                         echo "<script>positionModal();</script>";
                     } else {
                         $file_extension = pathinfo($user_form_ref_cv, PATHINFO_EXTENSION);
-                        if (strtolower($file_extension) !== "pdf") {
+                        $allowed_extensions = array("pdf", "jpg", "png", "jpeg", "doc", "docx");
+                        if (!in_array(strtolower($file_extension), $allowed_extensions)) {
                             echo "<script>fileModal();</script>";
                         } else {
                             $insert_query = "INSERT INTO `user_form`(
@@ -283,7 +284,7 @@
                     </select>
                 </div>
                 <div class="mb-3">
-                    <label for="formFile" class="form-label form-data-label">Upload CV for reference*</label>
+                    <label for="formFile" class="form-label form-data-label">Upload CV for reference* (PDF, JPEG, PNG OR WORD File)</label>
                     <input class="form-control" name="user_form_ref_cv" type="file" id="formFile" required>
                 </div>
                 <button type="submit" name="submit" class="btn btn-primary form-btn">Submit</button>
