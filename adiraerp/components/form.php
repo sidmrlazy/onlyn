@@ -214,31 +214,31 @@
 
             <form action="" method="POST" enctype="multipart/form-data">
                 <div class="mb-3">
-                    <label for="employeeId" class="form-label form-data-label">Employee ID</label>
+                    <label for="employeeId" class="form-label form-data-label">Employee ID*</label>
                     <input type="text" name="user_form_emp_id" class="form-control" id="employeeId" aria-describedby="emailHelp" required>
                 </div>
                 <div class="mb-3">
-                    <label for="contactNumber" class="form-label form-data-label">Employee Mobile Number</label>
+                    <label for="contactNumber" class="form-label form-data-label">Employee Mobile Number*</label>
                     <input type="number" name="user_form_contact" class="form-control" id="contactNumber" aria-describedby="emailHelp" required>
                 </div>
                 <div class="mb-3">
-                    <label for="employeeEmail" class="form-label form-data-label">Employee Email-ID</label>
+                    <label for="employeeEmail" class="form-label form-data-label">Employee Email-ID*</label>
                     <input type="email" name="user_form_email" class="form-control" id="employeeEmail" aria-describedby="emailHelp" required>
                 </div>
                 <div class="mb-3">
-                    <label for="contactNumber" class="form-label form-data-label">Mobile No. of Candidate (Referred by Employee)</label>
+                    <label for="contactNumber" class="form-label form-data-label">Mobile No. of Candidate (Referred by Employee)*</label>
                     <input type="number" name="user_form_ref_contact" class="form-control" id="contactNumber" aria-describedby="emailHelp" required>
                 </div>
                 <div class="mb-3">
-                    <label for="contactNumber" class="form-label form-data-label">Name of Candidate (Referred by Employee)</label>
+                    <label for="contactNumber" class="form-label form-data-label">Name of Candidate (Referred by Employee)*</label>
                     <input type="text" name="user_form_ref_name" class="form-control" id="contactNumber" aria-describedby="emailHelp" required>
                 </div>
                 <div class="mb-3">
-                    <label for="contactNumber" class="form-label form-data-label">Email-ID of Candidate (Referred by Employee)</label>
+                    <label for="contactNumber" class="form-label form-data-label">Email-ID of Candidate (Referred by Employee)*</label>
                     <input type="text" name="user_form_ref_email" class="form-control" id="contactNumber" aria-describedby="emailHelp" required>
                 </div>
                 <div class="mb-3">
-                    <label for="contactNumber" class="form-label form-data-label">Position Applied for</label>
+                    <label for="contactNumber" class="form-label form-data-label">Position Applied for*</label>
                     <select name="user_form_ref_position" class="form-select" aria-label="Default select example">
                         <option value="null">Open this menu</option>
                         <option value="Realme Advisor">Realme Advisor</option>
@@ -246,7 +246,7 @@
                     </select>
                 </div>
                 <div class="mb-3">
-                    <label for="formFile" class="form-label form-data-label">Upload CV for reference</label>
+                    <label for="formFile" class="form-label form-data-label">Upload CV for reference*</label>
                     <input class="form-control" name="user_form_ref_cv" type="file" id="formFile" required>
                 </div>
                 <button type="submit" name="submit" class="btn btn-primary form-btn">Submit</button>
