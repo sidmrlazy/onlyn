@@ -42,7 +42,7 @@
         <div class="form-job-details-container">
             <h3>RA - Role & Responsibilities</h3>
             <ul>
-                <li>In shop Demonstrations of Product features. Advantages & benefits.</li>
+                <li>In shop Demonstrations of Product features.</li>
                 <li>Per Day Activation Target Vs Achievement</li>
                 <li>Attractive Display of Products on Shelf</li>
                 <li>Model wise Stocking as per norms</li>
