@@ -40,7 +40,7 @@
         </div>
 
         <div class="form-job-details-container">
-            <h3>RA - Role & Responsibilities</h3>
+            <h3>RA - Roles & Responsibilities (Only for Gujarat)</h3>
             <ul>
                 <li>In shop Demonstrations of Product features.</li>
                 <li>Per Day Activation Target Vs Achievement</li>
