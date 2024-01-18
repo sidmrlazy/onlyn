@@ -73,9 +73,9 @@ if (isset($_POST['download'])) {
             readfile($zipFilename);
 
             // Remove the temporary directory and files
-            unlink($csvFilename);
-            unlink($zipFilename);
-            rmdir($tempDir);
+            // unlink($csvFilename);
+            // unlink($zipFilename);
+            // rmdir($tempDir);
 
             // Exit to prevent any additional output
             exit;
